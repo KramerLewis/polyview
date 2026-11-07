@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+# Raw downloads are large and reproducible; only curated samples are committed.
+data/raw/
+data/build/
+.DS_Store

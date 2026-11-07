@@ -1,0 +1,867 @@
+biennium,fiscal_year,agency_code,agency,object,category,amount
+2025-27,2026,010,Bond Retirement and Interest,C,Personal Service Contracts,640834.91
+2025-27,2026,010,Bond Retirement and Interest,E,Goods and Services,1580884.29
+2025-27,2026,010,Bond Retirement and Interest,G,Travel,423.24
+2025-27,2026,011,House of Representatives,C,Personal Service Contracts,90947.45
+2025-27,2026,011,House of Representatives,E,Goods and Services,3557116.69
+2025-27,2026,011,House of Representatives,G,Travel,1818142.67
+2025-27,2026,011,House of Representatives,J,Capital Outlays,1253786.02
+2025-27,2026,012,Senate,C,Personal Service Contracts,50228.86
+2025-27,2026,012,Senate,E,Goods and Services,3401022.2
+2025-27,2026,012,Senate,G,Travel,975582.22
+2025-27,2026,012,Senate,J,Capital Outlays,187180.81
+2025-27,2026,013,Joint Transportation Committee,C,Personal Service Contracts,1622479.39
+2025-27,2026,013,Joint Transportation Committee,E,Goods and Services,123683.1
+2025-27,2026,013,Joint Transportation Committee,G,Travel,41634.65
+2025-27,2026,013,Joint Transportation Committee,J,Capital Outlays,6492.47
+2025-27,2026,014,Joint Leg Audit & Review Committee,C,Personal Service Contracts,255280.0
+2025-27,2026,014,Joint Leg Audit & Review Committee,E,Goods and Services,504141.04
+2025-27,2026,014,Joint Leg Audit & Review Committee,G,Travel,17171.44
+2025-27,2026,014,Joint Leg Audit & Review Committee,J,Capital Outlays,81393.36
+2025-27,2026,020,LEAP Committee,C,Personal Service Contracts,4200.0
+2025-27,2026,020,LEAP Committee,E,Goods and Services,237856.88
+2025-27,2026,020,LEAP Committee,J,Capital Outlays,37627.36
+2025-27,2026,035,Actuary,C,Personal Service Contracts,212777.34
+2025-27,2026,035,Actuary,E,Goods and Services,434061.84
+2025-27,2026,035,Actuary,G,Travel,6099.43
+2025-27,2026,035,Actuary,J,Capital Outlays,15149.11
+2025-27,2026,035,Actuary,N,"Grants, Benefits & Client Services",50.0
+2025-27,2026,036,State Legislative Labor Relations,C,Personal Service Contracts,7620.0
+2025-27,2026,036,State Legislative Labor Relations,E,Goods and Services,21042.16
+2025-27,2026,036,State Legislative Labor Relations,G,Travel,2948.77
+2025-27,2026,036,State Legislative Labor Relations,J,Capital Outlays,3547.21
+2025-27,2026,037,Office of Legislative Support Svcs,E,Goods and Services,837762.39
+2025-27,2026,037,Office of Legislative Support Svcs,F,Cost Of Goods Sold,157725.7
+2025-27,2026,037,Office of Legislative Support Svcs,G,Travel,17102.77
+2025-27,2026,037,Office of Legislative Support Svcs,J,Capital Outlays,383658.28
+2025-27,2026,037,Office of Legislative Support Svcs,S,Interagency Reimbursements,597.79
+2025-27,2026,038,Joint Legislative Systems Committee,C,Personal Service Contracts,480213.79
+2025-27,2026,038,Joint Legislative Systems Committee,E,Goods and Services,8249576.79
+2025-27,2026,038,Joint Legislative Systems Committee,G,Travel,52913.32
+2025-27,2026,038,Joint Legislative Systems Committee,J,Capital Outlays,2134302.09
+2025-27,2026,040,Statute Law Committee,E,Goods and Services,301506.16
+2025-27,2026,040,Statute Law Committee,G,Travel,26940.44
+2025-27,2026,040,Statute Law Committee,J,Capital Outlays,142129.63
+2025-27,2026,040,Statute Law Committee,N,"Grants, Benefits & Client Services",325.0
+2025-27,2026,045,Supreme Court,C,Personal Service Contracts,7492.99
+2025-27,2026,045,Supreme Court,E,Goods and Services,2413665.37
+2025-27,2026,045,Supreme Court,G,Travel,62118.37
+2025-27,2026,045,Supreme Court,J,Capital Outlays,718868.75
+2025-27,2026,048,Court of Appeals,C,Personal Service Contracts,6140.4
+2025-27,2026,048,Court of Appeals,E,Goods and Services,3608233.98
+2025-27,2026,048,Court of Appeals,G,Travel,95878.26
+2025-27,2026,048,Court of Appeals,J,Capital Outlays,283389.82
+2025-27,2026,050,Judicial Conduct,C,Personal Service Contracts,45652.78
+2025-27,2026,050,Judicial Conduct,E,Goods and Services,416203.81
+2025-27,2026,050,Judicial Conduct,G,Travel,63574.73
+2025-27,2026,050,Judicial Conduct,J,Capital Outlays,6364.56
+2025-27,2026,055,Administrative Office of the Courts,C,Personal Service Contracts,10631879.83
+2025-27,2026,055,Administrative Office of the Courts,E,Goods and Services,14706509.64
+2025-27,2026,055,Administrative Office of the Courts,G,Travel,970573.08
+2025-27,2026,055,Administrative Office of the Courts,J,Capital Outlays,584902.19
+2025-27,2026,055,Administrative Office of the Courts,N,"Grants, Benefits & Client Services",38315787.66
+2025-27,2026,056,Public Defense,C,Personal Service Contracts,1519624.19
+2025-27,2026,056,Public Defense,E,Goods and Services,5736782.24
+2025-27,2026,056,Public Defense,G,Travel,977425.89
+2025-27,2026,056,Public Defense,J,Capital Outlays,52995.68
+2025-27,2026,056,Public Defense,N,"Grants, Benefits & Client Services",80762916.15
+2025-27,2026,057,Civil Legal Aid,C,Personal Service Contracts,72745029.88
+2025-27,2026,057,Civil Legal Aid,E,Goods and Services,747347.48
+2025-27,2026,057,Civil Legal Aid,G,Travel,292115.92
+2025-27,2026,057,Civil Legal Aid,J,Capital Outlays,112.93
+2025-27,2026,057,Civil Legal Aid,N,"Grants, Benefits & Client Services",3352.5
+2025-27,2026,075,Governor,C,Personal Service Contracts,1128484.61
+2025-27,2026,075,Governor,E,Goods and Services,7070134.99
+2025-27,2026,075,Governor,G,Travel,266353.06
+2025-27,2026,075,Governor,J,Capital Outlays,22545.03
+2025-27,2026,075,Governor,N,"Grants, Benefits & Client Services",3166783.12
+2025-27,2026,080,Lieutenant Governor,C,Personal Service Contracts,210.0
+2025-27,2026,080,Lieutenant Governor,E,Goods and Services,411465.81
+2025-27,2026,080,Lieutenant Governor,G,Travel,22505.32
+2025-27,2026,082,Public Disclosure Commission,C,Personal Service Contracts,123306.39
+2025-27,2026,082,Public Disclosure Commission,E,Goods and Services,1698878.49
+2025-27,2026,082,Public Disclosure Commission,G,Travel,4408.79
+2025-27,2026,082,Public Disclosure Commission,J,Capital Outlays,6420.99
+2025-27,2026,083,Washington State Leadership Board,E,Goods and Services,212476.43
+2025-27,2026,083,Washington State Leadership Board,G,Travel,63711.71
+2025-27,2026,083,Washington State Leadership Board,N,"Grants, Benefits & Client Services",41447.44
+2025-27,2026,085,Secretary of State,C,Personal Service Contracts,5710195.79
+2025-27,2026,085,Secretary of State,E,Goods and Services,23550420.24
+2025-27,2026,085,Secretary of State,G,Travel,699199.3
+2025-27,2026,085,Secretary of State,J,Capital Outlays,3738117.1
+2025-27,2026,085,Secretary of State,N,"Grants, Benefits & Client Services",7324997.99
+2025-27,2026,085,Secretary of State,P,Debt Service,3472.59
+2025-27,2026,086,Indian Affairs,E,Goods and Services,408967.9
+2025-27,2026,086,Indian Affairs,G,Travel,25438.73
+2025-27,2026,086,Indian Affairs,J,Capital Outlays,396.62
+2025-27,2026,087,Asian Pacific American Affairs,E,Goods and Services,639947.37
+2025-27,2026,087,Asian Pacific American Affairs,G,Travel,5974.6
+2025-27,2026,087,Asian Pacific American Affairs,N,"Grants, Benefits & Client Services",12956.0
+2025-27,2026,090,Treasurer,C,Personal Service Contracts,312882.79
+2025-27,2026,090,Treasurer,E,Goods and Services,2420113.47
+2025-27,2026,090,Treasurer,G,Travel,41397.67
+2025-27,2026,090,Treasurer,J,Capital Outlays,60270.86
+2025-27,2026,095,Auditor,C,Personal Service Contracts,1484542.74
+2025-27,2026,095,Auditor,E,Goods and Services,7976782.32
+2025-27,2026,095,Auditor,G,Travel,676769.89
+2025-27,2026,095,Auditor,J,Capital Outlays,284541.57
+2025-27,2026,095,Auditor,N,"Grants, Benefits & Client Services",8950.55
+2025-27,2026,099,Salaries for Elected Officials,E,Goods and Services,83137.89
+2025-27,2026,099,Salaries for Elected Officials,G,Travel,35.0
+2025-27,2026,100,Attorney General,C,Personal Service Contracts,6422780.98
+2025-27,2026,100,Attorney General,E,Goods and Services,45098089.39
+2025-27,2026,100,Attorney General,G,Travel,1720555.8
+2025-27,2026,100,Attorney General,J,Capital Outlays,1413344.48
+2025-27,2026,100,Attorney General,N,"Grants, Benefits & Client Services",2586292.33
+2025-27,2026,101,Caseload Forecast Council,C,Personal Service Contracts,12328.8
+2025-27,2026,101,Caseload Forecast Council,E,Goods and Services,614481.39
+2025-27,2026,102,Financial Institutions,C,Personal Service Contracts,900214.02
+2025-27,2026,102,Financial Institutions,E,Goods and Services,6292960.97
+2025-27,2026,102,Financial Institutions,G,Travel,827189.61
+2025-27,2026,102,Financial Institutions,J,Capital Outlays,16410.82
+2025-27,2026,102,Financial Institutions,N,"Grants, Benefits & Client Services",744867.38
+2025-27,2026,103,Commerce,C,Personal Service Contracts,53204939.92
+2025-27,2026,103,Commerce,E,Goods and Services,24050609.82
+2025-27,2026,103,Commerce,G,Travel,946652.37
+2025-27,2026,103,Commerce,J,Capital Outlays,1123805.21
+2025-27,2026,103,Commerce,N,"Grants, Benefits & Client Services",2170265228.39
+2025-27,2026,103,Commerce,S,Interagency Reimbursements,254364.6
+2025-27,2026,104,Economic & Revenue Forecast Council,E,Goods and Services,206603.91
+2025-27,2026,104,Economic & Revenue Forecast Council,G,Travel,2031.19
+2025-27,2026,105,Financial Management,C,Personal Service Contracts,50958328.96
+2025-27,2026,105,Financial Management,E,Goods and Services,53897152.72
+2025-27,2026,105,Financial Management,G,Travel,128355.56
+2025-27,2026,105,Financial Management,J,Capital Outlays,1378363.12
+2025-27,2026,105,Financial Management,N,"Grants, Benefits & Client Services",10928257.75
+2025-27,2026,105,Financial Management,S,Interagency Reimbursements,226822.61
+2025-27,2026,107,Health Care Authority,C,Personal Service Contracts,54324687.45
+2025-27,2026,107,Health Care Authority,E,Goods and Services,884563448.23
+2025-27,2026,107,Health Care Authority,G,Travel,156474.45
+2025-27,2026,107,Health Care Authority,J,Capital Outlays,4484314.27
+2025-27,2026,107,Health Care Authority,N,"Grants, Benefits & Client Services",17015523698.89
+2025-27,2026,107,Health Care Authority,S,Interagency Reimbursements,315618.4
+2025-27,2026,110,Administrative Hearings,C,Personal Service Contracts,808.0
+2025-27,2026,110,Administrative Hearings,E,Goods and Services,4162460.77
+2025-27,2026,110,Administrative Hearings,G,Travel,15640.82
+2025-27,2026,110,Administrative Hearings,J,Capital Outlays,342437.8
+2025-27,2026,110,Administrative Hearings,N,"Grants, Benefits & Client Services",5295.9
+2025-27,2026,116,Lottery Commission,C,Personal Service Contracts,92697.0
+2025-27,2026,116,Lottery Commission,E,Goods and Services,2373981.06
+2025-27,2026,116,Lottery Commission,G,Travel,77392.29
+2025-27,2026,116,Lottery Commission,J,Capital Outlays,21742.07
+2025-27,2026,116,Lottery Commission,T,Intra-Agency Reimbursements,1033780.19
+2025-27,2026,117,Gambling Commission,C,Personal Service Contracts,5521155.57
+2025-27,2026,117,Gambling Commission,E,Goods and Services,4318756.96
+2025-27,2026,117,Gambling Commission,G,Travel,173972.95
+2025-27,2026,117,Gambling Commission,J,Capital Outlays,469887.9
+2025-27,2026,118,Hispanic Affairs,C,Personal Service Contracts,40000.0
+2025-27,2026,118,Hispanic Affairs,E,Goods and Services,385262.76
+2025-27,2026,118,Hispanic Affairs,G,Travel,18941.75
+2025-27,2026,118,Hispanic Affairs,J,Capital Outlays,3192.46
+2025-27,2026,118,Hispanic Affairs,N,"Grants, Benefits & Client Services",5769.75
+2025-27,2026,119,African American Affairs,E,Goods and Services,157014.97
+2025-27,2026,119,African American Affairs,J,Capital Outlays,2203.99
+2025-27,2026,120,Human Rights Commission,C,Personal Service Contracts,20000.0
+2025-27,2026,120,Human Rights Commission,E,Goods and Services,1857919.04
+2025-27,2026,120,Human Rights Commission,G,Travel,1331.75
+2025-27,2026,120,Human Rights Commission,N,"Grants, Benefits & Client Services",221.0
+2025-27,2026,124,Retirement Systems,C,Personal Service Contracts,21173972.32
+2025-27,2026,124,Retirement Systems,E,Goods and Services,11744632.54
+2025-27,2026,124,Retirement Systems,G,Travel,39234.83
+2025-27,2026,124,Retirement Systems,J,Capital Outlays,69120.12
+2025-27,2026,126,State Investment Board,C,Personal Service Contracts,437017.36
+2025-27,2026,126,State Investment Board,E,Goods and Services,6081535.92
+2025-27,2026,126,State Investment Board,G,Travel,1675324.88
+2025-27,2026,126,State Investment Board,J,Capital Outlays,85429.82
+2025-27,2026,126,State Investment Board,N,"Grants, Benefits & Client Services",75.0
+2025-27,2026,140,Revenue,C,Personal Service Contracts,12021537.73
+2025-27,2026,140,Revenue,E,Goods and Services,32348310.99
+2025-27,2026,140,Revenue,G,Travel,1928442.36
+2025-27,2026,140,Revenue,J,Capital Outlays,1426634.29
+2025-27,2026,140,Revenue,N,"Grants, Benefits & Client Services",4287.46
+2025-27,2026,142,Tax Appeals,E,Goods and Services,647936.38
+2025-27,2026,147,Minority & Women's Business Enterp,C,Personal Service Contracts,96748.29
+2025-27,2026,147,Minority & Women's Business Enterp,E,Goods and Services,1809445.69
+2025-27,2026,147,Minority & Women's Business Enterp,G,Travel,60635.97
+2025-27,2026,147,Minority & Women's Business Enterp,J,Capital Outlays,1136.96
+2025-27,2026,160,Insurance Commissioner,C,Personal Service Contracts,2309299.35
+2025-27,2026,160,Insurance Commissioner,E,Goods and Services,6892191.36
+2025-27,2026,160,Insurance Commissioner,G,Travel,428932.73
+2025-27,2026,160,Insurance Commissioner,J,Capital Outlays,668156.65
+2025-27,2026,160,Insurance Commissioner,N,"Grants, Benefits & Client Services",2268714.25
+2025-27,2026,163,Washington Technology Solutions,C,Personal Service Contracts,14104885.75
+2025-27,2026,163,Washington Technology Solutions,E,Goods and Services,138250085.92
+2025-27,2026,163,Washington Technology Solutions,G,Travel,163104.16
+2025-27,2026,163,Washington Technology Solutions,J,Capital Outlays,1153674.06
+2025-27,2026,163,Washington Technology Solutions,P,Debt Service,18083354.54
+2025-27,2026,165,Accountancy,C,Personal Service Contracts,58944.53
+2025-27,2026,165,Accountancy,E,Goods and Services,1109230.34
+2025-27,2026,165,Accountancy,G,Travel,11064.67
+2025-27,2026,166,Bd of Reg Prof Eng & Land Surveyors,C,Personal Service Contracts,14840.63
+2025-27,2026,166,Bd of Reg Prof Eng & Land Surveyors,E,Goods and Services,855685.64
+2025-27,2026,166,Bd of Reg Prof Eng & Land Surveyors,G,Travel,30953.17
+2025-27,2026,166,Bd of Reg Prof Eng & Land Surveyors,J,Capital Outlays,16002.25
+2025-27,2026,166,Bd of Reg Prof Eng & Land Surveyors,N,"Grants, Benefits & Client Services",2199.78
+2025-27,2026,167,Forensic Investigations Council,C,Personal Service Contracts,25736.27
+2025-27,2026,167,Forensic Investigations Council,E,Goods and Services,99143.54
+2025-27,2026,167,Forensic Investigations Council,N,"Grants, Benefits & Client Services",126674.0
+2025-27,2026,179,Enterprise Services,C,Personal Service Contracts,1624228.89
+2025-27,2026,179,Enterprise Services,E,Goods and Services,178094719.75
+2025-27,2026,179,Enterprise Services,F,Cost Of Goods Sold,10019547.15
+2025-27,2026,179,Enterprise Services,G,Travel,1024844.41
+2025-27,2026,179,Enterprise Services,J,Capital Outlays,105763794.37
+2025-27,2026,179,Enterprise Services,N,"Grants, Benefits & Client Services",2436.55
+2025-27,2026,179,Enterprise Services,P,Debt Service,4666658.33
+2025-27,2026,185,Horse Racing Commission,C,Personal Service Contracts,6189.04
+2025-27,2026,185,Horse Racing Commission,E,Goods and Services,315418.22
+2025-27,2026,185,Horse Racing Commission,G,Travel,6686.34
+2025-27,2026,185,Horse Racing Commission,J,Capital Outlays,2373.66
+2025-27,2026,185,Horse Racing Commission,N,"Grants, Benefits & Client Services",837799.56
+2025-27,2026,190,Industrial Insurance Appeals,C,Personal Service Contracts,872058.47
+2025-27,2026,190,Industrial Insurance Appeals,E,Goods and Services,6966738.06
+2025-27,2026,190,Industrial Insurance Appeals,G,Travel,46731.28
+2025-27,2026,190,Industrial Insurance Appeals,J,Capital Outlays,46241.57
+2025-27,2026,190,Industrial Insurance Appeals,N,"Grants, Benefits & Client Services",7433.25
+2025-27,2026,195,Liquor and Cannabis Board,C,Personal Service Contracts,2025491.51
+2025-27,2026,195,Liquor and Cannabis Board,E,Goods and Services,14034426.06
+2025-27,2026,195,Liquor and Cannabis Board,G,Travel,1522601.46
+2025-27,2026,195,Liquor and Cannabis Board,J,Capital Outlays,3532449.61
+2025-27,2026,195,Liquor and Cannabis Board,N,"Grants, Benefits & Client Services",8460.3
+2025-27,2026,205,Pilotage Commissioners,E,Goods and Services,352929.77
+2025-27,2026,205,Pilotage Commissioners,G,Travel,10724.21
+2025-27,2026,205,Pilotage Commissioners,N,"Grants, Benefits & Client Services",1037419.09
+2025-27,2026,215,Utilities and Transportation Cmsn,C,Personal Service Contracts,649312.58
+2025-27,2026,215,Utilities and Transportation Cmsn,E,Goods and Services,5802498.19
+2025-27,2026,215,Utilities and Transportation Cmsn,G,Travel,735000.94
+2025-27,2026,215,Utilities and Transportation Cmsn,J,Capital Outlays,45400.82
+2025-27,2026,215,Utilities and Transportation Cmsn,N,"Grants, Benefits & Client Services",602170.33
+2025-27,2026,220,Volunteer Firefighters,C,Personal Service Contracts,168068.77
+2025-27,2026,220,Volunteer Firefighters,E,Goods and Services,264357.73
+2025-27,2026,220,Volunteer Firefighters,G,Travel,9831.25
+2025-27,2026,225,State Patrol,C,Personal Service Contracts,12824123.6
+2025-27,2026,225,State Patrol,E,Goods and Services,113045692.89
+2025-27,2026,225,State Patrol,G,Travel,3765786.65
+2025-27,2026,225,State Patrol,J,Capital Outlays,26531725.94
+2025-27,2026,225,State Patrol,N,"Grants, Benefits & Client Services",1812907.16
+2025-27,2026,227,Criminal Justice Training Cmsn,C,Personal Service Contracts,5813810.1
+2025-27,2026,227,Criminal Justice Training Cmsn,E,Goods and Services,15697349.28
+2025-27,2026,227,Criminal Justice Training Cmsn,G,Travel,321578.14
+2025-27,2026,227,Criminal Justice Training Cmsn,J,Capital Outlays,991138.37
+2025-27,2026,227,Criminal Justice Training Cmsn,N,"Grants, Benefits & Client Services",28452458.76
+2025-27,2026,228,Traffic Safety Commission,C,Personal Service Contracts,2742063.85
+2025-27,2026,228,Traffic Safety Commission,E,Goods and Services,826696.54
+2025-27,2026,228,Traffic Safety Commission,G,Travel,294120.56
+2025-27,2026,228,Traffic Safety Commission,J,Capital Outlays,7673.22
+2025-27,2026,228,Traffic Safety Commission,N,"Grants, Benefits & Client Services",17606796.11
+2025-27,2026,229,Independent Investigations,C,Personal Service Contracts,248184.23
+2025-27,2026,229,Independent Investigations,E,Goods and Services,3898799.44
+2025-27,2026,229,Independent Investigations,G,Travel,613892.75
+2025-27,2026,229,Independent Investigations,J,Capital Outlays,2700837.06
+2025-27,2026,229,Independent Investigations,N,"Grants, Benefits & Client Services",7825.5
+2025-27,2026,235,Labor and Industries,C,Personal Service Contracts,13142179.4
+2025-27,2026,235,Labor and Industries,E,Goods and Services,107689610.05
+2025-27,2026,235,Labor and Industries,F,Cost Of Goods Sold,-124.1
+2025-27,2026,235,Labor and Industries,G,Travel,5211688.11
+2025-27,2026,235,Labor and Industries,J,Capital Outlays,511010.71
+2025-27,2026,235,Labor and Industries,N,"Grants, Benefits & Client Services",32604858.86
+2025-27,2026,235,Labor and Industries,S,Interagency Reimbursements,149930.98
+2025-27,2026,240,Licensing,C,Personal Service Contracts,11415615.53
+2025-27,2026,240,Licensing,E,Goods and Services,75418735.35
+2025-27,2026,240,Licensing,G,Travel,1060160.05
+2025-27,2026,240,Licensing,J,Capital Outlays,206814.72
+2025-27,2026,240,Licensing,N,"Grants, Benefits & Client Services",4208232.4
+2025-27,2026,245,Military Department,C,Personal Service Contracts,1943670.83
+2025-27,2026,245,Military Department,E,Goods and Services,19972343.96
+2025-27,2026,245,Military Department,G,Travel,1353100.03
+2025-27,2026,245,Military Department,J,Capital Outlays,22194115.89
+2025-27,2026,245,Military Department,N,"Grants, Benefits & Client Services",617587807.09
+2025-27,2026,245,Military Department,S,Interagency Reimbursements,248059.39
+2025-27,2026,275,Public Employment Relations Cmsn,E,Goods and Services,990783.05
+2025-27,2026,275,Public Employment Relations Cmsn,G,Travel,76571.33
+2025-27,2026,275,Public Employment Relations Cmsn,N,"Grants, Benefits & Client Services",444.72
+2025-27,2026,300,Social and Health Services,C,Personal Service Contracts,121332476.26
+2025-27,2026,300,Social and Health Services,E,Goods and Services,490337034.57
+2025-27,2026,300,Social and Health Services,G,Travel,7016255.14
+2025-27,2026,300,Social and Health Services,J,Capital Outlays,302854894.28
+2025-27,2026,300,Social and Health Services,N,"Grants, Benefits & Client Services",8879031221.23
+2025-27,2026,300,Social and Health Services,P,Debt Service,13610.6
+2025-27,2026,300,Social and Health Services,T,Intra-Agency Reimbursements,11294318.96
+2025-27,2026,303,Health,C,Personal Service Contracts,78617849.39
+2025-27,2026,303,Health,E,Goods and Services,222144650.08
+2025-27,2026,303,Health,G,Travel,2842752.92
+2025-27,2026,303,Health,J,Capital Outlays,10600510.16
+2025-27,2026,303,Health,N,"Grants, Benefits & Client Services",440021918.03
+2025-27,2026,303,Health,T,Intra-Agency Reimbursements,10770.0
+2025-27,2026,305,Veterans' Affairs,C,Personal Service Contracts,2759696.44
+2025-27,2026,305,Veterans' Affairs,E,Goods and Services,23123860.05
+2025-27,2026,305,Veterans' Affairs,G,Travel,658858.27
+2025-27,2026,305,Veterans' Affairs,J,Capital Outlays,11408628.85
+2025-27,2026,305,Veterans' Affairs,N,"Grants, Benefits & Client Services",7106091.84
+2025-27,2026,305,Veterans' Affairs,P,Debt Service,151966.48
+2025-27,2026,307,"Children, Youth, and Families",C,Personal Service Contracts,105177365.76
+2025-27,2026,307,"Children, Youth, and Families",E,Goods and Services,380859982.83
+2025-27,2026,307,"Children, Youth, and Families",G,Travel,7657555.37
+2025-27,2026,307,"Children, Youth, and Families",J,Capital Outlays,6098108.47
+2025-27,2026,307,"Children, Youth, and Families",N,"Grants, Benefits & Client Services",1234365117.51
+2025-27,2026,307,"Children, Youth, and Families",P,Debt Service,135440.96
+2025-27,2026,307,"Children, Youth, and Families",S,Interagency Reimbursements,14497.95
+2025-27,2026,307,"Children, Youth, and Families",T,Intra-Agency Reimbursements,5410.02
+2025-27,2026,310,Corrections,C,Personal Service Contracts,2814314.97
+2025-27,2026,310,Corrections,E,Goods and Services,325051554.81
+2025-27,2026,310,Corrections,F,Cost Of Goods Sold,4047714.6
+2025-27,2026,310,Corrections,G,Travel,10665387.61
+2025-27,2026,310,Corrections,J,Capital Outlays,53733397.24
+2025-27,2026,310,Corrections,N,"Grants, Benefits & Client Services",104505971.38
+2025-27,2026,315,Services for the Blind,C,Personal Service Contracts,291662.24
+2025-27,2026,315,Services for the Blind,E,Goods and Services,4324990.54
+2025-27,2026,315,Services for the Blind,G,Travel,211259.06
+2025-27,2026,315,Services for the Blind,J,Capital Outlays,227648.19
+2025-27,2026,315,Services for the Blind,N,"Grants, Benefits & Client Services",5806669.61
+2025-27,2026,340,Student Achievement Council,C,Personal Service Contracts,5754185.16
+2025-27,2026,340,Student Achievement Council,E,Goods and Services,4278379.51
+2025-27,2026,340,Student Achievement Council,G,Travel,257941.14
+2025-27,2026,340,Student Achievement Council,J,Capital Outlays,169722.35
+2025-27,2026,340,Student Achievement Council,N,"Grants, Benefits & Client Services",50499948.47
+2025-27,2026,341,LEOFF 2 Retirement Board,C,Personal Service Contracts,23587.5
+2025-27,2026,341,LEOFF 2 Retirement Board,E,Goods and Services,559915.45
+2025-27,2026,341,LEOFF 2 Retirement Board,G,Travel,76187.73
+2025-27,2026,341,LEOFF 2 Retirement Board,J,Capital Outlays,5664.01
+2025-27,2026,341,LEOFF 2 Retirement Board,N,"Grants, Benefits & Client Services",1400.0
+2025-27,2026,350,Public Schools,C,Personal Service Contracts,27175754.34
+2025-27,2026,350,Public Schools,E,Goods and Services,43229145.43
+2025-27,2026,350,Public Schools,G,Travel,822797.45
+2025-27,2026,350,Public Schools,J,Capital Outlays,492079.83
+2025-27,2026,350,Public Schools,N,"Grants, Benefits & Client Services",567792729.18
+2025-27,2026,350,Public Schools,S,Interagency Reimbursements,35694.37
+2025-27,2026,351,School for the Blind,C,Personal Service Contracts,23043.4
+2025-27,2026,351,School for the Blind,E,Goods and Services,2019312.15
+2025-27,2026,351,School for the Blind,G,Travel,372320.01
+2025-27,2026,351,School for the Blind,J,Capital Outlays,1492903.37
+2025-27,2026,351,School for the Blind,N,"Grants, Benefits & Client Services",709280.98
+2025-27,2026,353,Deaf and Hard of Hearing Youth,C,Personal Service Contracts,447577.88
+2025-27,2026,353,Deaf and Hard of Hearing Youth,E,Goods and Services,2834466.96
+2025-27,2026,353,Deaf and Hard of Hearing Youth,G,Travel,532153.42
+2025-27,2026,353,Deaf and Hard of Hearing Youth,J,Capital Outlays,10127811.69
+2025-27,2026,353,Deaf and Hard of Hearing Youth,N,"Grants, Benefits & Client Services",1182349.0
+2025-27,2026,354,Workforce Trng & Educ Coord Board,C,Personal Service Contracts,1281296.76
+2025-27,2026,354,Workforce Trng & Educ Coord Board,E,Goods and Services,1824717.51
+2025-27,2026,354,Workforce Trng & Educ Coord Board,G,Travel,62540.88
+2025-27,2026,354,Workforce Trng & Educ Coord Board,J,Capital Outlays,16823.8
+2025-27,2026,354,Workforce Trng & Educ Coord Board,N,"Grants, Benefits & Client Services",24261627.89
+2025-27,2026,355,Archaeology & Historic Preservation,C,Personal Service Contracts,25132.09
+2025-27,2026,355,Archaeology & Historic Preservation,E,Goods and Services,2614393.59
+2025-27,2026,355,Archaeology & Historic Preservation,G,Travel,39483.05
+2025-27,2026,355,Archaeology & Historic Preservation,J,Capital Outlays,1506.41
+2025-27,2026,355,Archaeology & Historic Preservation,N,"Grants, Benefits & Client Services",2663975.18
+2025-27,2026,387,Arts Commission,C,Personal Service Contracts,690090.94
+2025-27,2026,387,Arts Commission,E,Goods and Services,1266905.03
+2025-27,2026,387,Arts Commission,G,Travel,117233.07
+2025-27,2026,387,Arts Commission,J,Capital Outlays,3119041.0
+2025-27,2026,387,Arts Commission,N,"Grants, Benefits & Client Services",2612907.54
+2025-27,2026,390,Historical Society,E,Goods and Services,1631505.49
+2025-27,2026,390,Historical Society,G,Travel,16201.32
+2025-27,2026,390,Historical Society,J,Capital Outlays,2411505.97
+2025-27,2026,390,Historical Society,N,"Grants, Benefits & Client Services",5404439.92
+2025-27,2026,395,Eastern WA State Historical Society,E,Goods and Services,1418999.41
+2025-27,2026,395,Eastern WA State Historical Society,G,Travel,9168.13
+2025-27,2026,395,Eastern WA State Historical Society,J,Capital Outlays,2129391.13
+2025-27,2026,405,Transportation,C,Personal Service Contracts,74051240.92
+2025-27,2026,405,Transportation,E,Goods and Services,771900184.39
+2025-27,2026,405,Transportation,G,Travel,6041579.75
+2025-27,2026,405,Transportation,J,Capital Outlays,2268005149.87
+2025-27,2026,405,Transportation,N,"Grants, Benefits & Client Services",426483180.0
+2025-27,2026,405,Transportation,P,Debt Service,2302.65
+2025-27,2026,405,Transportation,T,Intra-Agency Reimbursements,112504.88
+2025-27,2026,406,County Road Administration Board,C,Personal Service Contracts,22937.5
+2025-27,2026,406,County Road Administration Board,E,Goods and Services,750101.63
+2025-27,2026,406,County Road Administration Board,G,Travel,83582.42
+2025-27,2026,406,County Road Administration Board,J,Capital Outlays,8907.75
+2025-27,2026,406,County Road Administration Board,N,"Grants, Benefits & Client Services",25120307.37
+2025-27,2026,407,Transportation Improvement Board,E,Goods and Services,608142.36
+2025-27,2026,407,Transportation Improvement Board,G,Travel,118092.23
+2025-27,2026,407,Transportation Improvement Board,J,Capital Outlays,32743.89
+2025-27,2026,407,Transportation Improvement Board,N,"Grants, Benefits & Client Services",131729252.82
+2025-27,2026,410,Transportation Commission,C,Personal Service Contracts,741356.1
+2025-27,2026,410,Transportation Commission,E,Goods and Services,142434.8
+2025-27,2026,410,Transportation Commission,G,Travel,23636.46
+2025-27,2026,410,Transportation Commission,J,Capital Outlays,19230.28
+2025-27,2026,411,Freight Mobility Strategic Investmt,C,Personal Service Contracts,54667.11
+2025-27,2026,411,Freight Mobility Strategic Investmt,E,Goods and Services,37751.59
+2025-27,2026,411,Freight Mobility Strategic Investmt,G,Travel,28439.42
+2025-27,2026,460,Columbia River Gorge Commission,C,Personal Service Contracts,40695.02
+2025-27,2026,460,Columbia River Gorge Commission,E,Goods and Services,344629.44
+2025-27,2026,460,Columbia River Gorge Commission,G,Travel,9182.99
+2025-27,2026,461,Ecology,C,Personal Service Contracts,76535982.5
+2025-27,2026,461,Ecology,E,Goods and Services,62468087.71
+2025-27,2026,461,Ecology,G,Travel,4660539.73
+2025-27,2026,461,Ecology,J,Capital Outlays,2051999.86
+2025-27,2026,461,Ecology,N,"Grants, Benefits & Client Services",452115123.94
+2025-27,2026,462,Pollution Liability Insurance Prog,C,Personal Service Contracts,188793.73
+2025-27,2026,462,Pollution Liability Insurance Prog,E,Goods and Services,8193661.2
+2025-27,2026,462,Pollution Liability Insurance Prog,G,Travel,37913.52
+2025-27,2026,462,Pollution Liability Insurance Prog,J,Capital Outlays,502.72
+2025-27,2026,462,Pollution Liability Insurance Prog,N,"Grants, Benefits & Client Services",1205665.27
+2025-27,2026,463,Energy Facility Site Eval Council,C,Personal Service Contracts,17574.0
+2025-27,2026,463,Energy Facility Site Eval Council,E,Goods and Services,4736608.51
+2025-27,2026,463,Energy Facility Site Eval Council,G,Travel,41649.62
+2025-27,2026,465,State Parks and Recreation Comm,C,Personal Service Contracts,165715.54
+2025-27,2026,465,State Parks and Recreation Comm,E,Goods and Services,45049063.14
+2025-27,2026,465,State Parks and Recreation Comm,G,Travel,575742.09
+2025-27,2026,465,State Parks and Recreation Comm,J,Capital Outlays,44465189.9
+2025-27,2026,465,State Parks and Recreation Comm,N,"Grants, Benefits & Client Services",2563502.77
+2025-27,2026,467,Recreation and Conservation Office,C,Personal Service Contracts,5372156.44
+2025-27,2026,467,Recreation and Conservation Office,E,Goods and Services,2320607.13
+2025-27,2026,467,Recreation and Conservation Office,G,Travel,136436.16
+2025-27,2026,467,Recreation and Conservation Office,J,Capital Outlays,50436.3
+2025-27,2026,467,Recreation and Conservation Office,N,"Grants, Benefits & Client Services",231856557.43
+2025-27,2026,468,Environ & Land Use Hearings Office,E,Goods and Services,945188.44
+2025-27,2026,468,Environ & Land Use Hearings Office,G,Travel,2457.68
+2025-27,2026,468,Environ & Land Use Hearings Office,J,Capital Outlays,22483.3
+2025-27,2026,471,Conservation Commission,C,Personal Service Contracts,2012530.28
+2025-27,2026,471,Conservation Commission,E,Goods and Services,1445487.4
+2025-27,2026,471,Conservation Commission,G,Travel,235027.42
+2025-27,2026,471,Conservation Commission,J,Capital Outlays,23271.06
+2025-27,2026,471,Conservation Commission,N,"Grants, Benefits & Client Services",55273753.08
+2025-27,2026,477,Fish and Wildlife,C,Personal Service Contracts,14553895.27
+2025-27,2026,477,Fish and Wildlife,E,Goods and Services,97509856.15
+2025-27,2026,477,Fish and Wildlife,G,Travel,12328717.51
+2025-27,2026,477,Fish and Wildlife,J,Capital Outlays,34601859.59
+2025-27,2026,477,Fish and Wildlife,N,"Grants, Benefits & Client Services",27084791.11
+2025-27,2026,478,Puget Sound Partnership,C,Personal Service Contracts,6080877.64
+2025-27,2026,478,Puget Sound Partnership,E,Goods and Services,1680563.29
+2025-27,2026,478,Puget Sound Partnership,G,Travel,74048.45
+2025-27,2026,478,Puget Sound Partnership,J,Capital Outlays,14771.37
+2025-27,2026,478,Puget Sound Partnership,N,"Grants, Benefits & Client Services",3419082.4
+2025-27,2026,490,Natural Resources,C,Personal Service Contracts,14283763.77
+2025-27,2026,490,Natural Resources,E,Goods and Services,300340782.84
+2025-27,2026,490,Natural Resources,G,Travel,5572010.33
+2025-27,2026,490,Natural Resources,J,Capital Outlays,15173198.72
+2025-27,2026,490,Natural Resources,N,"Grants, Benefits & Client Services",25830542.46
+2025-27,2026,490,Natural Resources,S,Interagency Reimbursements,4538.56
+2025-27,2026,490,Natural Resources,T,Intra-Agency Reimbursements,2002.78
+2025-27,2026,495,Agriculture,C,Personal Service Contracts,4451368.03
+2025-27,2026,495,Agriculture,E,Goods and Services,23608206.17
+2025-27,2026,495,Agriculture,G,Travel,3965410.65
+2025-27,2026,495,Agriculture,J,Capital Outlays,1227524.8
+2025-27,2026,495,Agriculture,N,"Grants, Benefits & Client Services",101920247.51
+2025-27,2026,495,Agriculture,S,Interagency Reimbursements,3.02
+2025-27,2026,540,Employment Security Department,C,Personal Service Contracts,46544061.05
+2025-27,2026,540,Employment Security Department,E,Goods and Services,67474641.59
+2025-27,2026,540,Employment Security Department,G,Travel,790953.61
+2025-27,2026,540,Employment Security Department,J,Capital Outlays,1666460.5
+2025-27,2026,540,Employment Security Department,N,"Grants, Benefits & Client Services",65757384.45
+2025-27,2026,707,Sundry Claims,E,Goods and Services,2838488.0
+2025-27,2027,010,Bond Retirement and Interest,C,Personal Service Contracts,297228.0
+2025-27,2027,010,Bond Retirement and Interest,E,Goods and Services,619496.68
+2025-27,2027,010,Bond Retirement and Interest,G,Travel,164.92
+2025-27,2027,011,House of Representatives,C,Personal Service Contracts,60864.17
+2025-27,2027,011,House of Representatives,E,Goods and Services,974912.68
+2025-27,2027,011,House of Representatives,G,Travel,64506.33
+2025-27,2027,011,House of Representatives,J,Capital Outlays,136875.6
+2025-27,2027,012,Senate,C,Personal Service Contracts,19664.63
+2025-27,2027,012,Senate,E,Goods and Services,885426.3
+2025-27,2027,012,Senate,G,Travel,142672.77
+2025-27,2027,012,Senate,J,Capital Outlays,156352.3
+2025-27,2027,013,Joint Transportation Committee,C,Personal Service Contracts,452424.02
+2025-27,2027,013,Joint Transportation Committee,E,Goods and Services,39716.89
+2025-27,2027,013,Joint Transportation Committee,G,Travel,26426.03
+2025-27,2027,014,Joint Leg Audit & Review Committee,C,Personal Service Contracts,47250.0
+2025-27,2027,014,Joint Leg Audit & Review Committee,E,Goods and Services,118245.46
+2025-27,2027,020,LEAP Committee,E,Goods and Services,92749.63
+2025-27,2027,035,Actuary,C,Personal Service Contracts,99844.49
+2025-27,2027,035,Actuary,E,Goods and Services,239509.64
+2025-27,2027,035,Actuary,G,Travel,2275.93
+2025-27,2027,036,State Legislative Labor Relations,C,Personal Service Contracts,1334.0
+2025-27,2027,036,State Legislative Labor Relations,E,Goods and Services,4414.65
+2025-27,2027,036,State Legislative Labor Relations,J,Capital Outlays,654.39
+2025-27,2027,037,Office of Legislative Support Svcs,E,Goods and Services,232483.32
+2025-27,2027,037,Office of Legislative Support Svcs,F,Cost Of Goods Sold,41080.19
+2025-27,2027,037,Office of Legislative Support Svcs,G,Travel,7363.44
+2025-27,2027,037,Office of Legislative Support Svcs,J,Capital Outlays,11043.07
+2025-27,2027,038,Joint Legislative Systems Committee,C,Personal Service Contracts,96139.09
+2025-27,2027,038,Joint Legislative Systems Committee,E,Goods and Services,1201037.81
+2025-27,2027,038,Joint Legislative Systems Committee,G,Travel,16331.44
+2025-27,2027,038,Joint Legislative Systems Committee,J,Capital Outlays,199346.12
+2025-27,2027,040,Statute Law Committee,E,Goods and Services,52653.59
+2025-27,2027,040,Statute Law Committee,G,Travel,22965.59
+2025-27,2027,040,Statute Law Committee,N,"Grants, Benefits & Client Services",150.0
+2025-27,2027,045,Supreme Court,C,Personal Service Contracts,12250.72
+2025-27,2027,045,Supreme Court,E,Goods and Services,990060.77
+2025-27,2027,045,Supreme Court,G,Travel,25254.14
+2025-27,2027,045,Supreme Court,J,Capital Outlays,178955.57
+2025-27,2027,045,Supreme Court,T,Intra-Agency Reimbursements,82.0
+2025-27,2027,048,Court of Appeals,C,Personal Service Contracts,345296.75
+2025-27,2027,048,Court of Appeals,E,Goods and Services,1382611.62
+2025-27,2027,048,Court of Appeals,G,Travel,35085.06
+2025-27,2027,048,Court of Appeals,J,Capital Outlays,183972.52
+2025-27,2027,050,Judicial Conduct,C,Personal Service Contracts,330.0
+2025-27,2027,050,Judicial Conduct,E,Goods and Services,109059.59
+2025-27,2027,050,Judicial Conduct,G,Travel,11421.55
+2025-27,2027,050,Judicial Conduct,J,Capital Outlays,1615.64
+2025-27,2027,055,Administrative Office of the Courts,C,Personal Service Contracts,1317108.31
+2025-27,2027,055,Administrative Office of the Courts,E,Goods and Services,4756712.2
+2025-27,2027,055,Administrative Office of the Courts,G,Travel,265342.23
+2025-27,2027,055,Administrative Office of the Courts,J,Capital Outlays,658585.08
+2025-27,2027,055,Administrative Office of the Courts,N,"Grants, Benefits & Client Services",8686082.0
+2025-27,2027,056,Public Defense,C,Personal Service Contracts,389294.9
+2025-27,2027,056,Public Defense,E,Goods and Services,1395836.56
+2025-27,2027,056,Public Defense,G,Travel,284729.36
+2025-27,2027,056,Public Defense,J,Capital Outlays,64642.18
+2025-27,2027,056,Public Defense,N,"Grants, Benefits & Client Services",32360440.84
+2025-27,2027,057,Civil Legal Aid,C,Personal Service Contracts,20031560.82
+2025-27,2027,057,Civil Legal Aid,E,Goods and Services,200476.74
+2025-27,2027,057,Civil Legal Aid,G,Travel,90134.71
+2025-27,2027,057,Civil Legal Aid,J,Capital Outlays,4074.87
+2025-27,2027,075,Governor,C,Personal Service Contracts,204675.28
+2025-27,2027,075,Governor,E,Goods and Services,3976735.34
+2025-27,2027,075,Governor,G,Travel,82508.43
+2025-27,2027,075,Governor,J,Capital Outlays,5418.35
+2025-27,2027,075,Governor,N,"Grants, Benefits & Client Services",715448.84
+2025-27,2027,080,Lieutenant Governor,E,Goods and Services,170292.72
+2025-27,2027,080,Lieutenant Governor,G,Travel,32728.21
+2025-27,2027,080,Lieutenant Governor,J,Capital Outlays,12066.75
+2025-27,2027,082,Public Disclosure Commission,C,Personal Service Contracts,69144.96
+2025-27,2027,082,Public Disclosure Commission,E,Goods and Services,481292.54
+2025-27,2027,082,Public Disclosure Commission,G,Travel,551.3
+2025-27,2027,082,Public Disclosure Commission,J,Capital Outlays,10116.62
+2025-27,2027,083,Washington State Leadership Board,E,Goods and Services,42433.79
+2025-27,2027,083,Washington State Leadership Board,G,Travel,4734.11
+2025-27,2027,085,Secretary of State,C,Personal Service Contracts,2307843.32
+2025-27,2027,085,Secretary of State,E,Goods and Services,4845183.23
+2025-27,2027,085,Secretary of State,G,Travel,172071.23
+2025-27,2027,085,Secretary of State,J,Capital Outlays,1165123.06
+2025-27,2027,085,Secretary of State,N,"Grants, Benefits & Client Services",2070094.99
+2025-27,2027,085,Secretary of State,P,Debt Service,1607.22
+2025-27,2027,086,Indian Affairs,E,Goods and Services,52131.45
+2025-27,2027,086,Indian Affairs,G,Travel,5166.68
+2025-27,2027,087,Asian Pacific American Affairs,E,Goods and Services,114792.37
+2025-27,2027,087,Asian Pacific American Affairs,G,Travel,4781.49
+2025-27,2027,087,Asian Pacific American Affairs,N,"Grants, Benefits & Client Services",1600.0
+2025-27,2027,090,Treasurer,C,Personal Service Contracts,140061.6
+2025-27,2027,090,Treasurer,E,Goods and Services,549066.55
+2025-27,2027,090,Treasurer,G,Travel,12756.14
+2025-27,2027,090,Treasurer,J,Capital Outlays,38559.85
+2025-27,2027,095,Auditor,C,Personal Service Contracts,136881.64
+2025-27,2027,095,Auditor,E,Goods and Services,1683231.16
+2025-27,2027,095,Auditor,G,Travel,204199.63
+2025-27,2027,095,Auditor,J,Capital Outlays,19003.78
+2025-27,2027,095,Auditor,N,"Grants, Benefits & Client Services",2200.0
+2025-27,2027,099,Salaries for Elected Officials,E,Goods and Services,22457.42
+2025-27,2027,099,Salaries for Elected Officials,G,Travel,2123.51
+2025-27,2027,100,Attorney General,C,Personal Service Contracts,1821632.11
+2025-27,2027,100,Attorney General,E,Goods and Services,15343744.68
+2025-27,2027,100,Attorney General,G,Travel,389412.89
+2025-27,2027,100,Attorney General,J,Capital Outlays,84854.95
+2025-27,2027,100,Attorney General,N,"Grants, Benefits & Client Services",639451.57
+2025-27,2027,101,Caseload Forecast Council,E,Goods and Services,143822.01
+2025-27,2027,101,Caseload Forecast Council,N,"Grants, Benefits & Client Services",200.0
+2025-27,2027,102,Financial Institutions,C,Personal Service Contracts,320746.92
+2025-27,2027,102,Financial Institutions,E,Goods and Services,1627740.36
+2025-27,2027,102,Financial Institutions,G,Travel,186768.98
+2025-27,2027,102,Financial Institutions,J,Capital Outlays,2111.73
+2025-27,2027,102,Financial Institutions,N,"Grants, Benefits & Client Services",252947.11
+2025-27,2027,103,Commerce,C,Personal Service Contracts,5567106.4
+2025-27,2027,103,Commerce,E,Goods and Services,7567103.1
+2025-27,2027,103,Commerce,G,Travel,268007.44
+2025-27,2027,103,Commerce,J,Capital Outlays,230984.38
+2025-27,2027,103,Commerce,N,"Grants, Benefits & Client Services",493525277.58
+2025-27,2027,103,Commerce,S,Interagency Reimbursements,934666.45
+2025-27,2027,104,Economic & Revenue Forecast Council,E,Goods and Services,73705.64
+2025-27,2027,105,Financial Management,C,Personal Service Contracts,17366173.91
+2025-27,2027,105,Financial Management,E,Goods and Services,12538137.69
+2025-27,2027,105,Financial Management,G,Travel,32359.59
+2025-27,2027,105,Financial Management,J,Capital Outlays,159925.9
+2025-27,2027,105,Financial Management,N,"Grants, Benefits & Client Services",2553582.37
+2025-27,2027,107,Health Care Authority,C,Personal Service Contracts,15903102.78
+2025-27,2027,107,Health Care Authority,E,Goods and Services,118674512.0
+2025-27,2027,107,Health Care Authority,G,Travel,32477.72
+2025-27,2027,107,Health Care Authority,J,Capital Outlays,325787.03
+2025-27,2027,107,Health Care Authority,N,"Grants, Benefits & Client Services",4632466983.37
+2025-27,2027,107,Health Care Authority,S,Interagency Reimbursements,6048.0
+2025-27,2027,110,Administrative Hearings,E,Goods and Services,1114285.77
+2025-27,2027,110,Administrative Hearings,G,Travel,3201.13
+2025-27,2027,110,Administrative Hearings,N,"Grants, Benefits & Client Services",225.0
+2025-27,2027,116,Lottery Commission,C,Personal Service Contracts,28719.5
+2025-27,2027,116,Lottery Commission,E,Goods and Services,892845.21
+2025-27,2027,116,Lottery Commission,G,Travel,139031.52
+2025-27,2027,116,Lottery Commission,J,Capital Outlays,23653.7
+2025-27,2027,116,Lottery Commission,T,Intra-Agency Reimbursements,237693.39
+2025-27,2027,117,Gambling Commission,C,Personal Service Contracts,1493802.56
+2025-27,2027,117,Gambling Commission,E,Goods and Services,1056441.6
+2025-27,2027,117,Gambling Commission,G,Travel,23439.98
+2025-27,2027,117,Gambling Commission,J,Capital Outlays,84373.64
+2025-27,2027,118,Hispanic Affairs,C,Personal Service Contracts,70000.0
+2025-27,2027,118,Hispanic Affairs,E,Goods and Services,126704.2
+2025-27,2027,118,Hispanic Affairs,G,Travel,6819.01
+2025-27,2027,119,African American Affairs,E,Goods and Services,33874.98
+2025-27,2027,120,Human Rights Commission,E,Goods and Services,440230.73
+2025-27,2027,120,Human Rights Commission,J,Capital Outlays,426.89
+2025-27,2027,124,Retirement Systems,C,Personal Service Contracts,6282323.7
+2025-27,2027,124,Retirement Systems,E,Goods and Services,3169596.88
+2025-27,2027,124,Retirement Systems,G,Travel,6482.66
+2025-27,2027,124,Retirement Systems,J,Capital Outlays,4051.32
+2025-27,2027,126,State Investment Board,C,Personal Service Contracts,121714.07
+2025-27,2027,126,State Investment Board,E,Goods and Services,1529467.57
+2025-27,2027,126,State Investment Board,G,Travel,365037.85
+2025-27,2027,126,State Investment Board,J,Capital Outlays,11338.34
+2025-27,2027,140,Revenue,C,Personal Service Contracts,4833718.3
+2025-27,2027,140,Revenue,E,Goods and Services,9209707.6
+2025-27,2027,140,Revenue,G,Travel,490137.27
+2025-27,2027,140,Revenue,J,Capital Outlays,206885.61
+2025-27,2027,142,Tax Appeals,E,Goods and Services,184083.39
+2025-27,2027,147,Minority & Women's Business Enterp,C,Personal Service Contracts,293497.88
+2025-27,2027,147,Minority & Women's Business Enterp,E,Goods and Services,584175.41
+2025-27,2027,147,Minority & Women's Business Enterp,G,Travel,12426.18
+2025-27,2027,147,Minority & Women's Business Enterp,N,"Grants, Benefits & Client Services",4950.0
+2025-27,2027,160,Insurance Commissioner,C,Personal Service Contracts,162256.29
+2025-27,2027,160,Insurance Commissioner,E,Goods and Services,2440678.62
+2025-27,2027,160,Insurance Commissioner,G,Travel,138604.17
+2025-27,2027,160,Insurance Commissioner,J,Capital Outlays,1067634.74
+2025-27,2027,160,Insurance Commissioner,N,"Grants, Benefits & Client Services",361496.32
+2025-27,2027,163,Washington Technology Solutions,C,Personal Service Contracts,2338995.06
+2025-27,2027,163,Washington Technology Solutions,E,Goods and Services,26249920.33
+2025-27,2027,163,Washington Technology Solutions,G,Travel,24417.5
+2025-27,2027,163,Washington Technology Solutions,J,Capital Outlays,142778.33
+2025-27,2027,163,Washington Technology Solutions,P,Debt Service,4520437.59
+2025-27,2027,165,Accountancy,C,Personal Service Contracts,17333.26
+2025-27,2027,165,Accountancy,E,Goods and Services,184417.67
+2025-27,2027,165,Accountancy,G,Travel,3869.51
+2025-27,2027,166,Bd of Reg Prof Eng & Land Surveyors,C,Personal Service Contracts,6444.93
+2025-27,2027,166,Bd of Reg Prof Eng & Land Surveyors,E,Goods and Services,133641.7
+2025-27,2027,166,Bd of Reg Prof Eng & Land Surveyors,G,Travel,3013.39
+2025-27,2027,166,Bd of Reg Prof Eng & Land Surveyors,J,Capital Outlays,1631.08
+2025-27,2027,167,Forensic Investigations Council,C,Personal Service Contracts,8791.3
+2025-27,2027,167,Forensic Investigations Council,E,Goods and Services,5533.53
+2025-27,2027,167,Forensic Investigations Council,N,"Grants, Benefits & Client Services",63337.0
+2025-27,2027,179,Enterprise Services,C,Personal Service Contracts,407245.77
+2025-27,2027,179,Enterprise Services,E,Goods and Services,63951209.3
+2025-27,2027,179,Enterprise Services,F,Cost Of Goods Sold,2238602.07
+2025-27,2027,179,Enterprise Services,G,Travel,250847.61
+2025-27,2027,179,Enterprise Services,J,Capital Outlays,28693014.29
+2025-27,2027,179,Enterprise Services,N,"Grants, Benefits & Client Services",683.05
+2025-27,2027,179,Enterprise Services,P,Debt Service,1321350.0
+2025-27,2027,185,Horse Racing Commission,C,Personal Service Contracts,476.08
+2025-27,2027,185,Horse Racing Commission,E,Goods and Services,87818.88
+2025-27,2027,185,Horse Racing Commission,G,Travel,489.9
+2025-27,2027,185,Horse Racing Commission,J,Capital Outlays,593.95
+2025-27,2027,185,Horse Racing Commission,N,"Grants, Benefits & Client Services",11485.36
+2025-27,2027,190,Industrial Insurance Appeals,C,Personal Service Contracts,110345.0
+2025-27,2027,190,Industrial Insurance Appeals,E,Goods and Services,2179885.68
+2025-27,2027,190,Industrial Insurance Appeals,G,Travel,6454.69
+2025-27,2027,190,Industrial Insurance Appeals,J,Capital Outlays,27562.34
+2025-27,2027,190,Industrial Insurance Appeals,N,"Grants, Benefits & Client Services",690.0
+2025-27,2027,195,Liquor and Cannabis Board,C,Personal Service Contracts,692668.62
+2025-27,2027,195,Liquor and Cannabis Board,E,Goods and Services,3196196.35
+2025-27,2027,195,Liquor and Cannabis Board,G,Travel,405450.27
+2025-27,2027,195,Liquor and Cannabis Board,J,Capital Outlays,271443.52
+2025-27,2027,205,Pilotage Commissioners,E,Goods and Services,39377.33
+2025-27,2027,205,Pilotage Commissioners,G,Travel,1779.67
+2025-27,2027,205,Pilotage Commissioners,N,"Grants, Benefits & Client Services",256500.0
+2025-27,2027,215,Utilities and Transportation Cmsn,C,Personal Service Contracts,359568.29
+2025-27,2027,215,Utilities and Transportation Cmsn,E,Goods and Services,1534582.75
+2025-27,2027,215,Utilities and Transportation Cmsn,G,Travel,163937.33
+2025-27,2027,215,Utilities and Transportation Cmsn,J,Capital Outlays,2655.31
+2025-27,2027,215,Utilities and Transportation Cmsn,N,"Grants, Benefits & Client Services",203462.7
+2025-27,2027,220,Volunteer Firefighters,C,Personal Service Contracts,22226.0
+2025-27,2027,220,Volunteer Firefighters,E,Goods and Services,48588.18
+2025-27,2027,220,Volunteer Firefighters,G,Travel,4708.23
+2025-27,2027,225,State Patrol,C,Personal Service Contracts,2615639.13
+2025-27,2027,225,State Patrol,E,Goods and Services,38226630.52
+2025-27,2027,225,State Patrol,G,Travel,857829.07
+2025-27,2027,225,State Patrol,J,Capital Outlays,12234793.24
+2025-27,2027,225,State Patrol,N,"Grants, Benefits & Client Services",356943.64
+2025-27,2027,227,Criminal Justice Training Cmsn,C,Personal Service Contracts,1432187.82
+2025-27,2027,227,Criminal Justice Training Cmsn,E,Goods and Services,5516963.37
+2025-27,2027,227,Criminal Justice Training Cmsn,G,Travel,107463.69
+2025-27,2027,227,Criminal Justice Training Cmsn,J,Capital Outlays,169682.88
+2025-27,2027,227,Criminal Justice Training Cmsn,N,"Grants, Benefits & Client Services",7893783.72
+2025-27,2027,228,Traffic Safety Commission,C,Personal Service Contracts,1040603.85
+2025-27,2027,228,Traffic Safety Commission,E,Goods and Services,188292.52
+2025-27,2027,228,Traffic Safety Commission,G,Travel,114458.6
+2025-27,2027,228,Traffic Safety Commission,J,Capital Outlays,3605.0
+2025-27,2027,228,Traffic Safety Commission,N,"Grants, Benefits & Client Services",4504613.62
+2025-27,2027,229,Independent Investigations,C,Personal Service Contracts,24058.07
+2025-27,2027,229,Independent Investigations,E,Goods and Services,714305.59
+2025-27,2027,229,Independent Investigations,G,Travel,179245.48
+2025-27,2027,229,Independent Investigations,J,Capital Outlays,83158.4
+2025-27,2027,235,Labor and Industries,C,Personal Service Contracts,3702210.74
+2025-27,2027,235,Labor and Industries,E,Goods and Services,29615540.29
+2025-27,2027,235,Labor and Industries,G,Travel,1388166.68
+2025-27,2027,235,Labor and Industries,J,Capital Outlays,157604.75
+2025-27,2027,235,Labor and Industries,N,"Grants, Benefits & Client Services",9087999.56
+2025-27,2027,235,Labor and Industries,S,Interagency Reimbursements,132711.19
+2025-27,2027,240,Licensing,C,Personal Service Contracts,3847347.75
+2025-27,2027,240,Licensing,E,Goods and Services,18715348.67
+2025-27,2027,240,Licensing,G,Travel,334582.39
+2025-27,2027,240,Licensing,J,Capital Outlays,1051497.9
+2025-27,2027,240,Licensing,N,"Grants, Benefits & Client Services",2036287.45
+2025-27,2027,245,Military Department,C,Personal Service Contracts,1227009.95
+2025-27,2027,245,Military Department,E,Goods and Services,4860004.44
+2025-27,2027,245,Military Department,G,Travel,475653.83
+2025-27,2027,245,Military Department,J,Capital Outlays,6595049.88
+2025-27,2027,245,Military Department,N,"Grants, Benefits & Client Services",345314313.02
+2025-27,2027,275,Public Employment Relations Cmsn,C,Personal Service Contracts,500.0
+2025-27,2027,275,Public Employment Relations Cmsn,E,Goods and Services,249564.05
+2025-27,2027,275,Public Employment Relations Cmsn,G,Travel,23148.8
+2025-27,2027,275,Public Employment Relations Cmsn,J,Capital Outlays,10977.3
+2025-27,2027,300,Social and Health Services,C,Personal Service Contracts,45015062.7
+2025-27,2027,300,Social and Health Services,E,Goods and Services,134020114.59
+2025-27,2027,300,Social and Health Services,G,Travel,1684154.07
+2025-27,2027,300,Social and Health Services,J,Capital Outlays,144065946.97
+2025-27,2027,300,Social and Health Services,N,"Grants, Benefits & Client Services",2200190503.4
+2025-27,2027,300,Social and Health Services,S,Interagency Reimbursements,13994.78
+2025-27,2027,300,Social and Health Services,T,Intra-Agency Reimbursements,1144219.08
+2025-27,2027,303,Health,C,Personal Service Contracts,27117399.58
+2025-27,2027,303,Health,E,Goods and Services,52330380.83
+2025-27,2027,303,Health,G,Travel,841607.84
+2025-27,2027,303,Health,J,Capital Outlays,6496391.04
+2025-27,2027,303,Health,N,"Grants, Benefits & Client Services",169836540.88
+2025-27,2027,303,Health,T,Intra-Agency Reimbursements,1908.0
+2025-27,2027,305,Veterans' Affairs,C,Personal Service Contracts,415603.14
+2025-27,2027,305,Veterans' Affairs,E,Goods and Services,6139205.96
+2025-27,2027,305,Veterans' Affairs,G,Travel,177045.55
+2025-27,2027,305,Veterans' Affairs,J,Capital Outlays,1781538.32
+2025-27,2027,305,Veterans' Affairs,N,"Grants, Benefits & Client Services",1823803.67
+2025-27,2027,307,"Children, Youth, and Families",C,Personal Service Contracts,27001938.05
+2025-27,2027,307,"Children, Youth, and Families",E,Goods and Services,784397517.95
+2025-27,2027,307,"Children, Youth, and Families",G,Travel,1874129.35
+2025-27,2027,307,"Children, Youth, and Families",J,Capital Outlays,2134750.7
+2025-27,2027,307,"Children, Youth, and Families",N,"Grants, Benefits & Client Services",353148056.96
+2025-27,2027,307,"Children, Youth, and Families",P,Debt Service,23794.61
+2025-27,2027,307,"Children, Youth, and Families",T,Intra-Agency Reimbursements,7.62
+2025-27,2027,310,Corrections,C,Personal Service Contracts,770387.82
+2025-27,2027,310,Corrections,E,Goods and Services,97975453.04
+2025-27,2027,310,Corrections,G,Travel,3072507.09
+2025-27,2027,310,Corrections,J,Capital Outlays,16784259.74
+2025-27,2027,310,Corrections,N,"Grants, Benefits & Client Services",29661534.69
+2025-27,2027,315,Services for the Blind,C,Personal Service Contracts,57740.28
+2025-27,2027,315,Services for the Blind,E,Goods and Services,1290900.14
+2025-27,2027,315,Services for the Blind,G,Travel,73198.97
+2025-27,2027,315,Services for the Blind,J,Capital Outlays,141834.77
+2025-27,2027,315,Services for the Blind,N,"Grants, Benefits & Client Services",1694571.89
+2025-27,2027,340,Student Achievement Council,C,Personal Service Contracts,1220197.53
+2025-27,2027,340,Student Achievement Council,E,Goods and Services,1144651.44
+2025-27,2027,340,Student Achievement Council,G,Travel,86567.14
+2025-27,2027,340,Student Achievement Council,J,Capital Outlays,17307.92
+2025-27,2027,340,Student Achievement Council,N,"Grants, Benefits & Client Services",12695314.76
+2025-27,2027,341,LEOFF 2 Retirement Board,C,Personal Service Contracts,23225.0
+2025-27,2027,341,LEOFF 2 Retirement Board,E,Goods and Services,164541.0
+2025-27,2027,341,LEOFF 2 Retirement Board,G,Travel,19063.12
+2025-27,2027,341,LEOFF 2 Retirement Board,J,Capital Outlays,260.15
+2025-27,2027,341,LEOFF 2 Retirement Board,N,"Grants, Benefits & Client Services",200.0
+2025-27,2027,350,Public Schools,C,Personal Service Contracts,8671160.11
+2025-27,2027,350,Public Schools,E,Goods and Services,9810822.88
+2025-27,2027,350,Public Schools,G,Travel,247824.92
+2025-27,2027,350,Public Schools,J,Capital Outlays,107555.61
+2025-27,2027,350,Public Schools,N,"Grants, Benefits & Client Services",212909122.39
+2025-27,2027,350,Public Schools,S,Interagency Reimbursements,51940.0
+2025-27,2027,351,School for the Blind,C,Personal Service Contracts,6800.75
+2025-27,2027,351,School for the Blind,E,Goods and Services,589526.53
+2025-27,2027,351,School for the Blind,G,Travel,92238.22
+2025-27,2027,351,School for the Blind,J,Capital Outlays,44644.62
+2025-27,2027,351,School for the Blind,N,"Grants, Benefits & Client Services",109161.07
+2025-27,2027,353,Deaf and Hard of Hearing Youth,C,Personal Service Contracts,117454.22
+2025-27,2027,353,Deaf and Hard of Hearing Youth,E,Goods and Services,840234.21
+2025-27,2027,353,Deaf and Hard of Hearing Youth,G,Travel,71919.97
+2025-27,2027,353,Deaf and Hard of Hearing Youth,J,Capital Outlays,4386090.69
+2025-27,2027,353,Deaf and Hard of Hearing Youth,N,"Grants, Benefits & Client Services",191216.29
+2025-27,2027,354,Workforce Trng & Educ Coord Board,C,Personal Service Contracts,107310.19
+2025-27,2027,354,Workforce Trng & Educ Coord Board,E,Goods and Services,616507.88
+2025-27,2027,354,Workforce Trng & Educ Coord Board,G,Travel,29671.41
+2025-27,2027,354,Workforce Trng & Educ Coord Board,J,Capital Outlays,71939.02
+2025-27,2027,354,Workforce Trng & Educ Coord Board,N,"Grants, Benefits & Client Services",8509634.46
+2025-27,2027,355,Archaeology & Historic Preservation,C,Personal Service Contracts,30469.57
+2025-27,2027,355,Archaeology & Historic Preservation,E,Goods and Services,761905.71
+2025-27,2027,355,Archaeology & Historic Preservation,G,Travel,11090.47
+2025-27,2027,355,Archaeology & Historic Preservation,N,"Grants, Benefits & Client Services",334486.67
+2025-27,2027,387,Arts Commission,C,Personal Service Contracts,76308.39
+2025-27,2027,387,Arts Commission,E,Goods and Services,458693.37
+2025-27,2027,387,Arts Commission,G,Travel,36767.81
+2025-27,2027,387,Arts Commission,J,Capital Outlays,910444.12
+2025-27,2027,387,Arts Commission,N,"Grants, Benefits & Client Services",868325.25
+2025-27,2027,390,Historical Society,E,Goods and Services,467188.66
+2025-27,2027,390,Historical Society,G,Travel,4267.34
+2025-27,2027,390,Historical Society,J,Capital Outlays,145408.58
+2025-27,2027,390,Historical Society,N,"Grants, Benefits & Client Services",875387.85
+2025-27,2027,395,Eastern WA State Historical Society,E,Goods and Services,467444.7
+2025-27,2027,395,Eastern WA State Historical Society,G,Travel,2559.44
+2025-27,2027,395,Eastern WA State Historical Society,J,Capital Outlays,206260.34
+2025-27,2027,405,Transportation,C,Personal Service Contracts,24211364.63
+2025-27,2027,405,Transportation,E,Goods and Services,143319924.64
+2025-27,2027,405,Transportation,G,Travel,1339838.42
+2025-27,2027,405,Transportation,J,Capital Outlays,809031387.24
+2025-27,2027,405,Transportation,N,"Grants, Benefits & Client Services",162635243.38
+2025-27,2027,405,Transportation,P,Debt Service,2790.95
+2025-27,2027,406,County Road Administration Board,E,Goods and Services,197458.72
+2025-27,2027,406,County Road Administration Board,G,Travel,24491.53
+2025-27,2027,406,County Road Administration Board,J,Capital Outlays,3734.61
+2025-27,2027,406,County Road Administration Board,N,"Grants, Benefits & Client Services",8897586.49
+2025-27,2027,407,Transportation Improvement Board,E,Goods and Services,90370.79
+2025-27,2027,407,Transportation Improvement Board,G,Travel,18332.47
+2025-27,2027,407,Transportation Improvement Board,J,Capital Outlays,462.51
+2025-27,2027,407,Transportation Improvement Board,N,"Grants, Benefits & Client Services",28136646.13
+2025-27,2027,410,Transportation Commission,C,Personal Service Contracts,8236.7
+2025-27,2027,410,Transportation Commission,E,Goods and Services,57421.05
+2025-27,2027,410,Transportation Commission,G,Travel,7372.85
+2025-27,2027,410,Transportation Commission,J,Capital Outlays,52045.43
+2025-27,2027,411,Freight Mobility Strategic Investmt,C,Personal Service Contracts,24180.15
+2025-27,2027,411,Freight Mobility Strategic Investmt,E,Goods and Services,5829.57
+2025-27,2027,411,Freight Mobility Strategic Investmt,G,Travel,7465.42
+2025-27,2027,460,Columbia River Gorge Commission,C,Personal Service Contracts,189.82
+2025-27,2027,460,Columbia River Gorge Commission,E,Goods and Services,134789.62
+2025-27,2027,460,Columbia River Gorge Commission,G,Travel,1180.98
+2025-27,2027,460,Columbia River Gorge Commission,J,Capital Outlays,956.17
+2025-27,2027,461,Ecology,C,Personal Service Contracts,21049957.01
+2025-27,2027,461,Ecology,E,Goods and Services,15372679.42
+2025-27,2027,461,Ecology,G,Travel,1235887.02
+2025-27,2027,461,Ecology,J,Capital Outlays,329713.0
+2025-27,2027,461,Ecology,N,"Grants, Benefits & Client Services",102178815.25
+2025-27,2027,462,Pollution Liability Insurance Prog,C,Personal Service Contracts,25216.25
+2025-27,2027,462,Pollution Liability Insurance Prog,E,Goods and Services,201232.34
+2025-27,2027,462,Pollution Liability Insurance Prog,G,Travel,3834.1
+2025-27,2027,462,Pollution Liability Insurance Prog,J,Capital Outlays,22078.41
+2025-27,2027,462,Pollution Liability Insurance Prog,N,"Grants, Benefits & Client Services",776464.29
+2025-27,2027,463,Energy Facility Site Eval Council,C,Personal Service Contracts,3480.0
+2025-27,2027,463,Energy Facility Site Eval Council,E,Goods and Services,1069419.28
+2025-27,2027,463,Energy Facility Site Eval Council,G,Travel,7426.65
+2025-27,2027,465,State Parks and Recreation Comm,C,Personal Service Contracts,10631.27
+2025-27,2027,465,State Parks and Recreation Comm,E,Goods and Services,12725990.01
+2025-27,2027,465,State Parks and Recreation Comm,G,Travel,137665.94
+2025-27,2027,465,State Parks and Recreation Comm,J,Capital Outlays,10357567.63
+2025-27,2027,465,State Parks and Recreation Comm,N,"Grants, Benefits & Client Services",223950.02
+2025-27,2027,467,Recreation and Conservation Office,C,Personal Service Contracts,515866.07
+2025-27,2027,467,Recreation and Conservation Office,E,Goods and Services,774882.79
+2025-27,2027,467,Recreation and Conservation Office,G,Travel,40874.09
+2025-27,2027,467,Recreation and Conservation Office,J,Capital Outlays,41078.47
+2025-27,2027,467,Recreation and Conservation Office,N,"Grants, Benefits & Client Services",57435223.63
+2025-27,2027,468,Environ & Land Use Hearings Office,E,Goods and Services,323449.2
+2025-27,2027,468,Environ & Land Use Hearings Office,G,Travel,275.62
+2025-27,2027,471,Conservation Commission,C,Personal Service Contracts,245913.49
+2025-27,2027,471,Conservation Commission,E,Goods and Services,301264.61
+2025-27,2027,471,Conservation Commission,G,Travel,46240.39
+2025-27,2027,471,Conservation Commission,N,"Grants, Benefits & Client Services",12340114.4
+2025-27,2027,477,Fish and Wildlife,C,Personal Service Contracts,4584246.29
+2025-27,2027,477,Fish and Wildlife,E,Goods and Services,23906952.92
+2025-27,2027,477,Fish and Wildlife,G,Travel,3137053.29
+2025-27,2027,477,Fish and Wildlife,J,Capital Outlays,18013356.43
+2025-27,2027,477,Fish and Wildlife,N,"Grants, Benefits & Client Services",8094754.14
+2025-27,2027,478,Puget Sound Partnership,C,Personal Service Contracts,1306945.26
+2025-27,2027,478,Puget Sound Partnership,E,Goods and Services,453211.71
+2025-27,2027,478,Puget Sound Partnership,G,Travel,17767.73
+2025-27,2027,478,Puget Sound Partnership,N,"Grants, Benefits & Client Services",561373.39
+2025-27,2027,490,Natural Resources,C,Personal Service Contracts,3006802.89
+2025-27,2027,490,Natural Resources,E,Goods and Services,217212005.66
+2025-27,2027,490,Natural Resources,G,Travel,2099809.43
+2025-27,2027,490,Natural Resources,J,Capital Outlays,4569582.24
+2025-27,2027,490,Natural Resources,N,"Grants, Benefits & Client Services",5307005.15
+2025-27,2027,495,Agriculture,C,Personal Service Contracts,1679779.13
+2025-27,2027,495,Agriculture,E,Goods and Services,5747160.09
+2025-27,2027,495,Agriculture,G,Travel,1144277.67
+2025-27,2027,495,Agriculture,J,Capital Outlays,481128.97
+2025-27,2027,495,Agriculture,N,"Grants, Benefits & Client Services",24213996.6
+2025-27,2027,495,Agriculture,S,Interagency Reimbursements,106.3
+2025-27,2027,540,Employment Security Department,C,Personal Service Contracts,10780519.06
+2025-27,2027,540,Employment Security Department,E,Goods and Services,16542830.32
+2025-27,2027,540,Employment Security Department,G,Travel,314015.23
+2025-27,2027,540,Employment Security Department,J,Capital Outlays,30174.34
+2025-27,2027,540,Employment Security Department,N,"Grants, Benefits & Client Services",15987193.55

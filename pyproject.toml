@@ -1,0 +1,19 @@
+[project]
+name = "polyview"
+version = "0.0.1"
+description = "Washington State budget transparency: revenue, appropriations, allotments and actual spending, mapped to legislators and districts."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["ingest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
