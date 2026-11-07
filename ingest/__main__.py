@@ -2,7 +2,7 @@
 
 import sys
 
-from . import budget_bills, budget_current, checks, budget_to_actual, budget_to_actual_detail, districts, legislature, vendor_payments
+from . import budget_bills, budget_current, checks, outlook, budget_to_actual, budget_to_actual_detail, districts, legislature, vendor_payments
 
 INGESTERS = {
     "budget_bills": budget_bills.run,
@@ -11,6 +11,7 @@ INGESTERS = {
     "budget_to_actual": budget_to_actual.run,
     "budget_to_actual_detail": budget_to_actual_detail.run,
     "legislature": legislature.run,
+    "outlook": outlook.run,
     "vendor_payments": vendor_payments.run,
     "districts": districts.run,
 }

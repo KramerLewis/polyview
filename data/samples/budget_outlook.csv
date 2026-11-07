@@ -1,0 +1,52 @@
+outlook,order,section,label,is_detail,fy1,fy2,biennium1,fy3,fy4,biennium2
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",0,NGF-O Beginning Balance,NGF-O Beginning Balance,False,2536.0,1112.0,2536.0,277.0,-802.0,277.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",1,Forecasted Revenues,Forecasted Revenues,False,36714.0,38562.0,75276.0,39408.0,40973.0,80381.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",2,Forecasted Revenues,Feb 2026 Revenue Forecast (NGF-O),True,36714.0,38562.0,75276.0,39408.0,40973.0,80381.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",3,Forecasted Revenues,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,0.0,0.0,0.0,890.0,1138.0,2027.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",4,Forecasted Revenues,Remove the 4.5% Additional Revenues Assumption,True,0.0,0.0,0.0,-890.0,-1138.0,-2027.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",5,Other Resource Changes,Other Resource Changes,False,1115.0,717.0,1832.0,-331.0,2036.0,1706.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",6,Other Resource Changes,GF-S Transfer to BSA (1%),True,-344.0,-362.0,-705.0,-373.0,-411.0,-785.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",7,Other Resource Changes,Prior Period Adjustments,True,125.0,125.0,250.0,125.0,125.0,250.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",8,Other Resource Changes,Prior Enacted Fund Transfers- 2025 Session,True,612.0,13.0,625.0,4.0,4.0,7.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",9,Other Resource Changes,Newly Enacted Transfers- 2026 Session,True,9.0,379.0,388.0,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",10,Other Resource Changes,BSA Transfers- 2026 Session,True,514.0,366.0,880.0,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",11,Other Resource Changes,Revenue Legislation,True,-5.0,16.0,11.0,-80.0,2325.0,2245.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",12,Other Resource Changes,Adjusted Capital Gains Tax Distributions,True,208.0,187.0,395.0,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",13,Other Resource Changes,Budget Driven Revenue,True,-3.0,-6.0,-10.0,-6.0,-5.0,-11.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",14,Other Resource Changes,Governor's Resource Vetoes,True,0.0,-2.0,-2.0,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",15,Total Revenues and Resources,Total Revenues and Resources,False,40365.0,40391.0,79644.0,39354.0,42208.0,82363.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",16,Enacted Appropriations,Enacted Appropriations,False,38471.0,39387.0,77858.0,39763.0,40568.0,80331.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",17,Maintenance Level Total,Maintenance Level Total,False,746.0,980.0,1727.0,1006.0,963.0,1968.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",18,Maintenance Level Total,K-12 Education,True,142.0,145.0,287.0,101.0,76.0,177.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",19,Maintenance Level Total,Low Income Health Care & Comm Behavioral Health,True,188.0,288.0,476.0,303.0,312.0,615.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",20,Maintenance Level Total,Social & Health Services,True,105.0,261.0,367.0,264.0,240.0,504.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",21,Maintenance Level Total,Higher Education,True,61.0,87.0,149.0,83.0,104.0,187.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",22,Maintenance Level Total,Corrections,True,29.0,16.0,45.0,12.0,12.0,24.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",23,Maintenance Level Total,All Other,True,35.0,31.0,65.0,104.0,111.0,215.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",24,Maintenance Level Total,"Children, Youth, and Families",True,198.0,203.0,401.0,213.0,215.0,428.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",25,Maintenance Level Total,Debt Service,True,-13.0,-51.0,-64.0,-75.0,-108.0,-183.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",26,Policy Level Total,Policy Level Total,False,502.0,118.0,620.0,-237.0,415.0,179.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",27,Policy Level Total,K-12 Education,True,0.0,-79.0,-79.0,-97.0,67.0,-30.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",28,Policy Level Total,Low Income Health Care & Comm Behavioral Health,True,45.0,-10.0,35.0,25.0,30.0,55.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",29,Policy Level Total,Social & Health Services,True,-67.0,-7.0,-74.0,24.0,47.0,71.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",30,Policy Level Total,Higher Education,True,-120.0,-104.0,-224.0,8.0,8.0,16.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",31,Policy Level Total,Corrections,True,11.0,42.0,53.0,16.0,16.0,32.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",32,Policy Level Total,All Other,True,2.0,50.0,52.0,35.0,431.0,466.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",33,Policy Level Total,"Children, Youth, and Families",True,631.0,209.0,840.0,-271.0,-275.0,-545.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",34,Policy Level Total,Debt Service,True,0.0,0.0,0.0,10.0,77.0,86.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",35,Policy Level Total,Compensation & Benefits,True,1.0,18.0,18.0,14.0,14.0,27.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",36,Policy Level Total,Governor Expenditure Vetoes and Lapsed Items,True,0.0,-1.0,-1.0,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",37,Reversions,Reversions,False,-466.0,-371.0,-837.0,-376.0,-392.0,-768.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",38,Revised Appropriations,Revised Appropriations,False,39253.0,40114.0,79367.0,40156.0,41554.0,81710.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",39,NGF-O Projected Ending Balance,NGF-O Projected Ending Balance,False,1112.0,277.0,277.0,-802.0,653.0,653.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",40,Budget Stabilization Account,Beginning Balance,True,1269.0,1003.0,1269.0,1031.0,1436.0,1031.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",41,Budget Stabilization Account,GF-S Transfer to BSA (1%),True,344.0,362.0,705.0,373.0,411.0,785.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",42,Budget Stabilization Account,BSA Transfers,True,-514.0,-366.0,-880.0,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",43,Budget Stabilization Account,Pension Surplus Holding Account,True,0.0,0.0,0.0,0.0,880.0,880.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",44,Budget Stabilization Account,Appropriations from BSA,True,-141.0,0.0,-141.0,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",45,Budget Stabilization Account,Interest Earnings,True,45.0,33.0,78.0,31.0,44.0,75.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",46,BSA Ending Balance,BSA Ending Balance,False,1003.0,1031.0,1031.0,1436.0,2771.0,2771.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",47,Total Reserves,Total Reserves,False,2115.0,1308.0,1308.0,634.0,3425.0,3425.0
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",48,% of Reserves to Revenues and Other Resource Changes,% of Reserves to Revenues and Other Resource Changes,False,0.055999999999999994,0.033,,0.016,0.08,
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",49,% of Reserves to Revenues and Other Resource Changes,NGF-O,True,0.028999999999999998,0.006999999999999999,,-0.021,0.015,
+"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",50,% of Reserves to Revenues and Other Resource Changes,Budget Stabilization Account,True,0.027000000000000003,0.026000000000000002,,0.037000000000000005,0.064,

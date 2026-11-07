@@ -76,10 +76,10 @@ Done:
 - First static site (overview, agencies, legislators, data & methods), auto-deployed
 
 Next:
-1. Reconcile parsed bill totals with LEAP's published totals (D-017)
-2. Explain the AC fund reconciliation gap and "over budget" cases (D-012, D-026)
-3. Amendment content for amendment votes (D-022)
-4. Revenue for the current biennium (ERFC collections and forecasts)
+1. ~~Reconcile parsed bill totals~~: done for operating NGF-O (D-017). Transportation and capital still open
+2. ~~"Over budget" cases~~: resolved (D-026). Still open: the AC fund gap (D-012) and Contributions to Retirement Systems
+3. ~~Amendment content~~: done (D-029)
+4. ~~Revenue for the current biennium~~: done via the ERFC outlook (D-034). Still to do: monthly collections and forecast vintages
 5. Capital projects by legislative district (Phase 2): the LEAP capital project lists carry districts
 6. Backfill: 2021-23 and 2019-21 budget bills, FY2024 report layout
 7. **Money-flow Sankey** on the overview: revenue sources → funds → areas of government

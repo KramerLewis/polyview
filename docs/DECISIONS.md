@@ -250,6 +250,21 @@ The overview's "share of final budget spent" sums every non-adjustment row of th
 report. Accounts listed under two rollup funds (D-014) are counted twice. The effect is small
 (tens of $M on $162B), but it's not zero.
 
+### D-034 · Current-biennium income vs. spending comes from ERFC's adopted outlook (accepted)
+ERFC publishes the four-year balanced budget outlook adopted for each enacted budget as
+a one-page PDF ($ millions). We parse it (`ingest/outlook.py`) and check its own identities
+on every build: resources = beginning + forecast + other, revised appropriations =
+enacted + maintenance + policy + reversions, ending = resources − revised. The build fails
+if any is off by more than $3M.
+- It covers **NGF-O accounts only**, not federal or dedicated funds. The site says so.
+- The second biennium (2027-29) is an **official projection**, labeled as such. It's the
+  first "future" view on the site, and comes before any user scenarios (Phase 5).
+- It also gives the primary-source references for D-017. Parsed NGF-O is within 0.02% of the
+  outlook's "Enacted Appropriations" and 0.001% of enacted + maintenance + policy.
+- **Weak points:** revenue here is the *forecast* (Feb 2026), not collections to date.
+  Monthly collection reports are PDF-only and not parsed yet. Only one outlook vintage
+  is ingested, so "how the forecast changed" isn't shown yet.
+
 ---
 
 ## Presentation

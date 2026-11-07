@@ -235,11 +235,24 @@ def build() -> None:
             sources[rec["url"]] = {"fetched_at": rec["fetched_at"], "sha256": rec["sha256"][:12],
                                    "source": rec["source"]}
 
+    # --- Official four-year outlook (ERFC), $ millions -----------------------
+    from dataclasses import asdict as _asdict
+
+    from ingest import outlook as outlook_mod
+    ol = None
+    for label, url in outlook_mod.OUTLOOKS:
+        path = RAW / "outlook" / url.rsplit("/", 1)[-1]
+        rows_, meta_ = outlook_mod.parse_text(budget_to_actual.pdf_text(path), label)
+        ol = {"label": label, "url": url, "bienniums": meta_["bienniums"],
+              "rows": [{k: v for k, v in _asdict(r).items() if k not in ("outlook", "order")}
+                       for r in rows_]}
+
     data = {
         "built_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "budget": budget_meta,
         "agencies": agency_list,
         "completed": completed,
+        "outlook": ol,
         "history": history,
         "roll_calls": sorted(roll_calls.values(), key=lambda r: (r["bill"], r["date"], r["chamber"])),
         "legislators": legislators,

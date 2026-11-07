@@ -189,6 +189,40 @@
     hist("spending", $("#spending"), "spending");
   }
 
+  function outlook(d) {
+    const o = d.outlook;
+    if (!o) return;
+    const [b1, b2] = o.bienniums;
+    $("#outlook-note").innerHTML = `Near General Fund-Outlook (NGF-O) accounts only: the General Fund and three related
+      accounts that the Legislature must balance over four years. ${esc(b2)} figures are an <strong>official projection</strong>,
+      not actual results. Source: <a href="${esc(o.url)}">ERFC, ${esc(o.label)}</a>.`;
+    const row = (label) => o.rows.find((r) => r.label === label && !r.is_detail);
+    const end = row("NGF-O Projected Ending Balance");
+    const y0 = +b1.slice(0, 4);
+    const years = [y0 + 1, y0 + 2, y0 + 3, y0 + 4];
+    const negatives = ["fy1", "fy2", "fy3", "fy4"].map((k, i) => [years[i], end[k]]).filter(([, v]) => v < 0);
+    $("#outlook-callout").innerHTML = negatives.length ? `<div class="callout"><strong>Projected shortfall:</strong>
+      the outlook projects a negative NGF-O balance of ${negatives.map(([y, v]) => `${money(v * 1e6)} at the end of
+      fiscal year ${y}`).join(" and ")}. Rainy-day fund reserves are counted separately in the last rows.</div>` : "";
+    const shown = ["NGF-O Beginning Balance", "Forecasted Revenues", "Other Resource Changes", "Total Revenues and Resources",
+      "Enacted Appropriations", "Maintenance Level Total", "Policy Level Total", "Reversions", "Revised Appropriations",
+      "NGF-O Projected Ending Balance", "BSA Ending Balance", "Total Reserves"];
+    const names = { "NGF-O Beginning Balance": "Beginning balance", "Forecasted Revenues": "Forecast revenue",
+      "Other Resource Changes": "Transfers and other resource changes", "Total Revenues and Resources": "Total available",
+      "Enacted Appropriations": "Appropriations enacted in 2025", "Maintenance Level Total": "Changes to keep current services",
+      "Policy Level Total": "New policy changes", "Reversions": "Assumed unspent (reversions)",
+      "Revised Appropriations": "Total spending", "NGF-O Projected Ending Balance": "Ending balance",
+      "BSA Ending Balance": "Rainy-day fund (BSA) balance", "Total Reserves": "Total reserves" };
+    const bold = new Set(["Total Revenues and Resources", "Revised Appropriations", "NGF-O Projected Ending Balance", "Total Reserves"]);
+    const fmt = (v) => v == null ? "—" : `${v < 0 ? "−" : ""}$${Math.abs(v).toLocaleString("en-US", { maximumFractionDigits: 0 })}M`;
+    const cols = [["fy1", `FY ${years[0]}`], ["fy2", `FY ${years[1]}`], ["biennium1", b1], ["fy3", `FY ${years[2]}`],
+      ["fy4", `FY ${years[3]}`], ["biennium2", `${b2} (projected)`]];
+    $("#outlook-table").innerHTML = `<thead><tr><th>NGF-O, $ millions</th>${cols.map(([, h]) => `<th class="num">${esc(h)}</th>`).join("")}</tr></thead>
+      <tbody>${shown.map((l) => { const r = row(l); if (!r) return "";
+        return `<tr${bold.has(l) ? ' style="font-weight:600"' : ""}><td>${esc(names[l] || l)}</td>${cols.map(([k]) =>
+          `<td class="num">${fmt(r[k])}</td>`).join("")}</tr>`; }).join("")}</tbody>`;
+  }
+
   function agencies(d) {
     const rows = d.agencies.map((a) => ({
       ...a,
@@ -339,7 +373,7 @@
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
       $("#loading").remove();
-      overview(d); agencies(d); legislators(d); dataView(d);
+      overview(d); outlook(d); agencies(d); legislators(d); dataView(d);
       window.addEventListener("hashchange", route);
       route();
     })

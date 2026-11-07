@@ -61,7 +61,7 @@ FY2026 report. See [DECISIONS.md](DECISIONS.md).
 | fiscal.wa.gov "Revenue by Biennium" | SSRS report viewer | Exportable report | 🟡 | Statewide revenue by source and fund, 2003-05 to 2025-27. Same SSRS export approach as distributions. |
 | ERFC revenue forecasts | erfc.wa.gov | PDF (quarterly publications) | 🟡 | Check the forecast archive for XLSX tables. Quarterly vintages give forecast vs. actual. |
 | ERFC monthly collection reports | erfc.wa.gov | PDF | 🟡 | |
-| ERFC four-year balanced budget outlook | erfc.wa.gov | PDF | 🟡 | Official forward projection of fund balances. |
+| ERFC four-year balanced budget outlook | erfc.wa.gov/budget-outlook | PDF (1 page) | ✅ `ingest/outlook.py` | NGF-O balance sheet for the current and next biennium; arithmetic self-checked. |
 | DOR statistics (tax collections, local taxes, levies) | dor.wa.gov | Mixed (PDF, XLSX, interactive) | 🟡 | Includes local sales tax by city and county, property tax levy detail, and tax incentives. |
 | Tax structure guide | fiscal.wa.gov | PDF | reference | Use for plain-language explanations of each tax. |
 
