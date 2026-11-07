@@ -60,11 +60,13 @@ class Appropriation:
     agency_code: str
     department: str
     account: str
+    kind: str  # appropriation | distribution | transfer
     fund: str
     fund_source: str
     fiscal_year: str
     prior_amount: int | None
     amount: int | None
+    vetoed: bool
 
 
 @dataclass
@@ -77,6 +79,7 @@ class Proviso:
     account: str
     fiscal_year: str
     solely_for: bool
+    vetoed: bool
     text: str
 
 
@@ -104,17 +107,28 @@ def _text(el: ET.Element | None, *, skip_struck: bool = True) -> str:
     return re.sub(r"\s+", " ", "".join(parts)).strip()
 
 
-def _amounts(dollar_el: ET.Element | None) -> tuple[int | None, int | None]:
-    """Return (struck_amount, current_amount) for a <DollarAmount>."""
+def _is_vetoed(el: ET.Element) -> bool:
+    """The governor's line-item vetoes are marked lineVeto="yes" on text runs."""
+    return any(r.get("lineVeto") == "yes" for r in el.iter(f"{NS}TextRun"))
+
+
+def _amounts(dollar_el: ET.Element | None) -> tuple[int | None, int | None, bool]:
+    """Return (struck_amount, current_amount, added_only) for a <DollarAmount>.
+
+    added_only means the amount is new text with nothing struck, i.e. a line
+    the amending bill adds (its prior amount is zero).
+    """
     if dollar_el is None:
-        return None, None
-    runs = dollar_el.findall(f"{NS}TextRun")
+        return None, None, False
+    runs = list(dollar_el.iter(f"{NS}TextRun"))
     struck = next((r.text for r in runs if r.get("amendingStyle") == "strike"), None)
     added = next((r.text for r in runs if r.get("amendingStyle") == "add"), None)
     plain = dollar_el.text if dollar_el.text and dollar_el.text.strip() else None
     if plain is None and not struck and not added:
         plain = _text(dollar_el)
-    return dollars(struck), dollars(added or plain)
+    if not struck and not added and plain and not plain.startswith("$"):
+        plain = None
+    return dollars(struck), dollars(added or plain), bool(added and not struck)
 
 
 def _biennium(fy: str) -> str:
@@ -124,6 +138,20 @@ def _biennium(fy: str) -> str:
     y = int(fy)
     start = y - 1 if y % 2 == 0 else y - 2
     return f"{start}-{str(start + 2)[-2:]}"
+
+
+def classify(account: str) -> str:
+    """Budget bills also move money between funds and to local governments.
+
+    Those aren't agency spending, and adding them to appropriations would
+    double-count, so they're labeled.
+    """
+    low = account.lower()
+    if "for transfer to" in low or "transfer to the" in low:
+        return "transfer"
+    if "distribution" in low:
+        return "distribution"
+    return "appropriation"
 
 
 def parse_account(account: str) -> tuple[str, str, str]:
@@ -157,20 +185,25 @@ def parse_bill(xml_path: Path, bill: str, budget_biennium: str = ""
             pending: Appropriation | None = None
             for ap in block.findall(f"{NS}Appropriation"):
                 account = _text(ap.find(f"{NS}AccountName"))
-                struck, current = _amounts(ap.find(f"{NS}DollarAmount"))
+                struck, current, added_only = _amounts(ap.find(f"{NS}DollarAmount"))
+                vetoed = _is_vetoed(ap)
                 if not account and pending is not None:
                     # Continuation line carrying the amended amount.
                     pending.amount = current
+                    pending.vetoed = pending.vetoed or vetoed
                     continue
                 fund, source, fy = parse_account(account)
                 row = Appropriation(
                     bill=bill, section=section, section_type=sec.get("type", ""),
                     amends=amends, biennium=_biennium(fy),
                     agency_code=block.get("agency", agency), department=department,
-                    account=account, fund=fund, fund_source=source, fiscal_year=fy,
-                    prior_amount=struck if struck is not None else (
-                        current if sec.get("type") == "amendatory" else None),
+                    account=account, kind=classify(account), fund=fund,
+                    fund_source=source, fiscal_year=fy,
+                    prior_amount=(struck if struck is not None
+                                  else 0 if added_only
+                                  else current if sec.get("type") == "amendatory" else None),
                     amount=current if struck is None else None,
+                    vetoed=vetoed,
                 )
                 if struck is not None:
                     row.amount = 0  # struck with no replacement = removed
@@ -186,12 +219,13 @@ def parse_bill(xml_path: Path, bill: str, budget_biennium: str = ""
 
         for p in sec.findall(f"{NS}P"):
             text = _text(p)
+            p_vetoed = _is_vetoed(p)
             for m in PROVISO_RE.finditer(text):
                 provisos.append(Proviso(
                     bill=bill, section=section, agency_code=agency,
                     department=department, amount=dollars(m["amount"]) or 0,
                     account=m["account"], fiscal_year=m["fy"] or "",
-                    solely_for=bool(m["solely"]), text=text[:1000],
+                    solely_for=bool(m["solely"]), vetoed=p_vetoed, text=text[:1000],
                 ))
     return approps, provisos
 

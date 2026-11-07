@@ -46,3 +46,19 @@ def test_amendatory_section_keeps_prior_and_new_amounts():
     assert all(a.biennium == "2025-27" for a in senate.values())
     solely = [p for p in provisos if p.section == "102"]
     assert solely and solely[0].solely_for and solely[0].fiscal_year == "2027"
+
+
+def test_added_line_has_zero_prior_and_vetoes_flagged():
+    from ingest.budget_bills import NS, _amounts, _is_vetoed
+    import xml.etree.ElementTree as ET
+    added = ET.fromstring(f'<DollarAmount xmlns="{NS[1:-1]}"><TextRun amendingStyle="add">$50,000</TextRun></DollarAmount>')
+    assert _amounts(added) == (None, 50_000, True)
+    vetoed = ET.fromstring(f'<Appropriation xmlns="{NS[1:-1]}"><DollarAmount><TextRun lineVeto="yes">$1,000</TextRun></DollarAmount></Appropriation>')
+    assert _is_vetoed(vetoed)
+
+
+def test_classify_transfers_and_distributions():
+    from ingest.budget_bills import classify
+    assert classify("General Fund—State Appropriation (FY 2026)") == "appropriation"
+    assert classify("Personnel Service Account: For transfer to the state general fund, $3,827,000") == "transfer"
+    assert classify("General Fund Appropriation for prosecuting attorney distributions") == "distribution"

@@ -112,11 +112,23 @@ from the bill's own biennium for new sections.
 - **Weak point:** the chapter table must be extended for each new budget, or older
   amendatory lines come out blank.
 
-### D-016 · Supplemental budgets are stored as prior → new amounts (accepted)
-Supplementals strike and replace amounts. We keep both, so we can show the
-original enacted amount, each supplemental change, and the current amount.
-- **Weak point:** a supplemental only reprints the sections it changes, so the
-  "current" budget is an overlay of original plus supplementals. Building that overlay is in progress.
+### D-016 · The current budget is the original overlaid with supplementals (accepted)
+Supplementals strike and replace amounts, and reprint only the sections they
+change. `ingest/budget_current.py` starts from the original enacted lines,
+replaces each reprinted section's lines with the supplemental version, and keeps
+`original`, `after_<supplemental>` and `current` columns.
+- **Matching:** lines are matched by section, normalized account name, and
+  occurrence order within the section. Some DSHS sections repeat the same account
+  across program blocks.
+- **Self-check:** each supplemental line's struck amount must equal the
+  enacted amount. For 2025-27 that holds for **every matched line**.
+- **Result (2025-27):** agency appropriations go from **$133.78B original** to
+  **$139.15B current** after the 2026 supplemental. Transfers and distributions are excluded (D-020).
+- **Weak point:** when a supplemental rewords a line (a renamed account, a
+  restructured transfer), it appears as one line removed and one added. Totals
+  stay right, but that line's history is split. These are listed in
+  `data/samples/budget_current_2025-27_issues.csv` (19 for 2025-27) and should
+  be linked by hand in `crosswalk/`.
 
 ### D-017 · Parsed bill totals aren't yet reconciled to LEAP's published totals (open)
 The original 2025-27 operating budget's lines sum to $136.6B across all funds. LEAP's
@@ -124,9 +136,19 @@ published total is the reference we haven't matched yet. Possible reasons for di
 special appropriations to the State Treasurer (distribution lines without a
 fund-source suffix), nonappropriated amounts, and vetoes.
 
-### D-018 · Governor's partial vetoes aren't applied yet (open)
-Enacted bills carry veto notes. Until vetoes are applied, some appropriation
-lines may show amounts that were vetoed.
+### D-018 · Governor's line-item vetoes are applied (resolved)
+The XML marks vetoed text with `lineVeto="yes"`. Vetoed appropriation lines
+(5 in the original 2025-27 bill, 3 in the 2026 supplemental) count as $0 in
+`current`, and vetoed provisos are flagged.
+- **Weak point:** vetoes of whole sections, or of conditions that don't change a dollar
+  line, affect meaning rather than totals. Only the flag records those.
+
+### D-020 · Budget-bill lines are classified as appropriation, transfer or distribution (accepted)
+Budget bills also move money between funds ("For transfer to the state general
+fund, $X…") and make special distributions to local governments. Those aren't
+agency spending, and adding them to appropriations double-counts. They're labeled
+by keywords in the account text (`classify()` in `ingest/budget_bills.py`).
+- **Weak point:** keyword rules may misclassify unusual wording.
 
 ### D-019 · Proviso extraction is pattern-based (accepted)
 "$X of the … appropriation … is provided solely for …" is matched with a regular
