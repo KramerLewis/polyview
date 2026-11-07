@@ -156,6 +156,30 @@ expression. It catches the standard form but will miss unusual wording, and it
 records references in a paragraph that aren't earmarks ("Of the amounts provided in
 subsection (a), $X …"). Treat proviso counts as approximate.
 
+### D-021 · Roll-call names are matched to legislators by chamber and last name (accepted)
+Roll calls list last names, adding an initial when two members share one ("Wilson, C.").
+We match on biennium, chamber, last name and initial. For 2025-26 budget votes **2,792 of
+2,792** member votes matched.
+- **Weak point:** a member who leaves mid-biennium and a replacement with the
+  same last name would be ambiguous. Unmatched votes are left blank, never guessed.
+- **Weak point:** the member list is the biennium roster, so the district is the
+  member's district in that biennium.
+
+### D-022 · Votes are classified by motion text (accepted)
+`final_passage` = the vote sending the final (conference or concurrence) version to the
+governor. `passage` = a chamber passing its own version. `amendment` = a numbered floor
+amendment, with sponsor. `procedural` = everything else.
+- **Weak point:** amendment *content* isn't fetched yet, so an amendment vote
+  shows who voted how, but not what the amendment would have changed.
+- **Note:** roll-call sequence numbers aren't unique within a chamber, so a roll call is identified by
+  bill, chamber, sequence **and** date.
+
+### D-023 · Agencies are joined across sources by 3-digit code (accepted)
+Budget bills and vendor payments use 3-digit agency codes ("300" = DSHS). OFM's
+Budget-to-Actual uses 4 digits ("3000"). We join on the first three digits.
+- **Weak point:** this has been spot-checked (House, Senate, DSHS, OSPI), not proven for
+  every agency. A mismatch would show as an agency missing from one side.
+
 ---
 
 ## Presentation

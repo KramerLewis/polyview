@@ -61,7 +61,6 @@ biennium,member_id,name,first_name,last_name,chamber,party,district,acronym
 2025-26,7635,Ed Orcutt,Ed,Orcutt,House,R,20,ORCU
 2025-26,9207,Timm Ormsby,Timm,Ormsby,House,D,3,ORMS
 2025-26,18546,Lillian Ortiz-Self,Lillian,Ortiz-Self,House,D,21,ORTI
-2025-26,14205,,,,House,,,
 2025-26,35415,Lisa Parshley,Lisa,Parshley,House,D,22,PARS
 2025-26,29095,Dave Paul,Dave,Paul,House,D,10,PAUL
 2025-26,35416,Joshua Penner,Joshua,Penner,House,R,31,PENN
@@ -82,7 +81,6 @@ biennium,member_id,name,first_name,last_name,chamber,party,district,acronym
 2025-26,18057,Tana Senn,Tana,Senn,House,D,41,SENN
 2025-26,34050,Clyde Shavers,Clyde,Shavers,House,D,10,SHAV
 2025-26,31527,Tarra Simmons,Tarra,Simmons,House,D,23,SIMM
-2025-26,27504,,,,House,,,
 2025-26,10039,Larry Springer,Larry,Springer,House,D,45,SPRI
 2025-26,34023,Chris Stearns,Chris,Stearns,House,D,47,STEA
 2025-26,10546,Mike Steele,Mike,Steele,House,R,12,STEE
@@ -122,9 +120,7 @@ biennium,member_id,name,first_name,last_name,chamber,party,district,acronym
 2025-26,16499,Drew Hansen,Drew,Hansen,Senate,D,23,HANS
 2025-26,15813,Paul Harris,Paul,Harris,Senate,R,17,HARR
 2025-26,10030,Bob Hasegawa,Bob,Hasegawa,Senate,D,11,HASE
-2025-26,2006,,,,Senate,,,
 2025-26,17223,Jeff Holy,Jeff,Holy,Senate,R,6,HOLY
-2025-26,5155,,,,Senate,,,
 2025-26,35410,Victoria Hunt,Victoria,Hunt,Senate,D,5,HUNV
 2025-26,31537,Jeff Wilson,Jeff,Wilson,Senate,R,19,WILJ
 2025-26,12073,Claudia Kauffman,Claudia,Kauffman,Senate,D,47,KAUF
@@ -142,7 +138,6 @@ biennium,member_id,name,first_name,last_name,chamber,party,district,acronym
 2025-26,12002,Jamie Pedersen,Jamie,Pedersen,Senate,D,43,PEDE
 2025-26,29091,Bill Ramos,Bill,Ramos,Senate,D,5,RAMO
 2025-26,15706,Marcus Riccelli,Marcus,Riccelli,Senate,D,3,RICC
-2025-26,15814,,,,Senate,,,
 2025-26,18265,June Robinson,June,Robinson,Senate,D,38,ROBI
 2025-26,27290,Rebecca Saldaña,Rebecca,Saldaña,Senate,D,37,SALD
 2025-26,29089,Jesse Salomon,Jesse,Salomon,Senate,D,32,SALO
