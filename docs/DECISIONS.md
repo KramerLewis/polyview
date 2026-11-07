@@ -184,10 +184,20 @@ We match on biennium, chamber, last name and initial. For 2025-26 budget votes *
 `final_passage` = the vote sending the final (conference or concurrence) version to the
 governor. `passage` = a chamber passing its own version. `amendment` = a numbered floor
 amendment, with sponsor. `procedural` = everything else.
-- **Weak point:** amendment *content* isn't fetched yet, so an amendment vote
-  shows who voted how, but not what the amendment would have changed.
+- Amendment content now comes from staff EFFECT statements (D-029).
 - **Note:** roll-call sequence numbers aren't unique within a chamber, so a roll call is identified by
   bill, chamber, sequence **and** date.
+
+### D-029 · Amendments are described by quoting staff EFFECT statements (accepted)
+Each floor amendment's text ends with an "EFFECT:" statement (and usually "FISCAL IMPACT:"
+and "FOUR-YEAR OUTLOOK EFFECT:"), written by nonpartisan committee staff. The site quotes
+these verbatim, linked to the amendment text, and never paraphrases or characterizes an
+amendment itself.
+- 2025-26 budget bills: **103 floor amendments**, 100 with an EFFECT statement. **Only 22 had
+  recorded roll calls.** The rest were voice votes, so individual positions don't exist.
+- Striking amendments (whole alternative budgets) have no EFFECT statement and are labeled as such.
+- **Weak point:** extraction relies on those labels appearing in the HTML text. Amendments
+  without them show "—". Committee amendments aren't included yet.
 
 ### D-023 · Agencies are joined across sources by 3-digit code (accepted)
 Budget bills and vendor payments use 3-digit agency codes ("300" = DSHS). OFM's

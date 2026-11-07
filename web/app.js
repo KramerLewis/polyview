@@ -286,10 +286,32 @@
       { key: "bill", label: "Bill" },
       { key: "chamber", label: "Chamber" },
       { key: "type", label: "Type", render: (r) => typeLabel[r.type] || r.type },
-      { key: "motion", label: "Motion", render: (r) => esc(r.motion) + (r.sponsor ? ` <span class="muted">(sponsor: ${esc(r.sponsor)})</span>` : "") },
+      { key: "motion", label: "Motion", render: (r) => esc(r.motion)
+          + (r.sponsor ? ` <span class="muted">(sponsor: ${esc(r.sponsor)})</span>` : "")
+          + (r.effect ? `<details><summary>What it would do</summary><p>${esc(r.effect)}</p>
+              ${r.url ? `<a href="${esc(r.url)}">Amendment text</a>` : ""}</details>` : "") },
       { key: "yea", label: "Yes", num: true },
       { key: "nay", label: "No", num: true },
     ], d.roll_calls, { initialSort: { key: "date", dir: 1 } });
+
+    const amdCols = [
+      { key: "date", label: "Date", render: (r) => `<span class="pos">${esc(r.date)}</span>` },
+      { key: "bill", label: "Bill", render: (r) => `<span class="pos">${esc(r.bill)}</span>` },
+      { key: "chamber", label: "Chamber" },
+      { key: "number", label: "No.", num: true, sortValue: (r) => +r.number },
+      { key: "sponsor", label: "Sponsor" },
+      { key: "result", label: "Result", render: (r) => esc(r.result) + (r.recorded_vote ? ' <span class="muted">· recorded</span>' : "") },
+      { key: "effect", label: "Effect", render: (r) => r.effect
+          ? `<details><summary>${esc(r.effect.slice(0, 90))}${r.effect.length > 90 ? "…" : ""}</summary>${r.effect.length > 90 ? `<p>${esc(r.effect)}</p>` : ""}
+             ${r.fiscal_impact ? `<p class="muted">Fiscal impact: ${esc(r.fiscal_impact)}</p>` : ""}
+             <a href="${esc(r.url)}">Amendment text</a></details>`
+          : '<span class="muted">—</span>' },
+    ];
+    const amdTable = table($("#amendment-table"), amdCols, d.amendments, { initialSort: { key: "date", dir: 1 } });
+    $("#amd-filter").addEventListener("change", (e) => {
+      const v = e.target.value;
+      amdTable.update(d.amendments.filter((a) => !v || a.result.toLowerCase().startsWith(v.toLowerCase())));
+    });
   }
 
   function dataView(d) {

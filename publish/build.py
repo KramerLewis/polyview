@@ -200,6 +200,26 @@ def build() -> None:
             # Keyed by chamber too: a member who changed chambers mid-biennium
             # appears once per chamber, each with that chamber's votes (D-021).
             by_member[f'{v["member_id"]}|{v["chamber"]}'].append([rc["id"], v["position"]])
+    # Floor amendments with staff EFFECT statements, joined to their roll calls.
+    amendments = []
+    for a in read_csv(SAMPLES / "budget_amendments.csv"):
+        striker = " AMS " in a["name"] and not a["effect"] and "Striker" in " ".join(
+            rc["motion"] for rc in roll_calls.values()
+            if rc["bill"] == a["bill_id"] and rc["amendment"] == a["floor_number"])
+        amendments.append({
+            "bill": a["bill_id"], "chamber": a["chamber"], "number": a["floor_number"],
+            "sponsor": a["sponsor"], "result": a["floor_action"].capitalize(), "date": a["action_date"],
+            "effect": a["effect"] or ("Striking amendment: replaces the whole bill with an alternative budget."
+                                      if striker else ""),
+            "fiscal_impact": a["fiscal_impact"], "url": a["url"].replace("http://", "https://"),
+            "recorded_vote": a["roll_call"] == "True",
+        })
+    by_amd = {(a["bill"], a["chamber"], a["number"]): a for a in amendments}
+    for rc in roll_calls.values():
+        a = by_amd.get((rc["bill"], rc["chamber"], rc["amendment"]))
+        if a:
+            rc["effect"], rc["result"], rc["url"] = a["effect"], a["result"], a["url"]
+
     legislators = [{
         "id": m["member_id"], "name": m["name"], "chamber": m["chamber"], "party": m["party"],
         "district": int(m["district"]) if m["district"].isdigit() else None,
@@ -223,6 +243,7 @@ def build() -> None:
         "history": history,
         "roll_calls": sorted(roll_calls.values(), key=lambda r: (r["bill"], r["date"], r["chamber"])),
         "legislators": legislators,
+        "amendments": sorted(amendments, key=lambda a: (a["bill"], a["date"], a["chamber"], a["number"])),
         "sources": [{"url": u, **v} for u, v in sorted(sources.items())],
     }
     (OUT / "site.json").write_text(json.dumps(data, separators=(",", ":")))

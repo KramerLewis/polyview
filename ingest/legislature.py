@@ -130,6 +130,55 @@ def match_members(votes: list[dict], members: list[dict]) -> int:
     return unmatched
 
 
+def _section(text: str, label: str, stops: tuple[str, ...]) -> str:
+    """Pull 'EFFECT: …' style statements out of an amendment's text."""
+    i = text.find(label)
+    if i < 0:
+        return ""
+    body = text[i + len(label):]
+    end = min([j for j in (body.find(s) for s in stops) if j >= 0] or [len(body)])
+    return body[:end].strip(" :\u200e")
+
+
+def amendments(years: list[int], bill_numbers: set[str]) -> list[dict]:
+    """Floor amendments to the budget bills, with staff EFFECT / FISCAL IMPACT text.
+
+    Effect statements are written by nonpartisan committee staff and printed at the
+    end of each amendment; we quote them, never paraphrase (DECISIONS D-029).
+    """
+    import urllib.parse
+    out = []
+    for year in years:
+        root = _get("AmendmentService", "GetAmendments", f"amendments_{year}.xml", year=str(year))
+        for a in root.findall(f"{NS}Amendment"):
+            if _t(a, "BillNumber") not in bill_numbers or _t(a, "Type") != "Floor":
+                continue
+            row = {
+                "bill_id": _t(a, "BillId"), "chamber": _t(a, "Agency"), "name": _t(a, "Name"),
+                "floor_number": _t(a, "FloorNumber"), "sponsor": _t(a, "SponsorName"),
+                "location": _t(a, "Description"), "floor_action": _t(a, "FloorAction"),
+                "action_date": _t(a, "FloorActionDate")[:10], "url": _t(a, "HtmUrl"),
+                "effect": "", "fiscal_impact": "", "outlook_effect": "",
+            }
+            if _t(a, "DocumentExists") == "true" and row["url"]:
+                url = row["url"].replace("http://", "https://")
+                url = urllib.parse.quote(url, safe=":/")
+                try:
+                    path = fetch(url, "amendments", f"{row['name']}.htm".replace(" ", "_"))
+                    text = path.read_text(encoding="utf-8", errors="ignore")
+                    text = re.sub(r"<style.*?</style>", "", text, flags=re.S)
+                    text = re.sub(r"<[^>]+>", " ", text).replace("&nbsp;", " ").replace("&#x200e;", " ")
+                    text = re.sub(r"\s+", " ", text)
+                    stops = ("FISCAL IMPACT", "FOUR-YEAR OUTLOOK EFFECT", "--- END ---")
+                    row["effect"] = _section(text, "EFFECT:", stops)
+                    row["fiscal_impact"] = _section(text, "FISCAL IMPACT:", stops[1:])
+                    row["outlook_effect"] = _section(text, "FOUR-YEAR OUTLOOK EFFECT:", stops[2:])
+                except OSError as e:
+                    row["effect"] = f"(amendment text unavailable: {e})"
+            out.append(row)
+    return out
+
+
 def run() -> None:
     bienniums = sorted({b for b, _, _ in BUDGET_BILLS})
     all_members = [m for b in bienniums for m in members(b)]
@@ -145,3 +194,12 @@ def run() -> None:
     unmatched = match_members(votes, all_members)
     print(f"votes matched to members: {len(votes) - unmatched}/{len(votes)}")
     write_csv(SAMPLES / "budget_bill_votes.csv", votes)
+
+    years = sorted({int(b[:4]) for b, _, _ in BUDGET_BILLS} | {int(b[:4]) + 1 for b, _, _ in BUDGET_BILLS})
+    amds = amendments(years, {n for _, n, _ in BUDGET_BILLS})
+    recorded = {(v["bill_id"], v["chamber"], v["amendment"]) for v in votes if v["amendment"]}
+    for a in amds:
+        a["roll_call"] = (a["bill_id"], a["chamber"], a["floor_number"]) in recorded
+    print(f"floor amendments: {len(amds)} ({sum(a['roll_call'] for a in amds)} with recorded votes, "
+          f"{sum(1 for a in amds if a['effect'])} with an EFFECT statement)")
+    write_csv(SAMPLES / "budget_amendments.csv", amds)

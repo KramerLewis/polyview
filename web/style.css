@@ -127,3 +127,5 @@ table.data tbody tr.clickable:hover, table.data tbody tr[aria-selected="true"] {
 }
 .tooltip b { font-weight: 600; }
 .site-footer { border-top: 1px solid var(--border); color: var(--text-3); font-size: .85rem; padding: 16px 0 28px; }
+table.data details summary { cursor: pointer; color: var(--text-2); }
+table.data details p { margin: 6px 0; max-width: 60ch; white-space: normal; }
