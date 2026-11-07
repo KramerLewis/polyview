@@ -265,6 +265,29 @@ if any is off by more than $3M.
   Monthly collection reports are PDF-only and not parsed yet. Only one outlook vintage
   is ingested, so "how the forecast changed" isn't shown yet.
 
+### D-035 · Capital projects by district come from a committed snapshot of LEAP's report (accepted)
+LEAP's "capital projects by legislative district" report is an SSRS report viewer that only
+works with JavaScript, so `scripts/fetch_capital_districts.js` drives a headless browser to
+export each district's CSV. The CSVs are committed under `data/snapshots/capital_districts/`
+with the version label and fetch time, and the weekly build reads the snapshot.
+- **Why a snapshot:** a browser in CI is heavy and fragile, and enacted project lists only
+  change when a budget passes. **Weak point:** someone has to re-run the script after
+  each enacted capital budget. Add it to the release checklist.
+- **Current snapshot:** the 2025 enacted capital budget (05/20/2025): 1,252 project rows,
+  all 49 districts, every district's rows equal its printed total.
+- **Gap:** the 2026 supplemental's district list (a separate comparison report with five
+  parameters) isn't fetched yet, so district figures don't include the $1.8B of 2026
+  capital changes.
+
+### D-036 · District capital totals count location-specific amounts only (accepted)
+LEAP marks with "$" any amount that funds an entire project spanning several locations.
+Those ($0.63B of $4.10B) aren't attributed to the district they're listed under. They're shown
+in the project list but left out of district totals and rankings. Other markers (alternative
+financing, preliminary minor works, "only the local components") are shown as labels.
+- **Interpretation:** totals mostly reflect where state facilities are (universities,
+  hospitals, prisons). The site says so and doesn't present district totals as a
+  fairness measure.
+
 ---
 
 ## Presentation

@@ -15,6 +15,7 @@
     <nav aria-label="Sections">
       <a href="#overview">Overview</a>
       <a href="#agencies">Agencies</a>
+      <a href="#districts">Districts</a>
       <a href="#legislators">Legislators</a>
       <a href="#data">Data &amp; methods</a>
     </nav>
@@ -74,6 +75,20 @@
     </div>
     <div class="table-wrap"><table id="agency-table" class="data"></table></div>
     <div id="agency-detail" class="detail" hidden></div>
+  </section>
+
+  <section id="districts" class="view" hidden>
+    <h1>Your legislative district</h1>
+    <p class="lede">Washington has 49 legislative districts, each with one senator and two representatives.
+      Don't know yours? Use the Legislature's
+      <a href="https://app.leg.wa.gov/districtfinder/">official district finder</a>.</p>
+    <div class="controls">
+      <label>District <select id="district-pick"></select></label>
+    </div>
+    <div id="district-detail"></div>
+    <h2>Capital projects in every district</h2>
+    <p class="note" id="district-chart-note"></p>
+    <div id="district-chart" class="chart"></div>
   </section>
 
   <section id="legislators" class="view" hidden>

@@ -93,3 +93,10 @@ FY2026 report. See [DECISIONS.md](DECISIONS.md).
 - **data.wa.gov** has little state budget data. Searches for expenditure, revenue
   and budget return campaign finance (PDC), county roads, IT spend and Amazon spend.
   It is still useful for PDC data later.
+
+## Added in Phase 1–2
+
+| Source | Access | Status | Notes |
+|---|---|---|---|
+| Legislature AmendmentService (`GetAmendments?year=`) | HTTP GET, XML, plus amendment HTML | ✅ `ingest/legislature.py` | Floor amendments with staff EFFECT / FISCAL IMPACT statements |
+| LEAP capital projects by legislative district | fiscal.wa.gov SSRS report (JavaScript), CSV export | ✅ snapshot via `scripts/fetch_capital_districts.js` | See DECISIONS D-035 |

@@ -247,6 +247,25 @@ def build() -> None:
               "rows": [{k: v for k, v in _asdict(r).items() if k not in ("outlook", "order")}
                        for r in rows_]}
 
+    # --- Capital projects by legislative district (LEAP snapshot, D-035) ------
+    from ingest import capital_districts
+    district_projects: dict[int, list] = defaultdict(list)
+    capital_version = ""
+    for vdir in sorted(p for p in capital_districts.SNAPSHOTS.iterdir() if p.is_dir()):
+        projs, vmeta, _ = capital_districts.load(vdir)
+        capital_version = f"{vmeta['selected']} capital budget, 2025-27"
+        for pr in projs:
+            district_projects[pr.district].append({
+                "agency": pr.agency, "program": pr.program, "project": pr.project, "amount": pr.amount,
+                "multi_location": pr.multi_location, "alt_financing": pr.alt_financing,
+                "preliminary": pr.preliminary})
+    districts = [{
+        "district": d,
+        "local_total": sum(x["amount"] for x in ps if not x["multi_location"]),
+        "multi_total": sum(x["amount"] for x in ps if x["multi_location"]),
+        "projects": sorted(ps, key=lambda x: -x["amount"]),
+    } for d, ps in sorted(district_projects.items())]
+
     data = {
         "built_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "budget": budget_meta,
@@ -256,6 +275,8 @@ def build() -> None:
         "history": history,
         "roll_calls": sorted(roll_calls.values(), key=lambda r: (r["bill"], r["date"], r["chamber"])),
         "legislators": legislators,
+        "districts": districts,
+        "capital_version": capital_version,
         "amendments": sorted(amendments, key=lambda a: (a["bill"], a["date"], a["chamber"], a["number"])),
         "sources": [{"url": u, **v} for u, v in sorted(sources.items())],
     }

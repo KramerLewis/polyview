@@ -282,6 +282,68 @@
     el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  function districtsView(d) {
+    const pick = $("#district-pick");
+    for (let i = 1; i <= 49; i++) pick.insertAdjacentHTML("beforeend", `<option value="${i}">District ${i}</option>`);
+    const byD = Object.fromEntries(d.districts.map((x) => [x.district, x]));
+    const rc = Object.fromEntries(d.roll_calls.map((r) => [r.id, r]));
+    const posLabel = { yea: "Yes", nay: "No", absent: "Absent", excused: "Excused" };
+    const finalVote = (m, bill) => {
+      const v = m.votes.find(([id]) => rc[id].bill === bill && rc[id].type === "final_passage");
+      return v ? posLabel[v[1]] : "—";
+    };
+    const note = `Capital projects listed for each district in LEAP's ${esc(d.capital_version)} project list. Amounts marked "multi-location"
+      fund a project spanning several places and aren't specific to one district, so they're excluded from district totals.
+      The 2026 supplemental's changes aren't included by district yet. Large totals usually reflect where state facilities
+      are (District 43 includes the University of Washington; District 28 includes Western State Hospital), so differences
+      between districts aren't by themselves evidence of favoritism.`;
+    $("#district-chart-note").innerHTML = note;
+
+    function show(n) {
+      const x = byD[n] || { projects: [], local_total: 0, multi_total: 0 };
+      const members = d.legislators.filter((m) => m.district === +n && m.votes.length);
+      const proj = x.projects;
+      $("#district-detail").innerHTML = `
+        <div class="stats">
+          <div class="stat"><div class="label">Location-specific capital projects</div>
+            <div class="value">${money(x.local_total, 1)}</div>
+            <div class="sub">${proj.filter((p) => !p.multi_location).length} projects in District ${n}, 2025-27</div></div>
+          <div class="stat"><div class="label">Rank among 49 districts</div>
+            <div class="value">${1 + d.districts.filter((o) => o.local_total > x.local_total).length}</div>
+            <div class="sub">by location-specific capital dollars</div></div>
+        </div>
+        <h2>Legislators and their budget votes</h2>
+        <div class="table-wrap"><table class="data"><thead><tr><th>Name</th><th>Chamber</th><th>Party</th>
+          <th>2025-27 budget</th><th>2026 supplemental</th></tr></thead><tbody>
+          ${members.map((m) => `<tr><td>${esc(m.name)}</td><td>${esc(m.chamber)}</td><td>${esc(m.party)}</td>
+            <td>${finalVote(m, "ESSB 5167")}</td><td>${finalVote(m, "ESSB 5998")}</td></tr>`).join("")}
+        </tbody></table></div>
+        <p class="note">Final-passage votes on the operating budget. See the Legislators page for amendment votes.</p>
+        <h2>Capital projects in District ${n}</h2>
+        <div class="table-wrap"><table class="data"><thead><tr><th>Project</th><th>Agency / program</th>
+          <th class="num">2025-27</th></tr></thead><tbody>
+          ${proj.map((p) => `<tr><td>${esc(p.project)}${p.multi_location ? ' <span class="muted">· multi-location</span>' : ""}
+            ${p.preliminary ? ' <span class="muted">· preliminary</span>' : ""}${p.alt_financing ? ' <span class="muted">· alternative financing</span>' : ""}</td>
+            <td>${esc(p.agency)}${p.program ? `<br><span class="muted">${esc(p.program)}</span>` : ""}</td>
+            <td class="num">${money(p.amount)}</td></tr>`).join("") || '<tr><td colspan="3" class="muted">No projects listed.</td></tr>'}
+        </tbody></table></div>`;
+      bindTips($("#district-detail"));
+      try { localStorage.setItem("polyview-district", n); } catch (e) { /* storage unavailable */ }
+    }
+    let start = "1";
+    try { start = localStorage.getItem("polyview-district") || "1"; } catch (e) { /* ignore */ }
+    pick.value = start;
+    pick.addEventListener("change", () => show(pick.value));
+    show(start);
+
+    const sorted = [...d.districts].sort((a, b) => b.local_total - a.local_total);
+    bars($("#district-chart"), sorted.map((x) => ({
+      name: `District ${x.district}`, value: x.local_total, label: money(x.local_total),
+      tip: `<b>District ${x.district}</b><br>Location-specific: ${money(x.local_total)}<br>Multi-location (excluded): ${money(x.multi_total)}`,
+      cells: [`District ${x.district}`, money(x.local_total), money(x.multi_total)],
+    })), { tableHeads: ["District", "Location-specific", "Multi-location (excluded)"] });
+  }
+
   function legislators(d) {
     const rc = Object.fromEntries(d.roll_calls.map((r) => [r.id, r]));
     const finalVote = (m, bill) => {
@@ -361,7 +423,7 @@
   /* ---------- routing ---------- */
   function route() {
     const id = (location.hash || "#overview").slice(1);
-    const known = ["overview", "agencies", "legislators", "data"];
+    const known = ["overview", "agencies", "districts", "legislators", "data"];
     const view = known.includes(id) ? id : "overview";
     document.querySelectorAll(".view").forEach((v) => (v.hidden = v.id !== view));
     document.querySelectorAll("nav a").forEach((a) =>
@@ -373,7 +435,7 @@
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
       $("#loading").remove();
-      overview(d); outlook(d); agencies(d); legislators(d); dataView(d);
+      overview(d); outlook(d); agencies(d); districtsView(d); legislators(d); dataView(d);
       window.addEventListener("hashchange", route);
       route();
     })

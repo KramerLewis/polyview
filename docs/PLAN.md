@@ -80,7 +80,7 @@ Next:
 2. ~~"Over budget" cases~~: resolved (D-026). Still open: the AC fund gap (D-012) and Contributions to Retirement Systems
 3. ~~Amendment content~~: done (D-029)
 4. ~~Revenue for the current biennium~~: done via the ERFC outlook (D-034). Still to do: monthly collections and forecast vintages
-5. Capital projects by legislative district (Phase 2): the LEAP capital project lists carry districts
+5. ~~Capital projects by legislative district~~: done for the 2025 enacted list (D-035/036). Still to do: 2026 supplemental district list, address lookup
 6. Backfill: 2021-23 and 2019-21 budget bills, FY2024 report layout
 7. **Money-flow Sankey** on the overview: revenue sources → funds → areas of government
    (click through to agencies). Start with 2021-23 actuals, labeled as the latest complete
