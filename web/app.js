@@ -157,7 +157,7 @@
       cells: [x.source, money(x.original), money(x.current)],
     })), { tableHeads: ["Fund source", "Original", "Current"] });
 
-    $("#completed-note").textContent = `The ${c.biennium} biennium (July 2023 – June 2025). Final budget vs. actual spending for all three budgets, budgetary basis. Source: ${c.source}.`;
+    $("#completed-note").textContent = `The ${c.biennium} biennium (July 2023 – June 2025). Final budget vs. actual spending on appropriated lines for all three budgets, budgetary basis. Another ${money(c.other_actual, 1)} was recorded without an appropriation line (mostly bond debt service paid under statutory authority) and is not included. Source: ${c.source}.`;
     const top = [...d.agencies].filter((a) => a.budget_2325 > 0)
       .sort((x, y) => y.budget_2325 - x.budget_2325).slice(0, 12);
     bars($("#completed"), top.map((a) => ({
@@ -228,9 +228,13 @@
       ${a.programs.length ? `<h3>Programs named in the operating budget</h3><p>${a.programs.map(esc).join(" · ")}</p>` : ""}
       ${a.budget_2325 ? `<h3>2023-25: budgeted vs. spent</h3>
         <p>Final budget ${money(a.budget_2325)}, actual ${money(a.actual_2325)},
-        difference ${money(a.budget_2325 - a.actual_2325)} (${unspentLabel(a.budget_2325, a.actual_2325)}).</p>
-        ${a.actual_2325 > a.budget_2325 ? `<p class="note">Spending above the final budget usually reflects nonappropriated or
-        local funds recorded against this agency, not spending without authority. See DECISIONS D-026.</p>` : ""}` : ""}
+        difference ${money(a.budget_2325 - a.actual_2325)} (${unspentLabel(a.budget_2325, a.actual_2325)}).
+        <span class="muted">Appropriated lines only.</span></p>
+        ${a.actual_2325 > a.budget_2325 ? `<p class="note">Spending on appropriated lines exceeded the final budget.
+        This is unusual and is listed for follow-up in DECISIONS D-026.</p>` : ""}` : ""}
+      ${a.other_actual_2325 ? `<p class="note">Also in 2023-25: ${money(a.other_actual_2325)} recorded against this agency
+        with no appropriation line in OFM's report (for example, bond debt service paid under statutory
+        authority). It's shown separately because there is no budget to compare it with.</p>` : ""}
       ${a.paid_2527 ? `<h3>2025-27 payments to vendors and grantees so far</h3>
         <p>${money(a.paid_2527)}. <span class="muted">From the state's Open Checkbook. This excludes salaries and benefits
         and some payments to local governments, so it is <b>not</b> a measure of how much of the budget has been spent.</span></p>` : ""}

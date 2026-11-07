@@ -131,14 +131,21 @@ def build() -> None:
     bta_path = RAW / "budget_to_actual" / budget_to_actual.FILE_VARIANTS[25]
     bta_rows, _ = budget_to_actual.parse_text(budget_to_actual.pdf_text(bta_path), 2025)
     completed = {"biennium": "2023-25", "source": "OFM Budget-to-Actual Detailed Report, FY2025",
-                 "final_budget": 0, "actual": 0}
+                 "final_budget": 0, "actual": 0, "other_actual": 0}
     for r in bta_rows:
         if r.is_adjustment:
             continue
-        completed["final_budget"] += r.final_budget_k * 1000
-        completed["actual"] += r.actual_k * 1000
         a = agencies[agency3(r.agency_code)]
         a["name"] = a["name"] or r.agency
+        if not r.authority_code:
+            # Activity recorded with no expenditure-authority (appropriation) line,
+            # e.g. bond debt service paid under statutory authority. Reported
+            # separately so budget vs. actual compares like with like (D-026).
+            completed["other_actual"] += r.actual_k * 1000
+            a["other_actual_2325"] = a.get("other_actual_2325", 0) + r.actual_k * 1000
+            continue
+        completed["final_budget"] += r.final_budget_k * 1000
+        completed["actual"] += r.actual_k * 1000
         a["budget_2325"] = a.get("budget_2325", 0) + r.final_budget_k * 1000
         a["actual_2325"] = a.get("actual_2325", 0) + r.actual_k * 1000
 

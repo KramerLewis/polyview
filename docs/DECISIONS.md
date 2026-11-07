@@ -211,13 +211,19 @@ printed "Point Whitney Appraisal (92000002)"). The printed number is used, and r
 `xml_conflict`. The agency attribute can also be wrong in these cases: that section is
 printed as the Governor's special appropriation but tagged agency 085.
 
-### D-026 · "Over budget" usually isn't overspending (accepted)
-Some agencies show actual spending above their final budget (e.g. State Treasurer,
-University of Washington in 2023-25). In OFM's budgetary-basis report this typically
-reflects nonappropriated or local funds recorded against the agency, or accounting
-entries, not spending without authority. The site says "over budget" with that
-explanation instead of a negative "unspent".
-- **Open:** confirm by account which lines cause each case.
+### D-026 · Budget vs. actual compares appropriated lines only (resolved)
+"Over budget" agencies (State Treasurer/Bond Retirement +33%, UW +29% in 2023-25) were caused
+by OFM report rows with **no expenditure authority**: activity recorded against an agency and
+fund with no appropriation line, so the budget is $0. Examples: bond debt service paid from
+transportation accounts ($516M from the Transportation Partnership Account), UW General Fund
+activity ($263M). Statewide these rows held $12.6B actual vs $7.0B budget, including
+adjustment pseudo-agencies.
+- Budget vs. actual now uses **appropriated lines only**: 2023-25 statewide **$136.7B
+  spent of $161.5B (84.7%)**. The other $3.1B (excluding adjustments) is shown separately.
+- With that, Bond Retirement is at 99.9% and UW at 90.0%. **The only agency over budget on
+  appropriated lines is Contributions to Retirement Systems (+4.9%)**, which is **open** to explain.
+- **Weak point:** we infer "statutory or nonappropriated authority" from the missing
+  authority line. OFM's report doesn't say why each row has none.
 
 ### D-027 · 2025-27 totals cover all three budgets; capital reappropriations are separate (accepted)
 OFM's actuals cover operating, transportation and capital together, so 2025-27 figures
