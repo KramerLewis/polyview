@@ -43,13 +43,16 @@ supplemental only re-enacts the sections it changes.
 | Source | Access | Format | Status | Notes |
 |---|---|---|---|---|
 | Vendor payments ("Open Checkbook") | fiscal.wa.gov `Spending/VendorPayments2527.xlsx` | XLSX, about 33 MB per biennium | ✅ `ingest/vendor_payments.py` | 586,697 rows so far for 2025-27 ($54.0B). Columns: agency, fiscal month, object/sub-object, vendor, amount. **No fund or program**, so it shows who got paid but can't be compared line-by-line with appropriations. Check for older bienniums' files (`VendorPayments2325.xlsx`, …). |
-| Spending by biennium and historical trends | fiscal.wa.gov | Embedded Power BI | 🔴 | Has agency × fund expenditure history. No download. Options: ask LEAP/OFM for the underlying extract, or a public records request. |
+| **OFM Budget-to-Actual Detail Report** | ofm.wa.gov ACFR page, one PDF per fiscal year (FY2020+) | PDF | ✅ `ingest/budget_to_actual.py` (FY2025), `ingest/budget_to_actual_detail.py` (FY2021, FY2023) | **Final budget vs. actual** by fund, agency, account and expenditure authority. FY2020–23 also have **original budget** and **revenue by source**. Budgetary basis. FY2025 matches all printed subtotals. See DECISIONS D-002, D-010–D-014. |
+| Spending by biennium and historical trends | fiscal.wa.gov | Embedded Power BI | 🔴 | No download. Replaced by the Budget-to-Actual reports above. |
 | Distributions to local entities | fiscal.wa.gov `Spending/SpendDistributionSourceTotals.aspx` | SSRS report viewer (FY2013–2026) | 🟡 | Includes an **"All Legislative Districts"** view. SSRS supports CSV/Excel export after a form postback, which is scriptable. |
 | Agency contracts | data.wa.gov `6fx9-ncas` (FY2025) | Socrata API | 🟡 | |
 | Annual Comprehensive Financial Report (ACFR) | OFM | PDF | 🟡 | Audited fund-level actuals. Used as the reconciliation anchor. |
 
-The key gap is **agency × fund × program actual expenditures**, which are needed to
-compare appropriated with spent. This is the top Phase 1 research item.
+**Update (Phase 1):** the agency × fund gap is largely closed for completed
+bienniums by OFM's Budget-to-Actual reports. Still missing: **program-level**
+actuals, **allotments**, and **current-biennium** actuals until OFM publishes the
+FY2026 report. See [DECISIONS.md](DECISIONS.md).
 
 ## Revenue (income)
 

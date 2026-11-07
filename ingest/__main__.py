@@ -1,11 +1,13 @@
-"""Run ingesters: ``python -m ingest [budget_bills legislature vendor_payments districts]``."""
+"""Run ingesters: ``python -m ingest [name ...]`` (all when no names are given)."""
 
 import sys
 
-from . import budget_bills, districts, legislature, vendor_payments
+from . import budget_bills, budget_to_actual, budget_to_actual_detail, districts, legislature, vendor_payments
 
 INGESTERS = {
     "budget_bills": budget_bills.run,
+    "budget_to_actual": budget_to_actual.run,
+    "budget_to_actual_detail": budget_to_actual_detail.run,
     "legislature": legislature.run,
     "vendor_payments": vendor_payments.run,
     "districts": districts.run,

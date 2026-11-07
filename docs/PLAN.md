@@ -69,9 +69,9 @@ CSVs with a confidence flag on each match.
 
 ## Phase 1 to-do (from Phase 0 findings)
 
-1. **Actual expenditures by agency × fund (× program).** This is the key gap.
-   Investigate fiscal.wa.gov's SSRS reports, OFM AFRS extracts, and LEAP. If none
-   are public, file a public records request.
+1. ~~**Actual expenditures by agency × fund.**~~ Done for completed bienniums via
+   OFM's Budget-to-Actual reports (DECISIONS D-002). Program level and allotments
+   remain open. No records requests (D-005).
 2. **Supplemental overlay.** Combine the original budget with supplementals by
    section, so each line has *original*, *supplemental change*, and *current* values.
 3. **Reconcile parsed totals** against LEAP/OFM published totals. Add this as a test.

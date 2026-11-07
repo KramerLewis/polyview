@@ -1,0 +1,286 @@
+fiscal_year,biennium,level,fund_code,fund,agency_code,agency,account_code,account,section,line_code,line,authority_code,original,final,actual,variance
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,balance,AA,"Budgetary fund balance, beginning",,3664998445,3664998445,3664998445,0
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,AB,Taxes,,58644125307,59193075307,59524970229,331894922
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CD,"Licenses, permits, and fees",,277630264,285560264,302350577,16790313
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CE,Other contracts and grants,,1124502860,1172231860,792412993,-379818867
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CF,Timber sales,,9136223,9384223,9493805,109582
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CG,Federal grants-in-aid,,36069366168,45740811168,35373432210,-10367378958
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CH,Charges for services,,136919614,120744614,128104210,7359596
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CJ,Investment income (loss),,0,96295000,0,-96295000
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CJ,Interest revenue,,138017092,138017092,259537102,121520010
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CK,Miscellaneous revenue,,356586854,183784854,363029932,179245078
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,CP,Unclaimed property,,347795006,345868006,335984871,-9883135
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,DZ,Transfers from other funds,,959746057,999010057,1064808848,65798791
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,resources,TR,Transfers from other funds,,0,0,0,0
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,charges,F1,General government,,8905298625,13695074168,10470019456,3225054712
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,charges,F2,Human services,,47154818375,51615196133,50476444088,1138752045
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,charges,F3,Natural resources and recreation,,1138613000,2118007525,1392301806,725705719
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,charges,F4,Transportation,,148354000,177131850,148713847,28418003
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,charges,F5,Education,,33618900000,36542574000,32689895302,3852678698
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,charges,HC,Capital outlays,,532482770,747014770,126702979,620311791
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,charges,HZ,Transfers to other funds,,2205782083,2205782083,2421729765,-215947683
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,reconciling,NC,Debt service,,0,0,-41724,-41724
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,reconciling,NH,Issuance premium,,0,0,913537,913537
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,reconciling,NL,Refunding COPs issued,,0,0,4080000,4080000
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,reconciling,P1,Assumed reversions,,295743000,728051000,0,-728051000
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,reconciling,P2,Assigned for working capital,,0,0,38000000,38000000
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,reconciling,Z2,Noncash activity (net),,0,0,-94055589,-94055589
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,reconciling,ZA,Changes in reserves (net),,0,0,141256753,138222633
+2023,2021-23,fund,AA,General Fund - Basic Account,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,117563,117563
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,1188887412,1188887412,1188887412,0
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,AB,Taxes,,-159462000,4410032807,-170933253,-4580966060
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,CD,"Licenses, permits, and fees",,4726000,14870000,3674517,-11195483
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,CE,Other contracts and grants,,0,15296490,0,-15296490
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,CG,Federal grants-in-aid,,5186081000,5509077030,4481017506,-1028059524
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,CH,Charges for services,,21999000,64347000,34347,-64312653
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,CJ,Interest revenue,,1594000,8256000,14561356,6305356
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,CK,Miscellaneous revenue,,-8722000,77297301,-39955296,-117252597
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,DZ,Transfers from other funds,,2178917000,4482743569,3754246018,-728497551
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,resources,TR,Transfers from other funds,,0,0,0,0
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,charges,F1,General Government,,1659237000,3623906000,1931574060,1692331940
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,charges,F2,Human services,,1188296000,2847617000,1406466445,1441150555
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,charges,F3,Natural resources and recreation,,98215000,479534000,226841471,252692529
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,charges,F4,Transportation,,6254000,8643000,7337444,1305556
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,charges,F5,Education,,2178963000,5050054000,1894091505,3155962495
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,charges,HC,Capital outlays,,1487736373,2434804183,599367999,1835436184
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,charges,HZ,Transfers to other funds,,0,146976000,137852563,9123437
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,reconciling,ND,Bond sale proceeds,,95714000,239539000,318042149,78503149
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,reconciling,NH,Issuance premium,,0,0,171403,171403
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-6837920,-6837920
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,626415698,659384721
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,91596779,91596779
+2023,2021-23,fund,AC,Administrative Accts in the General Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,1141157510,1141157510,1141157510,0
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,AB,Taxes,,3417167000,3235771000,2680244348,-555526652
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,CD,"Licenses, permits, and fees",,1380212000,1468587000,1325197827,-143389173
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,CE,Other contracts and grants,,78970000,117924000,70164125,-47759875
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,CF,Timber sales,,0,0,19831,19831
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,CG,Federal grants-in-aid,,1275376000,1362908134,1059815098,-303093036
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,CH,Charges for services,,650747000,565714000,551146985,-14567015
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,CJ,Interest revenue,,36933000,37189000,65555346,28366346
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,CK,Miscellaneous revenue,,33909000,75207000,77788539,2581539
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,DZ,Transfers from other funds,,0,24750000,4455312179,4430562179
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,resources,TR,Transfers from other funds,,0,0,0,0
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,charges,F1,General Government,,29018000,15781000,10788964,4992036
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,charges,F3,Natural resources and recreation,,2954000,3380000,2814374,565626
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,charges,F4,Transportation,,2263722000,2658001000,2313903876,344097124
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,charges,F5,Education,,150000,550000,333080,216920
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,charges,HC,Capital outlays,,5563063000,6381363000,3698154717,2683208283
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,charges,HZ,Transfers to other funds,,0,0,3129567730,-3129567730
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,reconciling,ND,Bond sale proceeds,,2609718000,115000000,132490000,17490000
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,reconciling,NH,Issuance premium,,0,0,28461132,28461132
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-54258499,-54258499
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,7457770,10667545
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,-16211537,-23008645
+2023,2021-23,fund,BA,Motor Vehicle Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ND,Bond sale proceeds,,2315160000,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,889774,889774
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,-6514983,-6514983
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,-1275,-1275
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,481617176,481617176,481617176,0
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,resources,AB,Taxes,,191077000,233554983,205215806,-28339177
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,resources,CD,"Licenses, permits, and fees",,724050000,749125000,719382814,-29742186
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,resources,CE,Other contracts and grants,,266000,822000,272523,-549477
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,resources,CG,Federal grants-in-aid,,80514000,250521459,230506664,-20014795
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,resources,CH,Charges for services,,234281000,181965000,196276955,14311955
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,resources,CJ,Interest revenue,,13258000,14500000,25489049,10989049
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,resources,CK,Miscellaneous revenue,,61362000,158335000,140726415,-17608585
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,resources,DZ,Transfers from other funds,,718000,0,2494802229,2494802229
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,charges,F1,General government,,1245000,5460000,1757895,3702105
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,charges,F4,Transportation,,816716000,1346128000,712724406,633403594
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,charges,F5,Education,,0,450000,225000,225000
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,charges,HC,Capital outlays,,260127000,418144000,149382220,268761781
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,charges,HZ,Transfers to other funds,,0,0,2807607468,-2807607468
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,reconciling,NC,Debt service,,0,0,1366,1366
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-19836786,-19836786
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,109206536,109206536
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,-1704697,-1704697
+2023,2021-23,fund,BB,Multimodal Transportation Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,352525196,352525196,352525196,0
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,AB,Taxes,,214311000,72137224,32172234,-39964990
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,CD,"Licenses, permits, and fees",,737803000,799487818,636619452,-162868366
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,CE,Other contracts and grants,,2214000,67090454,9386,-67081069
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,CF,Timber sales,,4752000,6270000,6691467,421467
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,CG,Federal grants-in-aid,,927714000,1735422053,1306074130,-429347923
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,CH,Charges for services,,150722000,329191000,37229518,-291961482
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,CJ,Interest revenue,,19655000,85596577,67513082,-18083495
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,CK,Miscellaneous revenue,,216161000,145373500,49288844,-96084656
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,resources,DZ,Transfers from other funds,,44977000,312182544,244958808,-67223736
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,charges,F1,General government,,1404578000,2518674000,1762264743,756409257
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,charges,F2,Human services,,14669000,22648000,15221487,7426513
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,charges,F3,Natural resources and recreation,,51410000,98165000,52384358,45780642
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,charges,F4,Transportation,,84807000,134359000,89950777,44408223
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,charges,F5,Education,,544000,1088000,331000,757000
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,charges,HC,Capital outlays,,11637150,20626150,4198661,16427489
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,charges,HZ,Transfers to other funds,,278722000,327804000,345863101,-18059101
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,44513716,44513716
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,289992312,464568815
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,40699458,40699458
+2023,2021-23,fund,BD,Central Admin and Regulatory Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,13,13
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,BE,Human Services Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,1556946802,1556946802,1556946802,0
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,AB,Taxes,,1206199000,6852348013,1159938247,-5692409765
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,CD,"Licenses, permits, and fees",,1196985000,1146166000,1139361885,-6804115
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,CE,Other contracts and grants,,149428000,4716000,3000597,-1715403
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,CG,Federal grants-in-aid,,680305000,2759888094,407862898,-2352025195
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,CH,Charges for services,,262711000,762754000,405201999,-357552001
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,CJ,Interest revenue,,408000,5435000,8177858,2742858
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,CK,Miscellaneous revenue,,224771000,428314833,259909996,-168404837
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,DZ,Transfers from other funds,,531202000,795387000,250316848,-545070152
+2023,2021-23,fund,BE,Human Services Fund,,,,,resources,TR,Transfers from other funds,,0,0,0,0
+2023,2021-23,fund,BE,Human Services Fund,,,,,charges,F1,General government,,557382000,1267602000,382884729,884717271
+2023,2021-23,fund,BE,Human Services Fund,,,,,charges,F2,Human services,,2099784000,2181264000,1830200360,351063640
+2023,2021-23,fund,BE,Human Services Fund,,,,,charges,F3,Natural resources and recreation,,3844000,3884000,2989293,894707
+2023,2021-23,fund,BE,Human Services Fund,,,,,charges,F4,Transportation,,25413000,32551000,24635618,7915382
+2023,2021-23,fund,BE,Human Services Fund,,,,,charges,F5,Education,,1855000,3041000,1758644,1282356
+2023,2021-23,fund,BE,Human Services Fund,,,,,charges,HC,Capital outlays,,167085000,336084000,107710154,228373846
+2023,2021-23,fund,BE,Human Services Fund,,,,,charges,HZ,Transfers to other funds,,1094189000,1061813973,981649927,80164045
+2023,2021-23,fund,BE,Human Services Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,194439852,194439852
+2023,2021-23,fund,BE,Human Services Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,204060577,204060577
+2023,2021-23,fund,BE,Human Services Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,9594610,9594610
+2023,2021-23,fund,BE,Human Services Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,1857732862,1857732862,1857732862,0
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,AB,Taxes,,602114000,726300664,602857687,-123442978
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,CD,"Licenses, permits, and fees",,622065000,427509503,245451614,-182057889
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,CE,Other contracts and grants,,9989000,6936000,6034157,-901843
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,CF,Timber sales,,188678000,174040000,107478656,-66561344
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,CG,Federal grants-in-aid,,141110000,1297951758,82243045,-1215708714
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,CH,Charges for services,,28919000,82137315,29346028,-52791287
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,CJ,Interest revenue,,1157000,91756514,16852390,-74904124
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,CK,Miscellaneous revenue,,697652000,1149242575,1382195113,232952538
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,resources,DZ,Transfers from other funds,,120618000,268264000,275486093,7222093
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,charges,F1,General government,,1258000,1525000,923291,601709
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,charges,F2,Human services,,10015000,13069000,7157940,5911060
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,charges,F3,Natural resources and recreation,,952043000,1076308000,879827080,196480920
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,charges,F4,Transportation,,1533000,11548000,6545183,5002817
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,charges,F5,Education,,4300000,6391000,4314853,2076147
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,charges,HC,Capital outlays,,1403530049,1722788789,517296334,1205492455
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,charges,HZ,Transfers to other funds,,84382000,102094385,211969344,-109874959
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-15174299,-15174299
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,120522847,122228206
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,62927018,62927018
+2023,2021-23,fund,BF,Wildlife and Natural Resources Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,BG,Higher Education Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,536990354,536990354,536990354,0
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,AB,Taxes,,2457029000,2796829000,3365741140,568912140
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,CD,"Licenses, permits, and fees",,0,633000,0,-633000
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,CE,Other contracts and grants,,0,326000,0,-326000
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,CG,Federal grants-in-aid,,0,283654759,0,-283654759
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,CH,Charges for services,,3022017000,2824566000,2221,-2824563779
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,CJ,Interest revenue,,5062000,3808000,35413500,31605500
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,CK,Miscellaneous revenue,,4124000,8319000,1209,-8317791
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,DZ,Transfers from other funds,,5014000,112873000,27239720,-85633280
+2023,2021-23,fund,BG,Higher Education Fund,,,,,resources,TR,Transfers from other funds,,0,0,0,0
+2023,2021-23,fund,BG,Higher Education Fund,,,,,charges,F1,General government,,426000,39862000,39431000,431000
+2023,2021-23,fund,BG,Higher Education Fund,,,,,charges,F2,Human services,,44217000,95929000,43242408,52686592
+2023,2021-23,fund,BG,Higher Education Fund,,,,,charges,F5,Education,,2448116000,3334311000,2612919807,721391193
+2023,2021-23,fund,BG,Higher Education Fund,,,,,charges,HZ,Transfers to other funds,,138238000,178195000,27239841,150955159
+2023,2021-23,fund,BG,Higher Education Fund,,,,,reconciling,P2,Assigned for working capital,,0,0,0,0
+2023,2021-23,fund,BG,Higher Education Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,12757150,12757150
+2023,2021-23,fund,BG,Higher Education Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,4445301789,29768897542
+2023,2021-23,fund,BG,Higher Education Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,11765861,11765861
+2023,2021-23,fund,BG,Higher Education Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,701229933,701229933,701229933,0
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,AB,Taxes,,50401000,67795000,422246937,354451937
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,CD,"Licenses, permits, and fees",,172000,176000,1000,-175000
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,CE,Other contracts and grants,,0,1000,877,-123
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,CF,Timber sales,,28902000,70488000,79978430,9490430
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,CG,Federal grants-in-aid,,0,-2927000,0,2927000
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,CH,Charges for services,,6000000,6000000,5868614,-131386
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,CJ,Interest revenue,,432000,873000,5359914,4486914
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,CK,Miscellaneous revenue,,432426000,335335000,240127397,-95207603
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,resources,DZ,Transfers from other funds,,14722000,14347000,16005080,1658080
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,charges,F1,General government,,15308000,15500000,13593269,1906731
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,charges,F3,Natural resources and recreation,,8450000,16928000,7477588,9450412
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,charges,HC,Capital outlays,,524664770,654951770,236150496,418801274
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,charges,HZ,Transfers to other funds,,166660000,69177000,65496075,3680925
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-2358122,-2358122
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,7644194,20289559
+2023,2021-23,fund,BH,Local Construction and Loan Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,-41780979,-41780979
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,294822,294822,294822,0
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,resources,CH,Charges for services,,15062000,55254000,0,-55254000
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,resources,CJ,Interest revenue,,80000,345000,0,-345000
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,resources,CK,Miscellaneous revenue,,27000,2000,0,-2000
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,resources,DZ,Transfers from other funds,,99119000,157122000,86345831,-70776169
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,charges,F1,General government,,87788000,87703000,86345831,1357169
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,charges,HZ,Transfers to other funds,,28060000,71892000,0,71892000
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,reconciling,NC,Debt service,,0,-97000,-3359592,-3262592
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,reconciling,NE,Proceeds of refunding bonds,,0,-2909000,1822375000,1825284000
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,reconciling,NF,Payments to refunded bond escrow agents,,0,0,-2025239209,-2025239209
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,reconciling,NH,Issuance premium,,0,3006000,206223800,203217800
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-1423758,-1423758
+2023,2021-23,fund,CA,General Obligation Bond Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,34179000,34179000
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,286303293,286303293,286303293,0
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,resources,CJ,Interest revenue,,248000,0,4776962,4776962
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,resources,CK,Miscellaneous revenue,,47889000,0,56067384,56067384
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,resources,DZ,Transfers from other funds,,1662766000,1484516000,1412290524,-72225476
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,charges,F1,General government,,1512713000,1448169550,1440780666,7388884
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,charges,HZ,Transfers to other funds,,0,0,0,0
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,reconciling,NC,Debt service,,0,0,-3160232,-3160232
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,reconciling,NE,Proceeds of refunding bonds,,0,0,1147450000,1147450000
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,reconciling,NF,Payments to refunded bond escrow agents,,0,0,-1283886366,-1283886366
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,reconciling,NH,Issuance premium,,0,0,139596599,139596599
+2023,2021-23,fund,CB,Transportation General Oblig Bond Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-7910163,-7910163
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,5128688,5128688,5128688,0
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,resources,CJ,Interest revenue,,61000,73000,0,-73000
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,resources,DZ,Transfers from other funds,,311039000,296168000,300921118,4753118
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,charges,F1,General government,,300877000,300877000,300702950,174050
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,charges,HZ,Transfers to other funds,,1000,0,166644,-166644
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,reconciling,NC,Debt service,,0,-355000,-355000,0
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,reconciling,NE,Proceeds of refunding bonds,,0,-4896000,118155000,123051000
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,reconciling,NF,Payments to refunded bond escrow agents,,0,0,-123050672,-123050672
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,reconciling,NH,Issuance premium,,0,5251000,5250672,-328
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-140592,-140592
+2023,2021-23,fund,CD,Transportation Revenue Bond Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,DA,State Facilities Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,-105444595,-105444595,-105444595,0
+2023,2021-23,fund,DA,State Facilities Fund,,,,,resources,CE,Other contracts and grants,,0,0,12800,12800
+2023,2021-23,fund,DA,State Facilities Fund,,,,,resources,CF,Timber sales,,14865000,14551000,17231657,2680657
+2023,2021-23,fund,DA,State Facilities Fund,,,,,resources,CG,Federal grants-in-aid,,0,983000,7939951,6956951
+2023,2021-23,fund,DA,State Facilities Fund,,,,,resources,CJ,Interest revenue,,18000,34000,174135,140135
+2023,2021-23,fund,DA,State Facilities Fund,,,,,resources,CK,Miscellaneous revenue,,8288000,11084000,9712757,-1371243
+2023,2021-23,fund,DA,State Facilities Fund,,,,,resources,DZ,Transfers from other funds,,1650000,3208000,3765990,557990
+2023,2021-23,fund,DA,State Facilities Fund,,,,,resources,TR,Transfers from other funds,,0,0,0,0
+2023,2021-23,fund,DA,State Facilities Fund,,,,,charges,F1,General government,,15009000,16792000,6970185,9821815
+2023,2021-23,fund,DA,State Facilities Fund,,,,,charges,HC,Capital outlays,,5931564638,6512951507,3070280982,3442670525
+2023,2021-23,fund,DA,State Facilities Fund,,,,,charges,HZ,Transfers to other funds,,94336000,106220000,9735615,96484385
+2023,2021-23,fund,DA,State Facilities Fund,,,,,reconciling,ND,Bond sale proceeds,,6495548000,3680994000,2547052851,-4776935149
+2023,2021-23,fund,DA,State Facilities Fund,,,,,reconciling,NH,Issuance premium,,0,512748000,606138315,93390315
+2023,2021-23,fund,DA,State Facilities Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,942821,942821
+2023,2021-23,fund,DA,State Facilities Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,13839434,13839434
+2023,2021-23,fund,DA,State Facilities Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,-19914,-19914
+2023,2021-23,fund,DA,State Facilities Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,3492,3492
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,Z2,Noncash activity (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,,Excess Available For Appropriation,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,27997319,27997319,27997319,0
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,balance,AA,"Budgetary fund balance, beginning",,1920000,1920000,1920000,0
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,resources,CE,Other contracts and grants,,0,0,16,16
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,resources,CF,Timber sales,,0,1000000,2278,-997722
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,resources,CH,Charges for services,,175111000,164326000,145643756,-18682244
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,resources,CJ,Interest revenue,,4091000,311000,1586058,1275058
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,resources,CK,Miscellaneous revenue,,668000,318000,775918,457918
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,resources,DZ,Transfers from other funds,,96377000,135565000,155911944,20346944
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,resources,TR,Transfers from other funds,,0,0,0,0
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,charges,F5,Education,,26354000,26354000,24307004,2046996
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,charges,HC,Capital outlays,,270548050,272802050,232148937,40653113
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,charges,HZ,Transfers to other funds,,6827000,7939000,34207577,-26268577
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,reconciling,Z2,Noncash activity (net),,0,0,-1114211,-1114211
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,reconciling,Z3,Nonappropriated fund balances,,0,0,-16577816,-16577816
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,reconciling,ZA,Changes in reserves (net),,0,0,0,0
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,reconciling,ZA,Changes in reserves (net),,-1920000,-1920000,-1920000,0
+2023,2021-23,fund,DB,Higher Education Facilities Fund,,,,,reconciling,ZO,Source 900 not redistributed,,0,0,0,0

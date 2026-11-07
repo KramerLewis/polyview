@@ -9,9 +9,11 @@ legislators. It connects state **revenue**, **appropriations** (budget bills),
 **legislators, votes and legislative districts**, for past bienniums, the
 current one, and proposed or hypothetical budgets.
 
-> Status: **Phase 0 (discovery) complete.** Ingesters exist for budget bills,
-> legislators and votes, vendor payments, and district boundaries. No website yet.
-> See [`docs/PLAN.md`](docs/PLAN.md) and [`docs/sources.md`](docs/sources.md).
+> Status: **Phase 1 in progress.** Ingesters exist for budget bills, budget vs.
+> actual spending (OFM), legislators and votes, vendor payments, and district
+> boundaries. No website yet.
+> See [`docs/PLAN.md`](docs/PLAN.md), [`docs/sources.md`](docs/sources.md), and
+> [`docs/DECISIONS.md`](docs/DECISIONS.md) (assumptions, trade-offs and known weak points).
 
 ## What it will do
 
