@@ -82,3 +82,10 @@ Next:
 4. Revenue for the current biennium (ERFC collections and forecasts)
 5. Capital projects by legislative district (Phase 2): the LEAP capital project lists carry districts
 6. Backfill: 2021-23 and 2019-21 budget bills, FY2024 report layout
+7. **Money-flow Sankey** on the overview: revenue sources → funds → areas of government
+   (click through to agencies). Start with 2021-23 actuals, labeled as the latest complete
+   picture, then add a 2025-27 "as enacted" toggle once current-biennium revenue is in.
+   Rules: keep the funds column (money mixes within a fund, so never draw source → agency
+   directly); add reserve draw/deposit nodes so flows balance; net out transfers between funds
+   (D-011); top 6–8 nodes per column plus "Other"; vertical or stacked-bar fallback on phones;
+   table view. Bars stay for budget-vs-actual, change over time and votes.
