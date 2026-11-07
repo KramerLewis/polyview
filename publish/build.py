@@ -71,8 +71,10 @@ def current_budget() -> tuple[list[dict], dict]:
             src = SOURCE_NAMES.get(r["fund_source"].lower(), "Other")
             by_source[src]["original"] += r["original"]
             by_source[src]["current"] += r["current"]
+    from ingest.checks import ngfo
     meta = {
         "biennium": biennium,
+        "ngfo": {"original": ngfo(rows, biennium, "original"), "current": ngfo(rows, biennium, "current")},
         "by_budget": by_budget,
         "by_fund_source": [{"source": k, **v} for k, v in
                            sorted(by_source.items(), key=lambda kv: -kv[1]["current"])],

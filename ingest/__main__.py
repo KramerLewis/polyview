@@ -2,11 +2,12 @@
 
 import sys
 
-from . import budget_bills, budget_current, budget_to_actual, budget_to_actual_detail, districts, legislature, vendor_payments
+from . import budget_bills, budget_current, checks, budget_to_actual, budget_to_actual_detail, districts, legislature, vendor_payments
 
 INGESTERS = {
     "budget_bills": budget_bills.run,
     "budget_current": budget_current.run,  # needs budget_bills first
+    "checks": checks.run,  # reconcile against published totals; needs budget_bills
     "budget_to_actual": budget_to_actual.run,
     "budget_to_actual_detail": budget_to_actual_detail.run,
     "legislature": legislature.run,
@@ -20,4 +21,5 @@ if __name__ == "__main__":
         if name not in INGESTERS:
             sys.exit(f"unknown ingester {name!r}; choose from {', '.join(INGESTERS)}")
         print(f"== {name}")
-        INGESTERS[name]()
+        if INGESTERS[name]() is False:
+            sys.exit(f"{name} failed")

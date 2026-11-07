@@ -128,6 +128,9 @@
       <div class="stat"><div class="label">2025-27 enacted, all three budgets</div>
         <div class="value">${money(total, 1)}</div>
         <div class="sub">${money(total - orig, 1)} added by 2026 supplementals</div></div>
+      <div class="stat"><div class="label">Operating budget, NGF-O</div>
+        <div class="value">${money(b.ngfo.current, 1)}</div>
+        <div class="sub">General Fund–State and 3 related accounts, the figure the Legislature balances to</div></div>
       <div class="stat"><div class="label">Capital money carried forward</div>
         <div class="value">${money(b.by_budget.find((x) => x.budget === "capital").reappropriated, 1)}</div>
         <div class="sub">reappropriated from earlier bienniums</div></div>

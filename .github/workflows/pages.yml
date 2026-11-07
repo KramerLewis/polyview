@@ -29,6 +29,8 @@ jobs:
       - run: python -m pytest -q
       - name: Fetch and parse public data
         run: python -m ingest budget_bills budget_current budget_to_actual budget_to_actual_detail legislature vendor_payments
+      - name: Reconcile against published totals
+        run: python -m ingest checks
       - name: Build site data
         run: python -m publish
       - uses: actions/upload-pages-artifact@v3

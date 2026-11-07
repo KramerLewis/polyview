@@ -1,0 +1,3 @@
+check,biennium,budget,measure,version,expected,tolerance,source,source_url,note
+ngfo_original,2025-27,operating,ngfo_appropriations,original,77900000000,0.001,House Bill Report ESSB 5998 (Background),https://lawfilesext.leg.wa.gov/biennium/2025-26/Htm/Bill%20Reports/House/5998-S.E%20HBR%20APH%2026.htm,Published rounded to $0.1B
+ngfo_current,2025-27,operating,ngfo_appropriations,current,80206000000,0.001,Washington Research Council summary of enacted ESSB 5998,https://researchcouncil.org/,Secondary source; replace with LEAP/OFM figure when found

@@ -30,3 +30,17 @@ def test_overlay_replaces_reprinted_sections_and_keeps_history():
     assert ("205", "Old", 7, 0) in current  # dropped from reprinted section
     assert ("205", "New", 0, 9) in current  # added
     assert not any("!=" in i for i in issues)  # struck amounts matched enacted ones
+
+
+def test_ngfo_counts_only_state_appropriations_from_outlook_accounts():
+    from ingest.checks import ngfo
+    base = {"budget": "operating", "biennium": "2025-27", "original": 10, "current": 12}
+    rows = [
+        {**base, "kind": "appropriation", "fund": "General Fund", "fund_source": "State"},
+        {**base, "kind": "appropriation", "fund": "Washington Opportunity Pathways Account", "fund_source": "State"},
+        {**base, "kind": "appropriation", "fund": "General Fund", "fund_source": "Federal"},
+        {**base, "kind": "distribution", "fund": "General Fund", "fund_source": ""},
+        {**base, "kind": "appropriation", "fund": "Motor Vehicle Account", "fund_source": "State"},
+    ]
+    assert ngfo(rows, "2025-27", "original") == 20
+    assert ngfo(rows, "2025-27", "current") == 24

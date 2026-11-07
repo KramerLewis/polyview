@@ -130,11 +130,24 @@ replaces each reprinted section's lines with the supplemental version, and keeps
   `data/samples/budget_current_2025-27_issues.csv` (19 for 2025-27) and should
   be linked by hand in `crosswalk/`.
 
-### D-017 · Parsed bill totals aren't yet reconciled to LEAP's published totals (open)
-The original 2025-27 operating budget's lines sum to $136.6B across all funds. LEAP's
-published total is the reference we haven't matched yet. Possible reasons for differences:
-special appropriations to the State Treasurer (distribution lines without a
-fund-source suffix), nonappropriated amounts, and vetoes.
+### D-017 · Parsed totals are reconciled to published NGF-O figures on every build (resolved for operating NGF-O)
+The Legislature's headline figure is **NGF-O** (Near General Fund-Outlook: General
+Fund–State, Education Legacy Trust, Washington Opportunity Pathways and Workforce
+Education Investment accounts). `ingest/checks.py` recomputes it from the parsed bills
+and compares it with `crosswalk/reference_totals.csv`. **The site build fails if a check is
+more than 0.1% off.**
+- 2025-27 original: parsed **$77.874B** vs. published $77.9B (House bill report, rounded).
+- 2025-27 after the 2026 supplemental: parsed **$80.206B** vs. $80.206B (exact).
+- NGF-O counts appropriations only. The State Treasurer's "General Fund appropriation
+  for … distributions" lines ($0.25–0.33B) are *not* in the published figure, and leaving them
+  out is what makes it match.
+- **Weak points:**
+  - The current-version reference is a secondary source (Washington Research Council)
+    until a LEAP or OFM document with the enacted figure is found.
+  - The all-funds figure can't be reconciled the same way: the published "total
+    budgeted" ($150.4B original) includes appropriations in other bills and, apparently,
+    non-appropriated funds that the budget bills don't list.
+  - Transportation and capital have no reference check yet.
 
 ### D-018 · Governor's line-item vetoes are applied (resolved)
 The XML marks vetoed text with `lineVeto="yes"`. Vetoed appropriation lines
