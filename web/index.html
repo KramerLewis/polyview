@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>polyview · Washington State budget</title>
+<meta name="description" content="Where Washington State's money comes from, what the Legislature allocated, what was actually spent, and how legislators voted.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#overview">polyview</a>
+    <span class="tagline">Washington State budget: allocated, spent, and voted</span>
+    <nav aria-label="Sections">
+      <a href="#overview">Overview</a>
+      <a href="#agencies">Agencies</a>
+      <a href="#legislators">Legislators</a>
+      <a href="#data">Data &amp; methods</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <p class="loading" id="loading">Loading data…</p>
+
+  <section id="overview" class="view" hidden>
+    <h1>The 2025-27 state budget</h1>
+    <p class="lede">The Legislature passes three budgets each biennium (July 2025 – June 2027):
+      operating, transportation and capital. Amounts below are <strong>current enacted
+      appropriations</strong>, meaning the original budgets as changed by the 2026 supplementals,
+      with the governor's line-item vetoes removed.</p>
+    <div class="stats" id="stats"></div>
+
+    <h2>By budget</h2>
+    <p class="note">Bars show the current amount, and the tick marks the amount originally enacted in 2025.
+      Capital money carried over from earlier bienniums (reappropriations) is shown separately and is not included in the total.</p>
+    <div id="by-budget" class="chart"></div>
+
+    <h2>By fund source</h2>
+    <p class="note">State money includes the General Fund and dedicated state accounts. Federal money is mostly Medicaid and
+      education grants passed through state agencies.</p>
+    <div id="by-source" class="chart"></div>
+
+    <h2>Last completed biennium: budgeted vs. spent</h2>
+    <p class="note" id="completed-note"></p>
+    <div id="completed" class="chart"></div>
+
+    <h2>Where the money came from</h2>
+    <p class="note">State revenue by source for completed bienniums, actual collections, budgetary basis.
+      Transfers between state funds are excluded so money isn't counted twice.</p>
+    <div id="revenue" class="chart"></div>
+
+    <h2>What it was spent on</h2>
+    <p class="note">Spending by area of government for the same bienniums.</p>
+    <div id="spending" class="chart"></div>
+  </section>
+
+  <section id="agencies" class="view" hidden>
+    <h1>Agencies</h1>
+    <p class="lede">Each agency's 2025-27 appropriations (all three budgets), and its 2023-25 final budget
+      next to what it actually spent. Select an agency for details.</p>
+    <div class="controls">
+      <label>Search <input type="search" id="agency-search" placeholder="e.g. corrections, health"></label>
+    </div>
+    <div class="callout">
+      <strong>Reading "unspent":</strong> a share of budget left unspent is a question, not a verdict.
+      It can reflect savings, project delays, lower caseloads, federal authority that wasn't needed, or timing.
+    </div>
+    <div class="table-wrap"><table id="agency-table" class="data"></table></div>
+    <div id="agency-detail" class="detail" hidden></div>
+  </section>
+
+  <section id="legislators" class="view" hidden>
+    <h1>Legislators and budget votes</h1>
+    <p class="lede">How each member voted on final passage of the 2025-27 operating budget and the
+      2026 supplemental, and on floor amendments to them.</p>
+    <div class="controls">
+      <label>District <select id="district-filter"><option value="">All 49</option></select></label>
+      <label>Search <input type="search" id="member-search" placeholder="Name"></label>
+    </div>
+    <div class="table-wrap"><table id="member-table" class="data"></table></div>
+    <h2>All recorded votes on these bills</h2>
+    <div class="table-wrap"><table id="rollcall-table" class="data"></table></div>
+  </section>
+
+  <section id="data" class="view" hidden>
+    <h1>Data &amp; methods</h1>
+    <p class="lede">Every number on this site comes from a public Washington State or federal source,
+      fetched and parsed by open-source code. Known gaps and judgment calls are documented, not hidden.</p>
+    <ul class="links">
+      <li><a href="https://github.com/KramerLewis/polyview">Source code and data</a></li>
+      <li><a href="https://github.com/KramerLewis/polyview/blob/main/docs/DECISIONS.md">Decisions, assumptions and known weak points</a></li>
+      <li><a href="https://github.com/KramerLewis/polyview/blob/main/docs/sources.md">Data source inventory</a></li>
+    </ul>
+    <h2>Important limits</h2>
+    <ul class="limits">
+      <li><strong>Current-biennium spending isn't shown yet.</strong> OFM's budget-vs-actual reports are annual. The first
+        2025-27 report (fiscal year 2026) hadn't been published when this was built.</li>
+      <li><strong>"Spent" is budgetary basis</strong>, which differs on purpose from the audited financial statements (ACFR).</li>
+      <li><strong>Agency spending plans (allotments) and program-level spending</strong> aren't publicly downloadable, so they aren't shown.</li>
+      <li><strong>Fund-source totals and statewide totals</strong> exclude transfers between funds to avoid double counting.</li>
+      <li><strong>Party is shown as text only.</strong> Colors are never used to mark a party.</li>
+    </ul>
+    <h2>Sources used in this build</h2>
+    <p class="note" id="built-at"></p>
+    <div class="table-wrap"><table id="source-table" class="data"></table></div>
+  </section>
+</main>
+
+<div id="tooltip" class="tooltip" role="status" hidden></div>
+<footer class="site-footer"><div class="wrap">Open data, open code. Code MIT; derived data CC BY 4.0.
+  Not affiliated with the State of Washington.</div></footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -164,6 +164,8 @@ We match on biennium, chamber, last name and initial. For 2025-26 budget votes *
   same last name would be ambiguous. Unmatched votes are left blank, never guessed.
 - **Weak point:** the member list is the biennium roster, so the district is the
   member's district in that biennium.
+- **Members who changed chambers** (e.g. appointed from the House to the Senate) appear
+  once per chamber, each with only that chamber's votes.
 
 ### D-022 · Votes are classified by motion text (accepted)
 `final_passage` = the vote sending the final (conference or concurrence) version to the
@@ -180,6 +182,45 @@ Budget-to-Actual uses 4 digits ("3000"). We join on the first three digits.
 - **Weak point:** this has been spot-checked (House, Senate, DSHS, OSPI), not proven for
   every agency. A mismatch would show as an agency missing from one side.
 
+### D-024 · Vendor payments are not shown as "budget spent so far" (accepted)
+The Open Checkbook file has no salaries and benefits (objects A/B), and evidently omits
+large payments to local governments. OSPI shows $0.87B paid against a ~$37B
+budget because school apportionment isn't in it. Showing it as progress against the budget
+would mislead badly, so it appears only on agency detail, labeled as payments to
+vendors and grantees with an explicit "not a measure of budget spent" note.
+- **Consequence:** the site has **no current-biennium spending pace** until OFM
+  publishes the FY2026 Budget-to-Actual report.
+
+### D-025 · When bill XML metadata contradicts the printed text, the printed text wins (accepted)
+In the 2025-27 capital budgets, two projects' hidden `project` attributes disagree with the
+project number printed in the law (e.g. ESSB 6003 sec. 1001: attribute 40000010,
+printed "Point Whitney Appraisal (92000002)"). The printed number is used, and rows are flagged
+`xml_conflict`. The agency attribute can also be wrong in these cases: that section is
+printed as the Governor's special appropriation but tagged agency 085.
+
+### D-026 · "Over budget" usually isn't overspending (accepted)
+Some agencies show actual spending above their final budget (e.g. State Treasurer,
+University of Washington in 2023-25). In OFM's budgetary-basis report this typically
+reflects nonappropriated or local funds recorded against the agency, or accounting
+entries, not spending without authority. The site says "over budget" with that
+explanation instead of a negative "unspent".
+- **Open:** confirm by account which lines cause each case.
+
+### D-027 · 2025-27 totals cover all three budgets; capital reappropriations are separate (accepted)
+OFM's actuals cover operating, transportation and capital together, so 2025-27 figures
+also combine all three bills (ESSB 5167/5998, 5161/6005, 5195/6003). Capital
+reappropriations ($11.4B in 2025-27) are money already appropriated in earlier
+bienniums and carried forward. They're excluded from "enacted" totals so the same dollars
+aren't counted in two bienniums, and shown separately.
+- **Weak point:** OFM's capital "final budget" for 2023-25 *includes* that biennium's
+  reappropriations, so 2023-25 budget vs. 2025-27 enacted isn't an exact like-for-like
+  comparison for capital-heavy agencies.
+
+### D-028 · Statewide 2023-25 totals sum across rollup funds (open)
+The overview's "share of final budget spent" sums every non-adjustment row of the FY2025
+report. Accounts listed under two rollup funds (D-014) are counted twice. The effect is small
+(tens of $M on $162B), but it's not zero.
+
 ---
 
 ## Presentation
@@ -188,6 +229,20 @@ Budget-to-Actual uses 4 digits ("3000"). We join on the first three digits.
 Underspending can mean savings, delays, lower caseloads, lapsed federal
 authority, or a timing difference between years. Overspending (negative variance) can be
 nonappropriated activity or accounting entries. Pages will say this next to every variance.
+
+### D-032 · Party is shown as text, never as color (accepted)
+Red/blue party coloring frames the data as partisan before anyone reads it. Party
+appears as a plain "D"/"R" column. Charts use one neutral hue for amounts.
+
+### D-033 · A dependency-free static site, rebuilt from public sources in CI (accepted)
+The site is plain HTML/CSS/JS reading one JSON file. GitHub Actions re-fetches all
+sources, runs the tests, rebuilds the data and deploys to GitHub Pages on every push
+and weekly. Generated data isn't committed.
+- **Upside:** anyone can audit and reproduce it, and there's no server to run.
+- **Weak point:** if a state website is down or changes a file layout, the weekly build
+  fails and the site keeps the last good version (the deploy step doesn't run).
+- **Trade-off vs. the original plan:** no dbt/DuckDB yet. The Python transforms are small
+  enough for now. Revisit when backfill adds many bienniums.
 
 ### D-031 · Geography only where the money really has a place (accepted)
 Operating spending is mostly statewide (Medicaid, payroll, K-12 formula). We

@@ -24,11 +24,15 @@ NS = "{http://leg.wa.gov/2012/document}"
 BLOCK_TAGS = {f"{NS}BudgetP", f"{NS}P"}
 LAWFILES = "https://lawfilesext.leg.wa.gov/biennium"
 
-# Enacted operating budgets and supplementals we know about. Extend for backfill.
+# Enacted budget bills we know about. Extend for backfill.
 # (legislative biennium, chamber, bill number, budget biennium, label)
-OPERATING_BUDGETS = [
+BUDGET_BILLS = [
     ("2025-26", "Senate", "5167", "2025-27", "2025-27 operating budget (original)"),
     ("2025-26", "Senate", "5998", "2025-27", "2026 supplemental operating budget"),
+    ("2025-26", "Senate", "5161", "2025-27", "2025-27 transportation budget (original)"),
+    ("2025-26", "Senate", "6005", "2025-27", "2026 supplemental transportation budget"),
+    ("2025-26", "Senate", "5195", "2025-27", "2025-27 capital budget (original)"),
+    ("2025-26", "Senate", "6003", "2025-27", "2026 supplemental capital budget"),
 ]
 
 # Session-law chapters of enacted operating budgets -> the biennium they fund.
@@ -37,10 +41,12 @@ CHAPTER_BIENNIUM = {
     "2023 c 475": "2023-25",  # 2023-25 operating budget (SSB 5187)
     "2024 c 376": "2023-25",  # 2024 supplemental (ESSB 5950)
     "2025 c 424": "2025-27",  # 2025-27 operating budget (ESSB 5167)
+    "2025 c 416": "2025-27",  # 2025-27 transportation budget (ESSB 5161)
+    "2025 c 414": "2025-27",  # 2025-27 capital budget (ESSB 5195)
 }
 
 ACCOUNT_RE = re.compile(
-    r"^(?P<fund>.+?)\s*[—-]\s*(?P<source>[A-Za-z/ ]+?)\s+Appropriation"
+    r"^(?P<fund>.+?)\s*[—-]\s*(?P<source>[A-Za-z/ ]+?)(?:\s+Appropriation)?"
     r"(?:\s*\(FY\s*(?P<fy>\d{4})\))?\s*$"
 )
 PROVISO_RE = re.compile(
@@ -60,13 +66,16 @@ class Appropriation:
     agency_code: str
     department: str
     account: str
-    kind: str  # appropriation | distribution | transfer
+    kind: str  # appropriation | distribution | transfer | reappropriation | capital_context
     fund: str
     fund_source: str
     fiscal_year: str
     prior_amount: int | None
     amount: int | None
     vetoed: bool
+    project: str = ""  # capital budget project number (from the printed name when present)
+    project_name: str = ""
+    xml_conflict: bool = False  # the XML's hidden project attribute disagrees with the printed text
 
 
 @dataclass
@@ -181,8 +190,18 @@ def parse_bill(xml_path: Path, bill: str, budget_biennium: str = ""
         amends = _text(header.find(f"{NS}UncodCite"))
         first_new = len(approps)
 
+        # Capital sections name each project just before its blocks.
+        project_names: dict[int, str] = {}
+        current_name = ""
+        for child in sec:
+            if child.tag == f"{NS}CapitalProjectName":
+                current_name = _text(child)
+            elif child.tag == f"{NS}Appropriations":
+                project_names[id(child)] = current_name
+
         for block in blocks:
             pending: Appropriation | None = None
+            approp_type = block.get("appropType", "")
             for ap in block.findall(f"{NS}Appropriation"):
                 account = _text(ap.find(f"{NS}AccountName"))
                 struck, current, added_only = _amounts(ap.find(f"{NS}DollarAmount"))
@@ -197,14 +216,24 @@ def parse_bill(xml_path: Path, bill: str, budget_biennium: str = ""
                     bill=bill, section=section, section_type=sec.get("type", ""),
                     amends=amends, biennium=_biennium(fy),
                     agency_code=block.get("agency", agency), department=department,
-                    account=account, kind=classify(account), fund=fund,
+                    account=account,
+                    kind={"reappropriation": "reappropriation", "biennia": "capital_context"}.get(
+                        approp_type, classify(account)),
+                    fund=fund,
                     fund_source=source, fiscal_year=fy,
                     prior_amount=(struck if struck is not None
                                   else 0 if added_only
                                   else current if sec.get("type") == "amendatory" else None),
                     amount=current if struck is None else None,
                     vetoed=vetoed,
+                    project=block.get("project", ""),
+                    project_name=project_names.get(id(block), ""),
                 )
+                printed = re.search(r"\((\d{6,})\)\s*$", row.project_name)
+                if printed and printed.group(1) != row.project:
+                    # The printed law wins over XML metadata (DECISIONS D-025).
+                    row.xml_conflict = True
+                    row.project = printed.group(1)
                 if struck is not None:
                     row.amount = 0  # struck with no replacement = removed
                 approps.append(row)
@@ -231,7 +260,7 @@ def parse_bill(xml_path: Path, bill: str, budget_biennium: str = ""
 
 
 def run(sample_rows: int = 400) -> None:
-    for biennium, chamber, number, budget_biennium, label in OPERATING_BUDGETS:
+    for biennium, chamber, number, budget_biennium, label in BUDGET_BILLS:
         url = f"{LAWFILES}/{biennium}/Xml/Bills/Session%20Laws/{chamber}/{number}-S.SL.xml"
         path = fetch(url, "budget_bills", f"{number}-S.SL.xml")
         approps, provisos = parse_bill(path, f"{number}-S.SL", budget_biennium)

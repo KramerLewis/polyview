@@ -1,0 +1,46 @@
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 14 * * 1"  # weekly, Monday 14:17 UTC: pick up new state data
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get install -y poppler-utils
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m pytest -q
+      - name: Fetch and parse public data
+        run: python -m ingest budget_bills budget_current budget_to_actual budget_to_actual_detail legislature vendor_payments
+      - name: Build site data
+        run: python -m publish
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

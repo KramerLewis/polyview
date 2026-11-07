@@ -13,7 +13,7 @@ dependencies = [
 dev = ["pytest>=8"]
 
 [tool.setuptools]
-packages = ["ingest"]
+packages = ["ingest", "publish"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

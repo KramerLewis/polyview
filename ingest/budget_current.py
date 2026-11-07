@@ -19,9 +19,11 @@ from pathlib import Path
 from .budget_bills import Appropriation, parse_bill
 from .common import RAW, SAMPLES, write_csv
 
-# (biennium, original bill, original chapter, [(supplemental bill, label), ...])
+# (biennium, budget, original bill, original chapter, [(supplemental bill, label), ...])
 BUDGETS = [
-    ("2025-27", "5167", "2025 c 424", [("5998", "2026 supplemental")]),
+    ("2025-27", "operating", "5167", "2025 c 424", [("5998", "2026 supplemental")]),
+    ("2025-27", "transportation", "5161", "2025 c 416", [("6005", "2026 supplemental")]),
+    ("2025-27", "capital", "5195", "2025 c 414", [("6003", "2026 supplemental")]),
 ]
 
 
@@ -35,7 +37,7 @@ def _norm(account: str) -> str:
 
 
 def _keyed(lines: list[Appropriation], section_of) -> list[tuple[tuple[str, str, int], Appropriation]]:
-    """Key = (section, normalized account, n-th occurrence within the section).
+    """Key = (section, capital project, normalized account, n-th occurrence).
 
     Some sections (e.g. DSHS programs) contain several appropriation blocks
     with the same account names; occurrence order tells them apart.
@@ -44,7 +46,7 @@ def _keyed(lines: list[Appropriation], section_of) -> list[tuple[tuple[str, str,
     out = []
     for a in lines:
         sec = section_of(a)
-        base = (sec, _norm(a.account))
+        base = (sec, a.project, _norm(a.account))
         out.append(((*base, seen[base]), a))
         seen[base] += 1
     return out
@@ -58,7 +60,8 @@ def overlay(biennium: str, original: list[Appropriation], chapter: str,
     for k, a in _keyed(base, lambda a: a.section):
         rows[k] = {
             "biennium": biennium, "section": a.section, "agency_code": a.agency_code,
-            "department": a.department, "account": a.account, "kind": a.kind,
+            "department": a.department, "project": a.project, "project_name": a.project_name,
+            "account": a.account, "kind": a.kind,
             "fund": a.fund, "fund_source": a.fund_source, "fiscal_year": a.fiscal_year,
             "original": a.amount or 0, "original_vetoed": a.vetoed,
         }
@@ -80,7 +83,8 @@ def overlay(biennium: str, original: list[Appropriation], chapter: str,
             if k not in rows:
                 rows[k] = {
                     "biennium": biennium, "section": section, "agency_code": a.agency_code,
-                    "department": a.department, "account": a.account, "kind": a.kind,
+                    "department": a.department, "project": a.project,
+                    "project_name": a.project_name, "account": a.account, "kind": a.kind,
                     "fund": a.fund, "fund_source": a.fund_source, "fiscal_year": a.fiscal_year,
                     "original": 0, "original_vetoed": False,
                 }
@@ -114,23 +118,36 @@ def overlay(biennium: str, original: list[Appropriation], chapter: str,
     return out, issues
 
 
-def run() -> None:
-    for biennium, orig_bill, chapter, supps in BUDGETS:
+def build_all() -> tuple[list[dict], dict[str, list[str]]]:
+    """Overlay every budget in BUDGETS; rows carry a 'budget' column."""
+    all_rows: list[dict] = []
+    all_issues: dict[str, list[str]] = {}
+    for biennium, budget, orig_bill, chapter, supps in BUDGETS:
         orig, _ = parse_bill(RAW / "budget_bills" / f"{orig_bill}-S.SL.xml", orig_bill, biennium)
         parsed = [(label, parse_bill(RAW / "budget_bills" / f"{b}-S.SL.xml", b, biennium)[0])
                   for b, label in supps]
         rows, issues = overlay(biennium, orig, chapter, parsed)
-        approps = [r for r in rows if r["kind"] == "appropriation"]
-        print(f"{biennium}: {len(rows)} lines ({Counter(r['kind'] for r in rows)}); "
-              f"agency appropriations original ${sum(r['original'] for r in approps)/1e9:,.2f}B "
-              f"-> current ${sum(r['current'] for r in approps)/1e9:,.2f}B; "
-              f"{sum(r['changed'] for r in rows)} lines changed; {len(issues)} issues")
-        for i in issues[:15]:
-            print("  ", i)
-        cols = ["biennium", "section", "agency_code", "department", "account", "kind", "fund",
-                "fund_source", "fiscal_year", "original", "original_vetoed"]
-        extra = sorted({c for r in rows for c in r} - set(cols) - {"current", "changed"})
-        write_csv(SAMPLES / f"budget_current_{biennium}.csv", rows,
-                  cols + extra + ["current", "changed"])
-        write_csv(SAMPLES / f"budget_current_{biennium}_issues.csv",
-                  [{"issue": i} for i in issues], ["issue"])
+        for r in rows:
+            r["budget"] = budget
+        all_rows.extend(rows)
+        all_issues[f"{biennium} {budget}"] = issues
+    return all_rows, all_issues
+
+
+def run() -> None:
+    rows, issues = build_all()
+    for (biennium, budget, *_rest) in BUDGETS:
+        sub = [r for r in rows if r["biennium"] == biennium and r["budget"] == budget]
+        new = [r for r in sub if r["kind"] == "appropriation"]
+        print(f"{biennium} {budget}: {len(sub)} lines ({dict(Counter(r['kind'] for r in sub))}); "
+              f"new appropriations ${sum(r['original'] for r in new)/1e9:,.2f}B original -> "
+              f"${sum(r['current'] for r in new)/1e9:,.2f}B current; "
+              f"{len(issues[f'{biennium} {budget}'])} issues")
+    cols = ["biennium", "budget", "section", "agency_code", "department", "project", "project_name",
+            "account", "kind", "fund", "fund_source", "fiscal_year", "original", "original_vetoed"]
+    extra = sorted({c for r in rows for c in r} - set(cols) - {"current", "changed"})
+    for biennium in sorted({r["biennium"] for r in rows}):
+        write_csv(SAMPLES / f"budget_current_{biennium}.csv",
+                  [r for r in rows if r["biennium"] == biennium], cols + extra + ["current", "changed"])
+    write_csv(SAMPLES / "budget_current_issues.csv",
+              [{"budget": k, "issue": i} for k, v in issues.items() for i in v], ["budget", "issue"])

@@ -67,17 +67,18 @@ CSVs with a confidence flag on each match.
 | 5. Sandbox | Interactive scenario builder | |
 | 6. Audit depth | SAO findings, anomaly flags, proviso tracking, capital reappropriation chains | |
 
-## Phase 1 to-do (from Phase 0 findings)
+## Phase 1 status
 
-1. ~~**Actual expenditures by agency × fund.**~~ Done for completed bienniums via
-   OFM's Budget-to-Actual reports (DECISIONS D-002). Program level and allotments
-   remain open. No records requests (D-005).
-2. **Supplemental overlay.** Combine the original budget with supplementals by
-   section, so each line has *original*, *supplemental change*, and *current* values.
-3. **Reconcile parsed totals** against LEAP/OFM published totals. Add this as a test.
-4. **SSRS export scraper** for Revenue by Biennium and Distributions to Local
-   Entities (the latter has an "All Legislative Districts" view).
-5. **Match roll-call names to member IDs.**
-6. **Vetoes.** Apply the governor's partial vetoes (OFM veto messages, `SeeVetoNote` in the XML).
-7. **Agency code reference table** from bill XML plus vendor payment data.
-8. **First static site:** agency pages (appropriated vs. paid), legislator vote pages.
+Done:
+- Budget vs. actual for completed bienniums (OFM reports, FY2021/23/25), with revenue by source
+- Current 2025-27 enacted budget: operating, transportation, capital, with supplementals and vetoes
+- Roll-call votes matched to legislators, classified by type
+- First static site (overview, agencies, legislators, data & methods), auto-deployed
+
+Next:
+1. Reconcile parsed bill totals with LEAP's published totals (D-017)
+2. Explain the AC fund reconciliation gap and "over budget" cases (D-012, D-026)
+3. Amendment content for amendment votes (D-022)
+4. Revenue for the current biennium (ERFC collections and forecasts)
+5. Capital projects by legislative district (Phase 2): the LEAP capital project lists carry districts
+6. Backfill: 2021-23 and 2019-21 budget bills, FY2024 report layout

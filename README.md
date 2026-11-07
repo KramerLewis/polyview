@@ -11,7 +11,8 @@ current one, and proposed or hypothetical budgets.
 
 > Status: **Phase 1 in progress.** Ingesters exist for budget bills, budget vs.
 > actual spending (OFM), legislators and votes, vendor payments, and district
-> boundaries. No website yet.
+> boundaries, plus a static site (`web/`) deployed to GitHub Pages by
+> `.github/workflows/pages.yml`.
 > See [`docs/PLAN.md`](docs/PLAN.md), [`docs/sources.md`](docs/sources.md), and
 > [`docs/DECISIONS.md`](docs/DECISIONS.md) (assumptions, trade-offs and known weak points).
 
@@ -42,6 +43,8 @@ tests/       Parser tests with real XML fixtures
 ```bash
 python -m pip install -e '.[dev]'
 python -m ingest                 # all ingesters; or e.g. `python -m ingest budget_bills`
+python -m publish                # build web/data/site.json
+python -m http.server -d web     # preview at http://localhost:8000
 python -m pytest
 ```
 
