@@ -16,14 +16,25 @@ import re
 from collections import Counter
 from pathlib import Path
 
-from .budget_bills import Appropriation, parse_bill
+from .budget_bills import BUDGET_BILLS, Appropriation, chapter_of, parse_bill
+
+BILL_BIENNIUM = {number: budget_biennium for _, _, number, budget_biennium, _ in BUDGET_BILLS}
 from .common import RAW, SAMPLES, write_csv
 
-# (biennium, budget, original bill, original chapter, [(supplemental bill, label), ...])
+# (biennium, budget, original bill, chapters in the amendment chain, [(supplemental bill, label), ...])
+# A supplemental's amendatory section cites the chapter it amends: the original
+# act or an earlier supplemental ("2024 c 376 s 101" amends sec. 101 as last
+# amended by the 2024 supplemental). Any chapter in the chain maps to that section.
 BUDGETS = [
-    ("2025-27", "operating", "5167", "2025 c 424", [("5998", "2026 supplemental")]),
-    ("2025-27", "transportation", "5161", "2025 c 416", [("6005", "2026 supplemental")]),
-    ("2025-27", "capital", "5195", "2025 c 414", [("6003", "2026 supplemental")]),
+    ("2025-27", "operating", "5167", ["2025 c 424"], [("5998", "2026 supplemental")]),
+    ("2025-27", "transportation", "5161", ["2025 c 416"], [("6005", "2026 supplemental")]),
+    ("2025-27", "capital", "5195", ["2025 c 414"], [("6003", "2026 supplemental")]),
+    ("2023-25", "operating", "5187", ["2023 c 475", "2024 c 376"],
+     [("5950", "2024 supplemental"), ("5167", "2025 supplemental")]),
+    ("2023-25", "transportation", "1125", ["2023 c 472", "2024 c 310"],
+     [("2134", "2024 supplemental"), ("5161", "2025 supplemental")]),
+    ("2023-25", "capital", "5200", ["2023 c 474", "2024 c 375"],
+     [("5949", "2024 supplemental"), ("5195", "2025 supplemental")]),
 ]
 
 
@@ -52,8 +63,13 @@ def _keyed(lines: list[Appropriation], section_of) -> list[tuple[tuple[str, str,
     return out
 
 
-def overlay(biennium: str, original: list[Appropriation], chapter: str,
-            supplementals: list[tuple[str, list[Appropriation]]]) -> tuple[list[dict], list[str]]:
+def overlay(biennium: str, original: list[Appropriation], chapters: str | list[str],
+            supplementals: list[tuple]) -> tuple[list[dict], list[str]]:
+    """supplementals: [(label, lines) or (label, lines, own_chapter), ...] in enactment order.
+
+    A supplemental's own chapter lets later bills that cite *its* section numbers
+    ("2024 c 376 s 112") be translated back to the original section.
+    """
     rows: dict[tuple, dict] = {}
     order: list[tuple] = []
     base = [a for a in original if a.biennium == biennium and a.section_type == "new"]
@@ -68,14 +84,37 @@ def overlay(biennium: str, original: list[Appropriation], chapter: str,
         order.append(k)
 
     issues: list[str] = []
-    sec_re = re.compile(rf"^{re.escape(chapter)} s (\d+)$")
-    for label, supp in supplementals:
+    if isinstance(chapters, str):
+        chapters = [chapters]
+    # (chapter, section as numbered in that chapter) -> original section key.
+    # The original act's chapter maps sections to themselves.
+    sec_map: dict[tuple[str, str], str] = {}
+    original_chapter = chapters[0]
+    cite_re = re.compile(r"^(\d{4} c \d+) s (\d+)$")
+
+    for entry in supplementals:
+        label, supp = entry[0], entry[1]
+        own_chapter = entry[2] if len(entry) > 2 else ""
         col = f"after_{label.replace(' ', '_')}"
         changed_sections = set()
 
         def section_of(a: Appropriation) -> str:
-            m = sec_re.match(a.amends)
-            return m.group(1) if m else f"{label}:{a.section}"
+            m = cite_re.match(a.amends)
+            if m:
+                chap, sec = m.group(1), m.group(2)
+                if chap == original_chapter:
+                    target = sec
+                elif (chap, sec) in sec_map:
+                    target = sec_map[(chap, sec)]
+                elif chap in chapters:
+                    target = sec  # chain chapter we have no section map for: assume same numbering
+                else:
+                    target = f"{label}:{a.section}"
+            else:
+                target = f"{label}:{a.section}"
+            if own_chapter:
+                sec_map[(own_chapter, a.section)] = target
+            return target
 
         for k, a in _keyed([a for a in supp if a.biennium == biennium], section_of):
             section = k[0]
@@ -122,11 +161,15 @@ def build_all() -> tuple[list[dict], dict[str, list[str]]]:
     """Overlay every budget in BUDGETS; rows carry a 'budget' column."""
     all_rows: list[dict] = []
     all_issues: dict[str, list[str]] = {}
-    for biennium, budget, orig_bill, chapter, supps in BUDGETS:
+    for biennium, budget, orig_bill, chapters, supps in BUDGETS:
         orig, _ = parse_bill(RAW / "budget_bills" / f"{orig_bill}-S.SL.xml", orig_bill, biennium)
-        parsed = [(label, parse_bill(RAW / "budget_bills" / f"{b}-S.SL.xml", b, biennium)[0])
+        # Parse each bill with *its own* budget biennium: a 2025 bill that amends
+        # 2023-25 sections also has new 2025-27 sections, which must not be
+        # mistaken for 2023-25 lines.
+        parsed = [(label, parse_bill(RAW / "budget_bills" / f"{b}-S.SL.xml", b, BILL_BIENNIUM[b])[0],
+                   chapter_of(RAW / "budget_bills" / f"{b}-S.SL.xml"))
                   for b, label in supps]
-        rows, issues = overlay(biennium, orig, chapter, parsed)
+        rows, issues = overlay(biennium, orig, chapters, parsed)
         for r in rows:
             r["budget"] = budget
         all_rows.extend(rows)

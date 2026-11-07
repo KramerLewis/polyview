@@ -1,52 +1,541 @@
-outlook,order,section,label,is_detail,fy1,fy2,biennium1,fy3,fy4,biennium2
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",0,NGF-O Beginning Balance,NGF-O Beginning Balance,False,2536.0,1112.0,2536.0,277.0,-802.0,277.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",1,Forecasted Revenues,Forecasted Revenues,False,36714.0,38562.0,75276.0,39408.0,40973.0,80381.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",2,Forecasted Revenues,Feb 2026 Revenue Forecast (NGF-O),True,36714.0,38562.0,75276.0,39408.0,40973.0,80381.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",3,Forecasted Revenues,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,0.0,0.0,0.0,890.0,1138.0,2027.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",4,Forecasted Revenues,Remove the 4.5% Additional Revenues Assumption,True,0.0,0.0,0.0,-890.0,-1138.0,-2027.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",5,Other Resource Changes,Other Resource Changes,False,1115.0,717.0,1832.0,-331.0,2036.0,1706.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",6,Other Resource Changes,GF-S Transfer to BSA (1%),True,-344.0,-362.0,-705.0,-373.0,-411.0,-785.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",7,Other Resource Changes,Prior Period Adjustments,True,125.0,125.0,250.0,125.0,125.0,250.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",8,Other Resource Changes,Prior Enacted Fund Transfers- 2025 Session,True,612.0,13.0,625.0,4.0,4.0,7.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",9,Other Resource Changes,Newly Enacted Transfers- 2026 Session,True,9.0,379.0,388.0,0.0,0.0,0.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",10,Other Resource Changes,BSA Transfers- 2026 Session,True,514.0,366.0,880.0,0.0,0.0,0.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",11,Other Resource Changes,Revenue Legislation,True,-5.0,16.0,11.0,-80.0,2325.0,2245.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",12,Other Resource Changes,Adjusted Capital Gains Tax Distributions,True,208.0,187.0,395.0,0.0,0.0,0.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",13,Other Resource Changes,Budget Driven Revenue,True,-3.0,-6.0,-10.0,-6.0,-5.0,-11.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",14,Other Resource Changes,Governor's Resource Vetoes,True,0.0,-2.0,-2.0,0.0,0.0,0.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",15,Total Revenues and Resources,Total Revenues and Resources,False,40365.0,40391.0,79644.0,39354.0,42208.0,82363.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",16,Enacted Appropriations,Enacted Appropriations,False,38471.0,39387.0,77858.0,39763.0,40568.0,80331.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",17,Maintenance Level Total,Maintenance Level Total,False,746.0,980.0,1727.0,1006.0,963.0,1968.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",18,Maintenance Level Total,K-12 Education,True,142.0,145.0,287.0,101.0,76.0,177.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",19,Maintenance Level Total,Low Income Health Care & Comm Behavioral Health,True,188.0,288.0,476.0,303.0,312.0,615.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",20,Maintenance Level Total,Social & Health Services,True,105.0,261.0,367.0,264.0,240.0,504.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",21,Maintenance Level Total,Higher Education,True,61.0,87.0,149.0,83.0,104.0,187.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",22,Maintenance Level Total,Corrections,True,29.0,16.0,45.0,12.0,12.0,24.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",23,Maintenance Level Total,All Other,True,35.0,31.0,65.0,104.0,111.0,215.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",24,Maintenance Level Total,"Children, Youth, and Families",True,198.0,203.0,401.0,213.0,215.0,428.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",25,Maintenance Level Total,Debt Service,True,-13.0,-51.0,-64.0,-75.0,-108.0,-183.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",26,Policy Level Total,Policy Level Total,False,502.0,118.0,620.0,-237.0,415.0,179.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",27,Policy Level Total,K-12 Education,True,0.0,-79.0,-79.0,-97.0,67.0,-30.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",28,Policy Level Total,Low Income Health Care & Comm Behavioral Health,True,45.0,-10.0,35.0,25.0,30.0,55.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",29,Policy Level Total,Social & Health Services,True,-67.0,-7.0,-74.0,24.0,47.0,71.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",30,Policy Level Total,Higher Education,True,-120.0,-104.0,-224.0,8.0,8.0,16.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",31,Policy Level Total,Corrections,True,11.0,42.0,53.0,16.0,16.0,32.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",32,Policy Level Total,All Other,True,2.0,50.0,52.0,35.0,431.0,466.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",33,Policy Level Total,"Children, Youth, and Families",True,631.0,209.0,840.0,-271.0,-275.0,-545.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",34,Policy Level Total,Debt Service,True,0.0,0.0,0.0,10.0,77.0,86.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",35,Policy Level Total,Compensation & Benefits,True,1.0,18.0,18.0,14.0,14.0,27.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",36,Policy Level Total,Governor Expenditure Vetoes and Lapsed Items,True,0.0,-1.0,-1.0,0.0,0.0,0.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",37,Reversions,Reversions,False,-466.0,-371.0,-837.0,-376.0,-392.0,-768.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",38,Revised Appropriations,Revised Appropriations,False,39253.0,40114.0,79367.0,40156.0,41554.0,81710.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",39,NGF-O Projected Ending Balance,NGF-O Projected Ending Balance,False,1112.0,277.0,277.0,-802.0,653.0,653.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",40,Budget Stabilization Account,Beginning Balance,True,1269.0,1003.0,1269.0,1031.0,1436.0,1031.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",41,Budget Stabilization Account,GF-S Transfer to BSA (1%),True,344.0,362.0,705.0,373.0,411.0,785.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",42,Budget Stabilization Account,BSA Transfers,True,-514.0,-366.0,-880.0,0.0,0.0,0.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",43,Budget Stabilization Account,Pension Surplus Holding Account,True,0.0,0.0,0.0,0.0,880.0,880.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",44,Budget Stabilization Account,Appropriations from BSA,True,-141.0,0.0,-141.0,0.0,0.0,0.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",45,Budget Stabilization Account,Interest Earnings,True,45.0,33.0,78.0,31.0,44.0,75.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",46,BSA Ending Balance,BSA Ending Balance,False,1003.0,1031.0,1031.0,1436.0,2771.0,2771.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",47,Total Reserves,Total Reserves,False,2115.0,1308.0,1308.0,634.0,3425.0,3425.0
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",48,% of Reserves to Revenues and Other Resource Changes,% of Reserves to Revenues and Other Resource Changes,False,0.055999999999999994,0.033,,0.016,0.08,
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",49,% of Reserves to Revenues and Other Resource Changes,NGF-O,True,0.028999999999999998,0.006999999999999999,,-0.021,0.015,
-"Enacted 2026 supplemental (ESSB 5998), adopted April 2026",50,% of Reserves to Revenues and Other Resource Changes,Budget Stabilization Account,True,0.027000000000000003,0.026000000000000002,,0.037000000000000005,0.064,
+outlook,order,label,is_detail,biennium,fy_a,fy_b,total
+"Enacted 2023-25 budget (ESSB 5187), June 2023",0,NGF-O Beginning Balance,False,2021-23,4161.0,6310.0,4161.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",0,NGF-O Beginning Balance,False,2023-25,4168.0,3573.0,4168.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",0,NGF-O Beginning Balance,False,2025-27,1362.0,256.0,1362.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",1,Forecasted Revenues,False,2021-23,31478.0,32668.0,64146.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",1,Forecasted Revenues,False,2023-25,32250.0,33452.0,65702.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",1,Forecasted Revenues,False,2025-27,34957.0,36530.0,71488.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",2,March 2023 Revenue Forecast (NGF-O),True,2021-23,31478.0,32668.0,64146.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",2,March 2023 Revenue Forecast (NGF-O),True,2023-25,32250.0,33452.0,65702.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",2,March 2023 Revenue Forecast (NGF-O),True,2025-27,34564.0,35778.0,70342.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2023-25,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2025-27,393.0,752.0,1145.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",4,Other Resource Changes,False,2021-23,-273.0,-1247.0,-1520.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",4,Other Resource Changes,False,2023-25,1032.0,-229.0,803.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",4,Other Resource Changes,False,2025-27,-255.0,-266.0,-522.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",5,GF-S Transfer to BSA (1%),True,2021-23,-300.0,-310.0,-610.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",5,GF-S Transfer to BSA (1%),True,2023-25,-309.0,-321.0,-630.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",5,GF-S Transfer to BSA (1%),True,2025-27,-331.0,-343.0,-674.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",6,Prior Period Adjustments,True,2021-23,60.0,104.0,164.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",6,Prior Period Adjustments,True,2023-25,20.0,20.0,41.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",6,Prior Period Adjustments,True,2025-27,20.0,20.0,41.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",7,ACFR Adjustments,True,2021-23,-24.0,220.0,196.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",7,ACFR Adjustments,True,2023-25,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",7,ACFR Adjustments,True,2025-27,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",8,Prior Enacted Fund Transfers,True,2021-23,-8.0,-1172.0,-1180.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",8,Prior Enacted Fund Transfers,True,2023-25,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",8,Prior Enacted Fund Transfers,True,2025-27,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",9,New Enacted Fund Transfers (2023 Session),True,2021-23,0.0,-96.0,-96.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",9,New Enacted Fund Transfers (2023 Session),True,2023-25,24.0,26.0,51.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",9,New Enacted Fund Transfers (2023 Session),True,2025-27,19.0,19.0,37.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",10,New Enacted WRPTA Transfer (2023 Session),True,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",10,New Enacted WRPTA Transfer (2023 Session),True,2023-25,1302.0,0.0,1302.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",10,New Enacted WRPTA Transfer (2023 Session),True,2025-27,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",11,Revenue Legislation (2023 Session),True,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",11,Revenue Legislation (2023 Session),True,2023-25,6.0,52.0,57.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",11,Revenue Legislation (2023 Session),True,2025-27,26.0,25.0,51.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",12,Budget Driven Revenue,True,2021-23,0.0,6.0,6.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",12,Budget Driven Revenue,True,2023-25,-11.0,-7.0,-18.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",12,Budget Driven Revenue,True,2025-27,11.0,13.0,24.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",13,Total Revenues and Resources,False,2021-23,35366.0,37731.0,66787.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",13,Total Revenues and Resources,False,2023-25,37450.0,36796.0,70673.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",13,Total Revenues and Resources,False,2025-27,36064.0,36521.0,72328.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",14,Enacted Appropriations,False,2021-23,29531.0,34594.0,64125.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",14,Enacted Appropriations,False,2023-25,29531.0,34594.0,64125.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",14,Enacted Appropriations,False,2025-27,34884.0,35182.0,70066.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",15,Carryforward Level Adjustments,False,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",15,Carryforward Level Adjustments,False,2023-25,1830.0,-3336.0,-1506.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",15,Carryforward Level Adjustments,False,2025-27,-3346.0,-3357.0,-6703.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",16,Maintenance Level Total,False,2021-23,0.0,401.0,401.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",16,Maintenance Level Total,False,2023-25,844.0,1597.0,2442.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",16,Maintenance Level Total,False,2025-27,2067.0,2383.0,4451.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",17,K-12 Education,True,2021-23,0.0,26.0,26.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",17,K-12 Education,True,2023-25,393.0,829.0,1223.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",17,K-12 Education,True,2025-27,1056.0,1249.0,2305.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",18,Low Income Health Care & Comm Behavioral Health,True,2021-23,0.0,422.0,422.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",18,Low Income Health Care & Comm Behavioral Health,True,2023-25,111.0,27.0,138.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",18,Low Income Health Care & Comm Behavioral Health,True,2025-27,28.0,33.0,61.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",19,Social & Health Services,True,2021-23,0.0,-7.0,-7.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",19,Social & Health Services,True,2023-25,84.0,258.0,342.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",19,Social & Health Services,True,2025-27,254.0,261.0,515.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",20,Higher Education,True,2021-23,0.0,-13.0,-13.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",20,Higher Education,True,2023-25,24.0,66.0,90.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",20,Higher Education,True,2025-27,80.0,100.0,180.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",21,Corrections,True,2021-23,0.0,5.0,5.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",21,Corrections,True,2023-25,29.0,39.0,67.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",21,Corrections,True,2025-27,37.0,37.0,74.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",22,All Other,True,2021-23,0.0,-34.0,-34.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",22,All Other,True,2023-25,154.0,225.0,379.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",22,All Other,True,2025-27,280.0,395.0,675.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",23,Debt Service,True,2021-23,0.0,2.0,2.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",23,Debt Service,True,2023-25,49.0,154.0,203.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",23,Debt Service,True,2025-27,187.0,161.0,349.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",24,Hospital Safety Net,True,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",24,Hospital Safety Net,True,2023-25,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",24,Hospital Safety Net,True,2025-27,146.0,146.0,292.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",25,Policy Level Total,False,2021-23,0.0,-1179.0,-1179.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",25,Policy Level Total,False,2023-25,1967.0,2777.0,4744.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",25,Policy Level Total,False,2025-27,2393.0,2474.0,4867.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",26,K-12 Education,True,2021-23,0.0,-27.0,-27.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",26,K-12 Education,True,2023-25,319.0,715.0,1035.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",26,K-12 Education,True,2025-27,796.0,816.0,1612.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",27,Low Income Health Care & Comm Behavioral Health,True,2021-23,0.0,29.0,29.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",27,Low Income Health Care & Comm Behavioral Health,True,2023-25,214.0,296.0,510.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",27,Low Income Health Care & Comm Behavioral Health,True,2025-27,314.0,325.0,639.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",28,Social & Health Services,True,2021-23,0.0,-19.0,-19.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",28,Social & Health Services,True,2023-25,429.0,586.0,1015.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",28,Social & Health Services,True,2025-27,587.0,573.0,1160.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",29,Higher Education,True,2021-23,0.0,1.0,1.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",29,Higher Education,True,2023-25,193.0,148.0,341.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",29,Higher Education,True,2025-27,128.0,130.0,257.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",30,Corrections,True,2021-23,0.0,3.0,3.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",30,Corrections,True,2023-25,32.0,28.0,61.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",30,Corrections,True,2025-27,27.0,26.0,53.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",31,All Other,True,2021-23,0.0,26.0,26.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",31,All Other,True,2023-25,888.0,980.0,1868.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",31,All Other,True,2025-27,628.0,622.0,1250.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",32,Debt Service,True,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",32,Debt Service,True,2023-25,6.0,54.0,60.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",32,Debt Service,True,2025-27,151.0,283.0,434.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",33,Pensions,True,2021-23,0.0,-550.0,-550.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",33,Pensions,True,2023-25,-322.0,-442.0,-764.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",33,Pensions,True,2025-27,-506.0,-567.0,-1073.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",34,FMAP Adjustments,True,2021-23,0.0,-653.0,-653.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",34,FMAP Adjustments,True,2023-25,-107.0,0.0,-107.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",34,FMAP Adjustments,True,2025-27,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",35,Hospital Safety Net,True,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",35,Hospital Safety Net,True,2023-25,-80.0,-80.0,-160.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",35,Hospital Safety Net,True,2025-27,-226.0,-226.0,-452.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",36,Compensation & Benefits,True,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",36,Compensation & Benefits,True,2023-25,393.0,491.0,884.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",36,Compensation & Benefits,True,2025-27,488.0,488.0,976.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",37,Governor Vetoes and Lapsed Items,True,2021-23,0.0,11.0,11.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",37,Governor Vetoes and Lapsed Items,True,2023-25,2.0,1.0,3.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",37,Governor Vetoes and Lapsed Items,True,2025-27,7.0,3.0,10.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",38,Reversions,False,2021-23,-475.0,-253.0,-728.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",38,Reversions,False,2023-25,-296.0,-198.0,-493.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",38,Reversions,False,2025-27,-191.0,-185.0,-376.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",39,Revised Appropriations,False,2021-23,29056.0,33563.0,62618.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",39,Revised Appropriations,False,2023-25,33877.0,35434.0,69311.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",39,Revised Appropriations,False,2025-27,35807.0,36498.0,72305.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",40,NGF-O Projected Ending Balance,False,2021-23,6310.0,4168.0,4168.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",40,NGF-O Projected Ending Balance,False,2023-25,3573.0,1362.0,1362.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",40,NGF-O Projected Ending Balance,False,2025-27,256.0,23.0,23.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",41,NGF-O Beginning Balance,True,2021-23,19.0,335.0,19.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",41,NGF-O Beginning Balance,True,2023-25,652.0,984.0,652.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",41,NGF-O Beginning Balance,True,2025-27,1345.0,1727.0,1345.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",42,GF-S Transfer to BSA (1%),True,2021-23,300.0,310.0,610.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",42,GF-S Transfer to BSA (1%),True,2023-25,309.0,321.0,630.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",42,GF-S Transfer to BSA (1%),True,2025-27,331.0,343.0,674.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",43,BSA Transfers,True,2021-23,5.0,0.0,5.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",43,BSA Transfers,True,2023-25,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",43,BSA Transfers,True,2025-27,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",44,Prior Period Adjustments,True,2021-23,10.0,0.0,10.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",44,Prior Period Adjustments,True,2023-25,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",44,Prior Period Adjustments,True,2025-27,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",45,Interest Earnings,True,2021-23,0.0,7.0,7.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",45,Interest Earnings,True,2023-25,22.0,40.0,62.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",45,Interest Earnings,True,2025-27,51.0,61.0,112.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",46,BSA Ending Balance,False,2021-23,335.0,652.0,652.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",46,BSA Ending Balance,False,2023-25,984.0,1345.0,1345.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",46,BSA Ending Balance,False,2025-27,1727.0,2131.0,2131.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",47,NGF-O Beginning Balance,True,2021-23,1000.0,1000.0,1000.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",47,NGF-O Beginning Balance,True,2023-25,2100.0,798.0,2100.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",47,NGF-O Beginning Balance,True,2025-27,798.0,798.0,798.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",48,GF-S Transfer to WRPTA,True,2021-23,0.0,1100.0,1100.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",48,GF-S Transfer to WRPTA,True,2023-25,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",48,GF-S Transfer to WRPTA,True,2025-27,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",49,Transfer Balance from WRPTA to GF-S,True,2021-23,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",49,Transfer Balance from WRPTA to GF-S,True,2023-25,-1302.0,0.0,-1302.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",49,Transfer Balance from WRPTA to GF-S,True,2025-27,0.0,0.0,0.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",50,WRPTA Ending Balance,False,2021-23,1000.0,2100.0,2100.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",50,WRPTA Ending Balance,False,2023-25,798.0,798.0,798.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",50,WRPTA Ending Balance,False,2025-27,798.0,798.0,798.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",51,Total Reserves,False,2021-23,7644.0,6920.0,6920.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",51,Total Reserves,False,2023-25,5355.0,3504.0,3504.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",51,Total Reserves,False,2025-27,2781.0,2952.0,2952.0
+"Enacted 2023-25 budget (ESSB 5187), June 2023",52,% of Reserves to Revenues and Other Resources,False,2021-23,0.245,0.22,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",52,% of Reserves to Revenues and Other Resources,False,2023-25,0.161,0.105,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",52,% of Reserves to Revenues and Other Resources,False,2025-27,0.08,0.081,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",53,NGF-O,True,2021-23,0.20199999999999999,0.133,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",53,NGF-O,True,2023-25,0.107,0.040999999999999995,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",53,NGF-O,True,2025-27,0.006999999999999999,0.001,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",54,Budget Stabilization Account,True,2021-23,0.011000000000000001,0.021,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",54,Budget Stabilization Account,True,2023-25,0.03,0.04,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",54,Budget Stabilization Account,True,2025-27,0.05,0.059000000000000004,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",55,Washington Rescue Plan Transition Account,True,2021-23,0.032,0.067,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",55,Washington Rescue Plan Transition Account,True,2023-25,0.024,0.024,
+"Enacted 2023-25 budget (ESSB 5187), June 2023",55,Washington Rescue Plan Transition Account,True,2025-27,0.023,0.022000000000000002,
+"Enacted 2024 supplemental (ESSB 5950), 2024",0,NGF-O Beginning Balance,False,2023-25,5287.0,4868.0,5287.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",0,NGF-O Beginning Balance,False,2025-27,2368.0,808.0,2368.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",1,Forecasted Revenues,False,2023-25,32919.0,34086.0,67005.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",1,Forecasted Revenues,False,2025-27,35620.0,37223.0,72842.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",2,February 2024 Revenue Forecast (NGF-O),True,2023-25,32919.0,34086.0,67005.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",2,February 2024 Revenue Forecast (NGF-O),True,2025-27,35174.0,36547.0,71721.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2023-25,0.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2025-27,445.0,676.0,1121.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",4,Other Resource Changes,False,2023-25,1048.0,491.0,1538.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",4,Other Resource Changes,False,2025-27,-320.0,-314.0,-634.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",5,Budget Driven Revenue,True,2023-25,0.0,-1.0,-1.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",5,Budget Driven Revenue,True,2025-27,18.0,21.0,39.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",6,GF-S Transfer to BSA (1%),True,2023-25,-314.0,-325.0,-640.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",6,GF-S Transfer to BSA (1%),True,2025-27,-336.0,-349.0,-685.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",7,Prior Period Adjustments,True,2023-25,82.0,37.0,119.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",7,Prior Period Adjustments,True,2025-27,20.0,20.0,41.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",8,Revenue Legislation (2024 Session),True,2023-25,-2.0,-31.0,-33.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",8,Revenue Legislation (2024 Session),True,2025-27,-41.0,-35.0,-76.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",9,New Enacted WRPTA Transfer (2024 Session),True,2023-25,0.0,798.0,798.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",9,New Enacted WRPTA Transfer (2024 Session),True,2025-27,0.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",10,New Enacted Fund Transfers (2024 Session),True,2023-25,-44.0,-14.0,-58.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",10,New Enacted Fund Transfers (2024 Session),True,2025-27,0.0,10.0,10.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",11,Prior Enacted Fund Transfers,True,2023-25,1326.0,26.0,1353.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",11,Prior Enacted Fund Transfers,True,2025-27,19.0,19.0,37.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",12,Total Revenues and Resources,False,2023-25,39254.0,39444.0,73831.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",12,Total Revenues and Resources,False,2025-27,37668.0,37716.0,74576.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",13,Enacted Appropriations,False,2023-25,34173.0,35632.0,69804.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",13,Enacted Appropriations,False,2025-27,35998.0,36683.0,72681.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",14,Maintenance Level Total,False,2023-25,569.0,538.0,1107.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",14,Maintenance Level Total,False,2025-27,550.0,613.0,1163.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",15,K-12 Education,True,2023-25,87.0,104.0,191.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",15,K-12 Education,True,2025-27,108.0,119.0,228.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",16,Low Income Health Care & Comm Behavioral Health,True,2023-25,198.0,193.0,391.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",16,Low Income Health Care & Comm Behavioral Health,True,2025-27,199.0,205.0,404.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",17,Social & Health Services,True,2023-25,171.0,180.0,351.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",17,Social & Health Services,True,2025-27,184.0,190.0,375.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",18,Higher Education,True,2023-25,36.0,60.0,96.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",18,Higher Education,True,2025-27,60.0,74.0,134.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",19,Corrections,True,2023-25,24.0,35.0,59.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",19,Corrections,True,2025-27,25.0,26.0,51.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",20,All Other,True,2023-25,71.0,44.0,115.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",20,All Other,True,2025-27,24.0,14.0,38.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",21,Debt Service,True,2023-25,-18.0,-78.0,-96.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",21,Debt Service,True,2025-27,-51.0,-15.0,-66.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",22,Policy Level Total,False,2023-25,-72.0,1105.0,1033.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",22,Policy Level Total,False,2025-27,502.0,503.0,1005.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",23,K-12 Education,True,2023-25,100.0,236.0,336.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",23,K-12 Education,True,2025-27,211.0,213.0,425.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",24,Low Income Health Care & Comm Behavioral Health,True,2023-25,-15.0,241.0,226.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",24,Low Income Health Care & Comm Behavioral Health,True,2025-27,136.0,138.0,274.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",25,Social & Health Services,True,2023-25,68.0,184.0,251.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",25,Social & Health Services,True,2025-27,128.0,138.0,265.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",26,Higher Education,True,2023-25,8.0,113.0,121.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",26,Higher Education,True,2025-27,34.0,36.0,70.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",27,Corrections,True,2023-25,11.0,38.0,49.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",27,Corrections,True,2025-27,21.0,22.0,43.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",28,All Other,True,2023-25,16.0,300.0,316.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",28,All Other,True,2025-27,-22.0,-37.0,-59.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",29,Compensation & Benefits,True,2023-25,3.0,-4.0,-1.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",29,Compensation & Benefits,True,2025-27,-7.0,-6.0,-13.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",30,Federal Funds Shift,True,2023-25,-262.0,0.0,-262.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",30,Federal Funds Shift,True,2025-27,0.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",31,Governor Vetoes and Lapsed Items,True,2023-25,0.0,-2.0,-2.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",31,Governor Vetoes and Lapsed Items,True,2025-27,0.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",32,Reversions,False,2023-25,-284.0,-199.0,-483.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",32,Reversions,False,2025-27,-189.0,-184.0,-373.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",33,Revised Appropriations,False,2023-25,34386.0,37076.0,71462.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",33,Revised Appropriations,False,2025-27,36860.0,37616.0,74476.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",34,NGF-O Projected Ending Balance,False,2023-25,4868.0,2368.0,2368.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",34,NGF-O Projected Ending Balance,False,2025-27,808.0,100.0,100.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",35,NGF-O Beginning Balance,True,2023-25,652.0,969.0,652.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",35,NGF-O Beginning Balance,True,2025-27,1328.0,1707.0,1328.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",36,GF-S Transfer to BSA (1%),True,2023-25,314.0,325.0,640.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",36,GF-S Transfer to BSA (1%),True,2025-27,336.0,349.0,685.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",37,Appropriations from BSA,True,2023-25,-21.0,0.0,-21.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",37,Appropriations from BSA,True,2025-27,0.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",38,Interest Earnings,True,2023-25,23.0,34.0,58.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",38,Interest Earnings,True,2025-27,43.0,50.0,93.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",39,BSA Ending Balance,False,2023-25,969.0,1328.0,1328.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",39,BSA Ending Balance,False,2025-27,1707.0,2106.0,2106.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",40,NGF-O Beginning Balance,True,2023-25,2100.0,798.0,2100.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",40,NGF-O Beginning Balance,True,2025-27,0.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",41,Transfer Balance from WRPTA to GF-S,True,2023-25,-1302.0,-798.0,-2100.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",41,Transfer Balance from WRPTA to GF-S,True,2025-27,0.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",42,Washington Rescue Plan Transition Account Ending Balance,False,2023-25,798.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",42,Washington Rescue Plan Transition Account Ending Balance,False,2025-27,0.0,0.0,0.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",43,Total Reserves,False,2023-25,6635.0,3697.0,3697.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",43,Total Reserves,False,2025-27,2515.0,2206.0,2206.0
+"Enacted 2024 supplemental (ESSB 5950), 2024",44,% of Reserves to Revenues and Other Resources,False,2023-25,0.195,0.107,
+"Enacted 2024 supplemental (ESSB 5950), 2024",44,% of Reserves to Revenues and Other Resources,False,2025-27,0.071,0.06,
+"Enacted 2024 supplemental (ESSB 5950), 2024",45,NGF-O,True,2023-25,0.14300000000000002,0.068,
+"Enacted 2024 supplemental (ESSB 5950), 2024",45,NGF-O,True,2025-27,0.023,0.003,
+"Enacted 2024 supplemental (ESSB 5950), 2024",46,Budget Stabilization Account,True,2023-25,0.028999999999999998,0.038,
+"Enacted 2024 supplemental (ESSB 5950), 2024",46,Budget Stabilization Account,True,2025-27,0.048,0.057,
+"Enacted 2024 supplemental (ESSB 5950), 2024",47,Washington Rescue Plan Transition Account,True,2023-25,0.023,0.0,
+"Enacted 2024 supplemental (ESSB 5950), 2024",47,Washington Rescue Plan Transition Account,True,2025-27,0.0,0.0,
+"Enacted 2025-27 budget (ESSB 5167), 2025",0,NGF-O Beginning Balance,False,2023-25,5287.0,4884.0,5287.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",0,NGF-O Beginning Balance,False,2025-27,1934.0,590.0,1934.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",0,NGF-O Beginning Balance,False,2027-29,80.0,-56.0,80.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",1,Forecasted Revenues,False,2023-25,32672.0,33773.0,66445.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",1,Forecasted Revenues,False,2025-27,34724.0,36228.0,70952.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",1,Forecasted Revenues,False,2027-29,37567.0,38858.0,76425.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",2,Mar 2025 Revenue Forecast (NGF-O),True,2023-25,32672.0,33773.0,66445.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",2,Mar 2025 Revenue Forecast (NGF-O),True,2025-27,34724.0,36228.0,70952.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",2,Mar 2025 Revenue Forecast (NGF-O),True,2027-29,37567.0,38858.0,76425.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2027-29,291.0,703.0,995.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",4,Remove the 4.5% Additional Revenues Assumption,True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",4,Remove the 4.5% Additional Revenues Assumption,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",4,Remove the 4.5% Additional Revenues Assumption,True,2027-29,-291.0,-703.0,-995.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",5,Other Resource Changes,False,2023-25,1176.0,1008.0,2184.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",5,Other Resource Changes,False,2025-27,1978.0,2310.0,4288.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",5,Other Resource Changes,False,2027-29,1716.0,1795.0,3511.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",6,Budget Driven Revenue,True,2023-25,0.0,14.0,14.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",6,Budget Driven Revenue,True,2025-27,44.0,-6.0,38.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",6,Budget Driven Revenue,True,2027-29,-3.0,-2.0,-5.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",7,GF-S Transfer to BSA (1%),True,2023-25,-314.0,-325.0,-639.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",7,GF-S Transfer to BSA (1%),True,2025-27,-344.0,-365.0,-709.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",7,GF-S Transfer to BSA (1%),True,2027-29,-376.0,-389.0,-765.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",8,Prior Period Adjustments,True,2023-25,157.0,193.0,350.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",8,Prior Period Adjustments,True,2025-27,58.0,20.0,79.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",8,Prior Period Adjustments,True,2027-29,20.0,20.0,41.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",9,ACFR Adjustments,True,2023-25,51.0,0.0,51.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",9,ACFR Adjustments,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",9,ACFR Adjustments,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",10,Revenue Package Legislation (2025 Session),True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",10,Revenue Package Legislation (2025 Session),True,2025-27,1611.0,2646.0,4257.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",10,Revenue Package Legislation (2025 Session),True,2027-29,2136.0,2240.0,4377.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",11,Other Revenue Legislation (2025 Session),True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",11,Other Revenue Legislation (2025 Session),True,2025-27,24.0,70.0,93.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",11,Other Revenue Legislation (2025 Session),True,2027-29,8.0,-2.0,6.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",12,New Enacted Fund Transfers (2025 Session),True,2023-25,0.0,43.0,43.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",12,New Enacted Fund Transfers (2025 Session),True,2025-27,614.0,15.0,629.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",12,New Enacted Fund Transfers (2025 Session),True,2027-29,4.0,4.0,7.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",13,Proposed WRPTA Transfer,True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",13,Proposed WRPTA Transfer,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",13,Proposed WRPTA Transfer,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",14,Governor Vetoes,True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",14,Governor Vetoes,True,2025-27,-28.0,-71.0,-99.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",14,Governor Vetoes,True,2027-29,-74.0,-77.0,-150.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",15,Other Revenue Adjustments,True,2023-25,0.0,271.0,271.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",15,Other Revenue Adjustments,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",15,Other Revenue Adjustments,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",16,Prior Enacted Fund Transfers,True,2023-25,1282.0,811.0,2093.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",16,Prior Enacted Fund Transfers,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",16,Prior Enacted Fund Transfers,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",17,Total Revenues and Resources,False,2023-25,39135.0,39665.0,73916.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",17,Total Revenues and Resources,False,2025-27,38636.0,39127.0,77174.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",17,Total Revenues and Resources,False,2027-29,39363.0,40597.0,80016.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",18,Enacted Appropriations,False,2023-25,34670.0,37275.0,71945.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",18,Enacted Appropriations,False,2025-27,34670.0,37275.0,71945.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",18,Enacted Appropriations,False,2027-29,37680.0,38096.0,75776.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",19,Carryforward Level Adjustments,False,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",19,Carryforward Level Adjustments,False,2025-27,1560.0,-1081.0,479.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",19,Carryforward Level Adjustments,False,2027-29,-1099.0,-1117.0,-2216.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",20,Maintenance Level Total,False,2023-25,0.0,855.0,855.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",20,Maintenance Level Total,False,2025-27,1782.0,2628.0,4409.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",20,Maintenance Level Total,False,2027-29,2991.0,3315.0,6306.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",21,K-12 Education,True,2023-25,0.0,145.0,145.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",21,K-12 Education,True,2025-27,385.0,667.0,1052.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",21,K-12 Education,True,2027-29,924.0,1159.0,2084.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",22,Low Income Health Care & Comm Behavioral Health,True,2023-25,0.0,301.0,301.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",22,Low Income Health Care & Comm Behavioral Health,True,2025-27,384.0,359.0,744.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",22,Low Income Health Care & Comm Behavioral Health,True,2027-29,369.0,380.0,750.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",23,Social & Health Services,True,2023-25,0.0,530.0,530.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",23,Social & Health Services,True,2025-27,341.0,588.0,929.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",23,Social & Health Services,True,2027-29,625.0,640.0,1265.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",24,Higher Education,True,2023-25,0.0,37.0,37.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",24,Higher Education,True,2025-27,86.0,113.0,199.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",24,Higher Education,True,2027-29,138.0,165.0,303.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",25,Corrections,True,2023-25,0.0,-308.0,-308.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",25,Corrections,True,2025-27,28.0,13.0,41.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",25,Corrections,True,2027-29,10.0,10.0,20.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",26,All Other,True,2023-25,0.0,23.0,23.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",26,All Other,True,2025-27,58.0,71.0,129.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",26,All Other,True,2027-29,63.0,72.0,135.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",27,Debt Service,True,2023-25,0.0,-5.0,-5.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",27,Debt Service,True,2025-27,45.0,165.0,210.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",27,Debt Service,True,2027-29,207.0,227.0,433.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",28,"Children, Youth, and Families",True,2023-25,0.0,131.0,131.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",28,"Children, Youth, and Families",True,2025-27,454.0,650.0,1104.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",28,"Children, Youth, and Families",True,2027-29,655.0,662.0,1316.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",29,Policy Level Total,False,2023-25,0.0,-57.0,-57.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",29,Policy Level Total,False,2025-27,459.0,566.0,1024.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",29,Policy Level Total,False,2027-29,190.0,274.0,464.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",30,K-12 Education,True,2023-25,0.0,6.0,6.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",30,K-12 Education,True,2025-27,242.0,440.0,682.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",30,K-12 Education,True,2027-29,410.0,360.0,770.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",31,Low Income Health Care & Comm Behavioral Health,True,2023-25,0.0,31.0,31.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",31,Low Income Health Care & Comm Behavioral Health,True,2025-27,17.0,-35.0,-18.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",31,Low Income Health Care & Comm Behavioral Health,True,2027-29,-61.0,-80.0,-142.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",32,Social & Health Services,True,2023-25,0.0,-121.0,-121.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",32,Social & Health Services,True,2025-27,10.0,-7.0,3.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",32,Social & Health Services,True,2027-29,-34.0,-2.0,-36.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",33,Higher Education,True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",33,Higher Education,True,2025-27,-40.0,-93.0,-133.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",33,Higher Education,True,2027-29,-119.0,-120.0,-239.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",34,Corrections,True,2023-25,0.0,5.0,5.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",34,Corrections,True,2025-27,0.0,-5.0,-5.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",34,Corrections,True,2027-29,-11.0,-12.0,-23.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",35,All Other,True,2023-25,0.0,-23.0,-23.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",35,All Other,True,2025-27,196.0,40.0,236.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",35,All Other,True,2027-29,-150.0,-152.0,-301.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",36,Debt Service,True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",36,Debt Service,True,2025-27,8.0,65.0,73.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",36,Debt Service,True,2027-29,177.0,310.0,487.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",37,"Children, Youth, and Families",True,2023-25,0.0,-30.0,-30.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",37,"Children, Youth, and Families",True,2025-27,-119.0,-156.0,-276.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",37,"Children, Youth, and Families",True,2027-29,-227.0,-229.0,-455.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",38,Compensation & Benefits,True,2023-25,0.0,29.0,29.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",38,Compensation & Benefits,True,2025-27,405.0,562.0,967.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",38,Compensation & Benefits,True,2027-29,475.0,466.0,941.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",39,Pensions,True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",39,Pensions,True,2025-27,-251.0,-241.0,-491.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",39,Pensions,True,2027-29,-266.0,-263.0,-530.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",40,Governor Vetoes and Lapsed Items,True,2023-25,0.0,47.0,47.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",40,Governor Vetoes and Lapsed Items,True,2025-27,-9.0,-6.0,-14.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",40,Governor Vetoes and Lapsed Items,True,2027-29,-4.0,-4.0,-8.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",41,Reversions,False,2023-25,-420.0,-342.0,-762.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",41,Reversions,False,2025-27,-424.0,-340.0,-764.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",41,Reversions,False,2027-29,-344.0,-352.0,-696.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",42,Revised Appropriations,False,2023-25,34251.0,37731.0,71982.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",42,Revised Appropriations,False,2025-27,38047.0,39047.0,77094.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",42,Revised Appropriations,False,2027-29,39419.0,40216.0,79635.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",43,NGF-O Projected Ending Balance,False,2023-25,4884.0,1934.0,1934.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",43,NGF-O Projected Ending Balance,False,2025-27,590.0,80.0,80.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",43,NGF-O Projected Ending Balance,False,2027-29,-56.0,381.0,381.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",44,NGF-O Beginning Balance,True,2023-25,652.0,970.0,652.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",44,NGF-O Beginning Balance,True,2025-27,1252.0,1639.0,1252.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",44,NGF-O Beginning Balance,True,2027-29,2061.0,2499.0,2061.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",45,GF-S Transfer to BSA (1%),True,2023-25,314.0,325.0,639.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",45,GF-S Transfer to BSA (1%),True,2025-27,344.0,365.0,709.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",45,GF-S Transfer to BSA (1%),True,2027-29,376.0,389.0,765.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",46,Appropriations from BSA,True,2023-25,-21.0,-78.0,-99.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",46,Appropriations from BSA,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",46,Appropriations from BSA,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",47,Actual Reversions,True,2023-25,1.0,0.0,1.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",47,Actual Reversions,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",47,Actual Reversions,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",48,Prior Period Adjustments,True,2023-25,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",48,Prior Period Adjustments,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",48,Prior Period Adjustments,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",49,Interest Earnings,True,2023-25,24.0,35.0,59.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",49,Interest Earnings,True,2025-27,43.0,56.0,99.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",49,Interest Earnings,True,2027-29,63.0,76.0,139.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",50,BSA Ending Balance,False,2023-25,970.0,1252.0,1252.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",50,BSA Ending Balance,False,2025-27,1639.0,2061.0,2061.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",50,BSA Ending Balance,False,2027-29,2499.0,2964.0,2964.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",51,NGF-O Beginning Balance,True,2023-25,2100.0,798.0,2100.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",51,NGF-O Beginning Balance,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",51,NGF-O Beginning Balance,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",52,Transfer Balance from WRPTA to GF-S,True,2023-25,-1302.0,-798.0,-2100.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",52,Transfer Balance from WRPTA to GF-S,True,2025-27,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",52,Transfer Balance from WRPTA to GF-S,True,2027-29,0.0,0.0,0.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",53,Total Reserves,False,2023-25,6653.0,3186.0,3186.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",53,Total Reserves,False,2025-27,2229.0,2141.0,2141.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",53,Total Reserves,False,2027-29,2443.0,3345.0,3345.0
+"Enacted 2025-27 budget (ESSB 5167), 2025",54,% of Reserves to Revenues and Other Resources,False,2023-25,0.19699999999999998,0.092,
+"Enacted 2025-27 budget (ESSB 5167), 2025",54,% of Reserves to Revenues and Other Resources,False,2025-27,0.061,0.055999999999999994,
+"Enacted 2025-27 budget (ESSB 5167), 2025",54,% of Reserves to Revenues and Other Resources,False,2027-29,0.062,0.08199999999999999,
+"Enacted 2025-27 budget (ESSB 5167), 2025",55,NGF-O,True,2023-25,0.14400000000000002,0.055999999999999994,
+"Enacted 2025-27 budget (ESSB 5167), 2025",55,NGF-O,True,2025-27,0.016,0.002,
+"Enacted 2025-27 budget (ESSB 5167), 2025",55,NGF-O,True,2027-29,-0.001,0.009000000000000001,
+"Enacted 2025-27 budget (ESSB 5167), 2025",56,Budget Stabilization Account,True,2023-25,0.028999999999999998,0.036000000000000004,
+"Enacted 2025-27 budget (ESSB 5167), 2025",56,Budget Stabilization Account,True,2025-27,0.045,0.053,
+"Enacted 2025-27 budget (ESSB 5167), 2025",56,Budget Stabilization Account,True,2027-29,0.064,0.073,
+"Enacted 2025-27 budget (ESSB 5167), 2025",57,Washington Rescue Plan Transition Account,True,2023-25,0.024,0.0,
+"Enacted 2025-27 budget (ESSB 5167), 2025",57,Washington Rescue Plan Transition Account,True,2025-27,0.0,0.0,
+"Enacted 2025-27 budget (ESSB 5167), 2025",57,Washington Rescue Plan Transition Account,True,2027-29,0.0,0.0,
+"Enacted 2026 supplemental (ESSB 5998), April 2026",0,NGF-O Beginning Balance,False,2025-27,2536.0,1112.0,2536.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",0,NGF-O Beginning Balance,False,2027-29,277.0,-802.0,277.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",1,Forecasted Revenues,False,2025-27,36714.0,38562.0,75276.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",1,Forecasted Revenues,False,2027-29,39408.0,40973.0,80381.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",2,Feb 2026 Revenue Forecast (NGF-O),True,2025-27,36714.0,38562.0,75276.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",2,Feb 2026 Revenue Forecast (NGF-O),True,2027-29,39408.0,40973.0,80381.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2025-27,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",3,Addtl Revenue Based on 4.5% Growth Rate Assumption,True,2027-29,890.0,1138.0,2027.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",4,Remove the 4.5% Additional Revenues Assumption,True,2025-27,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",4,Remove the 4.5% Additional Revenues Assumption,True,2027-29,-890.0,-1138.0,-2027.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",5,Other Resource Changes,False,2025-27,1115.0,717.0,1832.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",5,Other Resource Changes,False,2027-29,-331.0,2036.0,1706.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",6,GF-S Transfer to BSA (1%),True,2025-27,-344.0,-362.0,-705.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",6,GF-S Transfer to BSA (1%),True,2027-29,-373.0,-411.0,-785.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",7,Prior Period Adjustments,True,2025-27,125.0,125.0,250.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",7,Prior Period Adjustments,True,2027-29,125.0,125.0,250.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",8,Prior Enacted Fund Transfers- 2025 Session,True,2025-27,612.0,13.0,625.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",8,Prior Enacted Fund Transfers- 2025 Session,True,2027-29,4.0,4.0,7.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",9,Newly Enacted Transfers- 2026 Session,True,2025-27,9.0,379.0,388.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",9,Newly Enacted Transfers- 2026 Session,True,2027-29,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",10,BSA Transfers- 2026 Session,True,2025-27,514.0,366.0,880.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",10,BSA Transfers- 2026 Session,True,2027-29,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",11,Revenue Legislation,True,2025-27,-5.0,16.0,11.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",11,Revenue Legislation,True,2027-29,-80.0,2325.0,2245.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",12,Adjusted Capital Gains Tax Distributions,True,2025-27,208.0,187.0,395.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",12,Adjusted Capital Gains Tax Distributions,True,2027-29,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",13,Budget Driven Revenue,True,2025-27,-3.0,-6.0,-10.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",13,Budget Driven Revenue,True,2027-29,-6.0,-5.0,-11.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",14,Governor's Resource Vetoes,True,2025-27,0.0,-2.0,-2.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",14,Governor's Resource Vetoes,True,2027-29,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",15,Total Revenues and Resources,False,2025-27,40365.0,40391.0,79644.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",15,Total Revenues and Resources,False,2027-29,39354.0,42208.0,82363.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",16,Enacted Appropriations,False,2025-27,38471.0,39387.0,77858.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",16,Enacted Appropriations,False,2027-29,39763.0,40568.0,80331.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",17,Maintenance Level Total,False,2025-27,746.0,980.0,1727.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",17,Maintenance Level Total,False,2027-29,1006.0,963.0,1968.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",18,K-12 Education,True,2025-27,142.0,145.0,287.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",18,K-12 Education,True,2027-29,101.0,76.0,177.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",19,Low Income Health Care & Comm Behavioral Health,True,2025-27,188.0,288.0,476.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",19,Low Income Health Care & Comm Behavioral Health,True,2027-29,303.0,312.0,615.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",20,Social & Health Services,True,2025-27,105.0,261.0,367.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",20,Social & Health Services,True,2027-29,264.0,240.0,504.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",21,Higher Education,True,2025-27,61.0,87.0,149.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",21,Higher Education,True,2027-29,83.0,104.0,187.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",22,Corrections,True,2025-27,29.0,16.0,45.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",22,Corrections,True,2027-29,12.0,12.0,24.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",23,All Other,True,2025-27,35.0,31.0,65.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",23,All Other,True,2027-29,104.0,111.0,215.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",24,"Children, Youth, and Families",True,2025-27,198.0,203.0,401.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",24,"Children, Youth, and Families",True,2027-29,213.0,215.0,428.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",25,Debt Service,True,2025-27,-13.0,-51.0,-64.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",25,Debt Service,True,2027-29,-75.0,-108.0,-183.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",26,Policy Level Total,False,2025-27,502.0,118.0,620.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",26,Policy Level Total,False,2027-29,-237.0,415.0,179.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",27,K-12 Education,True,2025-27,0.0,-79.0,-79.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",27,K-12 Education,True,2027-29,-97.0,67.0,-30.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",28,Low Income Health Care & Comm Behavioral Health,True,2025-27,45.0,-10.0,35.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",28,Low Income Health Care & Comm Behavioral Health,True,2027-29,25.0,30.0,55.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",29,Social & Health Services,True,2025-27,-67.0,-7.0,-74.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",29,Social & Health Services,True,2027-29,24.0,47.0,71.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",30,Higher Education,True,2025-27,-120.0,-104.0,-224.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",30,Higher Education,True,2027-29,8.0,8.0,16.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",31,Corrections,True,2025-27,11.0,42.0,53.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",31,Corrections,True,2027-29,16.0,16.0,32.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",32,All Other,True,2025-27,2.0,50.0,52.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",32,All Other,True,2027-29,35.0,431.0,466.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",33,"Children, Youth, and Families",True,2025-27,631.0,209.0,840.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",33,"Children, Youth, and Families",True,2027-29,-271.0,-275.0,-545.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",34,Debt Service,True,2025-27,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",34,Debt Service,True,2027-29,10.0,77.0,86.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",35,Compensation & Benefits,True,2025-27,1.0,18.0,18.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",35,Compensation & Benefits,True,2027-29,14.0,14.0,27.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",36,Governor Expenditure Vetoes and Lapsed Items,True,2025-27,0.0,-1.0,-1.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",36,Governor Expenditure Vetoes and Lapsed Items,True,2027-29,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",37,Reversions,False,2025-27,-466.0,-371.0,-837.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",37,Reversions,False,2027-29,-376.0,-392.0,-768.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",38,Revised Appropriations,False,2025-27,39253.0,40114.0,79367.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",38,Revised Appropriations,False,2027-29,40156.0,41554.0,81710.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",39,NGF-O Projected Ending Balance,False,2025-27,1112.0,277.0,277.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",39,NGF-O Projected Ending Balance,False,2027-29,-802.0,653.0,653.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",40,NGF-O Beginning Balance,True,2025-27,1269.0,1003.0,1269.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",40,NGF-O Beginning Balance,True,2027-29,1031.0,1436.0,1031.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",41,GF-S Transfer to BSA (1%),True,2025-27,344.0,362.0,705.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",41,GF-S Transfer to BSA (1%),True,2027-29,373.0,411.0,785.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",42,BSA Transfers,True,2025-27,-514.0,-366.0,-880.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",42,BSA Transfers,True,2027-29,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",43,Pension Surplus Holding Account,True,2025-27,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",43,Pension Surplus Holding Account,True,2027-29,0.0,880.0,880.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",44,Appropriations from BSA,True,2025-27,-141.0,0.0,-141.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",44,Appropriations from BSA,True,2027-29,0.0,0.0,0.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",45,Interest Earnings,True,2025-27,45.0,33.0,78.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",45,Interest Earnings,True,2027-29,31.0,44.0,75.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",46,BSA Ending Balance,False,2025-27,1003.0,1031.0,1031.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",46,BSA Ending Balance,False,2027-29,1436.0,2771.0,2771.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",47,Total Reserves,False,2025-27,2115.0,1308.0,1308.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",47,Total Reserves,False,2027-29,634.0,3425.0,3425.0
+"Enacted 2026 supplemental (ESSB 5998), April 2026",48,% of Reserves to Revenues and Other Resource Changes,False,2025-27,0.055999999999999994,0.033,
+"Enacted 2026 supplemental (ESSB 5998), April 2026",48,% of Reserves to Revenues and Other Resource Changes,False,2027-29,0.016,0.08,
+"Enacted 2026 supplemental (ESSB 5998), April 2026",49,NGF-O,True,2025-27,0.028999999999999998,0.006999999999999999,
+"Enacted 2026 supplemental (ESSB 5998), April 2026",49,NGF-O,True,2027-29,-0.021,0.015,
+"Enacted 2026 supplemental (ESSB 5998), April 2026",50,Budget Stabilization Account,True,2025-27,0.027000000000000003,0.026000000000000002,
+"Enacted 2026 supplemental (ESSB 5998), April 2026",50,Budget Stabilization Account,True,2027-29,0.037000000000000005,0.064,

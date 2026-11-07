@@ -223,6 +223,19 @@
           `<td class="num">${fmt(r[k])}</td>`).join("")}</tr>`; }).join("")}</tbody>`;
   }
 
+  function vintages(d) {
+    const v = (d.outlook && d.outlook.vintages) || [];
+    const bienniums = [...new Set(v.map((x) => x.biennium))].sort();
+    const outlooks = [...new Set(v.map((x) => x.outlook))];
+    const cell = (o, b) => { const x = v.find((y) => y.outlook === o && y.biennium === b); return x; };
+    const fmt = (n) => n == null ? "—" : `${n < 0 ? "−" : ""}$${Math.abs(n).toLocaleString("en-US", { maximumFractionDigits: 0 })}M`;
+    $("#vintage-table").innerHTML = `<thead><tr><th>Outlook adopted for</th>${bienniums.map((b) =>
+      `<th class="num">${esc(b)} ending balance</th>`).join("")}</tr></thead><tbody>${outlooks.map((o) => `<tr>
+      <td><a href="${esc(v.find((x) => x.outlook === o).url)}">${esc(o)}</a></td>${bienniums.map((b) => {
+        const x = cell(o, b); return `<td class="num">${x ? fmt(x.ending_balance) : '<span class="muted">—</span>'}</td>`;
+      }).join("")}</tr>`).join("")}</tbody>`;
+  }
+
   function agencies(d) {
     const rows = d.agencies.map((a) => ({
       ...a,
@@ -260,6 +273,10 @@
       ${a.gfs_curr_2527 ? `<p>Of which General Fund–State: <b>${money(a.gfs_curr_2527)}</b></p>` : ""}
       ${a.reapprop_2527 ? `<p>Capital money reappropriated from earlier bienniums: <b>${money(a.reapprop_2527)}</b></p>` : ""}
       ${a.programs.length ? `<h3>Programs named in the operating budget</h3><p>${a.programs.map(esc).join(" · ")}</p>` : ""}
+      ${a.enacted_2325 ? `<h3>2023-25: enacted in the budget bills</h3>
+        <p>${money(a.enacted_2325)} in new appropriations across the operating, transportation and capital budgets,
+        after the 2024 and 2025 supplementals. <span class="muted">OFM's final budget authority below can differ:
+        it includes capital money carried over from earlier bienniums and adjustments made after enactment.</span></p>` : ""}
       ${a.budget_2325 ? `<h3>2023-25: budgeted vs. spent</h3>
         <p>Final budget ${money(a.budget_2325)}, actual ${money(a.actual_2325)},
         difference ${money(a.budget_2325 - a.actual_2325)} (${unspentLabel(a.budget_2325, a.actual_2325)}).
@@ -435,7 +452,7 @@
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
       $("#loading").remove();
-      overview(d); outlook(d); agencies(d); districtsView(d); legislators(d); dataView(d);
+      overview(d); outlook(d); vintages(d); agencies(d); districtsView(d); legislators(d); dataView(d);
       window.addEventListener("hashchange", route);
       route();
     })

@@ -19,12 +19,22 @@ TEXT = """\
 
 
 def test_outlook_parses_and_balances():
-    rows, meta = parse_text(TEXT, "test")
-    assert meta["bienniums"] == ["2025-27", "2027-29"]
-    end = next(r for r in rows if r.label == "NGF-O Projected Ending Balance")
-    assert (end.biennium1, end.fy3, end.biennium2) == (277, -802, 653)
+    rows, bienniums = parse_text(TEXT, "test")
+    assert bienniums == ["2025-27", "2027-29"]
+    end = {r.biennium: r for r in rows if r.label == "NGF-O Projected Ending Balance"}
+    assert (end["2025-27"].total, end["2027-29"].fy_a, end["2027-29"].total) == (277, -802, 653)
     detail = next(r for r in rows if r.label.startswith("Feb 2026"))
     assert detail.is_detail
-    pct = next(r for r in rows if r.label == "NGF-O" and r.is_detail)
-    assert pct.biennium1 is None and abs(pct.fy3 + 0.021) < 1e-9
-    assert arithmetic_errors(rows) == []
+    pct = next(r for r in rows if r.label == "NGF-O" and r.is_detail and r.biennium == "2027-29")
+    assert pct.total is None and abs(pct.fy_a + 0.021) < 1e-9
+    assert arithmetic_errors(rows, bienniums) == []
+
+
+def test_three_biennium_outlook_layout():
+    """Biennial outlooks add the prior biennium: nine numbers per row."""
+    text = """                          FY 2024  FY 2025  2023-25  FY 2026  FY 2027  2025-27  FY 2028  FY 2029  2027-29
+        Enacted Appropriations           34,670   37,275   71,945   38,000   39,857   77,857   40,000   40,330   80,330
+"""
+    rows, bienniums = parse_text(text, "t")
+    assert bienniums == ["2023-25", "2025-27", "2027-29"]
+    assert [r.total for r in rows] == [71945, 77857, 80330]

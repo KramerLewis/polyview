@@ -130,24 +130,30 @@ replaces each reprinted section's lines with the supplemental version, and keeps
   `data/samples/budget_current_2025-27_issues.csv` (19 for 2025-27) and should
   be linked by hand in `crosswalk/`.
 
-### D-017 · Parsed totals are reconciled to published NGF-O figures on every build (resolved for operating NGF-O)
-The Legislature's headline figure is **NGF-O** (Near General Fund-Outlook: General
-Fund–State, Education Legacy Trust, Washington Opportunity Pathways and Workforce
-Education Investment accounts). `ingest/checks.py` recomputes it from the parsed bills
-and compares it with `crosswalk/reference_totals.csv`. **The site build fails if a check is
-more than 0.1% off.**
-- 2025-27 original: parsed **$77.874B** vs. published $77.9B (House bill report, rounded).
-- 2025-27 after the 2026 supplemental: parsed **$80.206B** vs. $80.206B (exact).
-- NGF-O counts appropriations only. The State Treasurer's "General Fund appropriation
-  for … distributions" lines ($0.25–0.33B) are *not* in the published figure, and leaving them
-  out is what makes it match.
-- **Weak points:**
-  - The current-version reference is a secondary source (Washington Research Council)
-    until a LEAP or OFM document with the enacted figure is found.
-  - The all-funds figure can't be reconciled the same way: the published "total
-    budgeted" ($150.4B original) includes appropriations in other bills and, apparently,
-    non-appropriated funds that the budget bills don't list.
-  - Transportation and capital have no reference check yet.
+### D-017 · Parsed totals are reconciled to ERFC's adopted outlooks on every build (resolved for operating NGF-O)
+The Legislature's headline figure is **NGF-O** (Near General Fund-Outlook: General Fund–State,
+Education Legacy Trust, Washington Opportunity Pathways and Workforce Education Investment
+accounts). `ingest/checks.py` recomputes it from the parsed bills at each step of the
+amendment chain and compares it with `crosswalk/reference_totals.csv`, where every expected value
+is the "enacted level" (enacted + carry-forward + maintenance + policy, before assumed reversions)
+in the ERFC outlook adopted for that budget. **The site build fails if a check is out of tolerance.**
+
+| Check | Parsed | ERFC | Off |
+|---|---|---|---|
+| 2023-25 original | $69.765B | $69.805B | 0.06% |
+| 2023-25 after 2024 supplemental | $71.905B | $71.944B | 0.05% |
+| 2023-25 after 2025 changes | $72.514B | $72.743B | **0.31%** |
+| 2025-27 original | $77.874B | $77.857B | 0.02% |
+| 2025-27 after 2026 supplemental | $80.206B | $80.205B | 0.00% |
+
+- NGF-O counts appropriations only. Treasurer "appropriation for … distributions" lines are excluded.
+- **Open:** the last 2023-25 step is $229M low (tolerance set to 0.5% and noted in the CSV). A
+  steady ~$40M gap at every 2023-25 step suggests NGF-O appropriated in other bills. The
+  extra ~$190M in 2025 was investigated and isn't an overlay mismatch: the flagged lines are
+  non-NGF-O, transfers, or genuine removals. Likely cause: FY2025 NGF-O appropriated in other 2025 bills.
+- All-funds totals can't be checked the same way. Published "total budgeted" includes
+  appropriations in other bills and non-appropriated funds. Transportation and capital have no
+  reference check yet.
 
 ### D-018 · Governor's line-item vetoes are applied (resolved)
 The XML marks vetoed text with `lineVeto="yes"`. Vetoed appropriation lines
@@ -287,6 +293,26 @@ financing, preliminary minor works, "only the local components") are shown as la
 - **Interpretation:** totals mostly reflect where state facilities are (universities,
   hospitals, prisons). The site says so and doesn't present district totals as a
   fairness measure.
+
+### D-037 · Supplemental citations are translated through the amendment chain (accepted)
+A later supplemental cites sections by the *previous supplemental's* numbering, which
+differs from the original's. For example, ESSB 5167 sec. 1103 amends "2024 c 376 s 112", which is section
+112 of the 2024 supplemental, itself an amendment of a different original section. The overlay builds a
+map (chapter, section) → original section as it processes each bill in order, using the chapter
+number printed in each bill's XML.
+- Each bill is parsed with **its own** budget biennium, so a 2025 bill's new 2025-27 sections are
+  never mistaken for the 2023-25 sections it also amends. (This bug briefly doubled 2023-25 totals.)
+- **Backfilled so far:** 2023-25 operating, transportation and capital, with the 2024 supplementals
+  and the 2025 changes. Earlier bienniums need the same chain set up, and older
+  bills may lack XML.
+
+### D-038 · Each outlook's columns come from its fiscal-year header (accepted)
+Supplemental outlooks show two bienniums. Biennial outlooks show three: prior, new, next. The
+parser reads the bienniums from the "FY 2026 FY 2027 …" header row and stores values in long
+format. An earlier version assumed six columns and silently mis-read the three-biennium
+layout. Its arithmetic checks only covered the columns it kept, so it didn't catch the
+problem. Now every biennium in every outlook must pass the identities, and a test covers
+the nine-column layout.
 
 ---
 

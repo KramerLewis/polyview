@@ -48,12 +48,14 @@ def read_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(f))
 
 
-def current_budget() -> tuple[list[dict], dict]:
-    rows, issues = build_all()
+def current_budget() -> tuple[list[dict], dict, list[dict]]:
+    all_rows, issues = build_all()
     biennium = BUDGETS[0][0]
-    rows = [r for r in rows if r["biennium"] == biennium]
+    rows = [r for r in all_rows if r["biennium"] == biennium]
     by_budget = []
-    for _, budget, orig_bill, _, supps in BUDGETS:
+    for b_, budget, orig_bill, _, supps in BUDGETS:
+        if b_ != biennium:
+            continue
         sub = [r for r in rows if r["budget"] == budget]
         new = [r for r in sub if r["kind"] == "appropriation"]
         by_budget.append({
@@ -80,14 +82,14 @@ def current_budget() -> tuple[list[dict], dict]:
                            sorted(by_source.items(), key=lambda kv: -kv[1]["current"])],
         "overlay_issues": sum(len(v) for v in issues.values()),
     }
-    return rows, meta
+    return rows, meta, all_rows
 
 
 def build() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
 
     # --- 2025-27 enacted budget, by agency ---------------------------------
-    budget_rows, budget_meta = current_budget()
+    budget_rows, budget_meta, all_budget_rows = current_budget()
     agencies: dict[str, dict] = defaultdict(lambda: {"name": "", "programs": set(),
                                                     "orig_2527": 0, "curr_2527": 0,
                                                     "gfs_curr_2527": 0, "reapprop_2527": 0,
@@ -120,6 +122,12 @@ def build() -> None:
         p["new" if r["kind"] == "appropriation" else "reapprop"] += r["current"]
     for (code, _), p in projects.items():
         agencies[code]["projects"].append(p)
+
+    # --- 2023-25 as enacted in the budget bills (after all supplementals) -----
+    for r in all_budget_rows:
+        if r["biennium"] == "2023-25" and r["kind"] == "appropriation":
+            a = agencies[agency3(r["agency_code"])]
+            a["enacted_2325"] = a.get("enacted_2325", 0) + r["current"]
 
     # --- 2025-27 payments so far (vendor payments; excludes payroll, D-024) --
     for r in read_csv(SAMPLES / "vendor_payments_by_agency_object_2527.csv"):
@@ -239,13 +247,25 @@ def build() -> None:
     from dataclasses import asdict as _asdict
 
     from ingest import outlook as outlook_mod
-    ol = None
+    loaded = []
     for label, url in outlook_mod.OUTLOOKS:
-        path = RAW / "outlook" / url.rsplit("/", 1)[-1]
-        rows_, meta_ = outlook_mod.parse_text(budget_to_actual.pdf_text(path), label)
-        ol = {"label": label, "url": url, "bienniums": meta_["bienniums"],
-              "rows": [{k: v for k, v in _asdict(r).items() if k not in ("outlook", "order")}
-                       for r in rows_]}
+        path = RAW / "outlook" / outlook_mod.local_name(url)
+        rows_, bienniums_ = outlook_mod.parse_text(budget_to_actual.pdf_text(path), label)
+        loaded.append((label, url, rows_, bienniums_))
+    label, url, rows_, bienniums_ = loaded[-1]
+    b1, b2 = bienniums_[-2:]
+    wide = {}
+    for r in rows_:
+        if r.biennium not in (b1, b2):
+            continue
+        w = wide.setdefault(r.order, {"label": r.label, "is_detail": r.is_detail})
+        if r.biennium == b1:
+            w.update(fy1=r.fy_a, fy2=r.fy_b, biennium1=r.total)
+        else:
+            w.update(fy3=r.fy_a, fy4=r.fy_b, biennium2=r.total)
+    vintages = [x for lab, u, rws, bs in loaded for x in outlook_mod.summarize(lab, u, rws, bs)]
+    ol = {"label": label, "url": url, "bienniums": [b1, b2],
+          "rows": [wide[k] for k in sorted(wide)], "vintages": vintages}
 
     # --- Capital projects by legislative district (LEAP snapshot, D-035) ------
     from ingest import capital_districts

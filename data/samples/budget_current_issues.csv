@@ -28,3 +28,68 @@ budget,issue
 2025-27 capital,"2026 supplemental sec 3086 'State Building Construction Account—State': prior 0 != enacted 7,726,000"
 2025-27 capital,"2026 supplemental sec 3086 'State Building Construction Account—State': prior 7,726,000 but no matching original line"
 2025-27 capital,2026 supplemental sec 6030 'Rural Washington Loan Fund—State': not in reprinted section (treated as removed)
+2023-25 operating,"2024 supplemental sec 223 'General Fund—Private/Local Appropriation': prior 0 != enacted 334,000"
+2023-25 operating,"2024 supplemental sec 223 'General Fund—Private/Local Appropriation': prior 334,000 but no matching original line"
+2023-25 operating,"2024 supplemental sec 223 'General Fund—Federal Appropriation': prior 0 != enacted 1,436,000"
+2023-25 operating,"2024 supplemental sec 223 'General Fund—Federal Appropriation': prior 1,436,000 != enacted 3,084,000"
+2023-25 operating,"2024 supplemental sec 223 'General Fund—Federal Appropriation': prior 3,084,000 but no matching original line"
+2023-25 operating,"2024 supplemental sec 801 'Dedicated Cannabis Account Appropriation for Cannabis Excise Tax distributions pursuant to Engrossed Second Substitute Senate Bill No. 5796 (cannabis revenue). This includes an increase of $1,178,000 which is an adjustment for distributions made in fiscal year 2022.': prior 50,472,000 but no matching original line"
+2023-25 operating,"2024 supplemental sec 805 'Washington Rescue Plan Transition Account: For transfer to the state general fund, $1,302,000,000 for fiscal year 2024 and $798,000,000 for fiscal year 2025': prior 1,302,000,000 but no matching original line"
+2023-25 operating,"2024 supplemental sec 805 'Long-Term Services and Supports Trust Account: For transfer to the state general fund as full repayment of the long-term services program start-up costs and interest, in an amount not to exceed the actual amount of the total remaining principal and interest of the loan, for fiscal year 2024': prior 64,281,000 but no matching original line"
+2023-25 operating,"2024 supplemental sec 805 'Washington Student Loan Account: For transfer to the state general fund, $40,000,000 for fiscal year 2024 and $10,000,000 for fiscal year 2025': prior 40,000,000 but no matching original line"
+2023-25 operating,"2024 supplemental sec 805 'Climate Investment Account: For transfer to the carbon emissions reduction account, $200,000,000 for fiscal year 2025 no later than October 15, 2024': prior 200,000,000 but no matching original line"
+2023-25 operating,2024 supplemental sec 801 'Dedicated Cannabis Account Appropriation for Cannabis Excise Tax distributions pursuant to Engrossed Second Substitute Senate Bill No. 5796 (cannabis revenue)': not in reprinted section (treated as removed)
+2023-25 operating,"2024 supplemental sec 805 'Washington Rescue Plan Transition Account: For transfer to the state general fund, $1,302,000,000 for fiscal year 2024': not in reprinted section (treated as removed)"
+2023-25 operating,2024 supplemental sec 805 'Long-Term Services and Supports Trust Account: For transfer to the state general fund as full repayment of the long-term services program start-up costs and interest for fiscal year 2024': not in reprinted section (treated as removed)
+2023-25 operating,"2024 supplemental sec 805 'Washington Student Loan Account: For transfer to the state general fund, $40,000,000 for fiscal year 2024': not in reprinted section (treated as removed)"
+2023-25 operating,"2024 supplemental sec 805 'Climate Investment Account: For transfer to the carbon emissions reduction account, $200,000,000 for fiscal year 2025': not in reprinted section (treated as removed)"
+2023-25 operating,"2025 supplemental sec 141 'Financial Services Regulation Nonappropriated Fund—State Appropriation': prior 5,000,000 but no matching original line"
+2023-25 operating,"2025 supplemental sec 801 'State Crime Victim and Witness Assistance Account Appropriation for distribution to counties.': prior 8,000,000 but no matching original line"
+2023-25 operating,"2025 supplemental sec 805 'Tobacco Settlement Account: For transfer to the state general fund, in an amount not to exceed the actual amount of the annual base payment to the tobacco settlement account for fiscal year 2025 and additional payments for fiscal year 2025 resulting from the diligent enforcement settlement': prior 92,000,000 but no matching original line"
+2023-25 operating,"2025 supplemental sec 805 'Climate Investment Account: For transfer to the carbon emissions reduction account, $5,847,000 for fiscal year 2025 no later than October 15, 2024. It is the intent of the legislature to make an additional transfer of $194,153,000 planned in fiscal year 2027 to ensure a total of $200,000,000 is transferred': prior 200,000,000 but no matching original line"
+2023-25 operating,"2025 supplemental sec 805 'Climate Investment Account: For transfer to the carbon emissions reduction account, $162,000,000 on or after January 1, 2025. It is the intent of the legislature to make an additional transfer of $162,000,000 planned in fiscal year 2027 to ensure a total of $324,000,000 is transferred': prior 324,000,000 but no matching original line"
+2023-25 operating,"2025 supplemental sec 805 'General Fund: For transfer to the death investigations account, $3,000,000 for fiscal year 2024 and $55,000 for fiscal year 2025': prior 3,000,000 but no matching original line"
+2023-25 operating,2025 supplemental sec 116 'General Fund—Federal Appropriation': not in reprinted section (treated as removed)
+2023-25 operating,2025 supplemental sec 129 'Coronavirus State Fiscal Recovery Fund—Federal Appropriation': not in reprinted section (treated as removed)
+2023-25 operating,2025 supplemental sec 135 'Economic Development Strategic Reserve Account—State Appropriation': not in reprinted section (treated as removed)
+2023-25 operating,2025 supplemental sec 135 'Performance Audits of Government Account—State Appropriation': not in reprinted section (treated as removed)
+2023-25 operating,2025 supplemental sec 135 'Workforce Education Investment Account—State Appropriation': not in reprinted section (treated as removed)
+2023-25 operating,2025 supplemental sec 141 'Financial Services Regulation Account—State Appropriation': not in reprinted section (treated as removed)
+2023-25 operating,2025 supplemental sec 222 'Public Health Supplemental Account—State Appropriation': not in reprinted section (treated as removed)
+2023-25 operating,2025 supplemental sec 310 'Contract Harvesting Revolving Nonappropriated Account—State Appropriation': not in reprinted section (treated as removed)
+2023-25 operating,2025 supplemental sec 801 'Dedicated Cannabis Account Appropriation for Cannabis Excise Tax distributions pursuant to Engrossed Second Substitute Senate Bill No. 5796 (cannabis revenue)': not in reprinted section (treated as removed)
+2023-25 operating,"2025 supplemental sec 801 'State Crime Victim and Witness Assistance Account Appropriation for distribution to counties. If Engrossed Substitute House Bill No. 1169 is not enacted by June 30, 2023, this amount shall lapse.': not in reprinted section (treated as removed)"
+2023-25 operating,"2025 supplemental sec 805 'Tobacco Settlement Account: For transfer to the state general fund, in an amount not to exceed the actual amount of the annual base payment to the tobacco settlement account for fiscal year 2025': not in reprinted section (treated as removed)"
+2023-25 operating,"2025 supplemental sec 805 'Tobacco Settlement Account: For transfer to the state general fund, in an amount not to exceed the actual amount of the tobacco arbitration payment to the tobacco settlement account, for fiscal year 2024': not in reprinted section (treated as removed)"
+2023-25 operating,"2025 supplemental sec 805 'Washington Rescue Plan Transition Account: For transfer to the state general fund, $1,302,000,000 for fiscal year 2024': not in reprinted section (treated as removed)"
+2023-25 operating,2025 supplemental sec 805 'Long-Term Services and Supports Trust Account: For transfer to the state general fund as full repayment of the long-term services program start-up costs and interest for fiscal year 2024': not in reprinted section (treated as removed)
+2023-25 operating,"2025 supplemental sec 805 'Washington Student Loan Account: For transfer to the state general fund, $40,000,000 for fiscal year 2024': not in reprinted section (treated as removed)"
+2023-25 operating,"2025 supplemental sec 805 'Climate Investment Account: For transfer to the carbon emissions reduction account, $200,000,000 for fiscal year 2025': not in reprinted section (treated as removed)"
+2023-25 operating,"2025 supplemental sec 805 'Climate Investment Account: For transfer to the carbon emissions reduction account, $200,000,000 for fiscal year 2025 no later than October 15, 2024': not in reprinted section (treated as removed)"
+2023-25 operating,"2025 supplemental sec 805 'Climate Investment Account: For transfer to the carbon emissions reduction account, $324,000,000 on or after January 1, 2025': not in reprinted section (treated as removed)"
+2023-25 operating,"2025 supplemental sec 805 'General Fund: For transfer to the death investigations account, $3,000,000 for fiscal year 2024': not in reprinted section (treated as removed)"
+2023-25 transportation,2025 supplemental sec 310 'Move Ahead WA Account—Federal Appropriation': not in reprinted section (treated as removed)
+2023-25 transportation,2025 supplemental sec 310 'Transportation Partnership Account—State Appropriation': not in reprinted section (treated as removed)
+2023-25 transportation,2025 supplemental sec 402 'Transportation Improvement Account—State Appropriation': not in reprinted section (treated as removed)
+2023-25 capital,"2024 supplemental sec 1022 'State Taxable Building Construction Account— State': prior 25,000,000 but no matching original line"
+2023-25 capital,"2024 supplemental sec 1026 'State Building Construction Account—State': prior 17,680,000 but no matching original line"
+2023-25 capital,"2024 supplemental sec 1026 'Future Biennia (Projected Costs)': prior 70,720,000 but no matching original line"
+2023-25 capital,"2024 supplemental sec 2031 'State Building Construction Account—State': prior 0 != enacted 21,070,000"
+2023-25 capital,"2024 supplemental sec 2031 'State Building Construction Account—State': prior 21,070,000 but no matching original line"
+2023-25 capital,"2024 supplemental sec 6002 'Public Facilities Construction Loan Revolving Account—State': prior 7,774,000 but no matching original line"
+2023-25 capital,2024 supplemental sec 1022 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2023-25 capital,2024 supplemental sec 1026 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2023-25 capital,2024 supplemental sec 1026 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2023-25 capital,2024 supplemental sec 1026 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2023-25 capital,2024 supplemental sec 6002 'Public Facility Construction Loan Revolving Account—State': not in reprinted section (treated as removed)
+2023-25 capital,"2025 supplemental sec 1065 'State Building Construction Account—State': prior 265,000 != enacted 1,686,000"
+2023-25 capital,"2025 supplemental sec 1065 'Future Biennia (Projected Costs)': prior 0 != enacted 20,640,000"
+2023-25 capital,"2025 supplemental sec 3134 'State Building Construction Account—State': prior 40,000 but no matching original line"
+2023-25 capital,"2025 supplemental sec 5002 'State Building Construction Account—State': prior 117,522,000 != enacted 293,650,000"
+2023-25 capital,"2025 supplemental sec 5003 'State Building Construction Account—State': prior 12,145,000 != enacted 214,880,000"
+2023-25 capital,2025 supplemental sec 1054 'Climate Commitment Account—State': not in reprinted section (treated as removed)
+2023-25 capital,2025 supplemental sec 1065 'Military Department Capital Account—State': not in reprinted section (treated as removed)
+2023-25 capital,2025 supplemental sec 3134 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2023-25 capital,2025 supplemental sec 3134 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2023-25 capital,2025 supplemental sec 3134 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2023-25 capital,2025 supplemental sec 5003 'Common School Construction Fund—Federal': not in reprinted section (treated as removed)

@@ -23,7 +23,13 @@ NGFO_FUNDS = {
 
 
 def ngfo(rows: list[dict], biennium: str, version: str) -> int:
-    return sum(r[version] for r in rows
+    """version: 'original', 'current', or an intermediate 'after_<label>' column
+    (a line a supplemental didn't touch keeps its original amount)."""
+    def amount(r: dict) -> int:
+        if version in ("original", "current"):
+            return r[version]
+        return r.get(version, r["original"])
+    return sum(amount(r) for r in rows
                if r["budget"] == "operating" and r["biennium"] == biennium
                and r["kind"] == "appropriation" and r["fund"] in NGFO_FUNDS
                and r["fund_source"] == "State")

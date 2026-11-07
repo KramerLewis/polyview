@@ -33,6 +33,12 @@ BUDGET_BILLS = [
     ("2025-26", "Senate", "6005", "2025-27", "2026 supplemental transportation budget"),
     ("2025-26", "Senate", "5195", "2025-27", "2025-27 capital budget (original)"),
     ("2025-26", "Senate", "6003", "2025-27", "2026 supplemental capital budget"),
+    ("2023-24", "Senate", "5187", "2023-25", "2023-25 operating budget (original)"),
+    ("2023-24", "Senate", "5950", "2023-25", "2024 supplemental operating budget"),
+    ("2023-24", "House", "1125", "2023-25", "2023-25 transportation budget (original)"),
+    ("2023-24", "House", "2134", "2023-25", "2024 supplemental transportation budget"),
+    ("2023-24", "Senate", "5200", "2023-25", "2023-25 capital budget (original)"),
+    ("2023-24", "Senate", "5949", "2023-25", "2024 supplemental capital budget"),
 ]
 
 # Session-law chapters of enacted operating budgets -> the biennium they fund.
@@ -40,6 +46,10 @@ BUDGET_BILLS = [
 CHAPTER_BIENNIUM = {
     "2023 c 475": "2023-25",  # 2023-25 operating budget (SSB 5187)
     "2024 c 376": "2023-25",  # 2024 supplemental (ESSB 5950)
+    "2023 c 472": "2023-25",  # 2023-25 transportation budget (ESHB 1125)
+    "2024 c 310": "2023-25",  # 2024 supplemental transportation (ESHB 2134)
+    "2023 c 474": "2023-25",  # 2023-25 capital budget (ESSB 5200)
+    "2024 c 375": "2023-25",  # 2024 supplemental capital (ESSB 5949)
     "2025 c 424": "2025-27",  # 2025-27 operating budget (ESSB 5167)
     "2025 c 416": "2025-27",  # 2025-27 transportation budget (ESSB 5161)
     "2025 c 414": "2025-27",  # 2025-27 capital budget (ESSB 5195)
@@ -147,6 +157,13 @@ def _biennium(fy: str) -> str:
     y = int(fy)
     start = y - 1 if y % 2 == 0 else y - 2
     return f"{start}-{str(start + 2)[-2:]}"
+
+
+def chapter_of(xml_path: Path) -> str:
+    """Session-law chapter of an enacted bill, e.g. '2024 c 376'."""
+    m = re.search(r'<ChapterLaw year="(\d{4})">(\d+)</ChapterLaw>',
+                  xml_path.read_text(encoding="utf-8-sig")[:5000])
+    return f"{m.group(1)} c {m.group(2)}" if m else ""
 
 
 def classify(account: str) -> str:
