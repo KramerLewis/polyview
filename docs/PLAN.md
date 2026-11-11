@@ -89,3 +89,8 @@ Next:
    directly); add reserve draw/deposit nodes so flows balance; net out transfers between funds
    (D-011); top 6–8 nodes per column plus "Other"; vertical or stacked-bar fallback on phones;
    table view. Bars stay for budget-vs-actual, change over time and votes.
+8. **Floor debate video (TVW)**: link each floor amendment and roll call to TVW's archived
+   video of that day's floor session (tvw.org), at the right timestamp where possible, so
+   voters can see who spoke for and against. Voice votes stay unattributed: video can't show
+   individual positions. Needs tvw.org allowed on the network and a check of whether TVW's
+   archive is searchable by date or bill; timestamps may need manual work.
