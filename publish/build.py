@@ -273,22 +273,40 @@ def build() -> None:
 
     # --- Capital projects by legislative district (LEAP snapshot, D-035) ------
     from ingest import capital_districts
-    district_projects: dict[int, list] = defaultdict(list)
-    capital_version = ""
-    for vdir in sorted(p for p in capital_districts.SNAPSHOTS.iterdir() if p.is_dir()):
+    # Snapshots sort oldest first. The latest is the current list (after the most
+    # recent supplemental, program-level); the original biennial list keeps
+    # project-by-project detail, shown separately (D-040). Never add them together.
+    snap_dirs = sorted(p for p in capital_districts.SNAPSHOTS.iterdir() if p.is_dir())
+
+    def by_district(vdir):
         projs, vmeta, _ = capital_districts.load(vdir)
-        capital_version = f"{vmeta['selected']} capital budget, 2025-27"
+        out: dict[int, list] = defaultdict(list)
         for pr in projs:
-            district_projects[pr.district].append({
-                "agency": pr.agency, "program": pr.program, "project": pr.project, "amount": pr.amount,
-                "multi_location": pr.multi_location, "alt_financing": pr.alt_financing,
+            out[pr.district].append({
+                "agency": pr.agency, "program": pr.program, "project": pr.project, "number": pr.project_number,
+                "amount": pr.amount, "multi_location": pr.multi_location, "alt_financing": pr.alt_financing,
                 "preliminary": pr.preliminary})
+        return out, vmeta
+
+    current, cur_meta = by_district(snap_dirs[-1])
+    detail, det_meta = by_district(snap_dirs[0]) if len(snap_dirs) > 1 else ({}, None)
+    # LEAP's two reports sometimes flag the same project differently (D-041): mark those.
+    for d, ps in current.items():
+        earlier = {x["project"].strip().lower(): x for x in detail.get(d, [])}
+        for x in ps:
+            e = earlier.get(x["project"].strip().lower())
+            if e is not None and e["multi_location"] != x["multi_location"]:
+                x["flag_changed"] = True
+    capital_version = f"{cur_meta['selected']} capital budget, 2025-27"
+    capital_detail_version = f"{det_meta['selected']} capital budget, 2025-27" if det_meta else ""
     districts = [{
         "district": d,
         "local_total": sum(x["amount"] for x in ps if not x["multi_location"]),
         "multi_total": sum(x["amount"] for x in ps if x["multi_location"]),
         "projects": sorted(ps, key=lambda x: -x["amount"]),
-    } for d, ps in sorted(district_projects.items())]
+        "detail": sorted(detail.get(d, []), key=lambda x: -x["amount"]),
+        "detail_local_total": sum(x["amount"] for x in detail.get(d, []) if not x["multi_location"]),
+    } for d, ps in sorted(current.items())]
 
     data = {
         "built_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
@@ -301,6 +319,7 @@ def build() -> None:
         "legislators": legislators,
         "districts": districts,
         "capital_version": capital_version,
+        "capital_detail_version": capital_detail_version,
         "amendments": sorted(amendments, key=lambda a: (a["bill"], a["date"], a["chamber"], a["number"])),
         "sources": [{"url": u, **v} for u, v in sorted(sources.items())],
     }

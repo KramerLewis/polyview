@@ -1,0 +1,856 @@
+version,district,agency,program,project,amount,project_number,alt_financing,multi_location,local_components_only,preliminary
+Enacted (04/01/2026),1,Community & Technical College System,,Cascadia: CC5 Gateway Building,5000000,40000222,False,False,False,False
+Enacted (04/01/2026),1,Department of Commerce,,2025-27 School-Based Health and Behavioral Health Clinics,419000,92002230,False,False,True,False
+Enacted (04/01/2026),1,Department of Commerce,,2025-27 Solar and Energy Storage Grants,650000,40000682,False,False,True,False
+Enacted (04/01/2026),1,Department of Commerce,,2026 Local and Community Projects,3019000,40000709,False,False,True,False
+Enacted (04/01/2026),1,Department of Commerce,,2027 Local and Community Projects,824000,40001947,False,False,True,False
+Enacted (04/01/2026),1,Department of Commerce,,Local and Water Infrastructure,371000,92002496,False,False,True,False
+Enacted (04/01/2026),1,Department of Commerce,,Regional Needs,562000,92002328,False,False,True,False
+Enacted (04/01/2026),1,Department of Ecology,,Statewide Water Conservation,1500000,92000233,False,False,True,False
+Enacted (04/01/2026),1,Recreation and Conservation Office,,2025-27 Aquatic Lands Enhancement Account,521000,40000560,False,False,True,False
+Enacted (04/01/2026),1,University of Washington,,UW Bothell - Asset Preservation (Minor Works) 25-27,4530000,40000161,False,False,False,False
+Enacted (04/01/2026),2,Department of Commerce,,2026 Local and Community Projects,6471000,40000709,False,False,True,False
+Enacted (04/01/2026),2,Department of Commerce,,2027 Local and Community Projects,398000,40001947,False,False,True,False
+Enacted (04/01/2026),2,Department of Commerce,,2027 Revitalized Local and Community Projects,618000,92002468,False,False,True,False
+Enacted (04/01/2026),2,Department of Commerce,,Affordable Housing Supply and Preservation,1023000,92001957,False,False,True,False
+Enacted (04/01/2026),2,Department of Commerce,,Local and Water Infrastructure,887000,92002496,False,False,True,False
+Enacted (04/01/2026),2,Department of Commerce,,Regional Needs,258000,92002328,False,False,True,False
+Enacted (04/01/2026),2,Department of Commerce,,Water Quality Projects,1500000,40001951,False,False,True,False
+Enacted (04/01/2026),2,Department of Natural Resources,,2025-27 Safe and Sustainable Recreation,250000,40000459,False,False,True,False
+Enacted (04/01/2026),2,Public Schools,,2025-27 Distressed Schools,306000,92001915,False,False,True,False
+Enacted (04/01/2026),2,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,8609000,40000150,False,False,True,False
+Enacted (04/01/2026),2,Recreation and Conservation Office,,2025-27 Community Forest Grant Program,3124000,40000562,False,False,True,False
+Enacted (04/01/2026),2,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,494000,40000548,False,False,True,False
+Enacted (04/01/2026),2,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,42000,40000556,False,False,True,False
+Enacted (04/01/2026),2,State Parks and Recreation Commission,,Nisqually Day Use Improvements,953000,40000202,False,False,False,False
+Enacted (04/01/2026),3,Community & Technical College System,,COP for Spokane Community College Main Building East Wing Renov.,25000000,40001343,True,False,False,False
+Enacted (04/01/2026),3,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,500000,40000040,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,2025-27 Behavioral Health Facilities,5368000,40000667,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,2025-27 Building Communities Fund Program,2500000,40000669,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,2025-27 Dental Capacity Grants,510000,92001952,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,1035000,40000663,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,2025-27 Housing Trust Fund,1500000,40000677,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,2025-27 Youth Recreational Facilities Program,1225000,40000661,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,2026 Local and Community Projects,3724000,40000709,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,Affordable Housing Supply and Preservation,1803000,92001957,False,False,True,False
+Enacted (04/01/2026),3,Department of Commerce,,Regional Needs,4230000,92002328,False,False,True,False
+Enacted (04/01/2026),3,Department of Corrections,,SW: Fire Alarm Systems Stabilization Project,6100000,40000524,False,True,False,False
+Enacted (04/01/2026),3,Eastern Washington State Historical Society,,Museum Expansion and Modernization,600000,40000064,False,False,False,False
+Enacted (04/01/2026),3,Eastern Washington University,,Dental Therapy Lab and Clinic,10498000,40000157,False,False,False,False
+Enacted (04/01/2026),3,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,3751000,40000548,False,False,True,False
+Enacted (04/01/2026),3,Washington State University,,Spokane Team Health Education Building,7000000,40000361,False,False,False,False
+Enacted (04/01/2026),4,Department of Commerce,,2025-27 Behavioral Health Facilities,5050000,40000667,False,False,True,False
+Enacted (04/01/2026),4,Department of Commerce,,2025-27 Building for the Arts Grant Program,878000,40000668,False,False,True,False
+Enacted (04/01/2026),4,Department of Commerce,,2026 Local and Community Projects,4647000,40000709,False,False,True,False
+Enacted (04/01/2026),4,Department of Commerce,,2027 Local and Community Projects,658000,40001947,False,False,True,False
+Enacted (04/01/2026),4,Department of Ecology,,2025-27 Remedial Action Grant Program,114000,40000726,False,False,True,False
+Enacted (04/01/2026),4,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,80000,40000467,False,False,True,False
+Enacted (04/01/2026),4,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,989000,40000548,False,False,True,False
+Enacted (04/01/2026),4,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,843000,40000556,False,False,True,False
+Enacted (04/01/2026),4,State Parks and Recreation Commission,,Mount Spokane Road Improvements,938000,30000982,False,False,False,False
+Enacted (04/01/2026),5,Department of Commerce,,2025-27 Tribal Climate Adaptation Pass-through Grants,250000,40000812,False,False,True,False
+Enacted (04/01/2026),5,Department of Commerce,,2026 Local and Community Projects,2910000,40000709,False,False,True,False
+Enacted (04/01/2026),5,Department of Commerce,,2027 Local and Community Projects,512000,40001947,False,False,True,False
+Enacted (04/01/2026),5,Department of Commerce,,Disaster and Flood Response,140000,92002497,False,False,True,False
+Enacted (04/01/2026),5,Department of Commerce,,Local and Water Infrastructure,154000,92002496,False,False,True,False
+Enacted (04/01/2026),5,Department of Commerce,,Regional Needs,258000,92002328,False,False,True,False
+Enacted (04/01/2026),5,Department of Commerce,,Revitalized Local and Community Projects,3000000,91002939,False,False,True,False
+Enacted (04/01/2026),5,Department of Commerce,,Tribal Clean Energy and Climate Resilience,2050000,92002299,False,False,True,False
+Enacted (04/01/2026),5,Department of Ecology,,2025-27 PFAS Response,2000000,40000719,False,False,True,False
+Enacted (04/01/2026),5,Department of Fish and Wildlife,,SRKW - Palmer Ponds Expansion,5821000,40000175,False,False,False,False
+Enacted (04/01/2026),5,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,277000,40000467,False,False,True,False
+Enacted (04/01/2026),5,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,4772000,40000564,False,False,True,False
+Enacted (04/01/2026),5,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,2244000,40000548,False,False,True,False
+Enacted (04/01/2026),6,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,1102000,40000663,False,False,True,False
+Enacted (04/01/2026),6,Department of Commerce,,2026 Local and Community Projects,1660000,40000709,False,False,True,False
+Enacted (04/01/2026),6,Department of Commerce,,2027 Local and Community Projects,83000,40001947,False,False,True,False
+Enacted (04/01/2026),6,Department of Commerce,,Affordable Housing Supply and Preservation,4050000,92001957,False,False,True,False
+Enacted (04/01/2026),6,Department of Commerce,,Local and Water Infrastructure,232000,92002496,False,False,True,False
+Enacted (04/01/2026),6,Department of Commerce,,Water Quality Projects,7500000,40001951,False,False,True,False
+Enacted (04/01/2026),6,Department of Ecology,,2025-27 Protect Investments in Cleanup Remedies,3500000,40000627,False,False,True,False
+Enacted (04/01/2026),6,Department of Fish and Wildlife,,Spokane Hatchery Renovation,12978000,30000663,False,False,False,False
+Enacted (04/01/2026),6,Department of Social and Health Services,,ESH Security Measures,250000,40001325,False,True,False,False
+Enacted (04/01/2026),6,Department of Social and Health Services,,Medical Lake Land Transfer,100000,91000094,False,True,False,False
+Enacted (04/01/2026),6,Department of Social and Health Services,,Statewide - Infrastructure: Emergency Generator Replacement,22611000,40001182,False,True,False,False
+Enacted (04/01/2026),6,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),6,Department of Social and Health Services,,Statewide-Campus: Pendant Alarm System Replacement,972000,40001183,False,True,False,False
+Enacted (04/01/2026),6,Department of Veterans' Affairs,,SVH - Skilled Nursing Facility Replacement,18900000,40000109,False,False,False,False
+Enacted (04/01/2026),6,Department of Veterans' Affairs,,WSVC - Phase V Expansion in Medical Lake,6755000,40000118,False,False,False,False
+Enacted (04/01/2026),6,Military Department,,Geiger Field 200 Restoration,1002000,40000354,False,False,False,False
+Enacted (04/01/2026),6,Military Department,,Geiger Field 402 Renovation,1002000,40000356,False,False,False,False
+Enacted (04/01/2026),6,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,6358000,40000548,False,False,True,False
+Enacted (04/01/2026),7,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,1535000,40000040,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,2025-27 Building Communities Fund Program,7950000,40000669,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,2025-27 Building for the Arts Grant Program,878000,40000668,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,1102000,40000663,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,2025-27 Housing Trust Fund,5000000,40000677,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,2025-27 Library Capital Improvement Program,723000,40000662,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,2026 Local and Community Projects,3046000,40000709,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,2027 Local and Community Projects,503000,40001947,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,New Health Medical Dental Behavioral Workforce,5050000,92002227,False,False,False,False
+Enacted (04/01/2026),7,Department of Commerce,,Regional Needs,2150000,92002328,False,False,True,False
+Enacted (04/01/2026),7,Department of Commerce,,Soil Remediation,4000000,92002513,False,False,False,False
+Enacted (04/01/2026),7,Department of Ecology,,2025-27 Columbia River Water Supply Development Program,3415000,40000681,False,False,True,False
+Enacted (04/01/2026),7,Department of Ecology,,2025-27 Eastern Washington Clean Sites Initiative,300000,40000628,False,False,True,False
+Enacted (04/01/2026),7,Department of Ecology,,2025-27 Floodplains by Design,2062000,40000660,False,False,True,False
+Enacted (04/01/2026),7,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,84000,40000467,False,False,True,False
+Enacted (04/01/2026),7,Department of Natural Resources,,2025-27 Safe and Sustainable Recreation,460000,40000459,False,False,True,False
+Enacted (04/01/2026),7,Department of Natural Resources,,2025-27 Trust Land Transfer Program,450000,40000685,False,False,True,False
+Enacted (04/01/2026),7,Department of Natural Resources,,Colville Firefighter Housing Project,387000,40000651,False,False,False,False
+Enacted (04/01/2026),7,Department of Natural Resources,,"Omak Consolidation, Expansion and Relocation",6000000,40000156,False,False,False,False
+Enacted (04/01/2026),7,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,61531000,40000150,False,False,True,False
+Enacted (04/01/2026),7,Public Schools,,SCAP Enhancement Program Pilot,1507000,91002559,False,False,True,False
+Enacted (04/01/2026),7,Public Schools,,SCAPR Transitional Projects,10568000,91002551,False,False,True,False
+Enacted (04/01/2026),7,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),7,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,14941000,40000548,False,False,True,False
+Enacted (04/01/2026),7,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,1258000,40000556,False,False,True,False
+Enacted (04/01/2026),8,Department of Commerce,,2025-27 Dental Capacity Grants,88000,92001952,False,False,True,False
+Enacted (04/01/2026),8,Department of Commerce,,2026 Local and Community Projects,1915000,40000709,False,False,True,False
+Enacted (04/01/2026),8,Department of Commerce,,2027 Local and Community Projects,402000,40001947,False,False,True,False
+Enacted (04/01/2026),8,Department of Commerce,,Affordable Housing Supply and Preservation,1520000,92001957,False,False,True,False
+Enacted (04/01/2026),8,Department of Commerce,,Grants for Recovery Residences,3800000,91002685,False,False,True,False
+Enacted (04/01/2026),8,Public Schools,,2025-27 Skills Center Minor Works,280000,40000158,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,2025-27 Early Learning Facilities - Eligible Organizations,2050000,40000656,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,823000,40000663,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,2025-27 Library Capital Improvement Program,75000,40000662,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,2025-27 School-Based Health and Behavioral Health Clinics,777000,92002230,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,2026 Local and Community Projects,2440000,40000709,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,2027 Local and Community Projects,395000,40001947,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,Local and Water Infrastructure,1602000,92002496,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,Local Infrastructure,1133000,92001953,False,False,True,False
+Enacted (04/01/2026),9,Department of Commerce,,Regional Needs,2128000,92002328,False,False,True,False
+Enacted (04/01/2026),9,Department of Ecology,,2025-27 Protect Investments in Cleanup Remedies,100000,40000627,False,False,True,False
+Enacted (04/01/2026),9,Department of Fish and Wildlife,,Sprague Lake Restoration,100000,92001260,False,False,False,False
+Enacted (04/01/2026),9,Eastern Washington University,,2025-27 Minor Works Preservation and Program,19800000,91000031,False,False,False,False
+Enacted (04/01/2026),9,Eastern Washington University,,EWU Large Solar Array,7134000,40000234,False,False,False,False
+Enacted (04/01/2026),9,Eastern Washington University,,Preventative Maintenance/Backlog Reduction,2217000,40000222,False,False,False,False
+Enacted (04/01/2026),9,Office of the Secretary of State,,OSOS Cheney Minor Works Preservation Project 2026S,345000,40000010,False,False,False,False
+Enacted (04/01/2026),9,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,46559000,40000150,False,False,True,False
+Enacted (04/01/2026),9,Public Schools,,SCAP Enhancement Program Pilot,1429000,91002559,False,False,True,False
+Enacted (04/01/2026),9,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,2061000,40000548,False,False,True,False
+Enacted (04/01/2026),9,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,361000,40000556,False,False,True,False
+Enacted (04/01/2026),9,Washington State University,,2025-27 Minor Works Preservation and Program,51000000,91000046,False,False,False,False
+Enacted (04/01/2026),9,Washington State University,,Ensminger Beef Center,150000,92001137,False,False,False,False
+Enacted (04/01/2026),9,Washington State University,,Ensminger Pavilion Infrastructure,1500000,92001139,False,False,False,False
+Enacted (04/01/2026),9,Washington State University,,Greenhouse Renovations,750000,92001136,False,False,False,False
+Enacted (04/01/2026),9,Washington State University,,Preventive Facility Maintenance and Building System Repairs,10115000,91000037,False,False,False,False
+Enacted (04/01/2026),9,Washington State University,,Pullman Dairy Modernization,500000,40000373,False,False,False,False
+Enacted (04/01/2026),9,Washington State University,,Pullman Sciences Building,25000000,40000284,False,False,False,False
+Enacted (04/01/2026),9,Washington State University,,Soil Health Research Infrastructure,400000,92001138,False,False,False,False
+Enacted (04/01/2026),9,Washington State University,,WSU Creamery Energy Efficiency,1000000,92001140,False,False,False,False
+Enacted (04/01/2026),10,Department of Commerce,,2025-27 Behavioral Health Facilities,927000,40000667,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,2025-27 Building for the Arts Grant Program,1631000,40000668,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,2025-27 Youth Recreational Facilities Program,491000,40000661,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,2026 Local and Community Projects,1922000,40000709,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,2027 Local and Community Projects,492000,40001947,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,2027 Revitalized Local and Community Projects,621000,92002468,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,Affordable Housing Supply and Preservation,1812000,92001957,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,Local and Water Infrastructure,1015000,92002496,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,Local Infrastructure,1390000,92001953,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,Regional Needs,498000,92002328,False,False,True,False
+Enacted (04/01/2026),10,Department of Commerce,,Youth Shelters and Housing,400000,91002686,False,False,True,False
+Enacted (04/01/2026),10,Department of Ecology,,2025-27 Clean Up Toxic Sites-Puget Sound Initiative,1000000,40000653,False,False,True,False
+Enacted (04/01/2026),10,Department of Ecology,,2025-27 Floodplains by Design,8840000,40000660,False,False,True,False
+Enacted (04/01/2026),10,Department of Natural Resources,,2025-27 Rivers and Habitat Open Space Program,1330000,40000601,False,False,True,False
+Enacted (04/01/2026),10,Recreation and Conservation Office,,2025-27 Estuary and Salmon Restoration Program,829000,40000566,False,False,True,False
+Enacted (04/01/2026),10,Recreation and Conservation Office,,2025-27 Puget Sound Acquisition and Restoration,29999000,40000554,False,False,True,False
+Enacted (04/01/2026),11,Community & Technical College System,,COP for Renton Technical College Building J Renovations,8000000,91000453,True,False,False,False
+Enacted (04/01/2026),11,Department of Commerce,,2025-27 Building Communities Fund Program,3297000,40000669,False,False,True,False
+Enacted (04/01/2026),11,Department of Commerce,,2025-27 Dental Capacity Grants,1030000,92001952,False,False,True,False
+Enacted (04/01/2026),11,Department of Commerce,,2026 Local and Community Projects,5898000,40000709,False,False,True,False
+Enacted (04/01/2026),11,Department of Commerce,,2027 Local and Community Projects,767000,40001947,False,False,True,False
+Enacted (04/01/2026),11,Department of Commerce,,2027 Revitalized Local and Community Projects,706000,92002468,False,False,True,False
+Enacted (04/01/2026),11,Department of Commerce,,Affordable Housing Supply and Preservation,1000000,92001957,False,False,True,False
+Enacted (04/01/2026),11,Department of Commerce,,Youth Shelters and Housing,2500000,91002686,False,False,True,False
+Enacted (04/01/2026),11,Department of Social and Health Services,,Olympic Heritage Behavioral Health – Facility Modernization,6037000,40001145,False,False,False,False
+Enacted (04/01/2026),11,Department of Social and Health Services,,Olympic Heritage Behavioral Health - Joint Commission Compliance,8772000,40001175,False,False,False,False
+Enacted (04/01/2026),11,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,1072000,40000548,False,False,True,False
+Enacted (04/01/2026),11,Washington State Historical Society,,Heritage Capital Grants 2025-27,347000,40000184,False,False,True,False
+Enacted (04/01/2026),12,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,312000,40000040,False,False,True,False
+Enacted (04/01/2026),12,"Department of Children, Youth, and Families",,Echo Glen Central Family Visiting Center,250000,40000603,False,False,False,False
+Enacted (04/01/2026),12,"Department of Children, Youth, and Families",,Echo Glen Secure Facility Improvements,2500000,40000546,False,False,False,False
+Enacted (04/01/2026),12,"Department of Children, Youth, and Families",,Echo Glen Upper Campus Main Boiler HVAC Replacement,8200000,40000593,False,False,False,False
+Enacted (04/01/2026),12,Department of Commerce,,2025-27 Building Communities Fund Program,2895000,40000669,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,2025-27 Housing Trust Fund,1000000,40000677,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,2025-27 Youth Recreational Facilities Program,1974000,40000661,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,2026 Local and Community Projects,11463000,40000709,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,2027 Local and Community Projects,695000,40001947,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,2027 Revitalized Local and Community Projects,248000,92002468,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,Affordable Housing Supply and Preservation,258000,92001957,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,Local and Water Infrastructure,360000,92002496,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,Local Infrastructure,824000,92001953,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,Regional Needs,3175000,92002328,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,Tribal Clean Energy and Climate Resilience,2050000,92002299,False,False,True,False
+Enacted (04/01/2026),12,Department of Commerce,,Youth Shelters and Housing,100000,91002686,False,False,True,False
+Enacted (04/01/2026),12,Department of Corrections,,MCC: SOU and TRU - Domestic Water and HVAC Piping System,27772000,40000246,False,True,False,False
+Enacted (04/01/2026),12,Department of Corrections,,MCC: WSR Perimeter Wall Renovation,3674000,30000117,False,True,False,False
+Enacted (04/01/2026),12,Department of Corrections,,SW: Perimeter Fence Detection Stabilization Project,6445000,40000525,False,True,False,False
+Enacted (04/01/2026),12,Department of Corrections,,SW: Security Electronics Renewal & Adaptation,4825000,40000523,False,True,False,False
+Enacted (04/01/2026),12,Department of Ecology,,2025-27 Cleanup Settlement Account Projects,650000,40000629,False,False,True,False
+Enacted (04/01/2026),12,Department of Ecology,,2025-27 Columbia River Water Supply Development Program,3000000,40000681,False,False,True,False
+Enacted (04/01/2026),12,Department of Ecology,,2025-27 Eastern Washington Clean Sites Initiative,450000,40000628,False,False,True,False
+Enacted (04/01/2026),12,Department of Ecology,,2025-27 Floodplains by Design,5845000,40000660,False,False,True,False
+Enacted (04/01/2026),12,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,64000,40000467,False,False,True,False
+Enacted (04/01/2026),12,Department of Natural Resources,,2025-27 Trust Land Transfer Program,4000000,40000685,False,False,True,False
+Enacted (04/01/2026),12,Military Department,,Minor Works Program 2025-27 Biennium,9885000,40000345,False,True,False,False
+Enacted (04/01/2026),12,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,6040000,40000150,False,False,True,False
+Enacted (04/01/2026),12,Recreation and Conservation Office,,2025-27 Aquatic Lands Enhancement Account,521000,40000560,False,False,True,False
+Enacted (04/01/2026),12,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,2279000,40000564,False,False,True,False
+Enacted (04/01/2026),12,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),12,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,3555000,40000548,False,False,True,False
+Enacted (04/01/2026),12,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,1158000,40000556,False,False,True,False
+Enacted (04/01/2026),12,State Parks and Recreation Commission,,Wallace Falls Parking Expansion,2386000,40000207,False,False,False,False
+Enacted (04/01/2026),12,Washington State Historical Society,,Heritage Capital Grants 2025-27,1000000,40000184,False,False,True,False
+Enacted (04/01/2026),12,Washington State Patrol,,Fire Training Academy (FTA) Fuel Farm Refurbishment,1000000,40000092,False,False,False,False
+Enacted (04/01/2026),12,Washington State Patrol,,Fire Training Academy (FTA) Maintenance Building Roof Replacement,300000,40000091,False,False,False,False
+Enacted (04/01/2026),12,Washington State University,,Wenatchee Tree Fruit Research & Ext. Center Plant Growth Facility,10000000,40000376,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,2025-27 Minor Works Preservation and Program,8000000,91000028,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,Aviation Degree Expansion,9968000,40000125,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,Electrical Grid Security Feeder 14,1491000,40000206,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,Emergency Backup Power System,11773000,40000163,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,Humanities & Social Science Complex,11158000,40000081,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,Institutional Equipment Upgrades,1000000,40000166,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,Minor Works Preservation 2023-2025,700000,40000128,False,False,True,False
+Enacted (04/01/2026),13,Central Washington University,,North Academic Complex Moving Costs,700000,91000029,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,Preventive Facility Maintenance and Building System Repairs,2422000,91000023,False,False,False,False
+Enacted (04/01/2026),13,Central Washington University,,Secondary Geothermal Module,4000000,40000161,False,False,False,False
+Enacted (04/01/2026),13,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,978000,40000663,False,False,True,False
+Enacted (04/01/2026),13,Department of Commerce,,2026 Local and Community Projects,6409000,40000709,False,False,True,False
+Enacted (04/01/2026),13,Department of Commerce,,2027 Local and Community Projects,320000,40001947,False,False,True,False
+Enacted (04/01/2026),13,Department of Commerce,,Affordable Housing Supply and Preservation,15677000,92001957,False,False,True,False
+Enacted (04/01/2026),13,Department of Commerce,,Local and Water Infrastructure,112000,92002496,False,False,True,False
+Enacted (04/01/2026),13,Department of Commerce,,Local Infrastructure,172000,92001953,False,False,True,False
+Enacted (04/01/2026),13,Department of Commerce,,Regional Needs,1688000,92002328,False,False,True,False
+Enacted (04/01/2026),13,Department of Commerce,,Revitalized Local and Community Projects,2200000,91002939,False,False,True,False
+Enacted (04/01/2026),13,Department of Commerce,,Water Quality Projects,4810000,40001951,False,False,True,False
+Enacted (04/01/2026),13,Department of Ecology,,2025-27 Floodplains by Design,10309000,40000660,False,False,True,False
+Enacted (04/01/2026),13,Department of Ecology,,2025-27 Remedial Action Grant Program,3833000,40000726,False,False,True,False
+Enacted (04/01/2026),13,Department of Ecology,,Statewide Water Conservation,875000,92000233,False,False,True,False
+Enacted (04/01/2026),13,Department of Natural Resources,,2025-27 Environmental Mitigation Projects,274000,40000586,False,False,True,False
+Enacted (04/01/2026),13,Department of Natural Resources,,2025-27 Safe and Sustainable Recreation,1000000,40000459,False,False,True,False
+Enacted (04/01/2026),13,Military Department,,Moses Lake Readiness Center Renovation,925000,40000194,False,False,False,False
+Enacted (04/01/2026),13,Military Department,,Moses Lake Readiness Center Stormwater Repairs,226000,40000349,False,False,False,False
+Enacted (04/01/2026),13,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,20315000,40000150,False,False,True,False
+Enacted (04/01/2026),13,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,1684000,40000564,False,False,True,False
+Enacted (04/01/2026),13,Recreation and Conservation Office,,2025-27 Community Forest Grant Program,3124000,40000562,False,False,True,False
+Enacted (04/01/2026),13,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,7335000,40000548,False,False,True,False
+Enacted (04/01/2026),13,State Parks and Recreation Commission,,Lake Easton - Infrastructure Improvements,780000,30000177,False,False,False,False
+Enacted (04/01/2026),13,State Parks and Recreation Commission,,Sun Lakes - Dry Falls Visitor's Center Renovation,6382000,40000156,False,False,False,False
+Enacted (04/01/2026),13,Washington State Historical Society,,Heritage Capital Grants 2025-27,240000,40000184,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,2025-27 Behavioral Health Facilities,11959000,40000667,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,2025-27 Building Communities Fund Program,1425000,40000669,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,2025-27 Dental Capacity Grants,515000,92001952,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,2025-27 Library Capital Improvement Program,661000,40000662,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,2025-27 Youth Recreational Facilities Program,750000,40000661,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,2026 Local and Community Projects,4813000,40000709,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,2027 Local and Community Projects,734000,40001947,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,2027 Revitalized Local and Community Projects,386000,92002468,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,Local and Water Infrastructure,67000,92002496,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,Local Infrastructure,2050000,92001953,False,False,True,False
+Enacted (04/01/2026),14,Department of Commerce,,Regional Needs,2151000,92002328,False,False,True,False
+Enacted (04/01/2026),14,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,34000,40000467,False,False,True,False
+Enacted (04/01/2026),14,Department of Natural Resources,,2025-27 Trust Land Transfer Program,3700000,40000685,False,False,True,False
+Enacted (04/01/2026),14,Public Schools,,2025-27 Distressed Schools,1500000,92001915,False,False,True,False
+Enacted (04/01/2026),14,Public Schools,,2025-27 Skills Center Minor Works,968000,40000158,False,False,True,False
+Enacted (04/01/2026),14,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,16259000,40000150,False,False,True,False
+Enacted (04/01/2026),14,Recreation and Conservation Office,,2025-27 Community Forest Grant Program,3124000,40000562,False,False,True,False
+Enacted (04/01/2026),14,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,5068000,40000548,False,False,True,False
+Enacted (04/01/2026),14,State Parks and Recreation Commission,,Klickitat Trail Suburbia Bridge Replacement,4066000,30001024,False,False,False,False
+Enacted (04/01/2026),15,Department of Agriculture,,"WSDA Plant Services Lab, Prosser",2186000,40000002,False,False,False,False
+Enacted (04/01/2026),15,Department of Commerce,,2025-27 Building Communities Fund Program,350000,40000669,False,False,True,False
+Enacted (04/01/2026),15,Department of Commerce,,2025-27 Dental Capacity Grants,1898000,92001952,False,False,True,False
+Enacted (04/01/2026),15,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,1102000,40000663,False,False,True,False
+Enacted (04/01/2026),15,Department of Commerce,,2025-27 Youth Recreational Facilities Program,1200000,40000661,False,False,True,False
+Enacted (04/01/2026),15,Department of Commerce,,2026 Local and Community Projects,9761000,40000709,False,False,True,False
+Enacted (04/01/2026),15,Department of Commerce,,2027 Local and Community Projects,494000,40001947,False,False,True,False
+Enacted (04/01/2026),15,Department of Commerce,,Affordable Housing Supply and Preservation,530000,92001957,False,False,True,False
+Enacted (04/01/2026),15,Department of Commerce,,Local Infrastructure,11075000,92001953,False,False,True,False
+Enacted (04/01/2026),15,Department of Ecology,,2025-27 Sunnyside Valley Irrigation District Water Conservation,3250000,40000674,False,False,True,False
+Enacted (04/01/2026),15,Department of Ecology,,Statewide Water Conservation,4475000,92000233,False,False,True,False
+Enacted (04/01/2026),15,Department of Ecology,,Yakima Tieton Irrigation Canal,8500000,92000220,False,False,False,False
+Enacted (04/01/2026),15,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),15,Military Department,,Yakima Readiness Center Deep Energy Retrofit and Decarbonization,283000,40000368,False,False,False,False
+Enacted (04/01/2026),15,Military Department,,Yakima Readiness Center Repairs,416000,40000350,False,False,False,False
+Enacted (04/01/2026),15,Military Department,,Yakima Training Center (MATES) Renovation,7950000,40000369,False,False,False,False
+Enacted (04/01/2026),15,Military Department,,Yakima Training Center 960 (MATES) HVAC System Replacement,5741000,40000351,False,False,False,False
+Enacted (04/01/2026),15,Military Department,,Yakima Training Center Military Vehicle Parking Repair,3623000,40000352,False,False,False,False
+Enacted (04/01/2026),15,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,2507000,40000548,False,False,True,False
+Enacted (04/01/2026),15,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,739000,40000556,False,False,True,False
+Enacted (04/01/2026),16,Community & Technical College System,,Columbia Basin: Performing Arts Building Replacement,54548000,40000108,False,False,False,False
+Enacted (04/01/2026),16,Community & Technical College System,,COP for Columbia Basin Student Housing Construction,18000000,40001151,True,False,False,False
+Enacted (04/01/2026),16,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,1996000,40000040,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,2025-27 Building for the Arts Grant Program,22000,40000668,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,2025-27 Clean Energy Fund Program,4000000,40000679,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,2025-27 Dental Capacity Grants,1030000,92001952,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,285000,40000663,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,2026 Local and Community Projects,3855000,40000709,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,2027 Local and Community Projects,258000,40001947,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,Affordable Housing Supply and Preservation,160000,92001957,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,Local Infrastructure,773000,92001953,False,False,True,False
+Enacted (04/01/2026),16,Department of Commerce,,Regional Needs,1008000,92002328,False,False,True,False
+Enacted (04/01/2026),16,Department of Corrections,,SW: Fire Alarm Systems Stabilization Project,6100000,40000524,False,True,False,False
+Enacted (04/01/2026),16,Department of Ecology,,2025-27 Columbia River Water Supply Development Program,3550000,40000681,False,False,True,False
+Enacted (04/01/2026),16,Department of Ecology,,2025-27 Eastern Washington Clean Sites Initiative,3500000,40000628,False,False,True,False
+Enacted (04/01/2026),16,Department of Ecology,,2025-27 Waste Tire Pile Cleanup and Prevention,3200000,40000621,False,False,True,False
+Enacted (04/01/2026),16,Department of Ecology,,Statewide Water Conservation,1947000,92000233,False,False,True,False
+Enacted (04/01/2026),16,Military Department,,Minor Works Program 2025-27 Biennium,9885000,40000345,False,True,False,False
+Enacted (04/01/2026),16,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,11555000,40000150,False,False,True,False
+Enacted (04/01/2026),16,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,6727000,40000564,False,False,True,False
+Enacted (04/01/2026),16,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,500000,40000548,False,False,True,False
+Enacted (04/01/2026),17,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,618000,40000040,False,False,True,False
+Enacted (04/01/2026),17,Department of Commerce,,2025-27 Early Learning Facilities - Eligible Organizations,1036000,40000656,False,False,True,False
+Enacted (04/01/2026),17,Department of Commerce,,2026 Local and Community Projects,2792000,40000709,False,False,True,False
+Enacted (04/01/2026),17,Department of Commerce,,2027 Local and Community Projects,733000,40001947,False,False,True,False
+Enacted (04/01/2026),17,Department of Commerce,,2027 Revitalized Local and Community Projects,2218000,92002468,False,False,True,False
+Enacted (04/01/2026),17,Department of Commerce,,Regional Needs,1530000,92002328,False,False,True,False
+Enacted (04/01/2026),17,Department of Natural Resources,,2025-27 Environmental Mitigation Projects,93000,40000586,False,False,True,False
+Enacted (04/01/2026),17,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,119000,40000467,False,False,True,False
+Enacted (04/01/2026),17,Department of Natural Resources,,2025-27 Safe and Sustainable Recreation,300000,40000459,False,False,True,False
+Enacted (04/01/2026),17,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,12072000,40000150,False,False,True,False
+Enacted (04/01/2026),17,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,6257000,40000548,False,False,True,False
+Enacted (04/01/2026),17,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,1998000,40000556,False,False,True,False
+Enacted (04/01/2026),18,Department of Commerce,,2026 Local and Community Projects,2293000,40000709,False,False,True,False
+Enacted (04/01/2026),18,Department of Commerce,,2027 Local and Community Projects,709000,40001947,False,False,True,False
+Enacted (04/01/2026),18,Department of Commerce,,2027 Revitalized Local and Community Projects,258000,92002468,False,False,True,False
+Enacted (04/01/2026),18,Department of Commerce,,Affordable Housing Supply and Preservation,4050000,92001957,False,False,True,False
+Enacted (04/01/2026),18,Department of Commerce,,Regional Needs,1600000,92002328,False,False,True,False
+Enacted (04/01/2026),18,Department of Enterprise Services,,Madrona Tenant Improvements,228000,40000630,False,False,False,False
+Enacted (04/01/2026),18,Department of Natural Resources,,Tukes Work Center Storm Water Mitigation,383000,40000618,False,False,False,False
+Enacted (04/01/2026),18,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),18,Washington State University,,Vancouver Central Chiller Plant Upgrades,3000000,40000371,False,False,False,False
+Enacted (04/01/2026),19,Community & Technical College System,,COP for Lower Columbia College David Story Field Improvements,3000000,40001341,True,False,False,False
+Enacted (04/01/2026),19,Community & Technical College System,,Grays Harbor College: Lake Swano Dam,1000000,40001150,False,False,False,False
+Enacted (04/01/2026),19,Community & Technical College System,,Lower Columbia: Center for Vocational and Transitional Studies,45196000,40000106,False,False,False,False
+Enacted (04/01/2026),19,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,365000,40000040,False,False,True,False
+Enacted (04/01/2026),19,Department of Commerce,,2025-27 Community EV Charging,3000000,40000673,False,False,True,False
+Enacted (04/01/2026),19,Department of Commerce,,2025-27 Housing Trust Fund,1236000,40000677,False,False,True,False
+Enacted (04/01/2026),19,Department of Commerce,,2026 Local and Community Projects,2138000,40000709,False,False,True,False
+Enacted (04/01/2026),19,Department of Commerce,,2027 Local and Community Projects,463000,40001947,False,False,True,False
+Enacted (04/01/2026),19,Department of Commerce,,Affordable Housing Supply and Preservation,1823000,92001957,False,False,True,False
+Enacted (04/01/2026),19,Department of Commerce,,Local and Water Infrastructure,348000,92002496,False,False,True,False
+Enacted (04/01/2026),19,Department of Commerce,,Local Infrastructure,515000,92001953,False,False,True,False
+Enacted (04/01/2026),19,Department of Commerce,,Regional Needs,410000,92002328,False,False,True,False
+Enacted (04/01/2026),19,Department of Fish and Wildlife,,Beaver Creek Hatchery - Renovation,7000000,30000680,False,False,False,False
+Enacted (04/01/2026),19,Department of Fish and Wildlife,,Culvert Court Case Fish Passage Barrier Corrections,817000,40000271,False,False,False,False
+Enacted (04/01/2026),19,Department of Fish and Wildlife,,Naselle Hatchery Renovation,9324000,30000671,False,False,False,False
+Enacted (04/01/2026),19,Department of Fish and Wildlife,,Nemah Hatchery Weir Replacement,381000,40000272,False,False,False,False
+Enacted (04/01/2026),19,Department of Natural Resources,,Derelict Vessel Removal Program,3000000,40000587,False,False,True,False
+Enacted (04/01/2026),19,Department of Social and Health Services,,Maple Lane - Rapid BH Bed Capacity,22107000,92000046,False,False,False,False
+Enacted (04/01/2026),19,Military Department,,Longview Readiness Center Renovation,694000,40000359,False,True,False,False
+Enacted (04/01/2026),19,Military Department,,Minor Works Program 2025-27 Biennium,9885000,40000345,False,True,False,False
+Enacted (04/01/2026),19,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,41557000,40000150,False,False,True,False
+Enacted (04/01/2026),19,Public Schools,,SCAP Enhancement Program Pilot,850000,91002559,False,False,True,False
+Enacted (04/01/2026),19,Public Schools,,SCAPR Transitional Projects,5304000,91002551,False,False,True,False
+Enacted (04/01/2026),19,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,8110000,40000564,False,False,True,False
+Enacted (04/01/2026),19,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),19,Recreation and Conservation Office,,2025-27 Washington Coastal Restoration and Resiliency Initiative,2082000,40000568,False,False,True,False
+Enacted (04/01/2026),19,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,4549000,40000548,False,False,True,False
+Enacted (04/01/2026),19,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,330000,40000556,False,False,True,False
+Enacted (04/01/2026),19,State Parks and Recreation Commission,,Twin Harbors South Beach Area Admin and Maint Facility,1366000,40000460,False,False,False,False
+Enacted (04/01/2026),19,Washington State Historical Society,,Heritage Capital Grants 2025-27,1688000,40000184,False,False,True,False
+Enacted (04/01/2026),20,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,150000,40000040,False,False,True,False
+Enacted (04/01/2026),20,"Department of Children, Youth, and Families",,Green Hill School HVAC Upgrades,4500000,40000584,False,False,False,False
+Enacted (04/01/2026),20,"Department of Children, Youth, and Families",,Green Hill School Security Doors/Locks Sleeping Rooms,1800000,40000615,False,False,False,False
+Enacted (04/01/2026),20,"Department of Children, Youth, and Families",,Green Hill School Visitor Screening & Security Improvements,4500000,40000596,False,False,False,False
+Enacted (04/01/2026),20,Department of Commerce,,2019-21 Behavioral Health Capacity Grants,0,40000114,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,2025-27 Behavioral Health Facilities,541000,40000667,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,2025-27 Building for the Arts Grant Program,217000,40000668,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,2026 Local and Community Projects,4422000,40000709,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,2027 Local and Community Projects,1017000,40001947,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,2027 Revitalized Local and Community Projects,767000,92002468,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,City of Centralia Nitrates Project,5000000,91000419,False,False,False,False
+Enacted (04/01/2026),20,Department of Commerce,,Disaster and Flood Response,1545000,92002497,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,Local and Water Infrastructure,30000,92002496,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,Local Infrastructure,3478000,92001953,False,False,True,False
+Enacted (04/01/2026),20,Department of Commerce,,Regional Needs,1552000,92002328,False,False,True,False
+Enacted (04/01/2026),20,Department of Ecology,,2025-27 Clean Up Toxic Sites-Puget Sound Initiative,2000000,40000653,False,False,True,False
+Enacted (04/01/2026),20,Department of Fish and Wildlife,,Bob Oke Game Farm Relocation and Remediation Efforts,50000,91000172,False,False,False,False
+Enacted (04/01/2026),20,Department of Fish and Wildlife,,Port of Woodland,0,92001259,False,False,False,False
+Enacted (04/01/2026),20,Department of Fish and Wildlife,,Toutle River Fish Collection Facility - Match,6504000,40000021,False,False,False,False
+Enacted (04/01/2026),20,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),20,Department of Social and Health Services,,Statewide-Campus: Pendant Alarm System Replacement,972000,40001183,False,True,False,False
+Enacted (04/01/2026),20,Military Department,,Minor Works Program 2025-27 Biennium,9885000,40000345,False,True,False,False
+Enacted (04/01/2026),20,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,6048000,40000150,False,False,True,False
+Enacted (04/01/2026),20,Recreation and Conservation Office,,2025-27 Aquatic Lands Enhancement Account,521000,40000560,False,False,True,False
+Enacted (04/01/2026),20,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),20,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,3127000,40000548,False,False,True,False
+Enacted (04/01/2026),20,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,1092000,40000556,False,False,True,False
+Enacted (04/01/2026),20,Washington State Historical Society,,Heritage Capital Grants 2025-27,145000,40000184,False,False,True,False
+Enacted (04/01/2026),21,Department of Commerce,,2026 Local and Community Projects,2325000,40000709,False,False,True,False
+Enacted (04/01/2026),21,Department of Commerce,,2027 Local and Community Projects,309000,40001947,False,False,True,False
+Enacted (04/01/2026),21,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,681000,40000548,False,False,True,False
+Enacted (04/01/2026),22,Community & Technical College System,,COP for South Puget Sound Athletic Field Construction,5000000,91000454,True,False,False,False
+Enacted (04/01/2026),22,"Department of Children, Youth, and Families",,6yr Statewide Facilities Master Plan,250000,40000587,False,False,False,False
+Enacted (04/01/2026),22,Department of Commerce,,2025-27 Housing Trust Fund,9300000,40000677,False,False,True,False
+Enacted (04/01/2026),22,Department of Commerce,,2026 Local and Community Projects,5298000,40000709,False,False,True,False
+Enacted (04/01/2026),22,Department of Commerce,,2027 Revitalized Local and Community Projects,2500000,92002468,False,False,True,False
+Enacted (04/01/2026),22,Department of Commerce,,Affordable Housing Supply and Preservation,773000,92001957,False,False,True,False
+Enacted (04/01/2026),22,Department of Commerce,,Industrial Symbiosis,5000000,92002215,False,False,False,False
+Enacted (04/01/2026),22,Department of Commerce,,Local and Water Infrastructure,711000,92002496,False,False,True,False
+Enacted (04/01/2026),22,Department of Commerce,,Regional Needs,500000,92002328,False,False,True,False
+Enacted (04/01/2026),22,Department of Commerce,,Revitalized Local and Community Projects,1855000,91002939,False,False,True,False
+Enacted (04/01/2026),22,Department of Ecology,,2025-27 Remedial Action Grant Program,1140000,40000726,False,False,True,False
+Enacted (04/01/2026),22,Department of Ecology,,Capitol Lake-Deschutes Estuary Project,25209000,92000226,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Cal Anderson Memorial,315000,92000058,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Campus Energy System Replacement,9237000,91000449,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Capitol Campus Arc Flash Study,1354000,40000474,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Capitol Campus Emergency Generator Replacement,1211000,40000393,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Capitol Campus Security,500000,40000628,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Capitol Campus Window Film,345000,40000627,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Cherberg - O’Brien Tunnel Repair,4007000,40000341,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,East Plaza - Water Infiltration & Elevator Repairs,580000,40000333,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,GA - Building Demolition,12216000,40000317,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Legislative Building Centennial Skylights,5944000,40000340,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Legislative Building Cleaning,3940000,40000400,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Legislative Building Repairs,250000,40000629,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Legislative Building Systems Rehabilitation,17125000,30000791,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Legislative Campus Modernization,49501000,92000020,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,LSS - Dolliver Building Relocation,340000,91000474,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Minor Works - Clean Buildings,5047000,40000527,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Minor Works - Elevator Modernization,4114000,40000551,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Minor Works - Fire and Life Safety Systems,1570000,40000553,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Minor Works - Infrastructure,2259000,40000505,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Minor Works - Preservation,1601000,40000485,False,False,True,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,Modular Building - Critical Repairs & Upgrades,25000000,40000314,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,NRB - Replace Piping for Wet Fire Suppression,9493000,40000249,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,O'Brien Building HVAC Repair,2543000,40000339,False,False,False,False
+Enacted (04/01/2026),22,Department of Enterprise Services,,West Campus - Hillside Stabilization,847000,40000396,False,False,False,False
+Enacted (04/01/2026),22,Department of Labor and Industries,,Emergency Generator and Building Switchgear Upgrades,1792000,40000019,False,False,False,False
+Enacted (04/01/2026),22,Department of Labor and Industries,,Minor Works Preservation Projects,1345000,30000035,False,False,True,False
+Enacted (04/01/2026),22,Department of Labor and Industries,,Transmission Electron Microscope Workspace Construction,1500000,40000023,False,False,False,False
+Enacted (04/01/2026),22,Department of Social and Health Services,,OB2 Facility Improvements,4257000,40001324,False,False,False,False
+Enacted (04/01/2026),22,Military Department,,Tumwater Field Maintenance Shop,3700000,40000367,False,False,False,False
+Enacted (04/01/2026),22,Office of the Secretary of State,,Puget Sound Regional Archives HVAC,2430000,40000007,False,True,False,False
+Enacted (04/01/2026),22,Office of the Secretary of State,,Tumwater Area Access,140000,40000011,False,True,False,False
+Enacted (04/01/2026),22,Public Schools,,2025-27 Skills Center Minor Works,2150000,40000158,False,False,True,False
+Enacted (04/01/2026),22,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,4722000,40000548,False,False,True,False
+Enacted (04/01/2026),22,The Evergreen State College,,2025-27 Minor Works Preservation and Program,15144000,91000042,False,False,False,False
+Enacted (04/01/2026),22,The Evergreen State College,,Labs 1 & 2 Third Floor Renovation,298000,40000145,False,False,False,False
+Enacted (04/01/2026),22,The Evergreen State College,,Preventive Facility Maintenance and Building System Repairs,880000,40000140,False,False,False,False
+Enacted (04/01/2026),22,Washington State Historical Society,,Heritage Capital Grants 2025-27,84000,40000184,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,2025-27 Behavioral Health Facilities,18480000,40000667,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,2025-27 Building Communities Fund Program,3040000,40000669,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,2025-27 Connecting Housing to Infrastructure Program,600000,40000675,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,2025-27 Dental Capacity Grants,927000,92001952,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,2025-27 Housing Trust Fund,1545000,40000677,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,2026 Local and Community Projects,1092000,40000709,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,2027 Local and Community Projects,788000,40001947,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,Affordable Housing Supply and Preservation,1893000,92001957,False,False,True,False
+Enacted (04/01/2026),23,Department of Commerce,,Regional Needs,2273000,92002328,False,False,True,False
+Enacted (04/01/2026),23,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,2000000,40000150,False,False,True,False
+Enacted (04/01/2026),23,Recreation and Conservation Office,,2025-27 Estuary and Salmon Restoration Program,160000,40000566,False,False,True,False
+Enacted (04/01/2026),23,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,1300000,40000548,False,False,True,False
+Enacted (04/01/2026),23,Washington State Historical Society,,Heritage Capital Grants 2025-27,450000,40000184,False,False,True,False
+Enacted (04/01/2026),24,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,467000,40000040,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2025-27 Building Communities Fund Program,3590000,40000669,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2025-27 Building for the Arts Grant Program,1032000,40000668,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2025-27 CERB Capital Construction,1330000,40000658,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2025-27 Early Learning Facilities - Eligible Organizations,2050000,40000656,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2025-27 Housing Trust Fund,4550000,40000677,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2025-27 Library Capital Improvement Program,473000,40000662,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2025-27 Tribal Climate Adaptation Pass-through Grants,5975000,40000812,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2026 Local and Community Projects,11973000,40000709,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2027 Local and Community Projects,3277000,40001947,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,2027 Revitalized Local and Community Projects,1463000,92002468,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,Local and Water Infrastructure,112000,92002496,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,Regional Needs,3290000,92002328,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,Revitalized Local and Community Projects,116000,91002939,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,Tribal Clean Energy and Climate Resilience,12035000,92002299,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,Water Quality Projects,800000,40001951,False,False,True,False
+Enacted (04/01/2026),24,Department of Commerce,,Youth Shelters and Housing,436000,91002686,False,False,True,False
+Enacted (04/01/2026),24,Department of Corrections,,SW: Fire Alarm Systems Stabilization Project,6100000,40000524,False,True,False,False
+Enacted (04/01/2026),24,Department of Corrections,,SW: Perimeter Fence Detection Stabilization Project,6445000,40000525,False,True,False,False
+Enacted (04/01/2026),24,Department of Corrections,,SW: Security Electronics Renewal & Adaptation,4825000,40000523,False,True,False,False
+Enacted (04/01/2026),24,Department of Ecology,,2025-27 Floodplains by Design,20604000,40000660,False,False,True,False
+Enacted (04/01/2026),24,Department of Ecology,,North Shore Levee,17000000,92000200,False,False,False,False
+Enacted (04/01/2026),24,Department of Fish and Wildlife,,Point Whitney Appraisal and Sale,5000,92001254,False,False,False,False
+Enacted (04/01/2026),24,Department of Fish and Wildlife,,Sol Duc Barrier and Boat Chute Replacement,1137000,40000168,False,False,False,False
+Enacted (04/01/2026),24,Department of Fish and Wildlife,,SRKW - Sol Duc Hatchery Modifications,11316000,40000147,False,False,False,False
+Enacted (04/01/2026),24,Department of Natural Resources,,2025-27 Correction of Fish Passage Culverts,104000,40000562,False,False,True,False
+Enacted (04/01/2026),24,Department of Natural Resources,,2025-27 Environmental Mitigation Projects,230000,40000586,False,False,True,False
+Enacted (04/01/2026),24,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,444000,40000467,False,False,True,False
+Enacted (04/01/2026),24,Department of Natural Resources,,2025-27 Rivers and Habitat Open Space Program,2348000,40000601,False,False,True,False
+Enacted (04/01/2026),24,Department of Natural Resources,,2025-27 Safe and Sustainable Recreation,200000,40000459,False,False,True,False
+Enacted (04/01/2026),24,Department of Natural Resources,,2025-27 Trust Land Transfer Program,12750000,40000685,False,False,True,False
+Enacted (04/01/2026),24,Department of Natural Resources,,Bridge Remediation,1060000,40000442,False,False,True,False
+Enacted (04/01/2026),24,Public Schools,,2025-27 School Seismic Safety Grant Program,165351000,40000159,False,False,True,False
+Enacted (04/01/2026),24,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,25889000,40000150,False,False,True,False
+Enacted (04/01/2026),24,Recreation and Conservation Office,,2025-27 Estuary and Salmon Restoration Program,452000,40000566,False,False,True,False
+Enacted (04/01/2026),24,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),24,Recreation and Conservation Office,,2025-27 Washington Coastal Restoration and Resiliency Initiative,7554000,40000568,False,False,True,False
+Enacted (04/01/2026),24,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,5872000,40000548,False,False,True,False
+Enacted (04/01/2026),24,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,1822000,40000556,False,False,True,False
+Enacted (04/01/2026),24,Special Appropriations to the Governor,,Point Whitney Appraisal,55000,92000002,False,False,False,False
+Enacted (04/01/2026),24,State Parks and Recreation Commission,,Fort Flagler WWI Historic Facilities Preservation,1230000,40000485,False,False,False,False
+Enacted (04/01/2026),24,State Parks and Recreation Commission,,Fort Worden Beach Campground Electrical Upgrades,2864000,40000473,False,False,False,False
+Enacted (04/01/2026),24,State Parks and Recreation Commission,,Little Hoko River Floodplain Restoration,1000000,40000513,False,False,False,False
+Enacted (04/01/2026),24,State Parks and Recreation Commission,,Ocean City Fish Barrier Removal,3895000,40000123,False,False,False,False
+Enacted (04/01/2026),24,Washington State Historical Society,,Heritage Capital Grants 2025-27,1909000,40000184,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,2025-27 Building Communities Fund Program,2000000,40000669,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,2025-27 Building for the Arts Grant Program,878000,40000668,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,2025-27 Tribal Climate Adaptation Pass-through Grants,5000000,40000812,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,2026 Local and Community Projects,2902000,40000709,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,2027 Local and Community Projects,423000,40001947,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,Affordable Housing Supply and Preservation,2050000,92001957,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,Local and Water Infrastructure,1030000,92002496,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,Regional Needs,412000,92002328,False,False,True,False
+Enacted (04/01/2026),25,Department of Commerce,,Revitalized Local and Community Projects,558000,91002939,False,False,True,False
+Enacted (04/01/2026),25,Department of Ecology,,2025-27 Floodplains by Design,6577000,40000660,False,False,True,False
+Enacted (04/01/2026),25,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,3542000,40000150,False,False,True,False
+Enacted (04/01/2026),25,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,1500000,40000548,False,False,True,False
+Enacted (04/01/2026),25,Washington State University,,Puyallup Washington Animal Disease Diagnostic Lab Facility,3000000,40000372,False,False,False,False
+Enacted (04/01/2026),26,Community & Technical College System,,Olympic Innovation and Technology Learning Center,31854000,40000103,False,False,False,False
+Enacted (04/01/2026),26,Department of Commerce,,2025-27 Dental Capacity Grants,973000,92001952,False,False,True,False
+Enacted (04/01/2026),26,Department of Commerce,,2026 Local and Community Projects,5481000,40000709,False,False,True,False
+Enacted (04/01/2026),26,Department of Commerce,,2027 Local and Community Projects,309000,40001947,False,False,True,False
+Enacted (04/01/2026),26,Department of Commerce,,Affordable Housing Supply and Preservation,460000,92001957,False,False,True,False
+Enacted (04/01/2026),26,Department of Commerce,,Local and Water Infrastructure,1030000,92002496,False,False,True,False
+Enacted (04/01/2026),26,Department of Commerce,,Local Infrastructure,211000,92001953,False,False,True,False
+Enacted (04/01/2026),26,Department of Commerce,,Regional Needs,1189000,92002328,False,False,True,False
+Enacted (04/01/2026),26,Department of Corrections,,WCCW: MSC Living Unit Bathroom Renovations,8448000,40000263,False,False,False,False
+Enacted (04/01/2026),26,Department of Corrections,,"WCCW: Replace Roofs Bldgs C, H, B, G, U & W",6749000,40000770,False,False,False,False
+Enacted (04/01/2026),26,Department of Fish and Wildlife,,Minter Hatchery Intakes,4497000,30000277,False,False,False,False
+Enacted (04/01/2026),26,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),26,Department of Veterans' Affairs,,THP - BLDG 10 Fire Alarm System Replacement,1416000,40000110,False,False,False,False
+Enacted (04/01/2026),26,Military Department,,Minor Works Program 2025-27 Biennium,9885000,40000345,False,True,False,False
+Enacted (04/01/2026),26,Public Schools,,West Sound Technical Skills Center Modernization,42000000,40000015,False,False,False,False
+Enacted (04/01/2026),26,Recreation and Conservation Office,,2025-27 Aquatic Lands Enhancement Account,1255000,40000560,False,False,True,False
+Enacted (04/01/2026),26,Recreation and Conservation Office,,2025-27 Estuary and Salmon Restoration Program,858000,40000566,False,False,True,False
+Enacted (04/01/2026),26,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),26,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,511000,40000548,False,False,True,False
+Enacted (04/01/2026),26,Washington State Historical Society,,Heritage Capital Grants 2025-27,23000,40000184,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,2025-27 Building Communities Fund Program,1752000,40000669,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,2025-27 Building for the Arts Grant Program,1902000,40000668,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,2025-27 Early Learning Facilities - Eligible Organizations,5535000,40000656,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,2025-27 Housing Trust Fund,2050000,40000677,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,2026 Local and Community Projects,12303000,40000709,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,2027 Local and Community Projects,3076000,40001947,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,Affordable Housing Supply and Preservation,628000,92001957,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,Local and Water Infrastructure,2009000,92002496,False,False,True,False
+Enacted (04/01/2026),27,Department of Commerce,,Regional Needs,5491000,92002328,False,False,True,False
+Enacted (04/01/2026),27,Department of Ecology,,2025-27 Remedial Action Grant Program,5000000,40000726,False,False,True,False
+Enacted (04/01/2026),27,Military Department,,Minor Works Program 2025-27 Biennium,9885000,40000345,False,True,False,False
+Enacted (04/01/2026),27,Public Schools,,2025-27 Distressed Schools,5000000,92001915,False,False,True,False
+Enacted (04/01/2026),27,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,500000,40000548,False,False,True,False
+Enacted (04/01/2026),27,University of Washington,,UW Tacoma - Asset Preservation (Minor Works) 25-27,5415000,40000164,False,False,False,False
+Enacted (04/01/2026),27,University of Washington,,UW Tacoma - Campus Power Repairs (Phase 3),3900000,40000160,False,False,False,False
+Enacted (04/01/2026),27,Washington State Historical Society,,Heritage Capital Grants 2025-27,665000,40000184,False,False,True,False
+Enacted (04/01/2026),27,Washington State Historical Society,,Permanent Gallery Renovation,1386000,40000183,False,False,False,False
+Enacted (04/01/2026),27,Washington State Historical Society,,Preservation - Minor Works 2025-27,2365000,40000182,False,False,False,False
+Enacted (04/01/2026),28,Community & Technical College System,,COP for Clover Park Technical College: Eastside Training Facility,15000000,40001336,True,False,False,False
+Enacted (04/01/2026),28,Department of Commerce,,2025-27 Building for the Arts Grant Program,452000,40000668,False,False,True,False
+Enacted (04/01/2026),28,Department of Commerce,,2025-27 Defense Community Compatibility Account,4451000,40000660,False,False,True,False
+Enacted (04/01/2026),28,Department of Commerce,,2026 Local and Community Projects,2383000,40000709,False,False,True,False
+Enacted (04/01/2026),28,Department of Commerce,,2027 Local and Community Projects,728000,40001947,False,False,True,False
+Enacted (04/01/2026),28,Department of Commerce,,Affordable Housing Supply and Preservation,515000,92001957,False,False,True,False
+Enacted (04/01/2026),28,Department of Commerce,,Local and Water Infrastructure,653000,92002496,False,False,True,False
+Enacted (04/01/2026),28,Department of Commerce,,Regional Needs,5000000,92002328,False,False,True,False
+Enacted (04/01/2026),28,Department of Corrections,,McNeil Island Parcel Analysis,522000,40000781,False,False,False,False
+Enacted (04/01/2026),28,Department of Corrections,,McNeil Island Transport Barge Replacement,6128000,40000419,False,False,False,False
+Enacted (04/01/2026),28,Department of Social and Health Services,,Special Commitment Center – Emergency Backup Generator Replacemen,6115000,40001307,False,True,False,False
+Enacted (04/01/2026),28,Department of Social and Health Services,,Statewide - Infrastructure: Emergency Generator Replacement,22611000,40001182,False,True,False,False
+Enacted (04/01/2026),28,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),28,Department of Social and Health Services,,Statewide-Campus: Pendant Alarm System Replacement,972000,40001183,False,True,False,False
+Enacted (04/01/2026),28,Department of Social and Health Services,,Western State Hospital: New Forensic Hospital,282000000,91000067,False,True,False,False
+Enacted (04/01/2026),28,Department of Social and Health Services,,Western State Hospital-Campus Shower Upgrades,1775000,40001186,False,True,False,False
+Enacted (04/01/2026),28,Department of Social and Health Services,,Western State Hospital-Water System: Assessment and Improvements,27162000,40001089,False,True,False,False
+Enacted (04/01/2026),28,Department of Social and Health Services,,WSH-Building 27: Fire Doors Replacement,1940000,40001322,False,True,False,False
+Enacted (04/01/2026),28,Military Department,,Camp Murray Mechanical Security Barricade Repair,2660000,40000347,False,False,False,False
+Enacted (04/01/2026),28,Military Department,,Joint Base Lewis-McChord 9608 (UTES) Interior Modification,782000,40000357,False,False,False,False
+Enacted (04/01/2026),28,Military Department,,Joint Base Lewis-McChord Army Aviation Support Facility 1 HVAC,4462000,40000348,False,False,False,False
+Enacted (04/01/2026),28,Military Department,,Joint Force Readiness Center: Replacement,6000000,30000591,False,False,False,False
+Enacted (04/01/2026),28,Recreation and Conservation Office,,2025-27 Aquatic Lands Enhancement Account,521000,40000560,False,False,True,False
+Enacted (04/01/2026),28,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,2724000,40000548,False,False,True,False
+Enacted (04/01/2026),29,Department of Commerce,,2025-27 Building Communities Fund Program,2400000,40000669,False,False,True,False
+Enacted (04/01/2026),29,Department of Commerce,,2025-27 Housing Trust Fund,11150000,40000677,False,False,True,False
+Enacted (04/01/2026),29,Department of Commerce,,2026 Local and Community Projects,6676000,40000709,False,False,True,False
+Enacted (04/01/2026),29,Department of Commerce,,2027 Local and Community Projects,515000,40001947,False,False,True,False
+Enacted (04/01/2026),29,Department of Commerce,,2027 Revitalized Local and Community Projects,1000000,92002468,False,False,True,False
+Enacted (04/01/2026),29,Department of Commerce,,Affordable Housing Supply and Preservation,4070000,92001957,False,False,True,False
+Enacted (04/01/2026),29,Department of Commerce,,Disaster and Flood Response,258000,92002497,False,False,True,False
+Enacted (04/01/2026),29,Department of Commerce,,Regional Needs,924000,92002328,False,False,True,False
+Enacted (04/01/2026),29,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,1500000,40000548,False,False,True,False
+Enacted (04/01/2026),29,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,2808000,40000556,False,False,True,False
+Enacted (04/01/2026),30,Department of Commerce,,2025-27 Dental Capacity Grants,258000,92001952,False,False,True,False
+Enacted (04/01/2026),30,Department of Commerce,,2026 Local and Community Projects,1796000,40000709,False,False,True,False
+Enacted (04/01/2026),30,Department of Commerce,,2027 Local and Community Projects,653000,40001947,False,False,True,False
+Enacted (04/01/2026),30,Department of Commerce,,Affordable Housing Supply and Preservation,1258000,92001957,False,False,True,False
+Enacted (04/01/2026),30,Department of Commerce,,Disaster and Flood Response,7500000,92002497,False,False,True,False
+Enacted (04/01/2026),30,Department of Commerce,,Local and Water Infrastructure,258000,92002496,False,False,True,False
+Enacted (04/01/2026),30,Department of Commerce,,Regional Needs,250000,92002328,False,False,True,False
+Enacted (04/01/2026),30,Department of Commerce,,Youth Shelters and Housing,258000,91002686,False,False,True,False
+Enacted (04/01/2026),30,Washington State Historical Society,,Heritage Capital Grants 2025-27,1000000,40000184,False,False,True,False
+Enacted (04/01/2026),31,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,4592000,40000663,False,False,True,False
+Enacted (04/01/2026),31,Department of Commerce,,2025-27 Tribal Climate Adaptation Pass-through Grants,7293000,40000812,False,False,True,False
+Enacted (04/01/2026),31,Department of Commerce,,2026 Local and Community Projects,3034000,40000709,False,False,True,False
+Enacted (04/01/2026),31,Department of Commerce,,2027 Local and Community Projects,300000,40001947,False,False,True,False
+Enacted (04/01/2026),31,Department of Commerce,,Regional Needs,1785000,92002328,False,False,True,False
+Enacted (04/01/2026),31,Department of Ecology,,2025-27 Cleanup Settlement Account Projects,500000,40000629,False,False,True,False
+Enacted (04/01/2026),31,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),31,Department of Veterans' Affairs,,Transitional Housing Program  Roosevelt Barracks HVAC Replacement,5576000,40000114,False,False,False,False
+Enacted (04/01/2026),31,Department of Veterans' Affairs,,Transitional Housing Program Betsy Ross Building HVAC Replacement,4356000,40000116,False,False,False,False
+Enacted (04/01/2026),31,Department of Veterans' Affairs,,WSH - Model Toxics - Pollution Remediation,40000,40000112,False,False,False,False
+Enacted (04/01/2026),31,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,6000000,40000150,False,False,True,False
+Enacted (04/01/2026),31,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,4677000,40000556,False,False,True,False
+Enacted (04/01/2026),32,Community & Technical College System,,COP for Edmonds College Student Housing Acquisition,9000000,40001152,True,False,False,False
+Enacted (04/01/2026),32,Department of Commerce,,2025-27 Behavioral Health Facilities,3325000,40000667,False,False,True,False
+Enacted (04/01/2026),32,Department of Commerce,,2025-27 Housing Trust Fund,2050000,40000677,False,False,True,False
+Enacted (04/01/2026),32,Department of Commerce,,2026 Local and Community Projects,2655000,40000709,False,False,True,False
+Enacted (04/01/2026),32,Department of Commerce,,2027 Local and Community Projects,634000,40001947,False,False,True,False
+Enacted (04/01/2026),32,Department of Health,,2025-27 Minor Works,640000,91000035,False,True,False,False
+Enacted (04/01/2026),32,Department of Health,,Reroute Existing Water Supply Mains,623000,40000041,False,True,False,False
+Enacted (04/01/2026),32,Department of Social and Health Services,,Statewide - Infrastructure: Emergency Generator Replacement,22611000,40001182,False,True,False,False
+Enacted (04/01/2026),32,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),32,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,1202000,40000548,False,False,True,False
+Enacted (04/01/2026),33,Department of Commerce,,2026 Local and Community Projects,3094000,40000709,False,False,True,False
+Enacted (04/01/2026),33,Department of Commerce,,2027 Local and Community Projects,1025000,40001947,False,False,True,False
+Enacted (04/01/2026),33,Department of Commerce,,2027 Revitalized Local and Community Projects,4000000,92002468,False,False,True,False
+Enacted (04/01/2026),33,Department of Commerce,,Open Doors Multicultural Village,13800000,92002217,False,False,False,False
+Enacted (04/01/2026),33,Department of Commerce,,Revitalized Local and Community Projects,1292000,91002939,False,False,True,False
+Enacted (04/01/2026),33,Military Department,,Minor Works Program 2025-27 Biennium,9885000,40000345,False,True,False,False
+Enacted (04/01/2026),33,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,1440000,40000548,False,False,True,False
+Enacted (04/01/2026),33,WA State Criminal Justice Training Commission,,Burien Campus Indoor Shooting Range,350000,40000047,False,True,False,False
+Enacted (04/01/2026),33,WA State Criminal Justice Training Commission,,Omnibus Minor Works,2616000,40000025,False,True,False,False
+Enacted (04/01/2026),33,WA State Criminal Justice Training Commission,,Shooting Range Indoor Ventilation System,2910000,40000041,False,True,False,False
+Enacted (04/01/2026),33,WA State Criminal Justice Training Commission,,Washington State Criminal Justice Training Commission ADA Upgrade,252000,40000045,False,True,False,False
+Enacted (04/01/2026),33,Washington State Historical Society,,Heritage Capital Grants 2025-27,578000,40000184,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,2025-27 Building Communities Fund Program,2450000,40000669,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,2025-27 Building for the Arts Grant Program,1656000,40000668,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,2025-27 Housing Trust Fund,11000000,40000677,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,2025-27 Library Capital Improvement Program,2000000,40000662,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,2025-27 School-Based Health and Behavioral Health Clinics,175000,92002230,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,2026 FIFA World Cup,19500000,40000650,False,False,False,False
+Enacted (04/01/2026),34,Department of Commerce,,2026 Local and Community Projects,2842000,40000709,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,2027 Local and Community Projects,1912000,40001947,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,2027 Revitalized Local and Community Projects,634000,92002468,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,Regional Needs,2550000,92002328,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,Revitalized Local and Community Projects,3575000,91002939,False,False,True,False
+Enacted (04/01/2026),34,Department of Commerce,,Seattle District Energy Electrification,4000000,91002964,False,False,False,False
+Enacted (04/01/2026),34,Department of Ecology,,2025-27 Remedial Action Grant Program,9751000,40000726,False,False,True,False
+Enacted (04/01/2026),34,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),34,Public Schools,,2025-27 Skills Center Minor Works,480000,40000158,False,False,True,False
+Enacted (04/01/2026),34,Recreation and Conservation Office,,2025-27 Aquatic Lands Enhancement Account,521000,40000560,False,False,True,False
+Enacted (04/01/2026),34,Recreation and Conservation Office,,2025-27 Estuary and Salmon Restoration Program,1232000,40000566,False,False,True,False
+Enacted (04/01/2026),34,Washington State Historical Society,,Heritage Capital Grants 2025-27,871000,40000184,False,False,True,False
+Enacted (04/01/2026),35,"Department of Children, Youth, and Families",,Additional Juvenile Rehabilitation Capacity,5000000,91000078,False,False,False,False
+Enacted (04/01/2026),35,Department of Commerce,,2025-27 Building Communities Fund Program,640000,40000669,False,False,True,False
+Enacted (04/01/2026),35,Department of Commerce,,2025-27 Youth Recreational Facilities Program,453000,40000661,False,False,True,False
+Enacted (04/01/2026),35,Department of Commerce,,2026 Local and Community Projects,2879000,40000709,False,False,True,False
+Enacted (04/01/2026),35,Department of Commerce,,2027 Local and Community Projects,367000,40001947,False,False,True,False
+Enacted (04/01/2026),35,Department of Commerce,,2027 Revitalized Local and Community Projects,3515000,92002468,False,False,True,False
+Enacted (04/01/2026),35,Department of Commerce,,Local Infrastructure,1186000,92001953,False,False,True,False
+Enacted (04/01/2026),35,Department of Commerce,,Regional Needs,1602000,92002328,False,False,True,False
+Enacted (04/01/2026),35,Department of Corrections,,SW: Fire Alarm Systems Stabilization Project,6100000,40000524,False,True,False,False
+Enacted (04/01/2026),35,Department of Corrections,,SW: Security Electronics Renewal & Adaptation,4825000,40000523,False,True,False,False
+Enacted (04/01/2026),35,Department of Fish and Wildlife,,Bingham Creek Smolt & Adult Trap Site Repair & Upgrade,1878000,40000269,False,True,False,False
+Enacted (04/01/2026),35,Department of Fish and Wildlife,,Minor Works Programmatic 2025-27,1000000,40000279,False,True,False,False
+Enacted (04/01/2026),35,Department of Natural Resources,,2025-27 Correction of Fish Passage Culverts,108000,40000562,False,False,True,False
+Enacted (04/01/2026),35,Department of Natural Resources,,2025-27 Environmental Mitigation Projects,508000,40000586,False,False,True,False
+Enacted (04/01/2026),35,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,1001000,40000467,False,False,True,False
+Enacted (04/01/2026),35,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,3421000,40000564,False,False,True,False
+Enacted (04/01/2026),35,Recreation and Conservation Office,,2025-27 Estuary and Salmon Restoration Program,3535000,40000566,False,False,True,False
+Enacted (04/01/2026),35,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),35,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,10683000,40000548,False,False,True,False
+Enacted (04/01/2026),35,Recreation and Conservation Office,,Black River Forestry Carbon Sequestration Easement,8000000,92001853,False,True,False,False
+Enacted (04/01/2026),35,Recreation and Conservation Office,,Skokomish Timber Land Acquisition,2020000,91003002,False,True,False,False
+Enacted (04/01/2026),35,State Parks and Recreation Commission,,Millersylvania Retreat Center Road Fish Barrier Removal,245000,40000499,False,False,False,False
+Enacted (04/01/2026),35,State Parks and Recreation Commission,,Millersylvania Welcome Center and Entrance Modifications,630000,40000498,False,False,False,False
+Enacted (04/01/2026),35,State Parks and Recreation Commission,,Potlatch Day Use Comfort Station Removal,419000,40000483,False,False,False,False
+Enacted (04/01/2026),35,State Parks and Recreation Commission,,Twanoh State Park Shoreline Restoration,1533000,40000235,False,False,False,False
+Enacted (04/01/2026),36,Department of Commerce,,2025-27 Building for the Arts Grant Program,1395000,40000668,False,False,True,False
+Enacted (04/01/2026),36,Department of Commerce,,2025-27 Connecting Housing to Infrastructure Program,10000000,40000675,False,False,True,False
+Enacted (04/01/2026),36,Department of Commerce,,2026 Local and Community Projects,2000000,40000709,False,False,True,False
+Enacted (04/01/2026),36,Department of Commerce,,2027 Local and Community Projects,924000,40001947,False,False,True,False
+Enacted (04/01/2026),36,Department of Commerce,,2027 Revitalized Local and Community Projects,580000,92002468,False,False,True,False
+Enacted (04/01/2026),36,Department of Commerce,,Regional Needs,2050000,92002328,False,False,True,False
+Enacted (04/01/2026),36,Department of Natural Resources,,Derelict Vessel Removal Program,3000000,40000587,False,False,True,False
+Enacted (04/01/2026),36,Public Schools,,2025-27 Distressed Schools,6227000,92001915,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,2025-27 Behavioral Health Facilities,7050000,40000667,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,2025-27 Building Communities Fund Program,6590000,40000669,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,2025-27 Building for the Arts Grant Program,1205000,40000668,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,2025-27 Connecting Housing to Infrastructure Program,2550000,40000675,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,2025-27 Housing Trust Fund,8050000,40000677,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,2025-27 Pacific Tower Capital Improvements,1913000,40000659,False,False,False,False
+Enacted (04/01/2026),37,Department of Commerce,,2026 Local and Community Projects,6190000,40000709,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,2027 Local and Community Projects,1145000,40001947,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,2027 Revitalized Local and Community Projects,106000,92002468,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,Affordable Housing Supply and Preservation,3500000,92001957,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,Regional Needs,85000,92002328,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,Revitalized Local and Community Projects,2000000,91002939,False,False,True,False
+Enacted (04/01/2026),37,Department of Commerce,,Transit Oriented Housing Development,721000,92001956,False,False,True,False
+Enacted (04/01/2026),37,Department of Ecology,,2025-27 Affordable Housing Cleanup Grant Program,6502000,40000644,False,False,True,False
+Enacted (04/01/2026),37,Department of Social and Health Services,,Statewide: Communications Systems Condition Assessment,11142000,40000959,False,True,False,False
+Enacted (04/01/2026),37,Public Schools,,2025-27 Distressed Schools,3600000,92001915,False,False,True,False
+Enacted (04/01/2026),37,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,500000,40000548,False,False,True,False
+Enacted (04/01/2026),37,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,1007000,40000556,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,2025-27 Behavioral Health Facilities,7110000,40000667,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,2025-27 Building for the Arts Grant Program,238000,40000668,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,2025-27 Defense Community Compatibility Account,6700000,40000660,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,2025-27 Early Learning Facilities - Eligible Organizations,6600000,40000656,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,2025-27 Tribal Climate Adaptation Pass-through Grants,939000,40000812,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,2025-27 Youth Recreational Facilities Program,1305000,40000661,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,2026 Local and Community Projects,2309000,40000709,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,Affordable Housing Supply and Preservation,4159000,92001957,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,Grants for Recovery Residences,773000,91002685,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,Regional Needs,309000,92002328,False,False,True,False
+Enacted (04/01/2026),38,Department of Commerce,,Tribal Clean Energy and Climate Resilience,2050000,92002299,False,False,True,False
+Enacted (04/01/2026),38,Department of Ecology,,2025-27 ASARCO Everett Smelter Plume Cleanup,7239000,40000641,False,False,False,False
+Enacted (04/01/2026),38,Department of Ecology,,2025-27 Remedial Action Grant Program,20000000,40000726,False,False,True,False
+Enacted (04/01/2026),38,Department of Ecology,,Statewide Water Conservation,180000,92000233,False,False,True,False
+Enacted (04/01/2026),38,Recreation and Conservation Office,,2025-27 Estuary and Salmon Restoration Program,1607000,40000566,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,2025-27 Behavioral Health Facilities,549000,40000667,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,2025-27 Building Communities Fund Program,100000,40000669,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,2025-27 Early Learning Facilities - Eligible Organizations,88000,40000656,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,2025-27 School-Based Health and Behavioral Health Clinics,563000,92002230,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,2026 Local and Community Projects,2685000,40000709,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,2027 Local and Community Projects,93000,40001947,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,2027 Revitalized Local and Community Projects,1123000,92002468,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,Disaster and Flood Response,464000,92002497,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,Local and Water Infrastructure,1030000,92002496,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,Local Infrastructure,1056000,92001953,False,False,True,False
+Enacted (04/01/2026),39,Department of Commerce,,Regional Needs,463000,92002328,False,False,True,False
+Enacted (04/01/2026),39,Department of Ecology,,2025-27 Floodplains by Design,10309000,40000660,False,False,True,False
+Enacted (04/01/2026),39,Department of Fish and Wildlife,,Wallace River Hatchery - Replace Intakes and Ponds,4500000,30000660,False,False,False,False
+Enacted (04/01/2026),39,Department of Natural Resources,,2025-27 Correction of Fish Passage Culverts,34000,40000562,False,False,True,False
+Enacted (04/01/2026),39,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,136000,40000467,False,False,True,False
+Enacted (04/01/2026),39,Department of Natural Resources,,2025-27 Rivers and Habitat Open Space Program,953000,40000601,False,False,True,False
+Enacted (04/01/2026),39,Military Department,,Sedro Woolley Field Maintenance Shop Renovation,5520000,40000366,False,False,False,False
+Enacted (04/01/2026),39,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,1400000,40000564,False,False,True,False
+Enacted (04/01/2026),39,Recreation and Conservation Office,,2025-27 Family Forest Fish Passage Program,11404000,40000803,False,True,False,False
+Enacted (04/01/2026),39,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,881000,40000548,False,False,True,False
+Enacted (04/01/2026),39,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,867000,40000556,False,False,True,False
+Enacted (04/01/2026),39,State Parks and Recreation Commission,,Rasar Day Use Upgrades,324000,40000489,False,False,False,False
+Enacted (04/01/2026),40,Department of Archaeology & Historic Preservation,,2025-27 Historic County Courthouse Rehabilitation Grant Program,1500000,40000040,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2025-27 Behavioral Health Facilities,3900000,40000667,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2025-27 Building Communities Fund Program,3687000,40000669,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2025-27 Building for the Arts Grant Program,506000,40000668,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2025-27 Housing Trust Fund,4493000,40000677,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2025-27 Library Capital Improvement Program,571000,40000662,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2025-27 Youth Recreational Facilities Program,263000,40000661,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2026 Local and Community Projects,4647000,40000709,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2027 Local and Community Projects,583000,40001947,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,2027 Revitalized Local and Community Projects,750000,92002468,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,Affordable Housing Supply and Preservation,1082000,92001957,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,Disaster and Flood Response,200000,92002497,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,Local and Water Infrastructure,2525000,92002496,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,Local Infrastructure,530000,92001953,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,Regional Needs,206000,92002328,False,False,True,False
+Enacted (04/01/2026),40,Department of Commerce,,Tribal Clean Energy and Climate Resilience,309000,92002299,False,False,True,False
+Enacted (04/01/2026),40,Department of Ecology,,2025-27 Remedial Action Grant Program,743000,40000726,False,False,True,False
+Enacted (04/01/2026),40,Department of Fish and Wildlife,,Samish Hatchery - Friday Creek Intake & Fish Passage,1964000,30000843,False,False,False,False
+Enacted (04/01/2026),40,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,345000,40000467,False,False,True,False
+Enacted (04/01/2026),40,Military Department,,Minor Works Program 2025-27 Biennium,9885000,40000345,False,True,False,False
+Enacted (04/01/2026),40,Public Schools,,2025-27 Distressed Schools,237000,92001915,False,False,True,False
+Enacted (04/01/2026),40,Recreation and Conservation Office,,2025-27 Aquatic Lands Enhancement Account,491000,40000560,False,False,True,False
+Enacted (04/01/2026),40,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,3174000,40000564,False,False,True,False
+Enacted (04/01/2026),40,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,3437000,40000548,False,False,True,False
+Enacted (04/01/2026),40,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,364000,40000556,False,False,True,False
+Enacted (04/01/2026),40,State Parks and Recreation Commission,,Moran Campground Renovation,1275000,40000394,False,False,False,False
+Enacted (04/01/2026),40,State Parks and Recreation Commission,,Moran Staff Housing,567000,40000487,False,False,False,False
+Enacted (04/01/2026),40,Western Washington University,,Academic Facilities Renewal - Phase I - V,5524000,40000017,False,False,False,False
+Enacted (04/01/2026),40,Western Washington University,,Access Control Security Upgrades,9070000,30000604,False,False,False,False
+Enacted (04/01/2026),40,Western Washington University,,Birnam Wood Parking Lot Replacement - Phase 2,3000000,40000020,True,False,False,False
+Enacted (04/01/2026),40,Western Washington University,,Heating Conversion Project,41000000,40000005,False,False,False,False
+Enacted (04/01/2026),40,Western Washington University,,Minor Works Preservation and Program,8150000,91000014,False,False,False,False
+Enacted (04/01/2026),40,Western Washington University,,Preventative Facility Maintenance and Building System Repairs,4114000,40000012,False,False,False,False
+Enacted (04/01/2026),41,Department of Commerce,,2025-27 Housing Trust Fund,2500000,40000677,False,False,True,False
+Enacted (04/01/2026),41,Department of Commerce,,2025-27 Tribal Climate Adaptation Pass-through Grants,1910000,40000812,False,False,True,False
+Enacted (04/01/2026),41,Department of Commerce,,2026 Local and Community Projects,1850000,40000709,False,False,True,False
+Enacted (04/01/2026),41,Department of Commerce,,2027 Local and Community Projects,1236000,40001947,False,False,True,False
+Enacted (04/01/2026),41,Department of Commerce,,2027 Revitalized Local and Community Projects,1000000,92002468,False,False,True,False
+Enacted (04/01/2026),41,Department of Commerce,,Local Infrastructure,1200000,92001953,False,False,True,False
+Enacted (04/01/2026),41,Office of the Secretary of State,,Puget Sound Regional Archives HVAC,2430000,40000007,False,True,False,False
+Enacted (04/01/2026),42,Community & Technical College System,,Whatcom: Technology and Engineering Center,51042000,40000137,False,False,False,False
+Enacted (04/01/2026),42,Department of Commerce,,2025-27 Building for the Arts Grant Program,878000,40000668,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,2025-27 Communities of Concern,750000,40000680,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,2025-27 Early Learning Facilities - School Districts,1100000,40000663,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,2025-27 Housing Trust Fund,8000000,40000677,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,2025-27 Library Capital Improvement Program,2000000,40000662,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,2025-27 School-Based Health and Behavioral Health Clinics,670000,92002230,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,2026 Local and Community Projects,3330000,40000709,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,2027 Local and Community Projects,495000,40001947,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,2027 Revitalized Local and Community Projects,13050000,92002468,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,Disaster and Flood Response,14050000,92002497,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,Local and Water Infrastructure,515000,92002496,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,Regional Needs,1545000,92002328,False,False,True,False
+Enacted (04/01/2026),42,Department of Commerce,,Transit Oriented Housing Development,500000,92001956,False,False,True,False
+Enacted (04/01/2026),42,Department of Ecology,,2025-27 Affordable Housing Cleanup Grant Program,3072000,40000644,False,False,True,False
+Enacted (04/01/2026),42,Department of Ecology,,2025-27 Floodplains by Design,10309000,40000660,False,False,True,False
+Enacted (04/01/2026),42,Department of Ecology,,2025-27 Remedial Action Grant Program,42116000,40000726,False,False,True,False
+Enacted (04/01/2026),42,Department of Ecology,,2025-27 Swift Creek Natural Asbestos Flood Control and Cleanup,4000000,40000658,False,False,False,False
+Enacted (04/01/2026),42,Department of Natural Resources,,2025-27 Natural Areas Facilities Preservation and Access,219000,40000467,False,False,True,False
+Enacted (04/01/2026),42,Department of Natural Resources,,2025-27 Safe and Sustainable Recreation,748000,40000459,False,False,True,False
+Enacted (04/01/2026),42,Department of Natural Resources,,Bridge Remediation,200000,40000442,False,False,True,False
+Enacted (04/01/2026),42,Public Schools,,2025-27 Small District and STEC Schools Modernization Program,5481000,40000150,False,False,True,False
+Enacted (04/01/2026),42,Recreation and Conservation Office,,2025-27 Estuary and Salmon Restoration Program,396000,40000566,False,False,True,False
+Enacted (04/01/2026),42,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,1352000,40000548,False,False,True,False
+Enacted (04/01/2026),42,Recreation and Conservation Office,,2025-27 Youth Athletics Facilities,401000,40000556,False,False,True,False
+Enacted (04/01/2026),42,Washington State Historical Society,,Heritage Capital Grants 2025-27,1000000,40000184,False,False,True,False
+Enacted (04/01/2026),43,Community & Technical College System,,Seattle Central EcoDistrict Decarbonization,11000000,40001348,False,False,False,False
+Enacted (04/01/2026),43,Department of Commerce,,2025-27 Building for the Arts Grant Program,3804000,40000668,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,2025-27 Communities of Concern,3271000,40000680,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,2025-27 Energy Retrofits for Public Buildings Grants,4000000,40000670,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,2025-27 Housing Trust Fund,11050000,40000677,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,2026 Local and Community Projects,3372000,40000709,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,2027 Local and Community Projects,155000,40001947,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,2027 Revitalized Local and Community Projects,7215000,92002468,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,Affordable Housing Supply and Preservation,1803000,92001957,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,Montlake Homes,6050000,92002383,False,False,False,False
+Enacted (04/01/2026),43,Department of Commerce,,Regional Needs,258000,92002328,False,False,True,False
+Enacted (04/01/2026),43,Department of Commerce,,Youth Shelters and Housing,3400000,91002686,False,False,True,False
+Enacted (04/01/2026),43,Department of Ecology,,2025-27 Affordable Housing Cleanup Grant Program,1346000,40000644,False,False,True,False
+Enacted (04/01/2026),43,Public Schools,,2025-27 Distressed Schools,3500000,92001915,False,False,True,False
+Enacted (04/01/2026),43,University of Washington,,Anderson Hall Renovation,11950000,20091002,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,Chemical Sciences & Bagley Hall,185000000,40000146,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,Ctr for Advanced Materials and Clean Energy Research Test Beds,263100000,91000016,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,FIFA World Cup Improvements,1700000,92000014,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,Infrastructure Renewal 25-27,39350000,40000159,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,Intellectual House - Phase 2,6300000,40000100,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,Magnuson Health Sciences Phase II- Renovation/Replacement,2100000,40000049,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,Power Plant Electrification & Campus Hot Water Loop - Phase 1,47500000,40000213,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,Preventive Facility Maintenance and Building System Repairs,25825000,91000029,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,UW Major Infrastructure,10300000,30000808,False,False,False,False
+Enacted (04/01/2026),43,University of Washington,,UW Seattle - Asset Preservation (Minor Works) 25-27,22080000,40000163,False,False,False,False
+Enacted (04/01/2026),44,Department of Commerce,,2026 Local and Community Projects,2530000,40000709,False,False,True,False
+Enacted (04/01/2026),44,Department of Commerce,,2027 Local and Community Projects,336000,40001947,False,False,True,False
+Enacted (04/01/2026),44,Department of Commerce,,Local and Water Infrastructure,361000,92002496,False,False,True,False
+Enacted (04/01/2026),45,Department of Commerce,,2025-27 Building for the Arts Grant Program,152000,40000668,False,False,True,False
+Enacted (04/01/2026),45,Department of Commerce,,2026 Local and Community Projects,1515000,40000709,False,False,True,False
+Enacted (04/01/2026),45,Department of Commerce,,2027 Revitalized Local and Community Projects,515000,92002468,False,False,True,False
+Enacted (04/01/2026),45,Department of Commerce,,Regional Needs,515000,92002328,False,False,True,False
+Enacted (04/01/2026),45,Military Department,,Redmond Readiness Center (500 and 501) Renovation,776000,40000403,False,False,True,False
+Enacted (04/01/2026),45,Public Schools,,2025-27 Skills Center Minor Works,578000,40000158,False,False,True,False
+Enacted (04/01/2026),45,Recreation and Conservation Office,,2025-27 Brian Abbott Fish Barrier Removal Board,578000,40000564,False,False,True,False
+Enacted (04/01/2026),46,Department of Commerce,,2025-27 Building for the Arts Grant Program,230000,40000668,False,False,True,False
+Enacted (04/01/2026),46,Department of Commerce,,2025-27 Housing Trust Fund,9100000,40000677,False,False,True,False
+Enacted (04/01/2026),46,Department of Commerce,,2026 Local and Community Projects,2545000,40000709,False,False,True,False
+Enacted (04/01/2026),46,Department of Commerce,,Affordable Housing Supply and Preservation,2550000,92001957,False,False,True,False
+Enacted (04/01/2026),46,Department of Commerce,,Transit Oriented Housing Development,7050000,92001956,False,False,True,False
+Enacted (04/01/2026),46,Department of Commerce,,Youth Shelters and Housing,2000000,91002686,False,False,True,False
+Enacted (04/01/2026),46,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,500000,40000548,False,False,True,False
+Enacted (04/01/2026),47,Department of Commerce,,2025-27 Building Communities Fund Program,2000000,40000669,False,False,True,False
+Enacted (04/01/2026),47,Department of Commerce,,2026 Local and Community Projects,1155000,40000709,False,False,True,False
+Enacted (04/01/2026),47,Department of Commerce,,2027 Local and Community Projects,509000,40001947,False,False,True,False
+Enacted (04/01/2026),47,Department of Commerce,,Disaster and Flood Response,2000000,92002497,False,False,True,False
+Enacted (04/01/2026),47,Department of Fish and Wildlife,,Soos Creek Hatchery Renovation,7726000,30000661,False,False,False,False
+Enacted (04/01/2026),47,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,1940000,40000548,False,False,True,False
+Enacted (04/01/2026),48,Department of Commerce,,2025-27 Dental Capacity Grants,254000,92001952,False,False,True,False
+Enacted (04/01/2026),48,Department of Commerce,,2025-27 Early Learning Facilities - Eligible Organizations,769000,40000656,False,False,True,False
+Enacted (04/01/2026),48,Department of Commerce,,2025-27 Youth Recreational Facilities Program,27000,40000661,False,False,True,False
+Enacted (04/01/2026),48,Department of Commerce,,2026 Local and Community Projects,4225000,40000709,False,False,True,False
+Enacted (04/01/2026),48,Department of Commerce,,2027 Revitalized Local and Community Projects,1773000,92002468,False,False,True,False
+Enacted (04/01/2026),48,Department of Commerce,,Local and Water Infrastructure,412000,92002496,False,False,True,False
+Enacted (04/01/2026),48,Department of Commerce,,Regional Needs,1811000,92002328,False,False,True,False
+Enacted (04/01/2026),48,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,500000,40000548,False,False,True,False
+Enacted (04/01/2026),49,Department of Commerce,,2025-27 Building Communities Fund Program,2416000,40000669,False,False,True,False
+Enacted (04/01/2026),49,Department of Commerce,,2025-27 Building for the Arts Grant Program,46000,40000668,False,False,True,False
+Enacted (04/01/2026),49,Department of Commerce,,2026 Local and Community Projects,3570000,40000709,False,False,True,False
+Enacted (04/01/2026),49,Department of Commerce,,2027 Local and Community Projects,258000,40001947,False,False,True,False
+Enacted (04/01/2026),49,Department of Commerce,,Affordable Housing Supply and Preservation,618000,92001957,False,False,True,False
+Enacted (04/01/2026),49,Department of Ecology,,2025-27 Protect Investments in Cleanup Remedies,850000,40000627,False,False,True,False
+Enacted (04/01/2026),49,Public Schools,,2025-27 Skills Center Minor Works,1362000,40000158,False,False,True,False
+Enacted (04/01/2026),49,Recreation and Conservation Office,,2025-27 Washington Wildlife Recreation Program,500000,40000548,False,False,True,False
+Enacted (04/01/2026),49,State School for the Blind,,Dormitory Modernization,350000,40000054,False,False,False,False
+Enacted (04/01/2026),49,State School for the Blind,,Minor Works Projects 2025-27,2110000,40000060,False,False,False,False
+Enacted (04/01/2026),49,Washington Center for Deaf & Hard of Hearing Youth,,2025-27 Minor Works,2125000,40000012,False,False,False,False
+Enacted (04/01/2026),49,Washington Center for Deaf & Hard of Hearing Youth,,Northrop Primary School Building Renovation,16162000,40000006,False,False,False,False

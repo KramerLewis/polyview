@@ -281,9 +281,7 @@ with the version label and fetch time, and the weekly build reads the snapshot.
   each enacted capital budget. Add it to the release checklist.
 - **Current snapshot:** the 2025 enacted capital budget (05/20/2025): 1,252 project rows,
   all 49 districts, every district's rows equal its printed total.
-- **Gap:** the 2026 supplemental's district list (a separate comparison report with five
-  parameters) isn't fetched yet, so district figures don't include the $1.8B of 2026
-  capital changes.
+- The 2026 supplemental's list is now included (D-040).
 
 ### D-036 · District capital totals count location-specific amounts only (accepted)
 LEAP marks with "$" any amount that funds an entire project spanning several locations.
@@ -330,6 +328,30 @@ Budget-to-Actual fund pages (actuals, budgetary basis; 2019-21 and 2021-23).
   flow is 2021-23, because FY2025's report has no revenue. 2025-27 "as enacted" needs
   revenue by fund, which ERFC doesn't publish in this form.
 - On phones the same three columns render as bar lists. Every view has a table.
+
+### D-040 · District capital figures use the 2026 revised list; 2025 detail kept separately (accepted)
+The current district list comes from LEAP's supplemental comparison report with format
+"Biennial + Supp = Revised", fetched by `scripts/fetch_capital_districts.js supp`.
+- **Report quirk:** with Version 1 and Version 2 set to the same version, the report
+  double-counts every amount (e.g. $419K became $838K). Version 2 must differ, so we set it to
+  "Passed Legislature" and use the Version 1 (Enacted, after vetoes) columns. Check: District 1's
+  revised total equals the 2025 list plus the 2026 changes ($9,139K + $8,257K = $17,396K).
+- The revised list is **program-level** for grant programs ("2026 Local and Community Projects").
+  The 2025 list named individual local projects. The site shows current totals and the
+  program-level list, with the 2025 project-by-project list underneath. They're never added together.
+- 2026 revised: $4.47B listed by district, $3.68B location-specific (+$0.21B vs 2025). Most of the
+  2026 supplemental's $1.8B capital increase isn't tied to a district.
+- Every district's rows equal its printed total in both snapshots.
+
+### D-041 · LEAP's two district reports flag some projects differently; we follow the current one (open)
+Among 196 projects that appear in both the 2025 enacted and 2026 revised district lists, **12
+($359M) changed their "$" multi-location flag**. Most are single-site facilities: Western State
+Hospital's new forensic hospital ($282M), its water system ($27M), Monroe Correctional Complex
+projects ($31M). That suggests the reports flag them differently rather than the projects
+changing. District 28's location-specific total falls from $352M to $53M as a result.
+- We follow the current report (it's the source for current totals) and mark each such
+  project on the site with what the 2025 list said. We don't override LEAP's flags ourselves.
+- **Open:** ask LEAP, or check the capital budget's project descriptions, which flag is right.
 
 ---
 

@@ -37,6 +37,7 @@ class DistrictProject:
     program: str
     project: str
     amount: int  # dollars
+    project_number: str
     alt_financing: bool
     multi_location: bool
     local_components_only: bool
@@ -73,8 +74,35 @@ def parse_csv(body: str, version: str) -> tuple[list[DistrictProject], int | Non
         flags = f1 | f2
         rows.append(DistrictProject(
             version, int(m.group(1)), agency.strip(), program, project,
-            int(amount.replace(",", "")) * 1000,
+            int(amount.replace(",", "")) * 1000, "",
             *(name in flags for name in MARKERS.values())))
+    return rows, total
+
+
+def parse_compare_csv(body: str, version: str) -> tuple[list[DistrictProject], int | None]:
+    """The supplemental comparison report: Version 1 / Version 2 / difference columns.
+    We use Version 1 (the enacted version); see DECISIONS D-040."""
+    body = body.lstrip("\ufeff")
+    start = body.find("Textbox79")
+    rows, total = [], None
+    for rec in csv.reader(io.StringIO(body[start:])):
+        if not rec or rec[0].startswith("Textbox"):
+            continue
+        rec = (rec + [""] * 12)[:12]
+        dist_label, total1, agency, program, project, amount1 = rec[2], rec[3], rec[6], rec[7], rec[8], rec[9]
+        m = re.search(r"(\d+)\w\w Legislative District", dist_label)
+        if not m or not amount1.strip():
+            continue
+        total = int(total1.replace(",", "")) * 1000 if total1.strip() else None
+        program, f1 = _strip_markers(program)
+        project, f2 = _strip_markers(project)
+        num = re.match(r"\s*(\d{6,})\s+(.*)$", project)
+        number, name = (num.group(1), num.group(2).strip()) if num else ("", project.strip())
+        flags = f1 | f2
+        rows.append(DistrictProject(
+            version, int(m.group(1)), agency.strip(), program, name,
+            int(amount1.replace(",", "")) * 1000, number,
+            *(n in flags for n in MARKERS.values())))
     return rows, total
 
 
@@ -84,7 +112,9 @@ def load(version_dir: Path) -> tuple[list[DistrictProject], dict, list[str]]:
     projects: list[DistrictProject] = []
     issues = []
     for path in sorted(version_dir.glob("ld*.csv")):
-        rows, total = parse_csv(path.read_text(encoding="utf-8-sig"), version)
+        body = path.read_text(encoding="utf-8-sig")
+        parse = parse_compare_csv if "Textbox79" in body[:3000] else parse_csv
+        rows, total = parse(body, version)
         if rows and total is not None and abs(sum(r.amount for r in rows) - total) > 1000 * len(rows):
             issues.append(f"{path.name}: rows sum {sum(r.amount for r in rows):,} != district total {total:,}")
         projects.extend(rows)

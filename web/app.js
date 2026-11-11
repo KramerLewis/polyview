@@ -348,12 +348,26 @@
       const v = m.votes.find(([id]) => rc[id].bill === bill && rc[id].type === "final_passage");
       return v ? posLabel[v[1]] : "—";
     };
-    const note = `Capital projects listed for each district in LEAP's ${esc(d.capital_version)} project list. Amounts marked "multi-location"
+    const note = `Capital projects listed for each district in LEAP's ${esc(d.capital_version)} project list (the 2025 budget as
+      revised by the 2026 supplemental). Amounts marked "multi-location"
       fund a project spanning several places and aren't specific to one district, so they're excluded from district totals.
-      The 2026 supplemental's changes aren't included by district yet. Large totals usually reflect where state facilities
-      are (District 43 includes the University of Washington; District 28 includes Western State Hospital), so differences
-      between districts aren't by themselves evidence of favoritism.`;
+      Large totals usually reflect where state facilities are (District 43 includes the University of Washington), so
+      differences between districts aren't by themselves evidence of favoritism. LEAP's 2025 and 2026 lists flag 12 projects
+      ($359M) differently as multi-location (for example, Western State Hospital's new forensic hospital in District 28);
+      these are marked, and totals follow the current list.`;
     $("#district-chart-note").innerHTML = note;
+
+    function projectTable(list) {
+      return `<div class="table-wrap"><table class="data"><thead><tr><th>Project</th><th>Agency / program</th>
+        <th class="num">2025-27</th></tr></thead><tbody>
+        ${list.map((p) => `<tr><td>${esc(p.project)}${p.number ? ` <span class="muted">${esc(p.number)}</span>` : ""}
+          ${p.multi_location ? ' <span class="muted">· multi-location</span>' : ""}
+          ${p.flag_changed ? ` <span class="muted">· LEAP's 2025 list ${p.multi_location ? "did not mark this" : "marked this"} as multi-location</span>` : ""}
+          ${p.preliminary ? ' <span class="muted">· preliminary</span>' : ""}${p.alt_financing ? ' <span class="muted">· alternative financing</span>' : ""}</td>
+          <td>${esc(p.agency)}${p.program ? `<br><span class="muted">${esc(p.program)}</span>` : ""}</td>
+          <td class="num">${money(p.amount)}</td></tr>`).join("") || '<tr><td colspan="3" class="muted">No projects listed.</td></tr>'}
+        </tbody></table></div>`;
+    }
 
     function show(n) {
       const x = byD[n] || { projects: [], local_total: 0, multi_total: 0 };
@@ -376,13 +390,12 @@
         </tbody></table></div>
         <p class="note">Final-passage votes on the operating budget. See the Legislators page for amendment votes.</p>
         <h2>Capital projects in District ${n}</h2>
-        <div class="table-wrap"><table class="data"><thead><tr><th>Project</th><th>Agency / program</th>
-          <th class="num">2025-27</th></tr></thead><tbody>
-          ${proj.map((p) => `<tr><td>${esc(p.project)}${p.multi_location ? ' <span class="muted">· multi-location</span>' : ""}
-            ${p.preliminary ? ' <span class="muted">· preliminary</span>' : ""}${p.alt_financing ? ' <span class="muted">· alternative financing</span>' : ""}</td>
-            <td>${esc(p.agency)}${p.program ? `<br><span class="muted">${esc(p.program)}</span>` : ""}</td>
-            <td class="num">${money(p.amount)}</td></tr>`).join("") || '<tr><td colspan="3" class="muted">No projects listed.</td></tr>'}
-        </tbody></table></div>`;
+        <p class="note">Current amounts, after the 2026 supplemental. Grant programs appear as one line per program;
+          the individual local projects funded in 2025 are listed below.
+          ${x.detail_local_total ? `Location-specific total as originally enacted in 2025: ${money(x.detail_local_total, 1)}.` : ""}</p>
+        ${projectTable(proj)}
+        ${x.detail.length ? `<details class="table-view"><summary>Project-by-project detail as enacted in 2025
+          (${x.detail.length} projects)</summary>${projectTable(x.detail)}</details>` : ""}`;
       bindTips($("#district-detail"));
       try { localStorage.setItem("polyview-district", n); } catch (e) { /* storage unavailable */ }
     }
