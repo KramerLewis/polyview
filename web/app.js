@@ -223,6 +223,45 @@
           `<td class="num">${fmt(r[k])}</td>`).join("")}</tr>`; }).join("")}</tbody>`;
   }
 
+  function moneyFlow(d) {
+    const flows = d.history.filter((h) => h.flow).map((h) => h.flow);
+    if (!flows.length) return;
+    const pick = $("#flow-pick");
+    pick.innerHTML = flows.map((f, i) => `<option value="${i}">${esc(f.biennium)}</option>`).join("");
+    pick.value = String(flows.length - 1);
+    const draw = () => {
+      const f = flows[+pick.value];
+      $("#flow-note").innerHTML = `Actual revenue and spending for the ${esc(f.biennium)} biennium, all funds, budgetary basis
+        (${esc(f.source)}). Colors follow each revenue source only as far as the fund it was deposited in: money mixes inside a
+        fund, so it can't be traced to a particular program. Transfers between funds are netted out. The gray nodes show where
+        spending used bond proceeds, transfers in or fund balances (${money(f.draw, 1)}), and where revenue was added to balances
+        or transferred out (${money(f.surplus, 1)}).`;
+      const el = $("#flow");
+      if (el.clientWidth < 640) {
+        // Phones: the same three columns as bar lists.
+        const titles = ["Where it came from", "Which funds it went into", "What it paid for"];
+        el.innerHTML = f.columns.map((c, i) => `<div class="flow-col"><h3>${titles[i]}</h3><div id="flow-col-${i}"></div></div>`).join("");
+        f.columns.forEach((c, i) => {
+          const tot = (n) => Math.max(...[f.links.filter((l) => l.from === n), f.links.filter((l) => l.to === n)]
+            .map((ls) => ls.reduce((a, l) => a + l.value, 0)));
+          bars($(`#flow-col-${i}`), c.map((n) => ({ name: n, value: tot(n), label: money(tot(n)),
+            tip: `<b>${esc(n)}</b><br>${money(tot(n))}` })));
+        });
+      } else {
+        window.renderSankey(el, f, { money, esc, bindTips });
+      }
+      $("#flow-table").innerHTML = `<thead><tr><th>From</th><th>To</th><th class="num">Amount</th></tr></thead><tbody>
+        ${f.links.map((l) => `<tr><td>${esc(l.from)}</td><td>${esc(l.to)}</td><td class="num">${money(l.value)}</td></tr>`).join("")}</tbody>`;
+    };
+    pick.addEventListener("change", draw);
+    let t;
+    window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(draw, 150); });
+    // Draw once the overview is visible, so the chart can measure its width.
+    const whenVisible = () => { if (!$("#overview").hidden) { draw(); window.removeEventListener("hashchange", whenVisible); } };
+    window.addEventListener("hashchange", whenVisible);
+    requestAnimationFrame(whenVisible);
+  }
+
   function vintages(d) {
     const v = (d.outlook && d.outlook.vintages) || [];
     const bienniums = [...new Set(v.map((x) => x.biennium))].sort();
@@ -455,6 +494,7 @@
       overview(d); outlook(d); vintages(d); agencies(d); districtsView(d); legislators(d); dataView(d);
       window.addEventListener("hashchange", route);
       route();
+      moneyFlow(d);
     })
     .catch((e) => { $("#loading").textContent = `Couldn't load the data (${e.message}).`; });
 })();

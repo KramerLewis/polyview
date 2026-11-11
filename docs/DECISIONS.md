@@ -314,6 +314,23 @@ layout. Its arithmetic checks only covered the columns it kept, so it didn't cat
 problem. Now every biennium in every outlook must pass the identities, and a test covers
 the nine-column layout.
 
+### D-039 · The money-flow Sankey traces money only as far as a fund (accepted)
+The overview's Sankey runs revenue sources → fund groups → areas of government, from OFM
+Budget-to-Actual fund pages (actuals, budgetary basis; 2019-21 and 2021-23).
+- **No source → area links.** Money mixes inside a fund. Link colors follow the revenue
+  source only into the fund, and links out of funds are neutral gray, so the visual never
+  implies "your sales tax paid for X".
+- **Transfers between funds are netted out** (D-011). Each fund group's gap between revenue
+  and spending is shown as a gray node: "Bonds, transfers & balances" ($3.9B in 2021-23,
+  mostly capital funded by bond proceeds) or "To balances & transfers out" ($2.9B). Every
+  node balances, and nothing is quietly dropped.
+- Fund rollups are grouped by hand into 7 groups (`FUND_GROUP` in `publish/flows.py`).
+- **Weak points:** "Other revenue" lumps contracts, timber, interest, miscellaneous and
+  unclaimed property together. Fund grouping is a judgment call. The latest complete
+  flow is 2021-23, because FY2025's report has no revenue. 2025-27 "as enacted" needs
+  revenue by fund, which ERFC doesn't publish in this form.
+- On phones the same three columns render as bar lists. Every view has a table.
+
 ---
 
 ## Presentation

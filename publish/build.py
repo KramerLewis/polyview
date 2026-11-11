@@ -14,6 +14,8 @@ from pathlib import Path
 
 from ingest import budget_to_actual, budget_to_actual_detail
 from ingest.budget_current import BUDGETS, build_all
+
+from .flows import money_flow
 from ingest.common import MANIFEST, RAW, ROOT, SAMPLES
 
 import csv
@@ -187,6 +189,8 @@ def build() -> None:
         history.append({
             "biennium": budget_to_actual._biennium(2000 + yy),
             "source": f"OFM Budget-to-Actual Detail Report, FY20{yy}",
+            "flow": money_flow(funds, budget_to_actual._biennium(2000 + yy),
+                               f"OFM Budget-to-Actual Detail Report, FY20{yy}"),
             "revenue": [{"line": k, **v} for k, v in sorted(rev.items(), key=lambda kv: -kv[1]["actual"])],
             "spending": [{"line": k, **v} for k, v in sorted(spend.items(), key=lambda kv: -kv[1]["actual"])],
         })

@@ -33,6 +33,13 @@
       with the governor's line-item vetoes removed.</p>
     <div class="stats" id="stats"></div>
 
+    <h2>Where the money came from, and where it went</h2>
+    <p class="note" id="flow-note"></p>
+    <div class="controls"><label>Biennium <select id="flow-pick"></select></label></div>
+    <div id="flow" class="chart"></div>
+    <details class="table-view"><summary>Show as table</summary>
+      <div class="table-wrap"><table id="flow-table" class="data"></table></div></details>
+
     <h2>Income vs. spending: the official four-year outlook</h2>
     <p class="note" id="outlook-note"></p>
     <div id="outlook-callout"></div>
@@ -145,6 +152,7 @@
 <div id="tooltip" class="tooltip" role="status" hidden></div>
 <footer class="site-footer"><div class="wrap">Open data, open code. Code MIT; derived data CC BY 4.0.
   Not affiliated with the State of Washington.</div></footer>
+<script src="sankey.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
