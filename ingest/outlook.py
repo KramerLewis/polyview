@@ -131,14 +131,44 @@ def arithmetic_errors(rows: list[OutlookRow], bienniums: list[str]) -> list[str]
     return errors
 
 
+def _title(text: str) -> str:
+    """'Outlook for the Enacted 2026 Supplemental Omnibus Operating Budget - Chapter 268, ...'"""
+    for line in text.splitlines():
+        if "Outlook for" in line:
+            return re.sub(r"\s+", " ", line).strip()
+    return "Budget outlook"
+
+
+def outlook_list() -> list[tuple[str, str, bool]]:
+    """(label, url, pinned). Pinned outlooks must parse; newly discovered ones are
+    added only if they pass their arithmetic checks (D-043)."""
+    pinned = [(label, url, True) for label, url in OUTLOOKS]
+    try:
+        from .discover import enacted_outlooks
+        known = {u for _, u in OUTLOOKS}
+        new = [("", u, False) for u in enacted_outlooks() if u not in known]
+    except Exception as e:
+        print(f"  outlook: discovery failed ({e}); using pinned outlooks")
+        new = []
+    return pinned + new
+
+
 def load() -> list[tuple[str, str, list[OutlookRow], list[str]]]:
     out = []
-    for label, url in OUTLOOKS:
+    for label, url, pinned in outlook_list():
         path = fetch(url, "outlook", local_name(url))
-        rows, bienniums = parse_text(pdf_text(path), label)
-        errors = arithmetic_errors(rows, bienniums)
+        text = pdf_text(path)
+        label = label or _title(text)
+        try:
+            rows, bienniums = parse_text(text, label)
+            errors = arithmetic_errors(rows, bienniums)
+        except Exception as e:  # a new layout we can't read
+            rows, bienniums, errors = [], [], [f"could not parse: {e}"]
         if errors:
-            raise ValueError(f"{label}: outlook arithmetic doesn't hold: {errors}")
+            if pinned:
+                raise ValueError(f"{label}: outlook arithmetic doesn't hold: {errors}")
+            print(f"  outlook: skipping newly found {url} ({errors[0]})")
+            continue
         out.append((label, url, rows, bienniums))
     return out
 

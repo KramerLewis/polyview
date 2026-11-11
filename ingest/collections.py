@@ -105,12 +105,24 @@ def parse_issue(text: str, issue: str) -> tuple[list[Collection], list[Variance]
     return rows, variances
 
 
+def issue_urls() -> list[str]:
+    """Newest issues found on ERFC's site (D-043), falling back to the pinned list."""
+    try:
+        from .discover import collection_issues
+        found = collection_issues()
+        if found:
+            return found
+    except Exception as e:  # ERFC down: use what we know
+        print(f"  collections: discovery failed ({e}); using pinned issues")
+    return ISSUES
+
+
 def load() -> tuple[list[Collection], list[Variance]]:
     """Combine issues; the newest issue's figure wins for each (period, line)."""
     seen: set[tuple[str, str]] = set()
     rows: list[Collection] = []
     latest_variances: list[Variance] = []
-    for i, url in enumerate(ISSUES):
+    for i, url in enumerate(issue_urls()):
         path = fetch(url, "collections", url.rsplit("/", 1)[-1])
         issue_rows, variances = parse_issue(pdf_text(path), url.rsplit("/", 1)[-1])
         if i == 0:

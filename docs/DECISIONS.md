@@ -371,6 +371,24 @@ in the variance table, and checked: the last column equals the variance table's 
 - **Weak point:** the issue list is hand-maintained. Each new month needs its URL added (or a
   scraper of the listing page).
 
+### D-043 · New source files are discovered weekly; only self-checking sources are used automatically (accepted)
+`ingest/discover.py` runs first in every build and writes `data/samples/freshness.json`.
+- **Used automatically:** ERFC monthly collection reports (the latest issue and the ones 12, 24 and
+  36 months earlier) and adopted budget outlooks (file names containing "Enacted", excluding
+  methodology, alternatives, memos and guidance). Both parsers check their own arithmetic.
+  Pinned outlooks must pass; a newly found one that fails is skipped and logged, not published.
+- **Flagged for a person:** enacted budget bills listed on fiscal.wa.gov that aren't configured
+  (their amendment chain and reference checks need setting up), and new OFM Budget-to-Actual
+  reports (layouts change). The build opens or updates one GitHub issue per item
+  (`scripts/report_issues.py`).
+- **Build failures** open or update a "Weekly site build failed" issue. The live site keeps the last
+  good version.
+- **Not automated:** LEAP's district project lists need a headless browser (D-035). Re-run
+  `scripts/fetch_capital_districts.js` after each capital budget.
+- Each section shows a "Data as of" line, and Data & methods has a freshness table.
+- **Weak points:** discovery relies on ERFC and fiscal.wa.gov page structure and file naming. If a
+  site is down, the build uses the files it already knows and reports the error in an issue.
+
 ---
 
 ## Presentation

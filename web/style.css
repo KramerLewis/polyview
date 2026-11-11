@@ -148,3 +148,4 @@ svg.sankey rect.balance { fill-opacity: .9; stroke: var(--text-3); stroke-dashar
 svg.sankey text { fill: var(--text); paint-order: stroke; stroke: var(--surface); stroke-width: 4px; stroke-linejoin: round; }
 svg.sankey .nval { fill: var(--text-2); font-variant-numeric: tabular-nums; }
 .flow-col h3 { font-size: .95rem; margin: 16px 0 4px; }
+.asof { color: var(--text-3); font-size: .8rem; margin: -4px 0 10px; font-variant-numeric: tabular-nums; }

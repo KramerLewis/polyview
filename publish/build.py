@@ -87,6 +87,34 @@ def current_budget() -> tuple[list[dict], dict, list[dict]]:
     return rows, meta, all_rows
 
 
+def freshness(sources: dict, budget_meta: dict, completed: dict, ol: dict | None,
+              collections: dict, capital_version: str) -> dict:
+    """What each section reflects and when its source was last fetched (D-043)."""
+    def fetched(source_dir: str) -> str:
+        dates = [v["fetched_at"][:10] for v in sources.values() if v["source"] == source_dir]
+        return max(dates) if dates else ""
+
+    last_bills = ", ".join(b["bills"][-1].split(" (")[0].replace("ESSB ", "").replace("ESHB ", "")
+                           for b in budget_meta["by_budget"])
+    coll_latest = next((v["period_text"] for v in collections["variance"]), "")
+    snap = sorted(p for p in (ROOT / "data" / "snapshots" / "capital_districts").iterdir() if p.is_dir())
+    snap_meta = json.loads((snap[-1] / "versions.json").read_text()) if snap else {}
+    sections = {
+        "budget": {"as_of": f"Enacted {budget_meta['biennium']} budgets including the latest supplementals "
+                            f"(bills {last_bills})", "fetched": fetched("budget_bills")},
+        "completed": {"as_of": completed["source"], "fetched": fetched("budget_to_actual")},
+        "flow": {"as_of": "OFM Budget-to-Actual Detail Reports, FY2021 and FY2023", "fetched": fetched("budget_to_actual")},
+        "collections": {"as_of": f"Collections through {coll_latest}", "fetched": fetched("collections")},
+        "outlook": {"as_of": ol["label"] if ol else "", "fetched": fetched("outlook")},
+        "districts": {"as_of": capital_version, "fetched": snap_meta.get("fetched_at", "")[:10]},
+        "votes": {"as_of": "Legislature web services: roll calls and amendments", "fetched": fetched("legislature")},
+    }
+    report_path = SAMPLES / "freshness.json"
+    report = json.loads(report_path.read_text()) if report_path.exists() else {}
+    return {"sections": sections, "checked_at": report.get("checked_at", ""),
+            "attention": report.get("attention", []), "errors": report.get("errors", [])}
+
+
 def build() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
 
@@ -251,11 +279,7 @@ def build() -> None:
     from dataclasses import asdict as _asdict
 
     from ingest import outlook as outlook_mod
-    loaded = []
-    for label, url in outlook_mod.OUTLOOKS:
-        path = RAW / "outlook" / outlook_mod.local_name(url)
-        rows_, bienniums_ = outlook_mod.parse_text(budget_to_actual.pdf_text(path), label)
-        loaded.append((label, url, rows_, bienniums_))
+    loaded = outlook_mod.load()  # pinned + newly discovered outlooks that pass their checks
     label, url, rows_, bienniums_ = loaded[-1]
     b1, b2 = bienniums_[-2:]
     wide = {}
@@ -334,6 +358,7 @@ def build() -> None:
         "capital_detail_version": capital_detail_version,
         "amendments": sorted(amendments, key=lambda a: (a["bill"], a["date"], a["chamber"], a["number"])),
         "sources": [{"url": u, **v} for u, v in sorted(sources.items())],
+        "freshness": freshness(sources, budget_meta, completed, ol, collections, capital_version),
     }
     (OUT / "site.json").write_text(json.dumps(data, separators=(",", ":")))
     print(f"wrote {OUT / 'site.json'} ({(OUT / 'site.json').stat().st_size / 1024:,.0f} KB): "

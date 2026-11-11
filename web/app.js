@@ -529,6 +529,33 @@
     });
   }
 
+  // "Data as of" lines under each section (D-043).
+  function stamps(d) {
+    const f = d.freshness;
+    if (!f) return;
+    const place = { budget: "#stats", flow: "#flow-note", collections: "#coll-note", outlook: "#outlook-note",
+      completed: "#completed-note", districts: "#district-chart-note" };
+    const line = (k) => { const x = f.sections[k]; if (!x) return "";
+      return `<p class="asof">Data as of: ${esc(x.as_of)}${x.fetched ? ` · fetched ${esc(x.fetched)}` : ""}</p>`; };
+    Object.entries(place).forEach(([k, sel]) => {
+      const el = $(sel);
+      if (el) el.insertAdjacentHTML(k === "budget" ? "beforebegin" : "afterend", line(k));
+    });
+    const lv = $("#member-table");
+    if (lv) lv.closest(".table-wrap").insertAdjacentHTML("beforebegin", line("votes"));
+    const names = { budget: "Enacted budgets", completed: "Budgeted vs. spent", flow: "Money flow", collections: "Tax collections",
+      outlook: "Four-year outlook", districts: "Capital projects by district", votes: "Votes and amendments" };
+    $("#freshness").innerHTML = `<div class="table-wrap"><table class="data"><thead><tr><th>Section</th><th>Reflects</th>
+      <th>Last fetched</th></tr></thead><tbody>${Object.entries(f.sections).map(([k, x]) =>
+        `<tr><td>${esc(names[k] || k)}</td><td>${esc(x.as_of)}</td><td>${esc(x.fetched || "—")}</td></tr>`).join("")}
+      </tbody></table></div>
+      <p class="note">New source files are checked for weekly${f.checked_at ? ` (last check ${esc(f.checked_at.slice(0, 10))})` : ""}.
+      Monthly tax reports and budget outlooks are picked up automatically once they pass their arithmetic checks;
+      new budget bills and reports with new layouts are flagged for a person to add.</p>
+      ${f.attention.length ? `<div class="callout"><strong>Waiting to be added:</strong><ul>${f.attention.map((a) =>
+        `<li>${esc(a.what)}</li>`).join("")}</ul></div>` : ""}`;
+  }
+
   function dataView(d) {
     $("#built-at").textContent = `Built ${d.built_at.replace("T", " ")} UTC.`;
     table($("#source-table"), [
@@ -558,6 +585,7 @@
       window.addEventListener("hashchange", route);
       route();
       moneyFlow(d);
+      stamps(d);
     })
     .catch((e) => { $("#loading").textContent = `Couldn't load the data (${e.message}).`; });
 })();

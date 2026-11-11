@@ -1,0 +1,27 @@
+{
+ "checked_at": "2026-11-11T07:57+00:00",
+ "auto": [
+  {
+   "source": "ERFC monthly collections",
+   "using": [
+    "https://erfc.wa.gov/sites/default/files/2026-10/oct26.pdf",
+    "https://erfc.wa.gov/sites/default/files/2025-10/oct25.pdf",
+    "https://erfc.wa.gov/sites/default/files/2025-03/oct24.pdf",
+    "https://erfc.wa.gov/sites/default/files/2025-03/oct23.pdf"
+   ],
+   "new": []
+  },
+  {
+   "source": "ERFC adopted outlooks",
+   "found": [
+    "https://erfc.wa.gov/sites/default/files/2025-03/20230613%20FY2023-25EnactedOutlook.pdf",
+    "https://erfc.wa.gov/sites/default/files/2025-03/FY%202024%20Enacted%20Outlook_Final.pdf",
+    "https://erfc.wa.gov/sites/default/files/2025-06/2025%20Enacted%20Outlook%20Final.pdf",
+    "https://erfc.wa.gov/sites/default/files/2026-04/20260422_Enacted_Sup_BO_Adopted.pdf"
+   ],
+   "new": []
+  }
+ ],
+ "attention": [],
+ "errors": []
+}
