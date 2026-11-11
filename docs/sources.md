@@ -100,3 +100,5 @@ FY2026 report. See [DECISIONS.md](DECISIONS.md).
 |---|---|---|---|
 | Legislature AmendmentService (`GetAmendments?year=`) | HTTP GET, XML, plus amendment HTML | ✅ `ingest/legislature.py` | Floor amendments with staff EFFECT / FISCAL IMPACT statements |
 | LEAP capital projects by legislative district | fiscal.wa.gov SSRS report (JavaScript), CSV export | ✅ snapshot via `scripts/fetch_capital_districts.js` | See DECISIONS D-035 |
+| ERFC monthly Economic & Revenue Update | erfc.wa.gov PDFs | ✅ `ingest/collections.py` | 13 months of GF-S collections by tax per issue; Oct 2023–Oct 2026 issues combined (D-042) |
+| LEAP capital projects by district, 2026 revised | fiscal.wa.gov SSRS comparison report | ✅ snapshot (`fetch_capital_districts.js supp`) | Version 2 must differ from Version 1 (D-040) |

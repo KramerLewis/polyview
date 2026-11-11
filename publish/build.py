@@ -308,12 +308,24 @@ def build() -> None:
         "detail_local_total": sum(x["amount"] for x in detail.get(d, []) if not x["multi_location"]),
     } for d, ps in sorted(current.items())]
 
+    # --- Monthly General Fund-State collections (ERFC monthly updates, D-042) --
+    coll = read_csv(SAMPLES / "gfs_collections.csv")
+    var = read_csv(SAMPLES / "gfs_collections_variance.csv")
+    collections = {
+        "values": [{"period": r["period"], "line": r["line"], "detail": r["is_detail"] == "True",
+                    "amount": int(r["amount"])} for r in coll],
+        "variance": [{k: (int(v) if k in ("estimate", "actual") else v) for k, v in r.items()} for r in var],
+        "source": "ERFC Economic & Revenue Update (monthly)",
+        "source_url": "https://erfc.wa.gov/publications/monthly-economic-and-revenue-updates",
+    }
+
     data = {
         "built_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "budget": budget_meta,
         "agencies": agency_list,
         "completed": completed,
         "outlook": ol,
+        "collections": collections,
         "history": history,
         "roll_calls": sorted(roll_calls.values(), key=lambda r: (r["bill"], r["date"], r["chamber"])),
         "legislators": legislators,

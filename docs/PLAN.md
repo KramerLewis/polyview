@@ -79,7 +79,7 @@ Next:
 1. ~~Reconcile parsed bill totals~~: done for operating NGF-O (D-017). Transportation and capital still open
 2. ~~"Over budget" cases~~: resolved (D-026). Still open: the AC fund gap (D-012) and Contributions to Retirement Systems
 3. ~~Amendment content~~: done (D-029)
-4. ~~Revenue for the current biennium~~: done via the ERFC outlook (D-034). Still to do: monthly collections and forecast vintages
+4. ~~Revenue for the current biennium~~: done via the ERFC outlook (D-034). Monthly collections done (D-042); forecast vintages done via outlooks (D-034/038)
 5. ~~Capital projects by legislative district~~: done for the 2025 enacted list (D-035/036). 2026 supplemental list done (D-040). Still to do: address lookup
 6. Backfill: ~~2023-25 budget bills~~ done (D-037); next 2021-23 and 2019-21 bills, FY2024 report layout, older ERFC outlooks
 7. ~~**Money-flow Sankey**~~: done for 2019-21 and 2021-23 actuals (D-039); a 2025-27 "as enacted" view still needs revenue by fund. Original plan: on the overview: revenue sources → funds → areas of government

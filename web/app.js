@@ -262,6 +262,56 @@
     requestAnimationFrame(whenVisible);
   }
 
+  function collectionsView(d) {
+    const c = d.collections;
+    if (!c) return;
+    const TOTAL = "Total General Fund-State";
+    const val = {};
+    c.values.forEach((v) => { (val[v.line] = val[v.line] || {})[v.period] = v.amount; });
+    const months = Object.keys(val[TOTAL]).sort();
+    const shift = (p, k) => { let [y, m] = p.split("-").map(Number); m += k; while (m > 12) { m -= 12; y++; } while (m < 1) { m += 12; y--; } return `${y}-${String(m).padStart(2, "0")}`; };
+    const last = months[months.length - 1];
+    const bStart = d.budget.biennium.slice(0, 4) + "-07";  // biennium starts in July
+    const btd = months.filter((p) => p >= bStart);
+    const prior = btd.map((p) => shift(p, -24));
+    const sum = (line, ps) => ps.reduce((a, p) => a + (val[line] && val[line][p] != null ? val[line][p] : NaN), 0);
+    const cur = sum(TOTAL, btd), prev = sum(TOTAL, prior);
+    const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const periodLabel = (p) => { const [y, m] = p.split("-").map(Number); const n = shift(p, 1).split("-").map(Number);
+      return `${MON[m - 1]} 11 – ${MON[n[1] - 1]} 10, ${n[0]}`; };
+    const v = c.variance.find((x) => x.scope === "latest period" && x.line.startsWith("Total General Fund"));
+    $("#coll-note").innerHTML = `General Fund–State tax collections reported by the Department of Revenue and the courts,
+      by monthly collection period (each period mostly reflects the previous month's business activity). Source:
+      <a href="${esc(c.source_url)}">${esc(c.source)}</a>. Growth partly reflects tax increases enacted in 2025,
+      not only a growing economy. This is the General Fund only; the four-year outlook below uses a broader set of accounts.`;
+    $("#coll-stats").innerHTML = `
+      <div class="stat"><div class="label">Collected so far in ${esc(d.budget.biennium)}</div>
+        <div class="value">${money(cur, 1)}</div>
+        <div class="sub">${btd.length} monthly periods through ${periodLabel(last)}</div></div>
+      <div class="stat"><div class="label">Same point in the last biennium</div>
+        <div class="value">${isNaN(prev) ? "—" : `${cur >= prev ? "+" : "−"}${(Math.abs(cur / prev - 1) * 100).toFixed(1)}%`}</div>
+        <div class="sub">${isNaN(prev) ? "" : `${money(prev, 1)} after the same ${btd.length} periods`}</div></div>
+      ${v ? `<div class="stat"><div class="label">Latest month vs. ERFC's forecast</div>
+        <div class="value">${v.actual >= v.estimate ? "+" : "−"}${money(Math.abs(v.actual - v.estimate))}</div>
+        <div class="sub">${((v.actual / v.estimate - 1) * 100).toFixed(1)}% (${esc(v.period_text)})</div></div>` : ""}`;
+    bars($("#coll-chart"), btd.slice().reverse().map((p) => {
+      const a = val[TOTAL][p], b = val[TOTAL][shift(p, -24)];
+      return { name: periodLabel(p), value: a, label: money(a), sub: b ? `2 years earlier: ${money(b)}` : "",
+        tip: `<b>${periodLabel(p)}</b><br>Collected: ${money(a)}` + (b ? `<br>Same period 2 years earlier: ${money(b)}` : ""),
+        cells: [periodLabel(p), money(a), b ? money(b) : "—"] };
+    }), { tableHeads: ["Collection period", "Collected", "Two years earlier"] });
+    const l12 = Array.from({ length: 12 }, (_, i) => shift(last, -i));
+    const p12 = l12.map((p) => shift(p, -12));
+    const lines = Object.keys(val).filter((l) => !["Department of Revenue-Total", "Revenue Act", "Non-Revenue Act", TOTAL].includes(l));
+    const tableRows = lines.map((l) => ({ l, a: sum(l, l12), b: sum(l, p12) })).filter((r) => !isNaN(r.a))
+      .sort((x, y) => y.a - x.a);
+    tableRows.push({ l: TOTAL, a: sum(TOTAL, l12), b: sum(TOTAL, p12), total: true });
+    $("#coll-table").innerHTML = `<thead><tr><th>Tax</th><th class="num">Last 12 months</th><th class="num">Prior 12 months</th>
+      <th class="num">Change</th></tr></thead><tbody>${tableRows.map((r) => `<tr${r.total ? ' style="font-weight:600"' : ""}>
+      <td>${esc(r.l === TOTAL ? "Total, General Fund–State" : r.l)}</td><td class="num">${money(r.a)}</td><td class="num">${isNaN(r.b) ? "—" : money(r.b)}</td>
+      <td class="num">${isNaN(r.b) || !r.b ? "—" : `${r.a >= r.b ? "+" : "−"}${(Math.abs(r.a / r.b - 1) * 100).toFixed(1)}%`}</td></tr>`).join("")}</tbody>`;
+  }
+
   function vintages(d) {
     const v = (d.outlook && d.outlook.vintages) || [];
     const bienniums = [...new Set(v.map((x) => x.biennium))].sort();
@@ -504,7 +554,7 @@
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
       $("#loading").remove();
-      overview(d); outlook(d); vintages(d); agencies(d); districtsView(d); legislators(d); dataView(d);
+      overview(d); collectionsView(d); outlook(d); vintages(d); agencies(d); districtsView(d); legislators(d); dataView(d);
       window.addEventListener("hashchange", route);
       route();
       moneyFlow(d);

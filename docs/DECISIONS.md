@@ -353,6 +353,24 @@ changing. District 28's location-specific total falls from $352M to $53M as a re
   project on the site with what the 2025 list said. We don't override LEAP's flags ourselves.
 - **Open:** ask LEAP, or check the capital budget's project descriptions, which flag is right.
 
+### D-042 · Tax collections come from ERFC's monthly updates, combined across issues (accepted)
+Each monthly Economic & Revenue Update has 13 months of General Fund–State collections by tax.
+We parse the Oct 2023–Oct 2026 issues (`ingest/collections.py`), and the newest issue wins for
+each month, since ERFC revises history. Every month must satisfy Revenue Act + non-Revenue Act =
+DOR total, or the build fails. Column alignment is anchored on the latest collection period named
+in the variance table, and checked: the last column equals the variance table's "actual".
+- **Shown:** collected so far this biennium (15 periods, $40.0B) vs. the same periods of 2023-25
+  (+10.2%), each month with the same month two years earlier, by-tax change over 12 months, and
+  ERFC's own variance against its latest forecast.
+- **Deliberately not shown:** collections as a percentage of the biennial forecast. The outlook's
+  forecast is NGF-O, a broader set of accounts on a different timing basis, so the ratio would
+  mislead.
+- **Caveats on the page:** periods are collection months (mostly the prior month's activity), and
+  growth partly reflects 2025 tax increases. Only the General Fund is covered, not dedicated or
+  transportation accounts.
+- **Weak point:** the issue list is hand-maintained. Each new month needs its URL added (or a
+  scraper of the listing page).
+
 ---
 
 ## Presentation

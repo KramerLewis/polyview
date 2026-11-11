@@ -1,0 +1,835 @@
+issue,period,line,is_detail,amount
+oct23.pdf,2022-09,Business and Occupation Tax,True,496431000
+oct23.pdf,2022-09,Cigarette,True,25121000
+oct23.pdf,2022-09,Department of Revenue-Total,False,2110411000
+oct23.pdf,2022-09,Liquor Sales/Liter,True,30081000
+oct23.pdf,2022-09,Non-Revenue Act,False,201830000
+oct23.pdf,2022-09,Other,True,12929000
+oct23.pdf,2022-09,Penalties and Interest,True,13471000
+oct23.pdf,2022-09,Property (State School Levy),True,20986000
+oct23.pdf,2022-09,Public Utility Tax,True,41219000
+oct23.pdf,2022-09,Real Estate Excise,True,117093000
+oct23.pdf,2022-09,Retail Sales Tax,True,1272646000
+oct23.pdf,2022-09,Revenue Act,False,1908580000
+oct23.pdf,2022-09,Tobacco Products Tax,True,1811000
+oct23.pdf,2022-09,Total General Fund-State,False,2113962000
+oct23.pdf,2022-09,Unclaimed Property,True,-4380000
+oct23.pdf,2022-09,Use Tax,True,83002000
+oct23.pdf,2022-09,Washington Court System (GF-S share,False,3552000
+oct23.pdf,2022-10,Business and Occupation Tax,True,572262000
+oct23.pdf,2022-10,Cigarette,True,24784000
+oct23.pdf,2022-10,Department of Revenue-Total,False,2499120000
+oct23.pdf,2022-10,Liquor Sales/Liter,True,27592000
+oct23.pdf,2022-10,Non-Revenue Act,False,420305000
+oct23.pdf,2022-10,Other,True,22048000
+oct23.pdf,2022-10,Penalties and Interest,True,23556000
+oct23.pdf,2022-10,Property (State School Levy),True,79266000
+oct23.pdf,2022-10,Public Utility Tax,True,36063000
+oct23.pdf,2022-10,Real Estate Excise,True,111856000
+oct23.pdf,2022-10,Retail Sales Tax,True,1356885000
+oct23.pdf,2022-10,Revenue Act,False,2078815000
+oct23.pdf,2022-10,Tobacco Products Tax,True,4751000
+oct23.pdf,2022-10,Total General Fund-State,False,2502568000
+oct23.pdf,2022-10,Unclaimed Property,True,154759000
+oct23.pdf,2022-10,Use Tax,True,85299000
+oct23.pdf,2022-10,Washington Court System (GF-S share,False,3448000
+oct23.pdf,2022-11,Business and Occupation Tax,True,522080000
+oct23.pdf,2022-11,Cigarette,True,22264000
+oct23.pdf,2022-11,Department of Revenue-Total,False,3558462000
+oct23.pdf,2022-11,Liquor Sales/Liter,True,26509000
+oct23.pdf,2022-11,Non-Revenue Act,False,1691281000
+oct23.pdf,2022-11,Other,True,17558000
+oct23.pdf,2022-11,Penalties and Interest,True,13992000
+oct23.pdf,2022-11,Property (State School Levy),True,1506201000
+oct23.pdf,2022-11,Public Utility Tax,True,35548000
+oct23.pdf,2022-11,Real Estate Excise,True,74792000
+oct23.pdf,2022-11,Retail Sales Tax,True,1208914000
+oct23.pdf,2022-11,Revenue Act,False,1867181000
+oct23.pdf,2022-11,Tobacco Products Tax,True,8122000
+oct23.pdf,2022-11,Total General Fund-State,False,3562949000
+oct23.pdf,2022-11,Unclaimed Property,True,43957000
+oct23.pdf,2022-11,Use Tax,True,78525000
+oct23.pdf,2022-11,Washington Court System (GF-S share,False,4487000
+oct23.pdf,2022-12,Business and Occupation Tax,True,500066000
+oct23.pdf,2022-12,Cigarette,True,22410000
+oct23.pdf,2022-12,Department of Revenue-Total,False,2358739000
+oct23.pdf,2022-12,Liquor Sales/Liter,True,30236000
+oct23.pdf,2022-12,Non-Revenue Act,False,513732000
+oct23.pdf,2022-12,Other,True,14307000
+oct23.pdf,2022-12,Penalties and Interest,True,15228000
+oct23.pdf,2022-12,Property (State School Levy),True,362068000
+oct23.pdf,2022-12,Public Utility Tax,True,41116000
+oct23.pdf,2022-12,Real Estate Excise,True,91501000
+oct23.pdf,2022-12,Retail Sales Tax,True,1209487000
+oct23.pdf,2022-12,Revenue Act,False,1845007000
+oct23.pdf,2022-12,Tobacco Products Tax,True,1922000
+oct23.pdf,2022-12,Total General Fund-State,False,2361980000
+oct23.pdf,2022-12,Unclaimed Property,True,-6791000
+oct23.pdf,2022-12,Use Tax,True,77188000
+oct23.pdf,2022-12,Washington Court System (GF-S share,False,3241000
+oct23.pdf,2023-01,Business and Occupation Tax,True,585969000
+oct23.pdf,2023-01,Cigarette,True,20231000
+oct23.pdf,2023-01,Department of Revenue-Total,False,2284794000
+oct23.pdf,2023-01,Liquor Sales/Liter,True,42960000
+oct23.pdf,2023-01,Non-Revenue Act,False,175712000
+oct23.pdf,2023-01,Other,True,29438000
+oct23.pdf,2023-01,Penalties and Interest,True,21047000
+oct23.pdf,2023-01,Property (State School Levy),True,19270000
+oct23.pdf,2023-01,Public Utility Tax,True,55580000
+oct23.pdf,2023-01,Real Estate Excise,True,57045000
+oct23.pdf,2023-01,Retail Sales Tax,True,1351287000
+oct23.pdf,2023-01,Revenue Act,False,2109081000
+oct23.pdf,2023-01,Tobacco Products Tax,True,2574000
+oct23.pdf,2023-01,Total General Fund-State,False,2287659000
+oct23.pdf,2023-01,Unclaimed Property,True,6768000
+oct23.pdf,2023-01,Use Tax,True,92624000
+oct23.pdf,2023-01,Washington Court System (GF-S share,False,2866000
+oct23.pdf,2023-02,Business and Occupation Tax,True,459478000
+oct23.pdf,2023-02,Cigarette,True,20408000
+oct23.pdf,2023-02,Department of Revenue-Total,False,1893625000
+oct23.pdf,2023-02,Liquor Sales/Liter,True,23738000
+oct23.pdf,2023-02,Non-Revenue Act,False,200075000
+oct23.pdf,2023-02,Other,True,89896000
+oct23.pdf,2023-02,Penalties and Interest,True,9061000
+oct23.pdf,2023-02,Property (State School Levy),True,9951000
+oct23.pdf,2023-02,Public Utility Tax,True,55453000
+oct23.pdf,2023-02,Real Estate Excise,True,54991000
+oct23.pdf,2023-02,Retail Sales Tax,True,1101696000
+oct23.pdf,2023-02,Revenue Act,False,1693550000
+oct23.pdf,2023-02,Tobacco Products Tax,True,2033000
+oct23.pdf,2023-02,Total General Fund-State,False,1896553000
+oct23.pdf,2023-02,Unclaimed Property,True,1090000
+oct23.pdf,2023-02,Use Tax,True,65829000
+oct23.pdf,2023-02,Washington Court System (GF-S share,False,2929000
+oct23.pdf,2023-03,Business and Occupation Tax,True,436232000
+oct23.pdf,2023-03,Cigarette,True,20557000
+oct23.pdf,2023-03,Department of Revenue-Total,False,1816941000
+oct23.pdf,2023-03,Liquor Sales/Liter,True,24411000
+oct23.pdf,2023-03,Non-Revenue Act,False,204348000
+oct23.pdf,2023-03,Other,True,16557000
+oct23.pdf,2023-03,Penalties and Interest,True,5601000
+oct23.pdf,2023-03,Property (State School Levy),True,70248000
+oct23.pdf,2023-03,Public Utility Tax,True,47433000
+oct23.pdf,2023-03,Real Estate Excise,True,75197000
+oct23.pdf,2023-03,Retail Sales Tax,True,1039111000
+oct23.pdf,2023-03,Revenue Act,False,1612593000
+oct23.pdf,2023-03,Tobacco Products Tax,True,5383000
+oct23.pdf,2023-03,Total General Fund-State,False,1820650000
+oct23.pdf,2023-03,Unclaimed Property,True,-2621000
+oct23.pdf,2023-03,Use Tax,True,78834000
+oct23.pdf,2023-03,Washington Court System (GF-S share,False,3709000
+oct23.pdf,2023-04,Business and Occupation Tax,True,594719000
+oct23.pdf,2023-04,Cigarette,True,19873000
+oct23.pdf,2023-04,Department of Revenue-Total,False,2406497000
+oct23.pdf,2023-04,Liquor Sales/Liter,True,29483000
+oct23.pdf,2023-04,Non-Revenue Act,False,388364000
+oct23.pdf,2023-04,Other,True,20073000
+oct23.pdf,2023-04,Penalties and Interest,True,20173000
+oct23.pdf,2023-04,Property (State School Levy),True,249991000
+oct23.pdf,2023-04,Public Utility Tax,True,56241000
+oct23.pdf,2023-04,Real Estate Excise,True,58323000
+oct23.pdf,2023-04,Retail Sales Tax,True,1254718000
+oct23.pdf,2023-04,Revenue Act,False,2018133000
+oct23.pdf,2023-04,Tobacco Products Tax,True,4485000
+oct23.pdf,2023-04,Total General Fund-State,False,2410302000
+oct23.pdf,2023-04,Unclaimed Property,True,10621000
+oct23.pdf,2023-04,Use Tax,True,87795000
+oct23.pdf,2023-04,Washington Court System (GF-S share,False,3804000
+oct23.pdf,2023-05,Business and Occupation Tax,True,485161000
+oct23.pdf,2023-05,Cigarette,True,22141000
+oct23.pdf,2023-05,Department of Revenue-Total,False,3696838000
+oct23.pdf,2023-05,Liquor Sales/Liter,True,25489000
+oct23.pdf,2023-05,Non-Revenue Act,False,1883036000
+oct23.pdf,2023-05,Other,True,18986000
+oct23.pdf,2023-05,Penalties and Interest,True,19359000
+oct23.pdf,2023-05,Property (State School Levy),True,1737543000
+oct23.pdf,2023-05,Public Utility Tax,True,47028000
+oct23.pdf,2023-05,Real Estate Excise,True,84815000
+oct23.pdf,2023-05,Retail Sales Tax,True,1157665000
+oct23.pdf,2023-05,Revenue Act,False,1813802000
+oct23.pdf,2023-05,Tobacco Products Tax,True,1780000
+oct23.pdf,2023-05,Total General Fund-State,False,3700706000
+oct23.pdf,2023-05,Unclaimed Property,True,-5938000
+oct23.pdf,2023-05,Use Tax,True,102808000
+oct23.pdf,2023-05,Washington Court System (GF-S share,False,3868000
+oct23.pdf,2023-06,Business and Occupation Tax,True,501279000
+oct23.pdf,2023-06,Cigarette,True,22973000
+oct23.pdf,2023-06,Department of Revenue-Total,False,2441041000
+oct23.pdf,2023-06,Liquor Sales/Liter,True,29423000
+oct23.pdf,2023-06,Non-Revenue Act,False,550890000
+oct23.pdf,2023-06,Other,True,10300000
+oct23.pdf,2023-06,Penalties and Interest,True,14701000
+oct23.pdf,2023-06,Property (State School Levy),True,397588000
+oct23.pdf,2023-06,Public Utility Tax,True,41607000
+oct23.pdf,2023-06,Real Estate Excise,True,98902000
+oct23.pdf,2023-06,Retail Sales Tax,True,1251780000
+oct23.pdf,2023-06,Revenue Act,False,1890151000
+oct23.pdf,2023-06,Tobacco Products Tax,True,1952000
+oct23.pdf,2023-06,Total General Fund-State,False,2444680000
+oct23.pdf,2023-06,Unclaimed Property,True,-8296000
+oct23.pdf,2023-06,Use Tax,True,78830000
+oct23.pdf,2023-06,Washington Court System (GF-S share,False,3639000
+oct23.pdf,2023-07,Business and Occupation Tax,True,580097000
+oct23.pdf,2023-07,Cigarette,True,27657000
+oct23.pdf,2023-07,Department of Revenue-Total,False,2307055000
+oct23.pdf,2023-07,Liquor Sales/Liter,True,29793000
+oct23.pdf,2023-07,Non-Revenue Act,False,189976000
+oct23.pdf,2023-07,Other,True,16441000
+oct23.pdf,2023-07,Penalties and Interest,True,12961000
+oct23.pdf,2023-07,Property (State School Levy),True,28948000
+oct23.pdf,2023-07,Public Utility Tax,True,41337000
+oct23.pdf,2023-07,Real Estate Excise,True,88649000
+oct23.pdf,2023-07,Retail Sales Tax,True,1378663000
+oct23.pdf,2023-07,Revenue Act,False,2117078000
+oct23.pdf,2023-07,Tobacco Products Tax,True,6519000
+oct23.pdf,2023-07,Total General Fund-State,False,2310861000
+oct23.pdf,2023-07,Unclaimed Property,True,-1512000
+oct23.pdf,2023-07,Use Tax,True,97502000
+oct23.pdf,2023-07,Washington Court System (GF-S share,False,3807000
+oct23.pdf,2023-08,Business and Occupation Tax,True,515538000
+oct23.pdf,2023-08,Cigarette,True,22072000
+oct23.pdf,2023-08,Department of Revenue-Total,False,2095197000
+oct23.pdf,2023-08,Liquor Sales/Liter,True,33090000
+oct23.pdf,2023-08,Non-Revenue Act,False,181913000
+oct23.pdf,2023-08,Other,True,17281000
+oct23.pdf,2023-08,Penalties and Interest,True,13774000
+oct23.pdf,2023-08,Property (State School Levy),True,13257000
+oct23.pdf,2023-08,Public Utility Tax,True,36940000
+oct23.pdf,2023-08,Real Estate Excise,True,94023000
+oct23.pdf,2023-08,Retail Sales Tax,True,1268909000
+oct23.pdf,2023-08,Revenue Act,False,1913284000
+oct23.pdf,2023-08,Tobacco Products Tax,True,4322000
+oct23.pdf,2023-08,Total General Fund-State,False,2099061000
+oct23.pdf,2023-08,Unclaimed Property,True,2190000
+oct23.pdf,2023-08,Use Tax,True,73802000
+oct23.pdf,2023-08,Washington Court System (GF-S share,False,3864000
+oct24.pdf,2023-09,Business and Occupation Tax,True,529675000
+oct24.pdf,2023-09,Cigarette,True,24268000
+oct24.pdf,2023-09,Department of Revenue-Total,False,2102061000
+oct24.pdf,2023-09,Liquor Sales/Liter,True,31229000
+oct24.pdf,2023-09,Non-Revenue Act,False,170895000
+oct24.pdf,2023-09,Other,True,12887000
+oct24.pdf,2023-09,Penalties and Interest,True,8365000
+oct24.pdf,2023-09,Property (State School Levy),True,21923000
+oct24.pdf,2023-09,Public Utility Tax,True,40603000
+oct24.pdf,2023-09,Real Estate Excise,True,80684000
+oct24.pdf,2023-09,Retail Sales Tax,True,1251678000
+oct24.pdf,2023-09,Revenue Act,False,1931166000
+oct24.pdf,2023-09,Tobacco Products Tax,True,4615000
+oct24.pdf,2023-09,Total General Fund-State,False,2106446000
+oct24.pdf,2023-09,Unclaimed Property,True,-95000
+oct24.pdf,2023-09,Use Tax,True,96230000
+oct23.pdf,2023-09,Washington Court System (GF-S share,False,4069000
+oct24.pdf,2023-09,Washington Court System (GF-S share),False,4385000
+oct24.pdf,2023-10,Business and Occupation Tax,True,576150000
+oct24.pdf,2023-10,Cigarette,True,21909000
+oct24.pdf,2023-10,Department of Revenue-Total,False,2413488000
+oct24.pdf,2023-10,Liquor Sales/Liter,True,27414000
+oct24.pdf,2023-10,Non-Revenue Act,False,364029000
+oct24.pdf,2023-10,Other,True,17411000
+oct24.pdf,2023-10,Penalties and Interest,True,16491000
+oct24.pdf,2023-10,Property (State School Levy),True,66463000
+oct24.pdf,2023-10,Public Utility Tax,True,40394000
+oct24.pdf,2023-10,Real Estate Excise,True,74588000
+oct24.pdf,2023-10,Retail Sales Tax,True,1320523000
+oct24.pdf,2023-10,Revenue Act,False,2049459000
+oct24.pdf,2023-10,Tobacco Products Tax,True,4675000
+oct24.pdf,2023-10,Total General Fund-State,False,2417906000
+oct24.pdf,2023-10,Unclaimed Property,True,156245000
+oct24.pdf,2023-10,Use Tax,True,91225000
+oct24.pdf,2023-10,Washington Court System (GF-S share),False,4418000
+oct24.pdf,2023-11,Business and Occupation Tax,True,543263000
+oct24.pdf,2023-11,Cigarette,True,21137000
+oct24.pdf,2023-11,Department of Revenue-Total,False,3718721000
+oct24.pdf,2023-11,Liquor Sales/Liter,True,26860000
+oct24.pdf,2023-11,Non-Revenue Act,False,1815134000
+oct24.pdf,2023-11,Other,True,16441000
+oct24.pdf,2023-11,Penalties and Interest,True,19357000
+oct24.pdf,2023-11,Property (State School Levy),True,1644352000
+oct24.pdf,2023-11,Public Utility Tax,True,35380000
+oct24.pdf,2023-11,Real Estate Excise,True,61771000
+oct24.pdf,2023-11,Retail Sales Tax,True,1229818000
+oct24.pdf,2023-11,Revenue Act,False,1903587000
+oct24.pdf,2023-11,Tobacco Products Tax,True,1895000
+oct24.pdf,2023-11,Total General Fund-State,False,3724246000
+oct24.pdf,2023-11,Unclaimed Property,True,44573000
+oct24.pdf,2023-11,Use Tax,True,73873000
+oct24.pdf,2023-11,Washington Court System (GF-S share),False,5525000
+oct24.pdf,2023-12,Business and Occupation Tax,True,520365000
+oct24.pdf,2023-12,Cigarette,True,18288000
+oct24.pdf,2023-12,Department of Revenue-Total,False,2306932000
+oct24.pdf,2023-12,Liquor Sales/Liter,True,30211000
+oct24.pdf,2023-12,Non-Revenue Act,False,418077000
+oct24.pdf,2023-12,Other,True,15614000
+oct24.pdf,2023-12,Penalties and Interest,True,21755000
+oct24.pdf,2023-12,Property (State School Levy),True,293392000
+oct24.pdf,2023-12,Public Utility Tax,True,41042000
+oct24.pdf,2023-12,Real Estate Excise,True,64959000
+oct24.pdf,2023-12,Retail Sales Tax,True,1219369000
+oct24.pdf,2023-12,Revenue Act,False,1888856000
+oct24.pdf,2023-12,Tobacco Products Tax,True,5096000
+oct24.pdf,2023-12,Total General Fund-State,False,2311361000
+oct24.pdf,2023-12,Unclaimed Property,True,-4388000
+oct24.pdf,2023-12,Use Tax,True,81228000
+oct24.pdf,2023-12,Washington Court System (GF-S share),False,4429000
+oct24.pdf,2024-01,Business and Occupation Tax,True,604818000
+oct24.pdf,2024-01,Cigarette,True,20992000
+oct24.pdf,2024-01,Department of Revenue-Total,False,2268871000
+oct24.pdf,2024-01,Liquor Sales/Liter,True,39156000
+oct24.pdf,2024-01,Non-Revenue Act,False,168824000
+oct24.pdf,2024-01,Other,True,27346000
+oct24.pdf,2024-01,Penalties and Interest,True,10299000
+oct24.pdf,2024-01,Property (State School Levy),True,17448000
+oct24.pdf,2024-01,Public Utility Tax,True,52244000
+oct24.pdf,2024-01,Real Estate Excise,True,68870000
+oct24.pdf,2024-01,Retail Sales Tax,True,1343371000
+oct24.pdf,2024-01,Revenue Act,False,2100047000
+oct24.pdf,2024-01,Tobacco Products Tax,True,2976000
+oct24.pdf,2024-01,Total General Fund-State,False,2272755000
+oct24.pdf,2024-01,Unclaimed Property,True,-4988000
+oct24.pdf,2024-01,Use Tax,True,86339000
+oct24.pdf,2024-01,Washington Court System (GF-S share),False,3884000
+oct24.pdf,2024-02,Business and Occupation Tax,True,479154000
+oct24.pdf,2024-02,Cigarette,True,16099000
+oct24.pdf,2024-02,Department of Revenue-Total,False,1883263000
+oct24.pdf,2024-02,Liquor Sales/Liter,True,25239000
+oct24.pdf,2024-02,Non-Revenue Act,False,180941000
+oct24.pdf,2024-02,Other,True,82517000
+oct24.pdf,2024-02,Penalties and Interest,True,15761000
+oct24.pdf,2024-02,Property (State School Levy),True,10716000
+oct24.pdf,2024-02,Public Utility Tax,True,54634000
+oct24.pdf,2024-02,Real Estate Excise,True,59701000
+oct24.pdf,2024-02,Retail Sales Tax,True,1077926000
+oct24.pdf,2024-02,Revenue Act,False,1702322000
+oct24.pdf,2024-02,Tobacco Products Tax,True,2111000
+oct24.pdf,2024-02,Total General Fund-State,False,1887602000
+oct24.pdf,2024-02,Unclaimed Property,True,-13331000
+oct24.pdf,2024-02,Use Tax,True,72735000
+oct24.pdf,2024-02,Washington Court System (GF-S share),False,4339000
+oct24.pdf,2024-03,Business and Occupation Tax,True,473674000
+oct24.pdf,2024-03,Cigarette,True,19530000
+oct24.pdf,2024-03,Department of Revenue-Total,False,1929013000
+oct24.pdf,2024-03,Liquor Sales/Liter,True,24381000
+oct24.pdf,2024-03,Non-Revenue Act,False,215772000
+oct24.pdf,2024-03,Other,True,4256000
+oct24.pdf,2024-03,Penalties and Interest,True,15581000
+oct24.pdf,2024-03,Property (State School Levy),True,85307000
+oct24.pdf,2024-03,Public Utility Tax,True,53578000
+oct24.pdf,2024-03,Real Estate Excise,True,71244000
+oct24.pdf,2024-03,Retail Sales Tax,True,1085624000
+oct24.pdf,2024-03,Revenue Act,False,1713241000
+oct24.pdf,2024-03,Tobacco Products Tax,True,5046000
+oct24.pdf,2024-03,Total General Fund-State,False,1933252000
+oct24.pdf,2024-03,Unclaimed Property,True,11054000
+oct24.pdf,2024-03,Use Tax,True,79737000
+oct24.pdf,2024-03,Washington Court System (GF-S share),False,4239000
+oct24.pdf,2024-04,Business and Occupation Tax,True,569878000
+oct24.pdf,2024-04,Cigarette,True,15316000
+oct24.pdf,2024-04,Department of Revenue-Total,False,2380339000
+oct24.pdf,2024-04,Liquor Sales/Liter,True,25594000
+oct24.pdf,2024-04,Non-Revenue Act,False,396857000
+oct24.pdf,2024-04,Other,True,17174000
+oct24.pdf,2024-04,Penalties and Interest,True,21146000
+oct24.pdf,2024-04,Property (State School Levy),True,214258000
+oct24.pdf,2024-04,Public Utility Tax,True,51516000
+oct24.pdf,2024-04,Real Estate Excise,True,87802000
+oct24.pdf,2024-04,Retail Sales Tax,True,1252721000
+oct24.pdf,2024-04,Revenue Act,False,1983482000
+oct24.pdf,2024-04,Tobacco Products Tax,True,1938000
+oct24.pdf,2024-04,Total General Fund-State,False,2384019000
+oct24.pdf,2024-04,Unclaimed Property,True,36713000
+oct24.pdf,2024-04,Use Tax,True,86282000
+oct24.pdf,2024-04,Washington Court System (GF-S share),False,3680000
+oct24.pdf,2024-05,Business and Occupation Tax,True,516174000
+oct24.pdf,2024-05,Cigarette,True,20099000
+oct24.pdf,2024-05,Department of Revenue-Total,False,3824404000
+oct24.pdf,2024-05,Liquor Sales/Liter,True,24717000
+oct24.pdf,2024-05,Non-Revenue Act,False,1994102000
+oct24.pdf,2024-05,Other,True,11950000
+oct24.pdf,2024-05,Penalties and Interest,True,11575000
+oct24.pdf,2024-05,Property (State School Levy),True,1852571000
+oct24.pdf,2024-05,Public Utility Tax,True,46812000
+oct24.pdf,2024-05,Real Estate Excise,True,100545000
+oct24.pdf,2024-05,Retail Sales Tax,True,1179108000
+oct24.pdf,2024-05,Revenue Act,False,1830301000
+oct24.pdf,2024-05,Tobacco Products Tax,True,4321000
+oct24.pdf,2024-05,Total General Fund-State,False,3829189000
+oct24.pdf,2024-05,Unclaimed Property,True,-15779000
+oct24.pdf,2024-05,Use Tax,True,72312000
+oct24.pdf,2024-05,Washington Court System (GF-S share),False,4785000
+oct24.pdf,2024-06,Business and Occupation Tax,True,524544000
+oct24.pdf,2024-06,Cigarette,True,17975000
+oct24.pdf,2024-06,Department of Revenue-Total,False,2424487000
+oct24.pdf,2024-06,Liquor Sales/Liter,True,20295000
+oct24.pdf,2024-06,Non-Revenue Act,False,522756000
+oct24.pdf,2024-06,Other,True,14763000
+oct24.pdf,2024-06,Penalties and Interest,True,14766000
+oct24.pdf,2024-06,Property (State School Levy),True,348315000
+oct24.pdf,2024-06,Public Utility Tax,True,44409000
+oct24.pdf,2024-06,Real Estate Excise,True,110047000
+oct24.pdf,2024-06,Retail Sales Tax,True,1237275000
+oct24.pdf,2024-06,Revenue Act,False,1901731000
+oct24.pdf,2024-06,Tobacco Products Tax,True,3123000
+oct24.pdf,2024-06,Total General Fund-State,False,2429125000
+oct24.pdf,2024-06,Unclaimed Property,True,11361000
+oct24.pdf,2024-06,Use Tax,True,77613000
+oct24.pdf,2024-06,Washington Court System (GF-S share),False,4638000
+oct24.pdf,2024-07,Business and Occupation Tax,True,563804000
+oct24.pdf,2024-07,Cigarette,True,21516000
+oct24.pdf,2024-07,Department of Revenue-Total,False,2295272000
+oct24.pdf,2024-07,Liquor Sales/Liter,True,38047000
+oct24.pdf,2024-07,Non-Revenue Act,False,228737000
+oct24.pdf,2024-07,Other,True,25556000
+oct24.pdf,2024-07,Penalties and Interest,True,21127000
+oct24.pdf,2024-07,Property (State School Levy),True,29596000
+oct24.pdf,2024-07,Public Utility Tax,True,41249000
+oct24.pdf,2024-07,Real Estate Excise,True,123871000
+oct24.pdf,2024-07,Retail Sales Tax,True,1339123000
+oct24.pdf,2024-07,Revenue Act,False,2066535000
+oct24.pdf,2024-07,Tobacco Products Tax,True,4090000
+oct24.pdf,2024-07,Total General Fund-State,False,2299697000
+oct24.pdf,2024-07,Unclaimed Property,True,-9849000
+oct24.pdf,2024-07,Use Tax,True,97142000
+oct24.pdf,2024-07,Washington Court System (GF-S share),False,4425000
+oct24.pdf,2024-08,Business and Occupation Tax,True,526207000
+oct24.pdf,2024-08,Cigarette,True,24229000
+oct24.pdf,2024-08,Department of Revenue-Total,False,2151094000
+oct24.pdf,2024-08,Liquor Sales/Liter,True,33678000
+oct24.pdf,2024-08,Non-Revenue Act,False,163827000
+oct24.pdf,2024-08,Other,True,-926000
+oct24.pdf,2024-08,Penalties and Interest,True,17756000
+oct24.pdf,2024-08,Property (State School Levy),True,14460000
+oct24.pdf,2024-08,Public Utility Tax,True,43029000
+oct24.pdf,2024-08,Real Estate Excise,True,106763000
+oct24.pdf,2024-08,Retail Sales Tax,True,1301431000
+oct24.pdf,2024-08,Revenue Act,False,1987268000
+oct24.pdf,2024-08,Tobacco Products Tax,True,3051000
+oct24.pdf,2024-08,Total General Fund-State,False,2155916000
+oct24.pdf,2024-08,Unclaimed Property,True,-14377000
+oct24.pdf,2024-08,Use Tax,True,95793000
+oct24.pdf,2024-08,Washington Court System (GF-S share),False,4822000
+oct25.pdf,2024-09,Business and Occupation Tax,True,540661000
+oct25.pdf,2024-09,Cigarette,True,21134000
+oct25.pdf,2024-09,Department of Revenue-Total,False,2177688000
+oct25.pdf,2024-09,Liquor Sales/Liter,True,27799000
+oct25.pdf,2024-09,Non-Revenue Act,False,209192000
+oct25.pdf,2024-09,Other,True,27201000
+oct25.pdf,2024-09,Penalties and Interest,True,11138000
+oct25.pdf,2024-09,Property (State School Levy),True,23066000
+oct25.pdf,2024-09,Public Utility Tax,True,44727000
+oct25.pdf,2024-09,Real Estate Excise,True,111491000
+oct25.pdf,2024-09,Retail Sales Tax,True,1282737000
+oct25.pdf,2024-09,Revenue Act,False,1968496000
+oct25.pdf,2024-09,Tobacco Products Tax,True,4713000
+oct25.pdf,2024-09,Total General Fund-State,False,2182063000
+oct25.pdf,2024-09,Unclaimed Property,True,-1499000
+oct25.pdf,2024-09,Use Tax,True,84520000
+oct25.pdf,2024-09,Washington Court System (GF-S share),False,4375000
+oct25.pdf,2024-10,Business and Occupation Tax,True,569546000
+oct25.pdf,2024-10,Cigarette,True,21898000
+oct25.pdf,2024-10,Department of Revenue-Total,False,2538714000
+oct25.pdf,2024-10,Liquor Sales/Liter,True,26567000
+oct25.pdf,2024-10,Non-Revenue Act,False,511657000
+oct25.pdf,2024-10,Other,True,5228000
+oct25.pdf,2024-10,Penalties and Interest,True,16492000
+oct25.pdf,2024-10,Property (State School Levy),True,71776000
+oct25.pdf,2024-10,Public Utility Tax,True,43431000
+oct25.pdf,2024-10,Real Estate Excise,True,105944000
+oct25.pdf,2024-10,Retail Sales Tax,True,1297863000
+oct25.pdf,2024-10,Revenue Act,False,2027057000
+oct25.pdf,2024-10,Tobacco Products Tax,True,2754000
+oct25.pdf,2024-10,Total General Fund-State,False,2543639000
+oct25.pdf,2024-10,Unclaimed Property,True,280243000
+oct25.pdf,2024-10,Use Tax,True,96971000
+oct25.pdf,2024-10,Washington Court System (GF-S share),False,4926000
+oct25.pdf,2024-11,Business and Occupation Tax,True,514047000
+oct25.pdf,2024-11,Cigarette,True,13172000
+oct25.pdf,2024-11,Department of Revenue-Total,False,3791145000
+oct25.pdf,2024-11,Liquor Sales/Liter,True,28036000
+oct25.pdf,2024-11,Non-Revenue Act,False,1890196000
+oct25.pdf,2024-11,Other,True,14550000
+oct25.pdf,2024-11,Penalties and Interest,True,7713000
+oct25.pdf,2024-11,Property (State School Levy),True,1720440000
+oct25.pdf,2024-11,Public Utility Tax,True,40447000
+oct25.pdf,2024-11,Real Estate Excise,True,86524000
+oct25.pdf,2024-11,Retail Sales Tax,True,1255157000
+oct25.pdf,2024-11,Revenue Act,False,1900949000
+oct25.pdf,2024-11,Tobacco Products Tax,True,4048000
+oct25.pdf,2024-11,Total General Fund-State,False,3796933000
+oct25.pdf,2024-11,Unclaimed Property,True,27474000
+oct25.pdf,2024-11,Use Tax,True,79536000
+oct25.pdf,2024-11,Washington Court System (GF-S share),False,5788000
+oct25.pdf,2024-12,Business and Occupation Tax,True,501118000
+oct25.pdf,2024-12,Cigarette,True,19864000
+oct25.pdf,2024-12,Department of Revenue-Total,False,2283965000
+oct25.pdf,2024-12,Liquor Sales/Liter,True,28178000
+oct25.pdf,2024-12,Non-Revenue Act,False,427807000
+oct25.pdf,2024-12,Other,True,9070000
+oct25.pdf,2024-12,Penalties and Interest,True,25010000
+oct25.pdf,2024-12,Property (State School Levy),True,245562000
+oct25.pdf,2024-12,Public Utility Tax,True,42138000
+oct25.pdf,2024-12,Real Estate Excise,True,104595000
+oct25.pdf,2024-12,Retail Sales Tax,True,1205295000
+oct25.pdf,2024-12,Revenue Act,False,1856158000
+oct25.pdf,2024-12,Tobacco Products Tax,True,3717000
+oct25.pdf,2024-12,Total General Fund-State,False,2287491000
+oct25.pdf,2024-12,Unclaimed Property,True,20537000
+oct25.pdf,2024-12,Use Tax,True,78879000
+oct25.pdf,2024-12,Washington Court System (GF-S share),False,3526000
+oct25.pdf,2025-01,Business and Occupation Tax,True,612230000
+oct25.pdf,2025-01,Cigarette,True,14034000
+oct25.pdf,2025-01,Department of Revenue-Total,False,2370320000
+oct25.pdf,2025-01,Liquor Sales/Liter,True,38272000
+oct25.pdf,2025-01,Non-Revenue Act,False,181848000
+oct25.pdf,2025-01,Other,True,16269000
+oct25.pdf,2025-01,Penalties and Interest,True,16096000
+oct25.pdf,2025-01,Property (State School Levy),True,32502000
+oct25.pdf,2025-01,Public Utility Tax,True,55461000
+oct25.pdf,2025-01,Real Estate Excise,True,80919000
+oct25.pdf,2025-01,Retail Sales Tax,True,1416846000
+oct25.pdf,2025-01,Revenue Act,False,2188472000
+oct25.pdf,2025-01,Tobacco Products Tax,True,2384000
+oct25.pdf,2025-01,Total General Fund-State,False,2374762000
+oct25.pdf,2025-01,Unclaimed Property,True,-149000
+oct25.pdf,2025-01,Use Tax,True,85456000
+oct25.pdf,2025-01,Washington Court System (GF-S share),False,4442000
+oct25.pdf,2025-02,Business and Occupation Tax,True,496109000
+oct25.pdf,2025-02,Cigarette,True,17450000
+oct25.pdf,2025-02,Department of Revenue-Total,False,1994805000
+oct25.pdf,2025-02,Liquor Sales/Liter,True,24611000
+oct25.pdf,2025-02,Non-Revenue Act,False,219455000
+oct25.pdf,2025-02,Other,True,94109000
+oct25.pdf,2025-02,Penalties and Interest,True,16589000
+oct25.pdf,2025-02,Property (State School Levy),True,11340000
+oct25.pdf,2025-02,Public Utility Tax,True,57352000
+oct25.pdf,2025-02,Real Estate Excise,True,74333000
+oct25.pdf,2025-02,Retail Sales Tax,True,1134281000
+oct25.pdf,2025-02,Revenue Act,False,1775350000
+oct25.pdf,2025-02,Tobacco Products Tax,True,2800000
+oct25.pdf,2025-02,Total General Fund-State,False,1999158000
+oct25.pdf,2025-02,Unclaimed Property,True,-2388000
+oct25.pdf,2025-02,Use Tax,True,68220000
+oct25.pdf,2025-02,Washington Court System (GF-S share),False,4353000
+oct25.pdf,2025-03,Business and Occupation Tax,True,490592000
+oct25.pdf,2025-03,Cigarette,True,14307000
+oct25.pdf,2025-03,Department of Revenue-Total,False,1924337000
+oct25.pdf,2025-03,Liquor Sales/Liter,True,23106000
+oct25.pdf,2025-03,Non-Revenue Act,False,231341000
+oct25.pdf,2025-03,Other,True,400000
+oct25.pdf,2025-03,Penalties and Interest,True,19029000
+oct25.pdf,2025-03,Property (State School Levy),True,83146000
+oct25.pdf,2025-03,Public Utility Tax,True,62914000
+oct25.pdf,2025-03,Real Estate Excise,True,100794000
+oct25.pdf,2025-03,Retail Sales Tax,True,1052539000
+oct25.pdf,2025-03,Revenue Act,False,1692997000
+oct25.pdf,2025-03,Tobacco Products Tax,True,4621000
+oct25.pdf,2025-03,Total General Fund-State,False,1928934000
+oct25.pdf,2025-03,Unclaimed Property,True,9587000
+oct25.pdf,2025-03,Use Tax,True,63301000
+oct25.pdf,2025-03,Washington Court System (GF-S share),False,4597000
+oct25.pdf,2025-04,Business and Occupation Tax,True,576718000
+oct25.pdf,2025-04,Cigarette,True,19158000
+oct25.pdf,2025-04,Department of Revenue-Total,False,2437925000
+oct25.pdf,2025-04,Liquor Sales/Liter,True,24360000
+oct25.pdf,2025-04,Non-Revenue Act,False,430256000
+oct25.pdf,2025-04,Other,True,22024000
+oct25.pdf,2025-04,Penalties and Interest,True,14503000
+oct25.pdf,2025-04,Property (State School Levy),True,225018000
+oct25.pdf,2025-04,Public Utility Tax,True,58239000
+oct25.pdf,2025-04,Real Estate Excise,True,105169000
+oct25.pdf,2025-04,Retail Sales Tax,True,1289434000
+oct25.pdf,2025-04,Revenue Act,False,2007669000
+oct25.pdf,2025-04,Tobacco Products Tax,True,1508000
+oct25.pdf,2025-04,Total General Fund-State,False,2442966000
+oct25.pdf,2025-04,Unclaimed Property,True,34527000
+oct25.pdf,2025-04,Use Tax,True,67268000
+oct25.pdf,2025-04,Washington Court System (GF-S share),False,5041000
+oct25.pdf,2025-05,Business and Occupation Tax,True,539881000
+oct25.pdf,2025-05,Cigarette,True,14004000
+oct25.pdf,2025-05,Department of Revenue-Total,False,3956053000
+oct25.pdf,2025-05,Liquor Sales/Liter,True,26598000
+oct25.pdf,2025-05,Non-Revenue Act,False,2051022000
+oct25.pdf,2025-05,Other,True,15306000
+oct25.pdf,2025-05,Penalties and Interest,True,19052000
+oct25.pdf,2025-05,Property (State School Levy),True,1905937000
+oct25.pdf,2025-05,Public Utility Tax,True,50461000
+oct25.pdf,2025-05,Real Estate Excise,True,97078000
+oct25.pdf,2025-05,Retail Sales Tax,True,1218453000
+oct25.pdf,2025-05,Revenue Act,False,1905031000
+oct25.pdf,2025-05,Tobacco Products Tax,True,2867000
+oct25.pdf,2025-05,Total General Fund-State,False,3961433000
+oct25.pdf,2025-05,Unclaimed Property,True,-7899000
+oct25.pdf,2025-05,Use Tax,True,74317000
+oct25.pdf,2025-05,Washington Court System (GF-S share),False,5380000
+oct25.pdf,2025-06,Business and Occupation Tax,True,544560000
+oct25.pdf,2025-06,Cigarette,True,18164000
+oct25.pdf,2025-06,Department of Revenue-Total,False,2547022000
+oct25.pdf,2025-06,Liquor Sales/Liter,True,23089000
+oct25.pdf,2025-06,Non-Revenue Act,False,498210000
+oct25.pdf,2025-06,Other,True,17464000
+oct25.pdf,2025-06,Penalties and Interest,True,28525000
+oct25.pdf,2025-06,Property (State School Levy),True,333053000
+oct25.pdf,2025-06,Public Utility Tax,True,40475000
+oct25.pdf,2025-06,Real Estate Excise,True,115353000
+oct25.pdf,2025-06,Retail Sales Tax,True,1273631000
+oct25.pdf,2025-06,Revenue Act,False,2048813000
+oct25.pdf,2025-06,Tobacco Products Tax,True,6350000
+oct25.pdf,2025-06,Total General Fund-State,False,2551576000
+oct25.pdf,2025-06,Unclaimed Property,True,-8914000
+oct25.pdf,2025-06,Use Tax,True,155272000
+oct25.pdf,2025-06,Washington Court System (GF-S share),False,4553000
+oct25.pdf,2025-07,Business and Occupation Tax,True,607629000
+oct25.pdf,2025-07,Cigarette,True,23699000
+oct25.pdf,2025-07,Department of Revenue-Total,False,2356518000
+oct25.pdf,2025-07,Liquor Sales/Liter,True,32700000
+oct25.pdf,2025-07,Non-Revenue Act,False,212821000
+oct25.pdf,2025-07,Other,True,9097000
+oct25.pdf,2025-07,Penalties and Interest,True,17065000
+oct25.pdf,2025-07,Property (State School Levy),True,32018000
+oct25.pdf,2025-07,Public Utility Tax,True,45314000
+oct25.pdf,2025-07,Real Estate Excise,True,123983000
+oct25.pdf,2025-07,Retail Sales Tax,True,1382139000
+oct25.pdf,2025-07,Revenue Act,False,2143697000
+oct25.pdf,2025-07,Tobacco Products Tax,True,2174000
+oct25.pdf,2025-07,Total General Fund-State,False,2361570000
+oct25.pdf,2025-07,Unclaimed Property,True,-8677000
+oct25.pdf,2025-07,Use Tax,True,89377000
+oct25.pdf,2025-07,Washington Court System (GF-S share),False,5051000
+oct25.pdf,2025-08,Business and Occupation Tax,True,568773000
+oct25.pdf,2025-08,Cigarette,True,15772000
+oct25.pdf,2025-08,Department of Revenue-Total,False,2237849000
+oct25.pdf,2025-08,Liquor Sales/Liter,True,33936000
+oct25.pdf,2025-08,Non-Revenue Act,False,191965000
+oct25.pdf,2025-08,Other,True,22169000
+oct25.pdf,2025-08,Penalties and Interest,True,5066000
+oct25.pdf,2025-08,Property (State School Levy),True,15622000
+oct25.pdf,2025-08,Public Utility Tax,True,49219000
+oct25.pdf,2025-08,Real Estate Excise,True,111830000
+oct25.pdf,2025-08,Retail Sales Tax,True,1325651000
+oct25.pdf,2025-08,Revenue Act,False,2045884000
+oct25.pdf,2025-08,Tobacco Products Tax,True,3885000
+oct25.pdf,2025-08,Total General Fund-State,False,2243141000
+oct25.pdf,2025-08,Unclaimed Property,True,-7365000
+oct25.pdf,2025-08,Use Tax,True,93290000
+oct25.pdf,2025-08,Washington Court System (GF-S share),False,5292000
+oct26.pdf,2025-09,Business and Occupation Tax,True,556346000
+oct26.pdf,2025-09,Cigarette,True,18897000
+oct26.pdf,2025-09,Department of Revenue-Total,False,2240798000
+oct26.pdf,2025-09,Liquor Sales/Liter,True,33219000
+oct26.pdf,2025-09,Non-Revenue Act,False,206854000
+oct26.pdf,2025-09,Other,True,5917000
+oct26.pdf,2025-09,Penalties and Interest,True,30949000
+oct26.pdf,2025-09,Property (State School Levy),True,24358000
+oct26.pdf,2025-09,Public Utility Tax,True,48262000
+oct26.pdf,2025-09,Real Estate Excise,True,128469000
+oct26.pdf,2025-09,Retail Sales Tax,True,1306146000
+oct26.pdf,2025-09,Revenue Act,False,2033944000
+oct26.pdf,2025-09,Tobacco Products Tax,True,3463000
+oct26.pdf,2025-09,Total General Fund-State,False,2245521000
+oct26.pdf,2025-09,Unclaimed Property,True,-4005000
+oct26.pdf,2025-09,Use Tax,True,88778000
+oct26.pdf,2025-09,Washington Court System (GF-S share),False,4723000
+oct26.pdf,2025-10,Business and Occupation Tax,True,591310000
+oct26.pdf,2025-10,Cigarette,True,20422000
+oct26.pdf,2025-10,Department of Revenue-Total,False,2606179000
+oct26.pdf,2025-10,Liquor Sales/Liter,True,21997000
+oct26.pdf,2025-10,Non-Revenue Act,False,481799000
+oct26.pdf,2025-10,Other,True,37845000
+oct26.pdf,2025-10,Penalties and Interest,True,18797000
+oct26.pdf,2025-10,Property (State School Levy),True,81500000
+oct26.pdf,2025-10,Public Utility Tax,True,48965000
+oct26.pdf,2025-10,Real Estate Excise,True,114371000
+oct26.pdf,2025-10,Retail Sales Tax,True,1378271000
+oct26.pdf,2025-10,Revenue Act,False,2124380000
+oct26.pdf,2025-10,Tobacco Products Tax,True,2986000
+oct26.pdf,2025-10,Total General Fund-State,False,2611162000
+oct26.pdf,2025-10,Unclaimed Property,True,205664000
+oct26.pdf,2025-10,Use Tax,True,84052000
+oct26.pdf,2025-10,Washington Court System (GF-S share),False,4984000
+oct26.pdf,2025-11,Business and Occupation Tax,True,619752000
+oct26.pdf,2025-11,Cigarette,True,15884000
+oct26.pdf,2025-11,Department of Revenue-Total,False,4073405000
+oct26.pdf,2025-11,Liquor Sales/Liter,True,25888000
+oct26.pdf,2025-11,Non-Revenue Act,False,1985899000
+oct26.pdf,2025-11,Other,True,5705000
+oct26.pdf,2025-11,Penalties and Interest,True,18184000
+oct26.pdf,2025-11,Property (State School Levy),True,1748626000
+oct26.pdf,2025-11,Public Utility Tax,True,39707000
+oct26.pdf,2025-11,Real Estate Excise,True,83768000
+oct26.pdf,2025-11,Retail Sales Tax,True,1310315000
+oct26.pdf,2025-11,Revenue Act,False,2087506000
+oct26.pdf,2025-11,Tobacco Products Tax,True,2731000
+oct26.pdf,2025-11,Total General Fund-State,False,4078924000
+oct26.pdf,2025-11,Unclaimed Property,True,106027000
+oct26.pdf,2025-11,Use Tax,True,96817000
+oct26.pdf,2025-11,Washington Court System (GF-S share),False,5519000
+oct26.pdf,2025-12,Business and Occupation Tax,True,562761000
+oct26.pdf,2025-12,Cigarette,True,17440000
+oct26.pdf,2025-12,Department of Revenue-Total,False,2339674000
+oct26.pdf,2025-12,Liquor Sales/Liter,True,28321000
+oct26.pdf,2025-12,Non-Revenue Act,False,404246000
+oct26.pdf,2025-12,Other,True,1593000
+oct26.pdf,2025-12,Penalties and Interest,True,28383000
+oct26.pdf,2025-12,Property (State School Levy),True,246484000
+oct26.pdf,2025-12,Public Utility Tax,True,45596000
+oct26.pdf,2025-12,Real Estate Excise,True,107975000
+oct26.pdf,2025-12,Retail Sales Tax,True,1221462000
+oct26.pdf,2025-12,Revenue Act,False,1935429000
+oct26.pdf,2025-12,Tobacco Products Tax,True,3468000
+oct26.pdf,2025-12,Total General Fund-State,False,2344139000
+oct26.pdf,2025-12,Unclaimed Property,True,2434000
+oct26.pdf,2025-12,Use Tax,True,73759000
+oct26.pdf,2025-12,Washington Court System (GF-S share),False,4465000
+oct26.pdf,2026-01,Business and Occupation Tax,True,688806000
+oct26.pdf,2026-01,Cigarette,True,12453000
+oct26.pdf,2026-01,Department of Revenue-Total,False,2608063000
+oct26.pdf,2026-01,Liquor Sales/Liter,True,38784000
+oct26.pdf,2026-01,Non-Revenue Act,False,192237000
+oct26.pdf,2026-01,Other,True,34781000
+oct26.pdf,2026-01,Penalties and Interest,True,23196000
+oct26.pdf,2026-01,Property (State School Levy),True,31579000
+oct26.pdf,2026-01,Public Utility Tax,True,58709000
+oct26.pdf,2026-01,Real Estate Excise,True,72034000
+oct26.pdf,2026-01,Retail Sales Tax,True,1498821000
+oct26.pdf,2026-01,Revenue Act,False,2415826000
+oct26.pdf,2026-01,Tobacco Products Tax,True,2321000
+oct26.pdf,2026-01,Total General Fund-State,False,2613932000
+oct26.pdf,2026-01,Unclaimed Property,True,2606000
+oct26.pdf,2026-01,Use Tax,True,143974000
+oct26.pdf,2026-01,Washington Court System (GF-S share),False,5869000
+oct26.pdf,2026-02,Business and Occupation Tax,True,551879000
+oct26.pdf,2026-02,Cigarette,True,17384000
+oct26.pdf,2026-02,Department of Revenue-Total,False,2127922000
+oct26.pdf,2026-02,Liquor Sales/Liter,True,24844000
+oct26.pdf,2026-02,Non-Revenue Act,False,206733000
+oct26.pdf,2026-02,Other,True,75438000
+oct26.pdf,2026-02,Penalties and Interest,True,12709000
+oct26.pdf,2026-02,Property (State School Levy),True,10431000
+oct26.pdf,2026-02,Public Utility Tax,True,56136000
+oct26.pdf,2026-02,Real Estate Excise,True,69415000
+oct26.pdf,2026-02,Retail Sales Tax,True,1155782000
+oct26.pdf,2026-02,Revenue Act,False,1921188000
+oct26.pdf,2026-02,Tobacco Products Tax,True,33453000
+oct26.pdf,2026-02,Total General Fund-State,False,2131956000
+oct26.pdf,2026-02,Unclaimed Property,True,9220000
+oct26.pdf,2026-02,Use Tax,True,111228000
+oct26.pdf,2026-02,Washington Court System (GF-S share),False,4034000
+oct26.pdf,2026-03,Business and Occupation Tax,True,522766000
+oct26.pdf,2026-03,Cigarette,True,11705000
+oct26.pdf,2026-03,Department of Revenue-Total,False,2057491000
+oct26.pdf,2026-03,Liquor Sales/Liter,True,21711000
+oct26.pdf,2026-03,Non-Revenue Act,False,232639000
+oct26.pdf,2026-03,Other,True,7932000
+oct26.pdf,2026-03,Penalties and Interest,True,13897000
+oct26.pdf,2026-03,Property (State School Levy),True,74037000
+oct26.pdf,2026-03,Public Utility Tax,True,58534000
+oct26.pdf,2026-03,Real Estate Excise,True,116659000
+oct26.pdf,2026-03,Retail Sales Tax,True,1137320000
+oct26.pdf,2026-03,Revenue Act,False,1824852000
+oct26.pdf,2026-03,Tobacco Products Tax,True,4806000
+oct26.pdf,2026-03,Total General Fund-State,False,2062321000
+oct26.pdf,2026-03,Unclaimed Property,True,595000
+oct26.pdf,2026-03,Use Tax,True,87529000
+oct26.pdf,2026-03,Washington Court System (GF-S share),False,4830000
+oct26.pdf,2026-04,Business and Occupation Tax,True,691199000
+oct26.pdf,2026-04,Cigarette,True,16077000
+oct26.pdf,2026-04,Department of Revenue-Total,False,2765023000
+oct26.pdf,2026-04,Liquor Sales/Liter,True,22524000
+oct26.pdf,2026-04,Non-Revenue Act,False,466674000
+oct26.pdf,2026-04,Other,True,59215000
+oct26.pdf,2026-04,Penalties and Interest,True,27294000
+oct26.pdf,2026-04,Property (State School Levy),True,237302000
+oct26.pdf,2026-04,Public Utility Tax,True,60653000
+oct26.pdf,2026-04,Real Estate Excise,True,95197000
+oct26.pdf,2026-04,Retail Sales Tax,True,1369311000
+oct26.pdf,2026-04,Revenue Act,False,2298349000
+oct26.pdf,2026-04,Tobacco Products Tax,True,10646000
+oct26.pdf,2026-04,Total General Fund-State,False,2769913000
+oct26.pdf,2026-04,Unclaimed Property,True,36359000
+oct26.pdf,2026-04,Use Tax,True,139247000
+oct26.pdf,2026-04,Washington Court System (GF-S share),False,4890000
+oct26.pdf,2026-05,Business and Occupation Tax,True,589205000
+oct26.pdf,2026-05,Cigarette,True,18098000
+oct26.pdf,2026-05,Department of Revenue-Total,False,4137454000
+oct26.pdf,2026-05,Liquor Sales/Liter,True,25987000
+oct26.pdf,2026-05,Non-Revenue Act,False,2043917000
+oct26.pdf,2026-05,Other,True,-26008000
+oct26.pdf,2026-05,Penalties and Interest,True,13237000
+oct26.pdf,2026-05,Property (State School Levy),True,1935350000
+oct26.pdf,2026-05,Public Utility Tax,True,53939000
+oct26.pdf,2026-05,Real Estate Excise,True,91458000
+oct26.pdf,2026-05,Retail Sales Tax,True,1287564000
+oct26.pdf,2026-05,Revenue Act,False,2093537000
+oct26.pdf,2026-05,Tobacco Products Tax,True,15376000
+oct26.pdf,2026-05,Total General Fund-State,False,4142595000
+oct26.pdf,2026-05,Unclaimed Property,True,-970000
+oct26.pdf,2026-05,Use Tax,True,134215000
+oct26.pdf,2026-05,Washington Court System (GF-S share),False,5141000
+oct26.pdf,2026-06,Business and Occupation Tax,True,567317000
+oct26.pdf,2026-06,Cigarette,True,15727000
+oct26.pdf,2026-06,Department of Revenue-Total,False,2780737000
+oct26.pdf,2026-06,Liquor Sales/Liter,True,26175000
+oct26.pdf,2026-06,Non-Revenue Act,False,535157000
+oct26.pdf,2026-06,Other,True,14542000
+oct26.pdf,2026-06,Penalties and Interest,True,19387000
+oct26.pdf,2026-06,Property (State School Levy),True,359639000
+oct26.pdf,2026-06,Public Utility Tax,True,47342000
+oct26.pdf,2026-06,Real Estate Excise,True,119074000
+oct26.pdf,2026-06,Retail Sales Tax,True,1332834000
+oct26.pdf,2026-06,Revenue Act,False,2245581000
+oct26.pdf,2026-06,Tobacco Products Tax,True,7287000
+oct26.pdf,2026-06,Total General Fund-State,False,2784965000
+oct26.pdf,2026-06,Unclaimed Property,True,0
+oct26.pdf,2026-06,Use Tax,True,271415000
+oct26.pdf,2026-06,Washington Court System (GF-S share),False,4227000
+oct26.pdf,2026-07,Business and Occupation Tax,True,676504000
+oct26.pdf,2026-07,Cigarette,True,21188000
+oct26.pdf,2026-07,Department of Revenue-Total,False,2658285000
+oct26.pdf,2026-07,Liquor Sales/Liter,True,28897000
+oct26.pdf,2026-07,Non-Revenue Act,False,202016000
+oct26.pdf,2026-07,Other,True,26662000
+oct26.pdf,2026-07,Penalties and Interest,True,19512000
+oct26.pdf,2026-07,Property (State School Levy),True,38622000
+oct26.pdf,2026-07,Public Utility Tax,True,48014000
+oct26.pdf,2026-07,Real Estate Excise,True,132301000
+oct26.pdf,2026-07,Retail Sales Tax,True,1580331000
+oct26.pdf,2026-07,Revenue Act,False,2456269000
+oct26.pdf,2026-07,Tobacco Products Tax,True,12523000
+oct26.pdf,2026-07,Total General Fund-State,False,2662901000
+oct26.pdf,2026-07,Unclaimed Property,True,-45654000
+oct26.pdf,2026-07,Use Tax,True,119385000
+oct26.pdf,2026-07,Washington Court System (GF-S share),False,4616000
+oct26.pdf,2026-08,Business and Occupation Tax,True,655376000
+oct26.pdf,2026-08,Cigarette,True,16396000
+oct26.pdf,2026-08,Department of Revenue-Total,False,2564027000
+oct26.pdf,2026-08,Liquor Sales/Liter,True,30841000
+oct26.pdf,2026-08,Non-Revenue Act,False,184936000
+oct26.pdf,2026-08,Other,True,9049000
+oct26.pdf,2026-08,Penalties and Interest,True,23800000
+oct26.pdf,2026-08,Property (State School Levy),True,18681000
+oct26.pdf,2026-08,Public Utility Tax,True,51749000
+oct26.pdf,2026-08,Real Estate Excise,True,115403000
+oct26.pdf,2026-08,Retail Sales Tax,True,1442342000
+oct26.pdf,2026-08,Revenue Act,False,2379091000
+oct26.pdf,2026-08,Tobacco Products Tax,True,15133000
+oct26.pdf,2026-08,Total General Fund-State,False,2569073000
+oct26.pdf,2026-08,Unclaimed Property,True,-5434000
+oct26.pdf,2026-08,Use Tax,True,190690000
+oct26.pdf,2026-08,Washington Court System (GF-S share),False,5046000
+oct26.pdf,2026-09,Business and Occupation Tax,True,604755000
+oct26.pdf,2026-09,Cigarette,True,15635000
+oct26.pdf,2026-09,Department of Revenue-Total,False,2407438000
+oct26.pdf,2026-09,Liquor Sales/Liter,True,28103000
+oct26.pdf,2026-09,Non-Revenue Act,False,211509000
+oct26.pdf,2026-09,Other,True,15208000
+oct26.pdf,2026-09,Penalties and Interest,True,18146000
+oct26.pdf,2026-09,Property (State School Levy),True,23842000
+oct26.pdf,2026-09,Public Utility Tax,True,49430000
+oct26.pdf,2026-09,Real Estate Excise,True,106104000
+oct26.pdf,2026-09,Retail Sales Tax,True,1396672000
+oct26.pdf,2026-09,Revenue Act,False,2195929000
+oct26.pdf,2026-09,Tobacco Products Tax,True,4934000
+oct26.pdf,2026-09,Total General Fund-State,False,2411740000
+oct26.pdf,2026-09,Unclaimed Property,True,22617000
+oct26.pdf,2026-09,Use Tax,True,121992000
+oct26.pdf,2026-09,Washington Court System (GF-S share),False,4302000
