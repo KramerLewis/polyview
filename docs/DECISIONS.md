@@ -389,6 +389,20 @@ in the variance table, and checked: the last column equals the variance table's 
 - **Weak points:** discovery relies on ERFC and fiscal.wa.gov page structure and file naming. If a
   site is down, the build uses the files it already knows and reports the error in an issue.
 
+### D-044 · Address lookup uses the U.S. Census Geocoder, called from the visitor's browser (accepted)
+The Districts page turns an address (or the device's location) into a legislative district with the
+Census Geocoder: `onelineaddress` or `coordinates`, layer 56 (state legislative districts, upper).
+Washington uses the same 49 districts for both chambers.
+- **Privacy:** the request goes straight from the visitor's browser to the Census Bureau. polyview has no
+  server and never sees or stores the address. The page says so next to the box.
+- **JSONP**, because the geocoder sends no CORS headers. It's a script include from a U.S. government domain.
+- **Map vintage:** the geocoder returns "2026 State Legislative Districts", which reflect the 2024
+  court-ordered Yakima Valley changes. Spot checks: Olympia → 22, Seattle (Space Needle) → 36,
+  downtown Yakima → 14.
+- **Weak points:** new or rural addresses may not match, and out-of-state results are rejected. Both
+  cases link to the Legislature's official district finder. An address on a district boundary is
+  resolved by Census geometry, which could differ from county election records in rare cases.
+
 ---
 
 ## Presentation

@@ -98,7 +98,17 @@
   <section id="districts" class="view" hidden>
     <h1>Your legislative district</h1>
     <p class="lede">Washington has 49 legislative districts, each with one senator and two representatives.
-      Don't know yours? Use the Legislature's
+      Enter your address to find yours.</p>
+    <form id="addr-form" class="controls addr" autocomplete="on">
+      <label class="grow">Address <input id="addr" name="street-address" autocomplete="street-address"
+        placeholder="e.g. 1111 Washington St SE, Olympia, WA" required></label>
+      <button type="submit">Find my district</button>
+      <button type="button" id="geo-btn" class="secondary">Use my location</button>
+    </form>
+    <p class="note" id="addr-status" role="status" aria-live="polite"></p>
+    <p class="note privacy">Your address (or location) is sent from your browser to the
+      <a href="https://geocoding.geo.census.gov/">U.S. Census Bureau's geocoder</a> to look up the district.
+      polyview never receives or stores it. You can also use the Legislature's
       <a href="https://app.leg.wa.gov/districtfinder/">official district finder</a>.</p>
     <div class="controls">
       <label>District <select id="district-pick"></select></label>

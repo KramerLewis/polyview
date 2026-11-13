@@ -388,6 +388,68 @@
     el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  /* Address -> legislative district via the U.S. Census Geocoder (D-044).
+     JSONP, because the geocoder sends no CORS headers. Layer 56 = state
+     legislative districts (upper); Washington uses the same 49 districts for both chambers. */
+  const GEOCODER = "https://geocoding.geo.census.gov/geocoder/geographies/";
+  function jsonp(url, timeoutMs = 15000) {
+    return new Promise((resolve, reject) => {
+      const cb = `pvgeo_${Date.now()}_${Math.floor(Math.random() * 1e6)}`;
+      const script = document.createElement("script");
+      const done = () => { delete window[cb]; script.remove(); clearTimeout(timer); };
+      const timer = setTimeout(() => { done(); reject(new Error("The Census geocoder didn't respond.")); }, timeoutMs);
+      window[cb] = (data) => { done(); resolve(data); };
+      script.onerror = () => { done(); reject(new Error("Couldn't reach the Census geocoder.")); };
+      script.src = `${url}&format=jsonp&callback=${cb}`;
+      document.head.appendChild(script);
+    });
+  }
+  function districtFrom(geographies) {
+    const key = Object.keys(geographies || {}).find((k) => /State Legislative Districts - Upper/.test(k));
+    const g = key && geographies[key][0];
+    if (!g) return { error: "no-district" };
+    if (g.STATE !== "53") return { error: "not-wa" };
+    return { district: parseInt(g.BASENAME, 10) };
+  }
+  function addressLookup(onFound) {
+    const status = $("#addr-status");
+    const say = (html) => { status.innerHTML = html; };
+    const finder = '<a href="https://app.leg.wa.gov/districtfinder/">official district finder</a>';
+    const handle = (res, label) => {
+      if (res.error === "not-wa") return say(`That location is outside Washington. Try a Washington address, or the Legislature's ${finder}.`);
+      if (res.error) return say(`Couldn't find a district for that. Check the address, or try the Legislature's ${finder}.`);
+      say(`${esc(label)} is in <strong>Legislative District ${res.district}</strong>.`);
+      onFound(res.district);
+      $("#district-detail").scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    $("#addr-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const q = $("#addr").value.trim();
+      if (!q) return;
+      say("Looking up…");
+      try {
+        const data = await jsonp(`${GEOCODER}onelineaddress?address=${encodeURIComponent(q)}`
+          + "&benchmark=Public_AR_Current&vintage=Current_Current&layers=56");
+        const m = data && data.result && data.result.addressMatches || [];
+        if (!m.length) return handle({ error: "no-match" });
+        handle(districtFrom(m[0].geographies), m[0].matchedAddress);
+      } catch (err) { say(`${esc(err.message)} Try again, or use the Legislature's ${finder}.`); }
+    });
+    const geoBtn = $("#geo-btn");
+    if (!("geolocation" in navigator)) { geoBtn.hidden = true; return; }
+    geoBtn.addEventListener("click", () => {
+      say("Getting your location…");
+      navigator.geolocation.getCurrentPosition(async (pos) => {
+        try {
+          const { longitude: x, latitude: y } = pos.coords;
+          const data = await jsonp(`${GEOCODER}coordinates?x=${x.toFixed(5)}&y=${y.toFixed(5)}`
+            + "&benchmark=Public_AR_Current&vintage=Current_Current&layers=56");
+          handle(districtFrom(data && data.result && data.result.geographies), "Your location");
+        } catch (err) { say(`${esc(err.message)} Try entering your address instead.`); }
+      }, () => say("Location wasn't shared. You can enter your address instead."), { timeout: 15000, maximumAge: 600000 });
+    });
+  }
+
   function districtsView(d) {
     const pick = $("#district-pick");
     for (let i = 1; i <= 49; i++) pick.insertAdjacentHTML("beforeend", `<option value="${i}">District ${i}</option>`);
@@ -453,6 +515,7 @@
     try { start = localStorage.getItem("polyview-district") || "1"; } catch (e) { /* ignore */ }
     pick.value = start;
     pick.addEventListener("change", () => show(pick.value));
+    addressLookup((n) => { pick.value = String(n); show(String(n)); });
     show(start);
 
     const sorted = [...d.districts].sort((a, b) => b.local_total - a.local_total);

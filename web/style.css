@@ -149,3 +149,13 @@ svg.sankey text { fill: var(--text); paint-order: stroke; stroke: var(--surface)
 svg.sankey .nval { fill: var(--text-2); font-variant-numeric: tabular-nums; }
 .flow-col h3 { font-size: .95rem; margin: 16px 0 4px; }
 .asof { color: var(--text-3); font-size: .8rem; margin: -4px 0 10px; font-variant-numeric: tabular-nums; }
+
+/* Address lookup */
+form.addr { align-items: flex-end; }
+form.addr label.grow { flex: 1 1 280px; }
+form.addr label.grow input { flex: 1; width: 100%; }
+button { font: inherit; border-radius: 6px; padding: 7px 14px; border: 1px solid var(--accent);
+  background: var(--accent); color: #fff; cursor: pointer; }
+button.secondary { background: transparent; color: var(--accent); }
+button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.privacy { font-size: .8rem; }
