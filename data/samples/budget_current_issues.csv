@@ -93,3 +93,243 @@ budget,issue
 2023-25 capital,2025 supplemental sec 3134 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
 2023-25 capital,2025 supplemental sec 3134 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
 2023-25 capital,2025 supplemental sec 5003 'Common School Construction Fund—Federal': not in reprinted section (treated as removed)
+2021-23 operating,"2022 supplemental sec 131 'Statewide Information Technology System Development Revolving Account—State Appropriation': prior 102,037,000 but no matching original line"
+2021-23 operating,"2022 supplemental sec 214 'State Health Care Affordability Account—State Appropriation': prior 50,000,000 but no matching original line"
+2021-23 operating,"2022 supplemental sec 223 'General Fund—Federal Appropriation': prior 0 != enacted 1,400,000"
+2021-23 operating,"2022 supplemental sec 223 'General Fund—Federal Appropriation': prior 1,400,000 but no matching original line"
+2021-23 operating,"2022 supplemental sec 302 'State Drought Preparedness and Response Account—State Appropriation': prior 204,000 but no matching original line"
+2021-23 operating,"2022 supplemental sec 801 'General Fund Appropriation for Cannabis Excise Tax distributions': prior 40,000,000 but no matching original line"
+2021-23 operating,"2022 supplemental sec 805 'Gambling Revolving Account: For transfer to the state general fund as repayment of the loan pursuant to chapter 127, Laws of 2020 (sports wagering/compacts), $3,000,000 for fiscal year 2022 and the lesser of the remaining amount determined by the treasurer for full repayment of the $6,000,000 transferred from the general fund in the 2019-2021 fiscal biennium with any related interest, or this amount for fiscal year 2023 $3,500,000': prior 6,500,000 but no matching original line"
+2021-23 operating,2022 supplemental sec 131 'Statewide Information Technology System Development Maintenance and Operations Revolving Account— State Appropriation': not in reprinted section (treated as removed)
+2021-23 operating,2022 supplemental sec 214 'Health Care Affordability Account—State Appropriation': not in reprinted section (treated as removed)
+2021-23 operating,2022 supplemental sec 302 'State Drought Preparedness Account—State Appropriation': not in reprinted section (treated as removed)
+2021-23 operating,2022 supplemental sec 801 'General Fund Appropriation for Marijuana Excise Tax distributions': not in reprinted section (treated as removed)
+2021-23 operating,"2022 supplemental sec 805 'Gambling Revolving Account: For transfer to the state general fund as repayment of the loan pursuant to chapter 127, Laws of 2020 (sports wagering/compacts), the lesser of the amount determined by the treasurer for full repayment of the $6,000,000 transferred from the general fund in the 2019-2021 fiscal biennium with any related interest, or this amount for fiscal year 2023 $6,500,000': not in reprinted section (treated as removed)"
+2021-23 operating,"2023 supplemental sec 144 '911 Account—State Appropriation': prior 54,034,000 but no matching original line"
+2021-23 operating,"2023 supplemental sec 223 'Coronavirus State Fiscal Recovery Fund—Federal Appropriation': prior 0 != enacted 28,409,000"
+2021-23 operating,"2023 supplemental sec 223 'Coronavirus State Fiscal Recovery Fund—Federal Appropriation': prior 28,409,000 != enacted 8,480,000"
+2021-23 operating,"2023 supplemental sec 223 'Coronavirus State Fiscal Recovery Fund—Federal Appropriation': prior 8,480,000 != enacted 267,000"
+2021-23 operating,"2023 supplemental sec 223 'Coronavirus State Fiscal Recovery Fund—Federal Appropriation': prior 0 != enacted 11,968,000"
+2021-23 operating,"2023 supplemental sec 223 'Coronavirus State Fiscal Recovery Fund—Federal Appropriation': prior 267,000 but no matching original line"
+2021-23 operating,"2023 supplemental sec 223 'Coronavirus State Fiscal Recovery Fund—Federal Appropriation': prior 11,968,000 but no matching original line"
+2021-23 operating,"2023 supplemental sec 801 'Manufacturing and Warehousing Job Centers Account Appropriation for distribution to local taxing jurisdictions to mitigate the unintended revenue redistributions effect of sourcing law changes pursuant to Engrossed Substitute House Bill No. 1521 (warehousing & manufacturing jobs).': prior 12,150,000 but no matching original line"
+2021-23 operating,"2023 supplemental sec 805 'Dedicated Cannabis Account: For transfer to the basic health plan trust account, the lesser of the amount determined pursuant to RCW 69.50.540 or this amount for fiscal year 2022, $265,000,000 and this amount for fiscal year 2023, $268,000,000': prior 533,000,000 but no matching original line"
+2021-23 operating,"2023 supplemental sec 805 'Dedicated Cannabis Account: For transfer to the state general fund, the lesser of the amount determined pursuant to RCW 69.50.540 or this amount for fiscal year 2022, $202,000,000 and this amount for fiscal year 2023, $200,000,000': prior 402,000,000 but no matching original line"
+2021-23 operating,"2023 supplemental sec 805 'Tobacco Settlement Account: For transfer to the state general fund, in an amount not to exceed the actual amount of the tobacco arbitration payment to the tobacco settlement account, for fiscal year 2023': prior 8,000,000 but no matching original line"
+2021-23 operating,"2023 supplemental sec 805 'General Fund: For transfer to the manufacturing and warehousing jobs centers account $6,750,000 for fiscal year 2022 and $5,400,000 for fiscal year 2023 pursuant to Engrossed Substitute House Bill No. 1521 (warehousing & manufacturing jobs).': prior 12,150,000 but no matching original line"
+2021-23 operating,2023 supplemental sec 127 'Consumer Privacy Account—State Appropriation': not in reprinted section (treated as removed)
+2021-23 operating,2023 supplemental sec 131 'Statewide Information Technology System Development Maintenance and Operations Revolving Account— State Appropriation': not in reprinted section (treated as removed)
+2021-23 operating,2023 supplemental sec 144 'Enhanced 911 Account—State Appropriation': not in reprinted section (treated as removed)
+2021-23 operating,2023 supplemental sec 214 'Health Care Affordability Account—State Appropriation': not in reprinted section (treated as removed)
+2021-23 operating,2023 supplemental sec 310 'Contract Harvesting Revolving Nonappropriated Account—State Appropriation': not in reprinted section (treated as removed)
+2021-23 operating,2023 supplemental sec 801 'General Fund Appropriation for Marijuana Excise Tax distributions': not in reprinted section (treated as removed)
+2021-23 operating,"2023 supplemental sec 801 'Manufacturing and Warehousing Job Centers Account Appropriation for distribution to local taxing jurisdictions to mitigate the unintended revenue redistributions effect of sourcing law changes pursuant to Engrossed Substitute House Bill No. 1521 (warehousing & manufacturing jobs). If Engrossed Substitute House Bill No. 1521 (warehousing & manufacturing jobs) is not enacted by June 30, 2021, this distribution is null and void.': not in reprinted section (treated as removed)"
+2021-23 operating,"2023 supplemental sec 805 'Dedicated Marijuana Account: For transfer to the basic health plan trust account, the lesser of the amount determined pursuant to RCW 69.50.540 or this amount for fiscal year 2022, $255,000,000 and this amount for fiscal year 2023, $265,000,000': not in reprinted section (treated as removed)"
+2021-23 operating,"2023 supplemental sec 805 'Dedicated Marijuana Account: For transfer to the state general fund, the lesser of the amount determined pursuant to RCW 69.50.540 or this amount for fiscal year 2022, $195,000,000 and this amount for fiscal year 2023, $200,000,000': not in reprinted section (treated as removed)"
+2021-23 operating,"2023 supplemental sec 805 'Tobacco Settlement Account: For transfer to the state general fund, in an amount not to exceed the actual amount of the tobacco arbitration payment to the tobacco settlement account, $11,000,000 for fiscal year 2022 and $8,000,000 for fiscal year 2023': not in reprinted section (treated as removed)"
+2021-23 operating,"2023 supplemental sec 805 'Long-Term Services and Supports Trust Account: For transfer to the general fund as repayment for start-up costs for the long term services program, the lesser of the amount determined by the treasurer for full repayment of the $17,040,000 transferred from the general fund in the 2019-2021 biennium and $19,618,000 transferred from the general fund in fiscal year 2022, which totals $36,658,000 transferred from the general fund in the 2019-2021 biennium and fiscal year 2022 for start-up costs with any related interest, or this amount for fiscal year 2022, $37,092,000': not in reprinted section (treated as removed)"
+2021-23 operating,"2023 supplemental sec 805 'Gambling Revolving Account: For transfer to the state general fund as repayment of the loan pursuant to chapter 127, Laws of 2020 (sports wagering/compacts), the lesser of the amount determined by the treasurer for full repayment of the $6,000,000 transferred from the general fund in the 2019-2021 fiscal biennium with any related interest, or this amount for fiscal year 2023 $6,500,000': not in reprinted section (treated as removed)"
+2021-23 operating,"2023 supplemental sec 805 'General Fund: For transfer to the manufacturing and warehousing jobs centers account $6,750,000 for fiscal year 2022 and $5,400,000 for fiscal year 2023 pursuant to Engrossed Substitute House Bill No. 1521 (warehousing & manufacturing jobs). If Engrossed Substitute House Bill No. 1521 (warehousing & manufacturing jobs) is not enacted by June 30, 2021, this transfer is null and void.': not in reprinted section (treated as removed)"
+2021-23 transportation,"2022 supplemental sec 113 'Puget Sound Capital Construction Account [Puget Sound Capital Construction Account]—State Appropriation': prior 300,000 but no matching original line"
+2021-23 transportation,"2022 supplemental sec 406 '(4)(a) Motor Vehicle Account—State Appropriation: For transfer to Alaskan Way Viaduct Replacement Project Account—State': prior 6,000,000 but no matching original line"
+2021-23 transportation,2022 supplemental sec 113 'Puget Sound Ferry Capital Construction Account [Puget Sound Capital Construction Account]—State Appropriation': not in reprinted section (treated as removed)
+2021-23 transportation,2022 supplemental sec 406 '(4)(a) Motor Vehicle Account—State Appropriation: For transfer to Alaskan Way Viaduct Account —State': not in reprinted section (treated as removed)
+2021-23 transportation,"2023 supplemental sec 208 'Abandoned Recreational Vehicle Disposal Account— State Appropriation': prior 3,078,000 but no matching original line"
+2021-23 transportation,"2023 supplemental sec 215 'Motor Vehicle Account—Private/Local Appropriation': prior 17,000 but no matching original line"
+2021-23 transportation,"2023 supplemental sec 220 'Multimodal Transportation Account—Private/Local Appropriation': prior 100,000 but no matching original line"
+2021-23 transportation,2023 supplemental sec 208 'Abandoned Recreational Vehicle Account—State Appropriation': not in reprinted section (treated as removed)
+2021-23 transportation,2023 supplemental sec 208 'Driver Licensing Technology Support Account—State Appropriation': not in reprinted section (treated as removed)
+2021-23 transportation,2023 supplemental sec 220 'Multimodal Transportation Account—Local Appropriation': not in reprinted section (treated as removed)
+2021-23 transportation,2023 supplemental sec 215 'Motor Vehicle Account—Local Appropriation': not in reprinted section (treated as removed)
+2021-23 capital,"2022 supplemental sec 1082 'State Taxable Building Construction Account— State': prior 150,000 but no matching original line"
+2021-23 capital,"2022 supplemental sec 2012 'State Building Construction Account—State': prior 0 != enacted 9,993,000"
+2021-23 capital,"2022 supplemental sec 2012 'State Building Construction Account—State': prior 9,993,000 but no matching original line"
+2021-23 capital,"2022 supplemental sec 2085 'State Building Construction Account—State': prior 0 != enacted 29,962,000"
+2021-23 capital,"2022 supplemental sec 2085 'State Building Construction Account—State': prior 29,962,000 but no matching original line"
+2021-23 capital,"2022 supplemental sec 3112 'State Building Construction Account—State': prior 5,000,000 but no matching original line"
+2021-23 capital,"2022 supplemental sec 5170 'State Building Construction Account—State': prior 0 != enacted 508,000"
+2021-23 capital,"2022 supplemental sec 5170 'State Building Construction Account—State': prior 508,000 but no matching original line"
+2021-23 capital,2022 supplemental sec 1082 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2021-23 capital,2022 supplemental sec 3112 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2021-23 capital,2022 supplemental sec 3112 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2021-23 capital,2022 supplemental sec 3112 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2021-23 capital,"2023 supplemental sec 1064 'State Taxable Building Construction Account— State': prior 2,500,000 != enacted 76,370,000"
+2021-23 capital,"2023 supplemental sec 1086 'Coronavirus State Fiscal Recovery Fund—Federal': prior 150,996,000 but no matching original line"
+2021-23 capital,"2023 supplemental sec 3084 'Water Pollution Control Revolving Fund—Federal': prior 108,000,000 != enacted 333,000,000"
+2021-23 capital,"2023 supplemental sec 3112 'State Drought Preparedness Account—State': prior 9,000,000 but no matching original line"
+2021-23 capital,"2023 supplemental sec 3112 'Future Biennia (Projected Costs)': prior 0 != enacted 14,000,000"
+2021-23 capital,"2023 supplemental sec 5015 'Common School Construction Account—Federal': prior 6,000,000 != enacted 540,680,000"
+2021-23 capital,"2023 supplemental sec 5101 'Future Biennia (Projected Costs)': prior 0 != enacted 54,500,000"
+2021-23 capital,"2023 supplemental sec 2082 'State Building Construction Account—State': prior 10,884,000 != enacted 35,399,000"
+2021-23 capital,2023 supplemental sec 1071 'Coronavirus Capital Projects Account—Federal': not in reprinted section (treated as removed)
+2021-23 capital,2023 supplemental sec 1086 'Coronavirus State Fiscal Recovery Account— Federal': not in reprinted section (treated as removed)
+2021-23 capital,2023 supplemental sec 1092 'Coronavirus Capital Projects Account—Federal': not in reprinted section (treated as removed)
+2021-23 capital,2023 supplemental sec 3112 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2021-23 capital,2023 supplemental sec 3112 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2021-23 capital,2023 supplemental sec 3112 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2021-23 capital,2023 supplemental sec 1094 'Coronavirus State Fiscal Recovery Fund—Federal': not in reprinted section (treated as removed)
+2021-23 capital,2023 supplemental sec 3112 'State Drought Preparedness and Response Account—State': not in reprinted section (treated as removed)
+2019-21 operating,"2020 supplemental sec 121 'Washington State Library Operations Account—State Appropriation': prior 11,498,000 but no matching original line"
+2019-21 operating,"2020 supplemental sec 125 'Auditing Services Revolving Account—State Appropriation': prior 12,650,000 but no matching original line"
+2019-21 operating,"2020 supplemental sec 131 'Statewide Information Technology System Development Maintenance and Operations Revolving Account—State Appropriation': prior 13,298,000 but no matching original line"
+2019-21 operating,"2020 supplemental sec 220 'Veterans Stewardship Account— State Appropriation': prior 300,000 but no matching original line"
+2019-21 operating,"2020 supplemental sec 613 'State Educational Trust Fund Account—State Appropriation': prior 6,000,000 but no matching original line"
+2019-21 operating,"2020 supplemental sec 805 'Aquatic Lands Enhancement Account: For transfer to the clean up settlement account as repayment of the loan provided in section 3022(2), chapter 2, Laws of 2012 2nd sp. sess. (ESB 6074, 2012 supplemental capital budget), in an amount not to exceed the actual amount of the total remaining principal and interest of the loan, $620,000 for fiscal year 2020 and $640,000 for fiscal year 2021': prior 1,240,000 but no matching original line"
+2019-21 operating,"2020 supplemental sec 805 'Model Toxics Control Operating Account: For transfer to the clean up settlement account as repayment of the loan provided in section 3022(2), chapter 2, Laws of 2012 2nd sp. sess. (ESB 6074, 2012 supplemental capital budget), in an amount not to exceed the actual amount of the total remaining principal and interest of the loan, $620,000 for fiscal year 2020 and $640,000 for fiscal year 2021': prior 1,240,000 but no matching original line"
+2019-21 operating,"2020 supplemental sec 805 'Oil Spill Response Account: For transfer to the oil spill prevention account for the military department to continue assisting local emergency planning committees statewide with hazardous materials plans that meet minimum federal requirements, $520,000 for fiscal year 2020 and $520,000 for fiscal year 2021': prior 1,040,000 but no matching original line"
+2019-21 operating,2020 supplemental sec 121 'Washington State Heritage Center Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2020 supplemental sec 125 'State Auditing Services Revolving Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2020 supplemental sec 131 'Statewide Information Technology System Development Revolving Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2020 supplemental sec 220 'Veterans Stewardship Nonappropriated Account— State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2020 supplemental sec 613 'State Educational Trust Fund Nonappropriated Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,"2020 supplemental sec 805 'Aquatic Lands Enhancement Account: For transfer to the clean up settlement account as repayment of the loan provided in section 3022(2), chapter 2, Laws of 2012 2nd sp. sess. (ESB 6074, 2012 supplemental capital budget), $620,000 for fiscal year 2020 and $620,000 for fiscal year 2021': not in reprinted section (treated as removed)"
+2019-21 operating,"2020 supplemental sec 805 'Model Toxics Control Operating Account: For transfer to the clean up settlement account as repayment of the loan provided in section 3022(2), chapter 2, Laws of 2012 2nd sp. sess. (ESB 6074, 2012 supplemental capital budget), $620,000 for fiscal year 2020 and $620,000 for fiscal year 2021': not in reprinted section (treated as removed)"
+2019-21 operating,"2021 supplemental sec 101 'Pension Funding Stabilization Account—State Appropriation': prior 4,266,000 != enacted 88,925,000"
+2019-21 operating,"2021 supplemental sec 118 'Pension Funding Stabilization Account—State Appropriation': prior 674,000 != enacted 27,986,000"
+2019-21 operating,"2021 supplemental sec 119 'Pension Funding Stabilization Account—State Appropriation': prior 54,000 != enacted 3,002,000"
+2019-21 operating,"2021 supplemental sec 120 'Pension Funding Stabilization Account—State Appropriation': prior 260,000 != enacted 11,962,000"
+2019-21 operating,"2021 supplemental sec 121 'Election Account—Federal Appropriation': prior 13,687,000 != enacted 112,224,000"
+2019-21 operating,"2021 supplemental sec 122 'Pension Funding Stabilization Account—State Appropriation': prior 28,000 != enacted 828,000"
+2019-21 operating,"2021 supplemental sec 123 'Pension Funding Stabilization Account—State Appropriation': prior 26,000 != enacted 783,000"
+2019-21 operating,"2021 supplemental sec 126 'Pension Funding Stabilization Account—State Appropriation': prior 30,000 != enacted 538,000"
+2019-21 operating,"2021 supplemental sec 127 'Tobacco Prevention and Control Account—State Appropriation': prior 273,000 != enacted 356,414,000"
+2019-21 operating,"2021 supplemental sec 128 'Pension Funding Stabilization Account—State Appropriation': prior 168,000 != enacted 4,271,000"
+2019-21 operating,"2021 supplemental sec 130 'Lottery Administrative Account—State Appropriation': prior 50,000 != enacted 1,940,000"
+2019-21 operating,"2021 supplemental sec 131 'Performance Audits of Government Account—State Appropriation': prior 678,000 != enacted 175,994,000"
+2019-21 operating,"2021 supplemental sec 134 'Pension Funding Stabilization Account—State Appropriation': prior 26,000 != enacted 929,000"
+2019-21 operating,"2021 supplemental sec 135 'Pension Funding Stabilization Account—State Appropriation': prior 26,000 != enacted 755,000"
+2019-21 operating,"2021 supplemental sec 138 'Pension Funding Stabilization Account—State Appropriation': prior 162,000 != enacted 5,303,000"
+2019-21 operating,"2021 supplemental sec 139 'Minority and Women's Business Enterprises Account— State Appropriation': prior 5,352,000 != enacted 6,221,000"
+2019-21 operating,"2021 supplemental sec 143 'Liquor Revolving Account—State Appropriation': prior 74,902,000 != enacted 102,810,000"
+2019-21 operating,"2021 supplemental sec 144 'Pipeline Safety Account—Federal Appropriation': prior 4,163,000 != enacted 65,956,000"
+2019-21 operating,"2021 supplemental sec 145 'Pension Funding Stabilization Account—State Appropriation': prior 1,244,000 != enacted 374,133,000"
+2019-21 operating,"2021 supplemental sec 146 'Pension Funding Stabilization Account—State Appropriation': prior 228,000 != enacted 10,511,000"
+2019-21 operating,"2021 supplemental sec 150 'Building Code Council Account—State Appropriation': prior 1,966,000 != enacted 13,202,000"
+2019-21 operating,"2021 supplemental sec 151 'Pension Funding Stabilization Account—State Appropriation': prior 136,000 != enacted 6,911,000"
+2019-21 operating,"2021 supplemental sec 202 'General Fund—Federal Appropriation': prior 315,000 != enacted 11,863,000"
+2019-21 operating,"2021 supplemental sec 204 'Skilled Nursing Facility Safety Net Trust Account— State Appropriation': prior 133,360,000 but no matching original line"
+2019-21 operating,"2021 supplemental sec 215 'General Fund—Federal Appropriation': prior 2,076,337,000 != enacted 0"
+2019-21 operating,"2021 supplemental sec 222 'Pension Funding Stabilization Account—State Appropriation': prior 510,000 != enacted 13,561,000"
+2019-21 operating,"2021 supplemental sec 222 'General Fund—State Appropriation (FY 2021)': prior 49,181,000 != enacted 97,016,000"
+2019-21 operating,"2021 supplemental sec 307 'State Wildlife Account—State Appropriation': prior 115,447,000 != enacted 96,018,000"
+2019-21 operating,"2021 supplemental sec 607 'Model Toxics Control Operating Account—State Appropriation': prior 50,000 but no matching original line"
+2019-21 operating,"2021 supplemental sec 612 'Pension Funding Stabilization Account—State Appropriation': prior 534,000 != enacted 19,624,000"
+2019-21 operating,"2021 supplemental sec 617 'Pension Funding Stabilization Account—State Appropriation': prior 122,000 != enacted 7,067,000"
+2019-21 operating,"2021 supplemental sec 618 'Pension Funding Stabilization Account—State Appropriation': prior 230,000 != enacted 7,757,000"
+2019-21 operating,"2021 supplemental sec 619 'Pension Funding Stabilization Account—State Appropriation': prior 214,000 != enacted 5,806,000"
+2019-21 operating,"2021 supplemental sec 805 'Criminal Justice Treatment Account: For transfer to the home security fund, for fiscal year 2020': prior 4,500,000 but no matching original line"
+2019-21 operating,"2021 supplemental sec 805 'General Fund: For transfer to the workforce education investment account, $45,000,000 for fiscal year 2021': prior 0 != enacted 41,342,000"
+2019-21 operating,2021 supplemental sec 121 'Washington State Heritage Center Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 129 'Economic Development Strategic Reserve Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 131 'Statewide Information Technology System Development Revolving Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 152 'Consolidated Technology Services Revolving Nonappropriated Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 204 'Skilled Nursing Facility Safety Net Trust Account—': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 204 'State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 220 'Veterans Stewardship Nonappropriated Account— State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'General Fund—State Appropriation (FY 2020)': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'General Fund—State Appropriation (FY 2021)': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Aquatic Lands Enhancement Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Education Legacy Trust Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Economic Development Strategic Reserve Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Institutions of Higher Education - Grant and Contracts Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Institutions of Higher Education - Dedicated Local Account Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Institutions of Higher Education - Operating Fees Account—Local Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Biotoxin Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Dedicated Marijuana Account—State Appropriation (FY 2020)': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Dedicated Marijuana Account—State Appropriation (FY 2021)': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'University of Washington Hospital Account—Local Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Accident Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 606 'Medical Aid Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 613 'State Educational Trust Fund Nonappropriated Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 720 'Volunteer Firefighters' and Reserve Officers' Administrative Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,"2021 supplemental sec 805 'Aquatic Lands Enhancement Account: For transfer to the clean up settlement account as repayment of the loan provided in section 3022(2), chapter 2, Laws of 2012 2nd sp. sess. (ESB 6074, 2012 supplemental capital budget), $620,000 for fiscal year 2020 and $620,000 for fiscal year 2021': not in reprinted section (treated as removed)"
+2019-21 operating,"2021 supplemental sec 805 'Criminal Justice Treatment Account: For transfer to the home security fund, $4,500,000 for fiscal year 2020 and $4,500,000 for fiscal year 2021': not in reprinted section (treated as removed)"
+2019-21 operating,"2021 supplemental sec 805 'Model Toxics Control Operating Account: For transfer to the clean up settlement account as repayment of the loan provided in section 3022(2), chapter 2, Laws of 2012 2nd sp. sess. (ESB 6074, 2012 supplemental capital budget), $620,000 for fiscal year 2020 and $620,000 for fiscal year 2021': not in reprinted section (treated as removed)"
+2019-21 operating,2021 supplemental sec 607 'Model Toxics Control Stormwater Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 operating,2021 supplemental sec 801 'Manufacturing and Warehousing Jobs Centers Account': not in reprinted section (treated as removed)
+2019-21 transportation,"2020 supplemental sec 205 'Interstate 405 and state Route Number 167 Express Toll Lanes Account—State Appropriation': prior 250,000 but no matching original line"
+2019-21 transportation,"2020 supplemental sec 209 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 18,329,000 but no matching original line"
+2019-21 transportation,"2020 supplemental sec 215 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 1,370,000 but no matching original line"
+2019-21 transportation,"2020 supplemental sec 218 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 3,000,000 but no matching original line"
+2019-21 transportation,"2020 supplemental sec 306 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 48,036,000 but no matching original line"
+2019-21 transportation,2020 supplemental sec 205 'Interstate 405 Express Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2020 supplemental sec 209 'Interstate 405 Express Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2020 supplemental sec 215 'Interstate 405 Express Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2020 supplemental sec 218 'High Occupancy Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2020 supplemental sec 306 'Interstate 405 Express Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,"2021 supplemental sec 201 'School Zone Safety Account—State Appropriation': prior 850,000 != enacted 32,694,000"
+2019-21 transportation,"2021 supplemental sec 205 'Alaskan Way Viaduct Replacement Project Account—State Appropriation': prior 136,000 != enacted 3,299,000"
+2019-21 transportation,"2021 supplemental sec 209 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 27,457,000 != enacted 146,083,000"
+2019-21 transportation,"2021 supplemental sec 210 'Transportation 2003 Account (Nickel Account)—State Appropriation': prior 1,460,000 != enacted 102,392,000"
+2019-21 transportation,"2021 supplemental sec 212 'Aeronautics Account—Private/Local Appropriation': prior 60,000 != enacted 10,846,000"
+2019-21 transportation,"2021 supplemental sec 213 'Multimodal Transportation Account—State Appropriation': prior 258,000 != enacted 60,546,000"
+2019-21 transportation,"2021 supplemental sec 215 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 4,528,000 != enacted 513,575,000"
+2019-21 transportation,"2021 supplemental sec 216 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 32,000 != enacted 78,653,000"
+2019-21 transportation,"2021 supplemental sec 217 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 119,000 != enacted 41,794,000"
+2019-21 transportation,"2021 supplemental sec 218 'Alaskan Way Viaduct Replacement Project Account— State Appropriation': prior 104,000 != enacted 70,902,000"
+2019-21 transportation,"2021 supplemental sec 220 'Multimodal Transportation Account—Local Appropriation': prior 100,000 != enacted 247,734,000"
+2019-21 transportation,"2021 supplemental sec 222 'Multimodal Transportation Account—Federal Appropriation': prior 500,000 != enacted 71,461,000"
+2019-21 transportation,"2021 supplemental sec 223 'Multimodal Transportation Account—State Appropriation': prior 350,000 != enacted 15,554,000"
+2019-21 transportation,"2021 supplemental sec 306 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 90,027,000 != enacted 3,284,027,000"
+2019-21 transportation,"2021 supplemental sec 308 'Interstate 405 and State Route Number 167 Express Toll Lanes Account—State Appropriation': prior 100,000 != enacted 14,562,000"
+2019-21 transportation,"2021 supplemental sec 309 'Transportation 2003 Account (Nickel Account)—State Appropriation': prior 986,000 != enacted 535,744,000"
+2019-21 transportation,"2021 supplemental sec 310 'Multimodal Transportation Account—Local Appropriation': prior 336,000 != enacted 95,518,000"
+2019-21 transportation,"2021 supplemental sec 311 'Multimodal Transportation Account—State Appropriation': prior 77,469,000 != enacted 340,953,000"
+2019-21 transportation,"2021 supplemental sec 406 '(b) The funds provided in (a) of this subsection are a loan to the state route number 520 civil penalties account—state, and the legislature assumes that these funds will be reimbursed to the motor vehicle account—state in the 2021-2023 biennium. (6) Motor Vehicle Account—State Appropriation: For transfer to the Transportation Improvement Account—State': prior 5,067,000 but no matching original line"
+2019-21 transportation,"2021 supplemental sec 406 '(20)(a) Transportation Partnership Account—State Appropriation: For transfer to the Tacoma Narrows Toll Bridge Account—State': prior 12,543,000 but no matching original line"
+2019-21 transportation,"2021 supplemental sec 406 '(32) Multimodal Transportation Account—State Appropriation: For transfer to the Puget Sound Ferry Operations Account—State': prior 0 != enacted 45,000,000"
+2019-21 transportation,"2021 supplemental sec 408 'Toll Facility Bond Retirement Account—State Appropriation': prior 25,372,000 != enacted 224,894,000"
+2019-21 transportation,2021 supplemental sec 205 'Multimodal Transportation Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 205 'Interstate 405 Express Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 209 'High Occupancy Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 209 'Motor Vehicle Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 209 'Interstate 405 Express Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 215 'Interstate 405 Express Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 218 'High Occupancy Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 306 'High Occupancy Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 306 'Interstate 405 Express Toll Lanes Operations Account—State Appropriation': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 406 '(6) Motor Vehicle Account—State Appropriation: For transfer to the Transportation Improvement Account—State': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 406 '(7) Highway Safety Account—State Appropriation: For transfer to the State Patrol Highway Account—State': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 406 '(11) Multimodal Transportation Account—State Appropriation: For transfer to the Freight Mobility Multimodal Account—State': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 406 '(12) Multimodal Transportation Account—State Appropriation: For transfer to the Puget Sound Capital Construction Account—State': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 406 '(25)(a) Transportation 2003 Account (Nickel Account) —State Appropriation: For transfer to the Tacoma Narrows Toll Bridge Account—State': not in reprinted section (treated as removed)
+2019-21 transportation,2021 supplemental sec 406 '(30) Motor Vehicle account—State Appropriation: For transfer to the Electric Vehicle Charging Infrastructure Account—State': not in reprinted section (treated as removed)
+2019-21 capital,"2020 supplemental sec 1090 'Prior Biennia (Expenditures)': prior 194,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 4001 'Fire Service Training Account—State': prior 2,832,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 4001 'Prior Biennia (Expenditures)': prior 300,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 6005 'State Building Construction Account—State': prior 19,631,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 6005 'State Taxable Building Construction Account—State': prior 83,500,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 6005 'Washington Housing Trust Account—State': prior 8,658,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 6005 'Future Biennia (Projected Costs)': prior 400,000,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 6006 'State Building Construction Account—State': prior 32,600,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 6006 'State Taxable Building Construction Account—State': prior 8,000,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 6006 'Energy Efficiency Account—State': prior 5,500,000 but no matching original line"
+2019-21 capital,"2020 supplemental sec 6006 'Future Biennia (Projected Costs)': prior 200,000,000 but no matching original line"
+2019-21 capital,2020 supplemental sec 1090 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2019-21 capital,2020 supplemental sec 1090 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2019-21 capital,2020 supplemental sec 4001 'Fire Service Training Account—State': not in reprinted section (treated as removed)
+2019-21 capital,2020 supplemental sec 4001 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2019-21 capital,2020 supplemental sec 4001 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2019-21 capital,"2021 supplemental sec 1029 'State Taxable Building Construction Account—State': prior 132,666,000 != enacted 176,750,000"
+2019-21 capital,"2021 supplemental sec 1037 'Early Learning Facilities Development Account—State': prior 4,186,000 != enacted 35,796,000"
+2019-21 capital,"2021 supplemental sec 1060 'Model Toxics Control Capital Account—State': prior 40,000 but no matching original line"
+2019-21 capital,"2021 supplemental sec 2020 supplemental:1022 'State Building Construction Account—State': prior 7,818,000 but no matching original line"
+2019-21 capital,"2021 supplemental sec 1090 'State Building Construction Account—State': prior 10,000,000 but no matching original line"
+2019-21 capital,"2021 supplemental sec 1090 'Prior Biennia (Expenditures)': prior 194,000 != enacted 0"
+2019-21 capital,"2021 supplemental sec 1090 'Future Biennia (Projected Costs)': prior 89,000,000 != enacted 0"
+2019-21 capital,"2021 supplemental sec 3217 'State Building Construction Account—State': prior 2,000,000 but no matching original line"
+2019-21 capital,"2021 supplemental sec 5012 'Common School Construction Account—Federal': prior 3,840,000 != enacted 1,040,956,000"
+2019-21 capital,"2021 supplemental sec 5047 'State Building Construction Account—State': prior 500,000 but no matching original line"
+2019-21 capital,2021 supplemental sec 1060 'Model Toxics Control Capital Account—State': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 3217 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 3217 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 3217 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 5047 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 5047 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 5047 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 2020 supplemental:1022 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 2020 supplemental:1022 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 2020 supplemental:1022 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 1090 'State Building Construction Account—State': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 1090 'Prior Biennia (Expenditures)': not in reprinted section (treated as removed)
+2019-21 capital,2021 supplemental sec 1090 'Future Biennia (Projected Costs)': not in reprinted section (treated as removed)

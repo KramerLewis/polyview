@@ -403,6 +403,27 @@ Washington uses the same 49 districts for both chambers.
   cases link to the Legislature's official district finder. An address on a district boundary is
   resolved by Census geometry, which could differ from county election records in rare cases.
 
+### D-045 · Backfill: 2019-21 and 2021-23 budget chains, and agency history (accepted, partly open)
+Added the 2019-21 chains (1109 → 6168 → 2021 changes; 1160 → 2322 → 2021; 1102 → 6248 → 2021) and the
+2021-23 chains (5092 → 5693 → 2023 changes; 5165 → 5689 → 5975 "additive" Move Ahead WA → 2023;
+1080 → 5651 → 2023). All bills have Legislature XML. Bond-authorization bills (1101, 5084) are left out.
+- **Reconciliation (D-017):** NGF-O at each step is within 0.11–0.72% of ERFC's enacted levels. Parsed
+  values run *high* for 2019-21 after 2020 and for 2021-23, which points to vetoes of provisos not tied
+  to a dollar line, and appropriations made or reduced in other bills. Tolerances are set just
+  above today's values so regressions are caught. **Open.**
+- The 2019-21 chain shows 32 "prior ≠ enacted" mismatches at the 2021 step: other bills (e.g. early
+  2021 federal relief) amended 2019-21 between supplementals. Final values come from the 2021 bill's
+  new amounts, so they're correct, but line history for that step is incomplete.
+- **Agency history:** each agency page shows, per biennium, enacted in bills vs. OFM final budget vs.
+  spent (appropriated lines only, D-026), for 2019-21, 2021-23 and 2023-25 (FY2021, FY2023 detail
+  reports; FY2025 summary), plus 2025-27 enacted.
+- **Finding to explain (open):** in 2021-23 OFM's final budget far exceeds what bills enacted for
+  some agencies (DSHS $22.3B vs $17.9B, Commerce $11.6B vs $6.3B, DCYF $6.8B vs $4.2B), while
+  2019-21 matches closely. Likely federal COVID funds added through unanticipated receipts and
+  capital reappropriations. Confirm before presenting a cause.
+- **Not done:** the FY2024 report layout (even years are superseded, D-004). Earlier bienniums
+  (2017-19 and before) aren't on OFM's site in this report series.
+
 ---
 
 ## Presentation

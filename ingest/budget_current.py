@@ -35,6 +35,18 @@ BUDGETS = [
      [("2134", "2024 supplemental"), ("5161", "2025 supplemental")]),
     ("2023-25", "capital", "5200", ["2023 c 474", "2024 c 375"],
      [("5949", "2024 supplemental"), ("5195", "2025 supplemental")]),
+    ("2021-23", "operating", "5092", ["2021 c 334", "2022 c 297"],
+     [("5693", "2022 supplemental"), ("5187", "2023 supplemental")]),
+    ("2021-23", "transportation", "5165", ["2021 c 333", "2022 c 186", "2022 c 187"],
+     [("5689", "2022 supplemental"), ("5975", "2022 additive"), ("1125", "2023 supplemental")]),
+    ("2021-23", "capital", "1080", ["2021 c 332", "2022 c 296"],
+     [("5651", "2022 supplemental"), ("5200", "2023 supplemental")]),
+    ("2019-21", "operating", "1109", ["2019 c 415", "2020 c 357"],
+     [("6168", "2020 supplemental"), ("5092", "2021 supplemental")]),
+    ("2019-21", "transportation", "1160", ["2019 c 416", "2020 c 219"],
+     [("2322", "2020 supplemental"), ("5165", "2021 supplemental")]),
+    ("2019-21", "capital", "1102", ["2019 c 413", "2020 c 356"],
+     [("6248", "2020 supplemental"), ("1080", "2021 supplemental")]),
 ]
 
 

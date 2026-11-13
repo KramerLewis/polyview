@@ -351,6 +351,24 @@
     });
   }
 
+  function historyTable(a) {
+    const h = a.hist || {};
+    const biens = Object.keys(h).sort();
+    if (!biens.length) return "";
+    return `<h3>By biennium: enacted, final budget, and spent</h3>
+      <div class="table-wrap"><table class="data"><thead><tr><th>Biennium</th><th class="num">Enacted in budget bills</th>
+        <th class="num">OFM final budget</th><th class="num">Spent</th><th class="num">Unspent</th></tr></thead><tbody>
+      ${biens.map((b) => { const x = h[b];
+        return `<tr><td>${esc(b)}</td><td class="num">${money(x.enacted ?? null)}</td><td class="num">${money(x.budget ?? null)}</td>
+          <td class="num">${money(x.actual ?? null)}</td><td class="num">${x.budget ? unspentLabel(x.budget, x.actual) : "—"}</td></tr>`; }).join("")}
+      </tbody></table></div>
+      <p class="note">"Enacted" is new appropriations in the operating, transportation and capital bills after all supplementals.
+        OFM's final budget can differ: it includes capital money carried over from earlier bienniums and adjustments made after
+        enactment, such as federal grants received during the biennium. Budget and spending are appropriated lines only.
+        Capital grants are often paid out over several bienniums, so a high unspent share is common for agencies with large
+        capital programs. ${biens.includes("2025-27") ? "2025-27 is still under way, so it has no spending yet." : ""}</p>`;
+  }
+
   function agencyDetail(a) {
     const el = $("#agency-detail");
     const budgets = Object.entries(a.by_budget_2527 || {});
@@ -362,10 +380,7 @@
       ${a.gfs_curr_2527 ? `<p>Of which General Fund–State: <b>${money(a.gfs_curr_2527)}</b></p>` : ""}
       ${a.reapprop_2527 ? `<p>Capital money reappropriated from earlier bienniums: <b>${money(a.reapprop_2527)}</b></p>` : ""}
       ${a.programs.length ? `<h3>Programs named in the operating budget</h3><p>${a.programs.map(esc).join(" · ")}</p>` : ""}
-      ${a.enacted_2325 ? `<h3>2023-25: enacted in the budget bills</h3>
-        <p>${money(a.enacted_2325)} in new appropriations across the operating, transportation and capital budgets,
-        after the 2024 and 2025 supplementals. <span class="muted">OFM's final budget authority below can differ:
-        it includes capital money carried over from earlier bienniums and adjustments made after enactment.</span></p>` : ""}
+      ${historyTable(a)}
       ${a.budget_2325 ? `<h3>2023-25: budgeted vs. spent</h3>
         <p>Final budget ${money(a.budget_2325)}, actual ${money(a.actual_2325)},
         difference ${money(a.budget_2325 - a.actual_2325)} (${unspentLabel(a.budget_2325, a.actual_2325)}).

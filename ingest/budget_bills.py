@@ -39,11 +39,30 @@ BUDGET_BILLS = [
     ("2023-24", "House", "2134", "2023-25", "2024 supplemental transportation budget"),
     ("2023-24", "Senate", "5200", "2023-25", "2023-25 capital budget (original)"),
     ("2023-24", "Senate", "5949", "2023-25", "2024 supplemental capital budget"),
+    ("2021-22", "Senate", "5092", "2021-23", "2021-23 operating budget (original)"),
+    ("2021-22", "Senate", "5693", "2021-23", "2022 supplemental operating budget"),
+    ("2021-22", "Senate", "5165", "2021-23", "2021-23 transportation budget (original)"),
+    ("2021-22", "Senate", "5689", "2021-23", "2022 supplemental transportation budget"),
+    ("2021-22", "Senate", "5975", "2021-23", "2022 additive transportation budget (Move Ahead WA)"),
+    ("2021-22", "House", "1080", "2021-23", "2021-23 capital budget (original)"),
+    ("2021-22", "Senate", "5651", "2021-23", "2022 supplemental capital budget"),
+    ("2019-20", "House", "1109", "2019-21", "2019-21 operating budget (original)"),
+    ("2019-20", "Senate", "6168", "2019-21", "2020 supplemental operating budget"),
+    ("2019-20", "House", "1160", "2019-21", "2019-21 transportation budget (original)"),
+    ("2019-20", "House", "2322", "2019-21", "2020 supplemental transportation budget"),
+    ("2019-20", "House", "1102", "2019-21", "2019-21 capital budget (original)"),
+    ("2019-20", "Senate", "6248", "2019-21", "2020 supplemental capital budget"),
 ]
 
 # Session-law chapters of enacted operating budgets -> the biennium they fund.
 # Amendatory sections cite the chapter they amend (e.g. "2024 c 376 s 101").
 CHAPTER_BIENNIUM = {
+    "2019 c 415": "2019-21", "2020 c 357": "2019-21",  # operating 1109, 6168
+    "2019 c 416": "2019-21", "2020 c 219": "2019-21",  # transportation 1160, 2322
+    "2019 c 413": "2019-21", "2020 c 356": "2019-21",  # capital 1102, 6248
+    "2021 c 334": "2021-23", "2022 c 297": "2021-23",  # operating 5092, 5693
+    "2021 c 333": "2021-23", "2022 c 186": "2021-23", "2022 c 187": "2021-23",  # transportation 5165, 5689, 5975
+    "2021 c 332": "2021-23", "2022 c 296": "2021-23",  # capital 1080, 5651
     "2023 c 475": "2023-25",  # 2023-25 operating budget (SSB 5187)
     "2024 c 376": "2023-25",  # 2024 supplemental (ESSB 5950)
     "2023 c 472": "2023-25",  # 2023-25 transportation budget (ESHB 1125)

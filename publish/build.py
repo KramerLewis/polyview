@@ -153,11 +153,14 @@ def build() -> None:
     for (code, _), p in projects.items():
         agencies[code]["projects"].append(p)
 
-    # --- 2023-25 as enacted in the budget bills (after all supplementals) -----
+    # --- Each biennium as enacted in the budget bills (after all supplementals) --
     for r in all_budget_rows:
-        if r["biennium"] == "2023-25" and r["kind"] == "appropriation":
+        if r["kind"] == "appropriation":
             a = agencies[agency3(r["agency_code"])]
-            a["enacted_2325"] = a.get("enacted_2325", 0) + r["current"]
+            h = a.setdefault("hist", {}).setdefault(r["biennium"], {})
+            h["enacted"] = h.get("enacted", 0) + r["current"]
+            if r["biennium"] == "2023-25":
+                a["enacted_2325"] = a.get("enacted_2325", 0) + r["current"]
 
     # --- 2025-27 payments so far (vendor payments; excludes payroll, D-024) --
     for r in read_csv(SAMPLES / "vendor_payments_by_agency_object_2527.csv"):
@@ -186,6 +189,9 @@ def build() -> None:
         completed["actual"] += r.actual_k * 1000
         a["budget_2325"] = a.get("budget_2325", 0) + r.final_budget_k * 1000
         a["actual_2325"] = a.get("actual_2325", 0) + r.actual_k * 1000
+        h = a.setdefault("hist", {}).setdefault("2023-25", {})
+        h["budget"] = h.get("budget", 0) + r.final_budget_k * 1000
+        h["actual"] = h.get("actual", 0) + r.actual_k * 1000
 
     agency_list = []
     for code, a in agencies.items():
@@ -214,6 +220,15 @@ def build() -> None:
                 line = r.line[0].upper() + r.line[1:].lower()  # OFM capitalization varies
                 target[line]["final"] += r.final
                 target[line]["actual"] += r.actual
+        bien = budget_to_actual._biennium(2000 + yy)
+        for r in rows:
+            # Appropriated lines only (expenditure-authority rows), as for FY2025 (D-026).
+            if (r.level == "account" and r.section == "charges" and r.authority_code
+                    and r.agency_code not in budget_to_actual.ADJUSTMENT_AGENCIES):
+                a = agencies[agency3(r.agency_code)]
+                h = a.setdefault("hist", {}).setdefault(bien, {})
+                h["budget"] = h.get("budget", 0) + r.final
+                h["actual"] = h.get("actual", 0) + r.actual
         history.append({
             "biennium": budget_to_actual._biennium(2000 + yy),
             "source": f"OFM Budget-to-Actual Detail Report, FY20{yy}",
