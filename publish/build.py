@@ -241,12 +241,15 @@ def build() -> None:
     # --- Legislators and budget votes --------------------------------------
     members = read_csv(SAMPLES / "legislators.csv")
     votes = read_csv(SAMPLES / "budget_bill_votes.csv")
+    from ingest.legislature import BUDGET_BILLS as LEG_BILLS
+    BILL_LABELS = {(lb, num): label for lb, num, label in LEG_BILLS}
     roll_calls: dict[tuple, dict] = {}
     by_member: dict[str, list] = defaultdict(list)
     for v in votes:
         key = (v["bill_id"], v["chamber"], v["sequence"], v["vote_date"])
         rc = roll_calls.setdefault(key, {
             "id": "|".join(key), "bill": v["bill_id"], "chamber": v["chamber"], "date": v["vote_date"],
+            "session": v["biennium"], "budget_label": BILL_LABELS.get((v["biennium"], re.sub(r"\D", "", v["bill_id"])), ""),
             "motion": v["motion"], "type": v["vote_type"], "amendment": v["amendment"],
             "sponsor": v["amendment_sponsor"], "yea": 0, "nay": 0, "other": 0})
         bucket = v["position"] if v["position"] in ("yea", "nay") else "other"
@@ -254,7 +257,25 @@ def build() -> None:
         if v["member_id"]:
             # Keyed by chamber too: a member who changed chambers mid-biennium
             # appears once per chamber, each with that chamber's votes (D-021).
-            by_member[f'{v["member_id"]}|{v["chamber"]}'].append([rc["id"], v["position"]])
+            by_member[f'{v["member_id"]}|{v["chamber"]}|{v["biennium"]}'].append([rc["id"], v["position"]])
+    # The enacting vote in each chamber is the latest passage vote on the bill there: a
+    # conference report or concurrence when there is one, otherwise the chamber's own final
+    # passage (bills that passed the second chamber unchanged). DECISIONS D-022.
+    latest: dict[tuple, dict] = {}
+    for rc in roll_calls.values():
+        if rc["type"] in ("final_passage", "passage"):
+            k = (rc["bill"], rc["chamber"], rc["session"])
+            if k not in latest or (rc["date"], rc["id"]) > (latest[k]["date"], latest[k]["id"]):
+                latest[k] = rc
+    enacting_ids = {rc["id"] for rc in latest.values()}
+    for rc in roll_calls.values():
+        if rc["type"] in ("final_passage", "passage"):
+            rc["type"] = "final_passage" if rc["id"] in enacting_ids else "passage"
+    for v in votes:
+        k = "|".join((v["bill_id"], v["chamber"], v["sequence"], v["vote_date"]))
+        if v["vote_type"] in ("final_passage", "passage"):
+            v["vote_type"] = "final_passage" if k in enacting_ids else "passage"
+
     # Floor amendments with staff EFFECT statements, joined to their roll calls.
     amendments = []
     for a in read_csv(SAMPLES / "budget_amendments.csv"):
@@ -278,7 +299,8 @@ def build() -> None:
     legislators = [{
         "id": m["member_id"], "name": m["name"], "chamber": m["chamber"], "party": m["party"],
         "district": int(m["district"]) if m["district"].isdigit() else None,
-        "votes": by_member.get(f'{m["member_id"]}|{m["chamber"]}', []),
+        "session": m["biennium"],
+        "votes": by_member.get(f'{m["member_id"]}|{m["chamber"]}|{m["biennium"]}', []),
     } for m in members]
     legislators.sort(key=lambda m: (m["district"] or 99, m["chamber"] != "Senate", m["name"]))
 
@@ -358,6 +380,63 @@ def build() -> None:
         "source_url": "https://erfc.wa.gov/publications/monthly-economic-and-revenue-updates",
     }
 
+    # --- "Follow the money": transfers, changes after passage, shortfall test --
+    from ingest import econ as econ_mod
+    from ingest.budget_bills import BUDGET_BILLS as BILL_LIST
+    from .accountability import shortfall, sweeps, changes
+
+    leg_bien = {number: lb for lb, _, number, _, _ in BILL_LIST}
+    # bill_id like "ESSB 5998" from the roll calls, keyed by (legislative biennium, number)
+    bill_ids = {}
+    for v in votes:
+        num = re.sub(r"\D", "", v["bill_id"])
+        bill_ids.setdefault((v["biennium"], num), v["bill_id"])
+    step_bill = {}
+    for b_, budget, orig_bill, _, supps in BUDGETS:
+        step_bill[(b_, budget, None)] = orig_bill
+        for num, label in supps:
+            step_bill[(b_, budget, label.replace(" ", "_"))] = num
+
+    # Final-passage tallies per bill and chamber (party counts are a plain fact; no colors).
+    tallies: dict[str, dict] = {}
+    for rc in roll_calls.values():
+        if rc["type"] != "final_passage":
+            continue
+        t = tallies.setdefault(rc["bill"], {})
+        t[rc["chamber"]] = {"yea": rc["yea"], "nay": rc["nay"], "date": rc["date"]}
+    by_party: dict[tuple, dict] = defaultdict(lambda: defaultdict(lambda: {"yea": 0, "nay": 0}))
+    for v in votes:
+        if v["vote_type"] == "final_passage" and v["position"] in ("yea", "nay"):
+            by_party[(v["bill_id"], v["chamber"])][v["party"] or "?"][v["position"]] += 1
+    for (bill, chamber), parties in by_party.items():
+        if bill in tallies and chamber in tallies[bill]:
+            tallies[bill][chamber]["by_party"] = {k: dict(x) for k, x in parties.items()}
+
+    def bill_of(biennium, budget, step):
+        num = step_bill.get((biennium, budget, step))
+        if not num:
+            return None
+        bid = bill_ids.get((leg_bien.get(num), num), f"Bill {num}")
+        return {"number": num, "id": bid, "legislative_biennium": leg_bien.get(num),
+                "votes": tallies.get(bid)}
+
+    follow = {
+        "sweeps": sweeps(all_budget_rows, bill_of),
+        "changes": changes(all_budget_rows, bill_of),
+        "shortfall": shortfall(outlook_mod.load(), econ_mod.load()),
+        "capital_carried_forward": {b: sum(r["current"] for r in all_budget_rows
+                                           if r["biennium"] == b and r["kind"] == "reappropriation")
+                                    for b in sorted({r["biennium"] for r in all_budget_rows})},
+    }
+    follow["changes"]["items"] = follow["changes"]["items"][:400]
+
+    # Votes are stored compactly as [roll-call index, position code]; the page expands them.
+    rc_sorted = sorted(roll_calls.values(), key=lambda r: (r["bill"], r["date"], r["chamber"]))
+    rc_index = {r["id"]: i for i, r in enumerate(rc_sorted)}
+    pos_code = {"yea": "y", "nay": "n", "absent": "a", "excused": "e"}
+    for m in legislators:
+        m["votes"] = [[rc_index[rid], pos_code.get(pos, "?")] for rid, pos in m["votes"]]
+
     data = {
         "built_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "budget": budget_meta,
@@ -366,13 +445,14 @@ def build() -> None:
         "outlook": ol,
         "collections": collections,
         "history": history,
-        "roll_calls": sorted(roll_calls.values(), key=lambda r: (r["bill"], r["date"], r["chamber"])),
+        "roll_calls": rc_sorted,
         "legislators": legislators,
         "districts": districts,
         "capital_version": capital_version,
         "capital_detail_version": capital_detail_version,
         "amendments": sorted(amendments, key=lambda a: (a["bill"], a["date"], a["chamber"], a["number"])),
         "sources": [{"url": u, **v} for u, v in sorted(sources.items())],
+        "follow": follow,
         "freshness": freshness(sources, budget_meta, completed, ol, collections, capital_version),
     }
     (OUT / "site.json").write_text(json.dumps(data, separators=(",", ":")))

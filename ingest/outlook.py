@@ -22,6 +22,10 @@ from .common import SAMPLES, fetch, write_csv
 ERFC = "https://erfc.wa.gov/sites/default/files/"
 # Oldest first; the last one is the current outlook shown on the site.
 OUTLOOKS = [
+    ("Enacted 2019-21 budget (EHB 1109), June 2019", ERFC + "2025-03/20190611_Outlook.pdf"),
+    ("Enacted 2020 supplemental (ESSB 6168), April 2020", ERFC + "2025-03/20200430_outlook.pdf"),
+    ("Enacted 2022 supplemental (ESSB 5693), April 2022",
+     ERFC + "2025-03/20220421%20FY%202022%20Enacted%20Sup%20Budget%20Outlook%20Adopted.pdf"),
     ("Enacted 2023-25 budget (ESSB 5187), June 2023", ERFC + "2025-03/20230613%20FY2023-25EnactedOutlook.pdf"),
     ("Enacted 2024 supplemental (ESSB 5950), 2024", ERFC + "2025-03/FY%202024%20Enacted%20Outlook_Final.pdf"),
     ("Enacted 2025-27 budget (ESSB 5167), 2025", ERFC + "2025-06/2025%20Enacted%20Outlook%20Final.pdf"),
@@ -30,6 +34,7 @@ OUTLOOKS = [
 # Row labels vary between years; map each to one canonical name.
 CANONICAL = {
     "Beginning Balance": "NGF-O Beginning Balance",
+    "Current Revenues": "Forecasted Revenues",  # 2019-2020 outlooks
     "Projected Ending Balance": "NGF-O Projected Ending Balance",
     "Budget Stabilization Account Ending Balance": "BSA Ending Balance",
 }

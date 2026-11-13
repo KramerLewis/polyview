@@ -193,6 +193,9 @@ amendment, with sponsor. `procedural` = everything else.
 - Amendment content now comes from staff EFFECT statements (D-029).
 - **Note:** roll-call sequence numbers aren't unique within a chamber, so a roll call is identified by
   bill, chamber, sequence **and** date.
+- **Enacting vote:** in each chamber, the latest passage vote on a bill (conference report or concurrence when
+  there is one, otherwise the chamber's own final passage) is marked `final_passage`. Bills that passed the second
+  chamber unchanged were missed before this rule.
 
 ### D-029 · Amendments are described by quoting staff EFFECT statements (accepted)
 Each floor amendment's text ends with an "EFFECT:" statement (and usually "FISCAL IMPACT:"
@@ -423,6 +426,56 @@ Added the 2019-21 chains (1109 → 6168 → 2021 changes; 1160 → 2322 → 2021
   capital reappropriations. Confirm before presenting a cause.
 - **Not done:** the FY2024 report layout (even years are superseded, D-004). Earlier bienniums
   (2017-19 and before) aren't on OFM's site in this report series.
+
+### D-046 · "Follow the money" is the home page: money moved, changes after passage, shortfall test (accepted)
+The site's purpose is accountability for voters: when a budget says it funds something, does the money
+stay there, and who decided otherwise. The home page answers three questions from parsed primary sources:
+1. **Money moved between accounts:** every "For transfer to …" line in the budget bills (2019-21 to
+   2025-27), grouped by direction: other accounts → General Fund, rainy-day fund → General Fund,
+   General Fund → other accounts, into the rainy-day fund, between other accounts. Labels are factual. We
+   don't call a transfer a "sweep" or "raid". Flags: *required by law* (the line cites an RCW or "pursuant
+   to"), *maximum* ("lesser of", "not to exceed"), *added after the budget passed*, *changed from $X*.
+2. **Changes after a budget passed:** each agency/program's amount as first enacted, as it stands now, and
+   which later bill changed it, by how much.
+3. **Is there really a shortfall?** See D-047.
+- **Who decided:** every item names the bill that made the change and its enacting votes in each chamber,
+  with party counts as plain text (D-032). A final vote approves a whole budget, so it isn't read as support for one
+  line. Amendment votes (D-029) are the precise record where they exist.
+- **Weak points:** "required by law" is detected from wording and may miss statutory transfers that don't
+  cite the statute. 11 of 257 transfers have no linked vote record. Destination account names are parsed from
+  free text.
+
+### D-047 · The shortfall test: growth vs. population and inflation, drivers, and track record (accepted)
+- **Yardstick:** NGF-O enacted level per biennium (the latest ERFC outlook's view of each biennium,
+  2017-19 → 2027-29), divided by average Washington population and adjusted with the Seattle-area CPI
+  (fiscal-year averages), both from ERFC's quarterly forecast publications (`ingest/econ.py`). Shown in
+  the latest completed-and-current biennium's dollars. The same calculation is used every period, whoever governs.
+- **Result today:** $8,292 per resident in 2017-19 → $9,762 in 2025-27 (+17.7%), above population plus inflation
+  in each completed period. The page computes these sentences from the data, never hand-writes them.
+- **Drivers:** from each biennium's adopted outlooks: starting level (what the prior budget costs to continue),
+  carry-forward adjustments, *keeping current services* (maintenance level) and *new policy choices*
+  (policy level), by area. Columns that are forward projections are excluded. Where outlooks don't break a biennium
+  down (no 2021 enacted outlook; the 2020 outlook lacks the split), the remainder is shown as "not broken down".
+- **Track record:** ending balance projected when each budget passed vs. the latest projection vs. the balance
+  actually carried into the next budget (the next outlook's beginning balance). So far, balances have ended far above
+  projections (2019-21: $372M projected, $4.16B carried forward).
+- **Projections assume no new decisions**, so projected periods usually understate spending. The page says a
+  projected drop isn't a planned cut.
+- **Weak points:** NGF-O only (not federal or dedicated funds). ERFC population differs from OFM's official April 1
+  figure by about 0.1%. Seattle CPI is a regional index, not a statewide one.
+
+### D-048 · Results are shown by source quality; independent before self-reported (accepted, for the track-record work)
+When program results are added (the "track record" pilot), sources are ranked and labeled:
+1. **Independent evaluations:** JLARC, State Auditor performance audits, WSIPP benefit-cost results.
+2. **Hard outcome data from official sources:** e.g. OSPI report card, recidivism, cost per Medicaid enrollee,
+   WSDOT project delivery (Gray Notebook).
+3. **Agency-reported measures**, labeled as self-reported, with who set the target.
+
+The "over/under budget × strong/weak results" view only appears where both the spending and the results
+data are solid. Otherwise the page says "results not independently measured". We provide what the sources
+support and expand later.
+- **Future idea (not built):** let people contribute data and research on a program's impact, kept clearly
+  separate from official sources, with attribution and review. See docs/PLAN.md.
 
 ---
 

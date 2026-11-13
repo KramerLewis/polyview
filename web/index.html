@@ -13,7 +13,8 @@
     <a class="brand" href="#overview">polyview</a>
     <span class="tagline">Washington State budget: allocated, spent, and voted</span>
     <nav aria-label="Sections">
-      <a href="#overview">Overview</a>
+      <a href="#follow">Follow the money</a>
+      <a href="#overview">Budget overview</a>
       <a href="#agencies">Agencies</a>
       <a href="#districts">Districts</a>
       <a href="#legislators">Legislators</a>
@@ -24,6 +25,81 @@
 
 <main class="wrap" id="main">
   <p class="loading" id="loading">Loading data…</p>
+
+  <section id="follow" class="view" hidden>
+    <h1>Follow the money</h1>
+    <p class="lede">When a budget says it funds something, does the money stay there? This page tracks three things
+      in Washington's budgets since 2017: money moved between accounts, changes made after a budget first passed, and
+      whether claims of a shortfall hold up. Every item shows the bill that made the decision and how the Legislature
+      voted. The numbers come straight from the budget bills and official state reports; what they mean is up to you.</p>
+    <nav class="toc" aria-label="On this page">
+      <a href="#q-moved">1. Money moved between accounts</a>
+      <a href="#q-changed">2. Changes after a budget passed</a>
+      <a href="#q-shortfall">3. Is there really a shortfall?</a>
+    </nav>
+
+    <section class="question" id="q-moved">
+      <h2>1. Where was money moved between accounts?</h2>
+      <div class="controls"><label>Budget period <select id="moved-pick"></select></label></div>
+      <p class="answer" id="moved-answer"></p>
+      <div id="moved-chart" class="chart"></div>
+      <details class="howto"><summary>How to read this</summary>
+        <p>The state keeps money in hundreds of accounts. Many are <strong>dedicated</strong>: set up by law for one
+          purpose, like public works loans or toxics cleanup. Budget bills can move money out of them with lines like
+          "For transfer to the state general fund, $X". Some transfers follow a formula in state law (marked
+          <em>required by law</em>); others are choices made in that budget. "Up to" means the bill sets a maximum, not
+          an exact amount. Moving money isn't wrong by itself. It's how budgets are balanced, so the point is to see
+          where it happens, how often, and who voted for it.</p>
+      </details>
+      <div class="table-wrap"><table id="moved-table" class="data"></table></div>
+    </section>
+
+    <section class="question" id="q-changed">
+      <h2>2. What changed after the budget first passed?</h2>
+      <div class="controls"><label>Budget period <select id="changed-pick"></select></label>
+        <label>Search <input type="search" id="changed-search" placeholder="Agency or program"></label></div>
+      <p class="answer" id="changed-answer"></p>
+      <details class="howto"><summary>How to read this</summary>
+        <p>Washington passes a two-year budget in odd years, then changes it in "supplemental" budgets, usually twice.
+          A program funded at one level when the budget passed can end up very different. This shows each agency or
+          program's amount as first passed, as it stands now, and which later bill made the change. Increases often follow
+          higher caseloads or costs; cuts can mean savings, delays, or money that wasn't going to be spent.</p>
+      </details>
+      <div class="table-wrap"><table id="changed-table" class="data"></table></div>
+    </section>
+
+    <section class="question" id="q-shortfall">
+      <h2>3. Is there really a shortfall, and what's driving it?</h2>
+      <p class="answer" id="short-answer"></p>
+      <h3 class="subhead">General Fund spending per resident, after inflation</h3>
+      <div id="short-trend" class="chart"></div>
+      <div class="table-wrap"><table id="short-growth" class="data"></table></div>
+      <details class="howto"><summary>How to read this</summary>
+        <p>A claim that the state "needs more money" can be tested against two things it has to keep up with: more
+          residents and rising prices. If spending per resident, adjusted for inflation, is flat, the budget is roughly
+          keeping pace. If it's rising, the state is doing more, or paying more, per person than before. Figures cover the
+          General Fund and three related accounts (NGF-O) that the Legislature must balance; they come from the official
+          budget outlook adopted with each budget. Population and Seattle-area inflation come from the state's Economic
+          and Revenue Forecast Council. <strong>Projected periods assume no new decisions</strong> (current law only), so they
+          usually understate future spending: a projected drop is not a planned cut.</p>
+      </details>
+
+      <h3 class="subhead">Where the growth came from</h3>
+      <div class="controls"><label>Budget period <select id="drivers-pick"></select></label></div>
+      <p class="note" id="drivers-note"></p>
+      <div id="drivers-chart" class="chart"></div>
+      <div class="table-wrap"><table id="drivers-table" class="data"></table></div>
+
+      <h3 class="subhead">Track record: projected vs. what happened</h3>
+      <p class="note">When each budget passed, the official outlook projected how much would be left in the General Fund at
+        the end of the two years. Here is that projection next to the latest one, and the balance actually carried into the
+        next budget.</p>
+      <div class="table-wrap"><table id="track-table" class="data"></table></div>
+
+      <h3 class="subhead">Money set aside or not used</h3>
+      <div class="table-wrap"><table id="unused-table" class="data"></table></div>
+    </section>
+  </section>
 
   <section id="overview" class="view" hidden>
     <h1>The 2025-27 state budget</h1>
@@ -124,6 +200,7 @@
     <p class="lede">How each member voted on final passage of the 2025-27 operating budget and the
       2026 supplemental, and on floor amendments to them.</p>
     <div class="controls">
+      <label>Session <select id="session-filter"></select></label>
       <label>District <select id="district-filter"><option value="">All 49</option></select></label>
       <label>Search <input type="search" id="member-search" placeholder="Name"></label>
     </div>

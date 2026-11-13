@@ -31,7 +31,7 @@ jobs:
       - name: Look for newly published source files
         run: python -m ingest discover
       - name: Fetch and parse public data
-        run: python -m ingest budget_bills budget_current budget_to_actual budget_to_actual_detail legislature vendor_payments outlook collections
+        run: python -m ingest budget_bills budget_current budget_to_actual budget_to_actual_detail legislature vendor_payments outlook collections econ
       - name: Reconcile against published totals
         run: python -m ingest checks
       - name: Build site data

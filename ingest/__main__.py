@@ -2,7 +2,7 @@
 
 import sys
 
-from . import budget_bills, budget_current, checks, collections, discover, outlook, budget_to_actual, budget_to_actual_detail, districts, legislature, vendor_payments
+from . import budget_bills, budget_current, checks, collections, discover, econ, outlook, budget_to_actual, budget_to_actual_detail, districts, legislature, vendor_payments
 
 INGESTERS = {
     "budget_bills": budget_bills.run,
@@ -13,6 +13,7 @@ INGESTERS = {
     "legislature": legislature.run,
     "outlook": outlook.run,
     "collections": collections.run,
+    "econ": econ.run,  # Seattle CPI and population (ERFC)
     "discover": discover.run,  # find new source files; writes data/samples/freshness.json
     "vendor_payments": vendor_payments.run,
     "districts": districts.run,

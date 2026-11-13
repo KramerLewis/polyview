@@ -17,10 +17,14 @@ BASE = "https://wslwebservices.leg.wa.gov"
 NS = "{http://WSLWebServices.leg.wa.gov/}"
 
 # Budget bills whose votes we track: (legislative biennium, bill number, label)
-BUDGET_BILLS = [
-    ("2025-26", "5167", "2025-27 operating budget"),
-    ("2025-26", "5998", "2026 supplemental operating budget"),
-]
+def _budget_bills() -> list[tuple[str, str, str]]:
+    """Every enacted budget bill we parse (ingest/budget_bills.py), as
+    (legislative biennium, bill number, label)."""
+    from .budget_bills import BUDGET_BILLS as BILLS
+    return [(leg_bien, number, label) for leg_bien, _, number, _, label in BILLS]
+
+
+BUDGET_BILLS = _budget_bills()
 
 
 def _get(service: str, method: str, filename: str, **params: str) -> ET.Element:

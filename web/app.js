@@ -16,6 +16,10 @@
   }
   const pct = (v) => (v == null || !isFinite(v) ? "—" : `${(v * 100).toFixed(1)}%`);
   const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  // "DEPARTMENT OF SOCIAL AND HEALTH SERVICES—MENTAL HEALTH" -> "Department of Social and Health Services — Mental Health"
+  const SMALL = new Set(["of", "and", "the", "for", "on", "to", "in", "a"]);
+  const nice = (s) => String(s || "").toLowerCase().split(/(—)/).map((part) => part === "—" ? " — " : part.trim().split(/\s+/)
+    .map((w, i) => (i && SMALL.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1))).join(" ")).join("");
   // Spending above the final budget usually means nonappropriated or local
   // funds recorded against the agency (DECISIONS D-026), so say so plainly.
   const unspentLabel = (budget, actual) => {
@@ -312,6 +316,146 @@
       <td class="num">${isNaN(r.b) || !r.b ? "—" : `${r.a >= r.b ? "+" : "−"}${(Math.abs(r.a / r.b - 1) * 100).toFixed(1)}%`}</td></tr>`).join("")}</tbody>`;
   }
 
+  /* ---------- Follow the money (D-046, D-047) ---------- */
+  function voteLine(bill) {
+    if (!bill) return '<span class="muted">—</span>';
+    const v = bill.votes || {};
+    const parts = ["House", "Senate"].filter((c) => v[c]).map((c) => {
+      const t = v[c]; const bp = t.by_party || {};
+      const party = Object.keys(bp).sort().map((p) => `${esc(p)} ${bp[p].yea}–${bp[p].nay}`).join(", ");
+      return `${c} ${t.yea}–${t.nay}${party ? ` (${party})` : ""}`;
+    });
+    return `<strong>${esc(bill.id)}</strong>${parts.length ? `<br><span class="vote">${parts.join("<br>")}</span>` : ""}`;
+  }
+  const stepName = (s) => s.replace(/_/g, " ");
+  function fillPick(sel, values, initial) {
+    sel.innerHTML = values.map((v) => `<option>${esc(v)}</option>`).join("");
+    sel.value = initial || values[values.length - 1];
+  }
+
+  function followView(d) {
+    const f = d.follow;
+    if (!f) return;
+    const DIRS = ["dedicated_to_gf", "rainy_day_to_gf", "gf_to_other", "to_rainy_day", "between_accounts"];
+    const biens = Object.keys(f.sweeps.totals).sort();
+
+    // 1. Money moved
+    const movedPick = $("#moved-pick");
+    fillPick(movedPick, biens);
+    const drawMoved = () => {
+      const b = movedPick.value, t = f.sweeps.totals[b] || {};
+      const total = Object.values(t).reduce((a, v) => a + v, 0);
+      const toGF = (t.dedicated_to_gf || 0) + (t.rainy_day_to_gf || 0);
+      $("#moved-answer").innerHTML = `The ${esc(b)} budget bills move <strong>${money(total, 1)}</strong> between accounts.
+        <strong>${money(toGF, 1)}</strong> of it goes into the General Fund: ${money(t.dedicated_to_gf || 0, 1)} from other
+        accounts and ${money(t.rainy_day_to_gf || 0, 1)} from the rainy-day fund.`;
+      bars($("#moved-chart"), DIRS.filter((k) => t[k]).map((k) => ({
+        name: f.sweeps.labels[k], value: t[k], label: money(t[k]),
+        tip: `<b>${esc(f.sweeps.labels[k])}</b><br>${money(t[k])} in ${esc(b)}`,
+        cells: [f.sweeps.labels[k], money(t[k])] })), { tableHeads: ["Direction", "Amount"] });
+      const items = f.sweeps.items.filter((x) => x.biennium === b);
+      $("#moved-table").innerHTML = `<thead><tr><th>From → to</th><th class="num">Amount</th><th>Notes</th><th>Decided in</th></tr></thead>
+        <tbody>${items.map((x) => `<tr>
+          <td><strong>${esc(x.from)}</strong> → ${esc(x.to)}<br><span class="muted">${esc(f.sweeps.labels[x.direction])} · ${esc(x.budget)} budget</span>
+            <details><summary>Bill text</summary><p>${esc(x.text)}</p></details></td>
+          <td class="num">${x.is_cap ? "up to " : ""}${money(x.amount)}</td>
+          <td>${x.statutory ? '<span class="tag">required by law</span>' : ""}${x.is_cap ? '<span class="tag">maximum</span>' : ""}
+            ${x.added_later ? `<span class="tag">added after the budget passed</span>` : ""}
+            ${!x.added_later && x.amount !== x.original ? `<span class="tag">changed from ${money(x.original)}</span>` : ""}</td>
+          <td>${voteLine(x.bill)}</td></tr>`).join("")}</tbody>`;
+    };
+    movedPick.addEventListener("change", drawMoved);
+    drawMoved();
+
+    // 2. Changes after passage
+    const cb = Object.keys(f.changes.summary).sort();
+    const changedPick = $("#changed-pick");
+    fillPick(changedPick, cb);
+    const drawChanged = () => {
+      const b = changedPick.value, s = f.changes.summary[b];
+      const q = $("#changed-search").value.trim().toLowerCase();
+      const net = s.current - s.original;
+      $("#changed-answer").innerHTML = `The ${esc(b)} budgets totaled <strong>${money(s.original, 1)}</strong> when they first
+        passed and <strong>${money(s.current, 1)}</strong> after later changes (${net >= 0 ? "+" : "−"}${money(Math.abs(net), 1)}):
+        ${money(s.increases, 1)} in increases and ${money(s.decreases, 1)} in cuts across agencies and programs.`;
+      const items = f.changes.items.filter((x) => x.biennium === b && (!q || x.program.toLowerCase().includes(q))).slice(0, 60);
+      $("#changed-table").innerHTML = `<thead><tr><th>Agency / program</th><th class="num">First passed</th><th class="num">Now</th>
+        <th class="num">Change</th><th>Changed by</th></tr></thead><tbody>${items.map((x) => `<tr>
+          <td>${esc(nice(x.program))}<br><span class="muted">${esc(x.budget)} budget${x.vetoed ? " · includes vetoed lines" : ""}</span></td>
+          <td class="num">${money(x.original)}</td><td class="num">${money(x.current)}</td>
+          <td class="num">${x.change >= 0 ? "+" : "−"}${money(Math.abs(x.change))}</td>
+          <td>${Object.entries(x.steps).map(([st, v]) => `<div>${esc(stepName(st))}: ${v >= 0 ? "+" : "−"}${money(Math.abs(v))}
+            · ${voteLine(x.bills[st])}</div>`).join("")}</td></tr>`).join("")
+          || '<tr><td colspan="5" class="muted">No matching changes.</td></tr>'}</tbody>`;
+    };
+    changedPick.addEventListener("change", drawChanged);
+    $("#changed-search").addEventListener("input", drawChanged);
+    drawChanged();
+
+    // 3. Shortfall test
+    const sf = f.shortfall, tr = sf.trend;
+    const firstT = tr[0], lastActual = [...tr].reverse().find((t) => !t.projected) || tr[tr.length - 1];
+    const cur = tr.find((t) => t.biennium === d.budget.biennium) || lastActual;
+    const real = (v) => `$${Math.round(v).toLocaleString("en-US")}`;
+    const pct = (v) => v == null ? "—" : `${v >= 0 ? "+" : "−"}${Math.abs(v * 100).toFixed(1)}%`;
+    $("#short-answer").innerHTML = `General Fund spending per resident, after inflation, went from <strong>${real(firstT.per_resident_real)}</strong>
+      in ${esc(firstT.biennium)} to <strong>${real(cur.per_resident_real)}</strong> in ${esc(cur.biennium)}
+      (${pct(cur.per_resident_real / firstT.per_resident_real - 1)}, in ${esc(sf.reference_biennium)} dollars).
+      ${(() => { const past = tr.filter((t) => t.growth && !t.projected);
+        const up = past.filter((t) => t.growth.per_resident_real > 0).length;
+        return past.length ? `In ${up} of the ${past.length} completed periods, spending grew faster than population and prices combined.` : ""; })()}
+      Below: what drove the growth, how past projections compared with what happened, and money set aside or not used.`;
+    bars($("#short-trend"), tr.map((t) => ({
+      name: t.biennium + (t.projected ? " (projected)" : ""), value: t.per_resident_real, label: real(t.per_resident_real),
+      sub: `${money(t.spending, 1)} total`,
+      tip: `<b>${esc(t.biennium)}</b><br>Per resident, after inflation: ${real(t.per_resident_real)}<br>Total: ${money(t.spending)}<br>
+        <span class="muted">${esc(t.source)}</span>`,
+      cells: [t.biennium, real(t.per_resident_real), money(t.spending)] })), { tableHeads: ["Budget period", "Per resident (inflation-adjusted)", "Total"] });
+    $("#short-growth").innerHTML = `<thead><tr><th>Compared with the period before</th><th class="num">Total spending</th>
+      <th class="num">Population</th><th class="num">Prices (Seattle area)</th><th class="num">Per resident, after inflation</th></tr></thead>
+      <tbody>${tr.filter((t) => t.growth).map((t) => `<tr><td>${esc(t.biennium)}${t.projected ? ' <span class="muted">projected</span>' : ""}</td>
+        <td class="num">${pct(t.growth.spending)}</td><td class="num">${pct(t.growth.population)}</td>
+        <td class="num">${pct(t.growth.inflation)}</td><td class="num"><strong>${pct(t.growth.per_resident_real)}</strong></td></tr>`).join("")}</tbody>`;
+
+    const drv = sf.drivers, dbi = Object.keys(drv).filter((b) => drv[b].base != null).sort();
+    const drvPick = $("#drivers-pick");
+    fillPick(drvPick, dbi, dbi.includes(d.budget.biennium) ? d.budget.biennium : undefined);
+    const drawDrivers = () => {
+      const x = drv[drvPick.value];
+      const M = (v) => money(v * 1e6);
+      $("#drivers-note").innerHTML = `${x.base != null ? `The ${esc(drvPick.value)} budget started from <strong>${M(x.base)}</strong>, what the
+        previous budget would cost to continue. ` : ""}Each budget then adds changes to
+        <strong>keep current services</strong> (more people enrolled, higher costs, legal requirements; officially "maintenance level") and
+        <strong>new policy choices</strong> ("policy level"). Source: the official outlooks adopted with each ${esc(drvPick.value)} budget.`;
+      const rows = [["Continued from the previous budget", x.base], ["Adjustments to that starting point", x.carryforward],
+        ["Keeping current services", x.maintenance], ["New policy choices", x.policy]];
+      if (x.not_broken_down && Math.abs(x.not_broken_down) > 1) rows.push(["Not broken down in available outlooks", x.not_broken_down]);
+      bars($("#drivers-chart"), rows.slice(1).map(([n, v]) => ({ name: n, value: Math.abs(v), label: `${v >= 0 ? "+" : "−"}${M(Math.abs(v))}`,
+        tip: `<b>${esc(n)}</b><br>${v >= 0 ? "+" : "−"}${M(Math.abs(v))}`, cells: [n, M(v)] })),
+        { tableHeads: ["Part", "Amount"] });
+      $("#drivers-table").innerHTML = `<thead><tr><th>Area</th><th class="num">Keeping current services</th><th class="num">New policy choices</th></tr></thead>
+        <tbody>${x.by_category.map((c) => `<tr><td>${esc(c.category)}</td><td class="num">${M(c.maintenance)}</td><td class="num">${M(c.policy)}</td></tr>`).join("")}
+        <tr style="font-weight:600"><td>Final level: ${M(x.final)}</td><td class="num">${M(x.maintenance)}</td><td class="num">${M(x.policy)}</td></tr></tbody>`;
+    };
+    drvPick.addEventListener("change", drawDrivers);
+    drawDrivers();
+
+    $("#track-table").innerHTML = `<thead><tr><th>Budget period</th><th class="num">Projected when it passed</th>
+      <th class="num">Latest projection</th><th class="num">Actually carried into the next budget</th></tr></thead>
+      <tbody>${sf.track_record.map((t) => `<tr><td>${esc(t.biennium)}</td><td class="num">${money((t.projected_at_passage || 0) * 1e6)}</td>
+        <td class="num">${money((t.latest || 0) * 1e6)}</td>
+        <td class="num">${t.next_beginning != null ? money(t.next_beginning * 1e6) : '<span class="muted">not yet known</span>'}</td></tr>`).join("")}</tbody>`;
+
+    const fin = sf.final;
+    const ub = Object.keys(f.capital_carried_forward).sort();
+    $("#unused-table").innerHTML = `<thead><tr><th>Budget period</th><th class="num">Expected to go unspent (General Fund)</th>
+      <th class="num">Rainy-day and other reserves at the end</th><th class="num">Capital money carried forward from earlier budgets</th></tr></thead>
+      <tbody>${ub.map((b) => { const v = fin[b] || {};
+        return `<tr><td>${esc(b)}</td><td class="num">${v.reversions != null ? money(Math.abs(v.reversions) * 1e6) : "—"}</td>
+          <td class="num">${v.reserves != null ? money(v.reserves * 1e6) : "—"}</td>
+          <td class="num">${money(f.capital_carried_forward[b])}</td></tr>`; }).join("")}</tbody>`;
+  }
+
   function vintages(d) {
     const v = (d.outlook && d.outlook.vintages) || [];
     const bienniums = [...new Set(v.map((x) => x.biennium))].sort();
@@ -548,30 +692,39 @@
       return v ? v[1] : null;
     };
     const posLabel = { yea: "Yes", nay: "No", absent: "Absent", excused: "Excused" };
-    const rows = d.legislators.map((m) => ({
-      ...m,
-      v5167: finalVote(m, "ESSB 5167"),
-      v5998: finalVote(m, "ESSB 5998"),
-      amendments: m.votes.filter(([id]) => rc[id].type === "amendment").length,
-    }));
-    const cols = [
-      { key: "district", label: "District", num: true, render: (r) => r.district ?? "—" },
-      { key: "name", label: "Name" },
-      { key: "chamber", label: "Chamber" },
-      { key: "party", label: "Party" },
-      { key: "v5167", label: "2025-27 budget", render: (r) => posLabel[r.v5167] || '<span class="muted">—</span>' },
-      { key: "v5998", label: "2026 supplemental", render: (r) => posLabel[r.v5998] || '<span class="muted">—</span>' },
-      { key: "amendments", label: "Amendment votes", num: true },
-    ];
-    const t = table($("#member-table"), cols, rows, { initialSort: { key: "district", dir: 1 } });
+    const sessions = [...new Set(d.legislators.map((m) => m.session))].sort();
+    const sessSel = $("#session-filter");
+    sessSel.innerHTML = sessions.map((x) => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+    sessSel.value = sessions[sessions.length - 1];
     const sel = $("#district-filter");
     for (let i = 1; i <= 49; i++) sel.insertAdjacentHTML("beforeend", `<option value="${i}">${i}</option>`);
-    const apply = () => {
+    let t = null;
+    const build = () => {
+      const session = sessSel.value;
+      const rows = d.legislators.filter((m) => m.session === session).map((m) => {
+        const finals = m.votes.filter(([id]) => rc[id].type === "final_passage").map(([id, pos]) => ({ rc: rc[id], pos }));
+        const op = finals.filter((f) => /operating/i.test(f.rc.budget_label));
+        return { ...m,
+          operating: op.map((f) => `${esc(f.rc.bill)}: ${posLabel[f.pos] || f.pos}`).join("<br>"),
+          yes: finals.filter((f) => f.pos === "yea").length, no: finals.filter((f) => f.pos === "nay").length,
+          amendments: m.votes.filter(([id]) => rc[id].type === "amendment").length };
+      });
+      const cols = [
+        { key: "district", label: "District", num: true, render: (r) => r.district ?? "—" },
+        { key: "name", label: "Name" },
+        { key: "chamber", label: "Chamber" },
+        { key: "party", label: "Party" },
+        { key: "operating", label: "Operating budget (final votes)", render: (r) => r.operating || '<span class="muted">—</span>' },
+        { key: "yes", label: "All budget bills: yes / no", num: true, render: (r) => `${r.yes} / ${r.no}` },
+        { key: "amendments", label: "Amendment votes", num: true },
+      ];
       const dist = sel.value, q = $("#member-search").value.trim().toLowerCase();
-      t.update(rows.filter((r) => (!dist || r.district === +dist) && (!q || r.name.toLowerCase().includes(q))));
+      const shown = rows.filter((r) => (!dist || r.district === +dist) && (!q || r.name.toLowerCase().includes(q)));
+      t = table($("#member-table"), cols, shown, { initialSort: { key: "district", dir: 1 } });
     };
-    sel.addEventListener("change", apply);
-    $("#member-search").addEventListener("input", apply);
+    [sessSel, sel].forEach((x) => x.addEventListener("change", build));
+    $("#member-search").addEventListener("input", build);
+    build();
 
     const typeLabel = { final_passage: "Final passage", passage: "Chamber passage", amendment: "Amendment", procedural: "Procedural" };
     table($("#rollcall-table"), [
@@ -646,9 +799,13 @@
 
   /* ---------- routing ---------- */
   function route() {
-    const id = (location.hash || "#overview").slice(1);
-    const known = ["overview", "agencies", "districts", "legislators", "data"];
-    const view = known.includes(id) ? id : "overview";
+    const id = (location.hash || "#follow").slice(1);
+    if (id.startsWith("q-")) {  // in-page anchors on the Follow page
+      document.querySelectorAll(".view").forEach((v) => (v.hidden = v.id !== "follow"));
+      return;
+    }
+    const known = ["follow", "overview", "agencies", "districts", "legislators", "data"];
+    const view = known.includes(id) ? id : "follow";
     document.querySelectorAll(".view").forEach((v) => (v.hidden = v.id !== view));
     document.querySelectorAll("nav a").forEach((a) =>
       a.setAttribute("aria-current", a.getAttribute("href") === `#${view}` ? "page" : "false"));
@@ -659,7 +816,9 @@
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((d) => {
       $("#loading").remove();
-      overview(d); collectionsView(d); outlook(d); vintages(d); agencies(d); districtsView(d); legislators(d); dataView(d);
+      const POS = { y: "yea", n: "nay", a: "absent", e: "excused" };
+      d.legislators.forEach((m) => { m.votes = m.votes.map(([i, p]) => [d.roll_calls[i].id, POS[p] || p]); });
+      followView(d); overview(d); collectionsView(d); outlook(d); vintages(d); agencies(d); districtsView(d); legislators(d); dataView(d);
       window.addEventListener("hashchange", route);
       route();
       moneyFlow(d);

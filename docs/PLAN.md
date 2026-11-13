@@ -94,3 +94,21 @@ Next:
    voters can see who spoke for and against. Voice votes stay unattributed: video can't show
    individual positions. Needs tvw.org allowed on the network and a check of whether TVW's
    archive is searchable by date or bill; timestamps may need manual work.
+
+## Direction (November 2026): accountability first
+
+Purpose, in the owner's words: show voters how money is actually managed. When a bill "funds X", did the
+money go to X, was it moved, and who decided? Where are the shortfalls, and why? Over a longer look-back,
+which programs consistently cost more or less than budgeted, and what results did they deliver?
+
+1. ~~Home page "Follow the money"~~: done. Money moved, changes after passage, shortfall test (D-046, D-047)
+2. Extend enacted budgets back to 2015-17 (structured XML exists from 2015), and find a source for actual
+   spending before 2019-21
+3. "Track record" pilot for about 5 programs with strong independent results data (K-12, Medicaid, corrections,
+   WSDOT capital projects, Working Families Tax Credit). Spending trend, budget performance and results side by side;
+   results ranked by source quality (D-048)
+4. Earmark ("provided solely for") tracking across budget versions; capital project carry-forward chains
+5. Plain-language pass, glossary, one-line summaries on agency and district pages, "how the budget works" explainer
+6. Later: user-contributed data and research on program impact, kept separate from official sources, with
+   attribution and review
+7. Performance: legislature ingest takes about 18 minutes (amendment fetches); cache unchanged amendment files

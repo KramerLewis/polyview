@@ -159,3 +159,16 @@ button { font: inherit; border-radius: 6px; padding: 7px 14px; border: 1px solid
 button.secondary { background: transparent; color: var(--accent); }
 button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 .privacy { font-size: .8rem; }
+
+/* Follow the money */
+.toc { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 4px 0 8px; font-size: .95rem; }
+section.question { border-top: 1px solid var(--border); margin-top: 32px; padding-top: 4px; }
+section.question h2 { font-size: 1.3rem; margin-top: 20px; }
+.answer { font-size: 1.1rem; line-height: 1.5; max-width: 72ch; margin: 8px 0 14px; }
+.answer strong { font-variant-numeric: tabular-nums; }
+details.howto { background: var(--callout); border-radius: 8px; padding: 8px 14px; margin: 8px 0 14px; font-size: .92rem; }
+details.howto summary { cursor: pointer; color: var(--text-2); font-weight: 600; }
+details.howto p { color: var(--text-2); max-width: 75ch; }
+.tag { display: inline-block; font-size: .75rem; border: 1px solid var(--border); border-radius: 999px; padding: 0 8px;
+  margin: 2px 4px 0 0; color: var(--text-2); white-space: nowrap; }
+.vote { font-size: .8rem; color: var(--text-2); white-space: nowrap; }
